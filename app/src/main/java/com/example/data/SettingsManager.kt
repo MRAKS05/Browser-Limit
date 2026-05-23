@@ -29,6 +29,24 @@ class SettingsManager(context: Context) {
     private val _showAnimation = MutableStateFlow(prefs.getBoolean("show_animation", true))
     val showAnimation = _showAnimation.asStateFlow()
 
+    private val _geminiApiKey = MutableStateFlow(prefs.getString("gemini_api_key", "") ?: "")
+    val geminiApiKey = _geminiApiKey.asStateFlow()
+
+    private val _removeSystemChrome = MutableStateFlow(prefs.getBoolean("remove_system_chrome", false))
+    val removeSystemChrome = _removeSystemChrome.asStateFlow()
+
+    private val _parentalLockWaitTime = MutableStateFlow(prefs.getInt("parental_lock_wait_time", 0))
+    val parentalLockWaitTime = _parentalLockWaitTime.asStateFlow()
+
+    private val _waitingModeEnabled = MutableStateFlow(prefs.getBoolean("waiting_mode_enabled", false))
+    val waitingModeEnabled = _waitingModeEnabled.asStateFlow()
+
+    var hasCompletedSetup: Boolean
+        get() = prefs.getBoolean("has_completed_setup", false)
+        set(value) {
+            prefs.edit().putBoolean("has_completed_setup", value).apply()
+        }
+
     var isParentalLockEnabled: Boolean
         get() = prefs.getBoolean("parental_lock", false)
         set(value) {
@@ -98,5 +116,25 @@ class SettingsManager(context: Context) {
     fun setShowAnimation(show: Boolean) {
         prefs.edit().putBoolean("show_animation", show).apply()
         _showAnimation.value = show
+    }
+
+    fun setGeminiApiKey(key: String) {
+        prefs.edit().putString("gemini_api_key", key).apply()
+        _geminiApiKey.value = key
+    }
+
+    fun setRemoveSystemChrome(remove: Boolean) {
+        prefs.edit().putBoolean("remove_system_chrome", remove).apply()
+        _removeSystemChrome.value = remove
+    }
+
+    fun setParentalLockWaitTime(time: Int) {
+        prefs.edit().putInt("parental_lock_wait_time", time).apply()
+        _parentalLockWaitTime.value = time
+    }
+
+    fun setWaitingModeEnabled(enabled: Boolean) {
+        prefs.edit().putBoolean("waiting_mode_enabled", enabled).apply()
+        _waitingModeEnabled.value = enabled
     }
 }

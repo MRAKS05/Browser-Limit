@@ -9,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import com.example.data.SettingsManager
 import com.example.engine.BrowserDatabase
@@ -27,17 +28,66 @@ fun SettingsScreen() {
     val countdownDuration by settings.countdownDuration.collectAsState()
     val runOnStartup by settings.runOnStartup.collectAsState()
     val showAnimation by settings.showAnimation.collectAsState()
+    val geminiApiKey by settings.geminiApiKey.collectAsState()
+    val removeSystemChrome by settings.removeSystemChrome.collectAsState()
+    val waitingModeEnabled by settings.waitingModeEnabled.collectAsState()
+    val parentalLockWaitTime by settings.parentalLockWaitTime.collectAsState()
     
     val scope = rememberCoroutineScope()
     var showLocalListDialog by remember { mutableStateOf(false) }
+    var showParentalLockDialog by remember { mutableStateOf(false) }
+    var showParentalUnlockDialog by remember { mutableStateOf(false) }
+    var parentalLockPin by remember { mutableStateOf("") }
+    var parentalUnlockPin by remember { mutableStateOf("") }
+    var isParentalLockEnabled by remember { mutableStateOf(settings.isParentalLockEnabled) }
 
     Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Text("Settings", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(bottom = 16.dp))
         
-        SettingToggle("Use Gemini AI detection", useGemini) { settings.setUseGemini(it) }
-        SettingToggle("Show confirmation overlay", showOverlay) { settings.setShowOverlay(it) }
+        OutlinedTextField(
+            value = geminiApiKey,
+            onValueChange = { settings.setGeminiApiKey(it) },
+            label = { Text("Gemini API Key") },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true,
+            visualTransformation = PasswordVisualTransformation()
+        )
         
-        if (!settings.isParentalLockEnabled) {
+        SettingToggle("Use Gemini AI detection", useGemini) { settings.setUseGemini(it) }
+        
+        SettingToggle("Remove Chrome (even if system app)", removeSystemChrome) { settings.setRemoveSystemChrome(it) }
+        
+        // Parental Lock Section
+        Card(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Text("Parental Lock", style = MaterialTheme.typography.titleMedium)
+                Spacer(modifier = Modifier.height(8.dp))
+                SettingToggle("Enable Parental Lock", isParentalLockEnabled) { enabled ->
+                    if (enabled) {
+                        showParentalLockDialog = true
+                    } else {
+                        showParentalUnlockDialog = true
+                    }
+                }
+                if (isParentalLockEnabled) {
+                    Text("Settings are restricted. Overlay disabled, Auto-remove enabled.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                }
+                
+                SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
+                if (waitingModeEnabled) {
+                    Text("Wait Time: $parentalLockWaitTime seconds")
+                    Slider(
+                        value = parentalLockWaitTime.toFloat(),
+                        onValueChange = { settings.setParentalLockWaitTime(it.toInt()) },
+                        valueRange = 0f..300f,
+                        steps = 29
+                    )
+                }
+            }
+        }
+        
+        if (!isParentalLockEnabled) {
+            SettingToggle("Show confirmation overlay", showOverlay) { settings.setShowOverlay(it) }
             SettingToggle("Auto-remove (No countdown)", autoRemove) { settings.setAutoRemove(it) }
         }
         
@@ -58,7 +108,7 @@ fun SettingsScreen() {
         
         Button(onClick = {
             scope.launch {
-                val client = GeminiClient()
+                val client = GeminiClient(context)
                 val result = client.isBrowser("com.android.chrome")
                 Toast.makeText(context, "Test Chrome: $result", Toast.LENGTH_LONG).show()
             }
@@ -76,6 +126,69 @@ fun SettingsScreen() {
         Button(onClick = { showLocalListDialog = true }, modifier = Modifier.fillMaxWidth()) {
             Text("View local browser list")
         }
+    }
+    
+    if (showParentalLockDialog) {
+        AlertDialog(
+            onDismissRequest = { showParentalLockDialog = false },
+            title = { Text("Set Parental Lock PIN") },
+            text = { 
+                OutlinedTextField(
+                    value = parentalLockPin, 
+                    onValueChange = { parentalLockPin = it },
+                    label = { Text("PIN") },
+                    visualTransformation = PasswordVisualTransformation()
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { 
+                    if (parentalLockPin.isNotBlank()) {
+                        settings.parentalPinHash = parentalLockPin // Note: We should hash this in a real app
+                        settings.isParentalLockEnabled = true
+                        settings.setShowOverlay(false)
+                        settings.setAutoRemove(true)
+                        isParentalLockEnabled = true
+                        showParentalLockDialog = false
+                    }
+                }) { Text("Confirm") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showParentalLockDialog = false }) { Text("Cancel") }
+            }
+        )
+    }
+
+    if (showParentalUnlockDialog) {
+        AlertDialog(
+            onDismissRequest = { showParentalUnlockDialog = false },
+            title = { Text("Enter PIN to Disable") },
+            text = { 
+                OutlinedTextField(
+                    value = parentalUnlockPin, 
+                    onValueChange = { parentalUnlockPin = it },
+                    label = { Text("PIN") },
+                    visualTransformation = PasswordVisualTransformation()
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { 
+                    if (parentalUnlockPin == settings.parentalPinHash) {
+                        settings.isParentalLockEnabled = false
+                        isParentalLockEnabled = false
+                        showParentalUnlockDialog = false
+                        parentalUnlockPin = ""
+                    } else {
+                        Toast.makeText(context, "Incorrect PIN", Toast.LENGTH_SHORT).show()
+                    }
+                }) { Text("Confirm") }
+            },
+            dismissButton = {
+                TextButton(onClick = { 
+                    showParentalUnlockDialog = false 
+                    parentalUnlockPin = ""
+                }) { Text("Cancel") }
+            }
+        )
     }
     
     if (showLocalListDialog) {

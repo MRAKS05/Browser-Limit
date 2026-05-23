@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.data.ExceptionsManager
 import com.example.data.LogDatabase
@@ -19,6 +20,9 @@ import com.example.data.SettingsManager
 import com.example.engine.ShizukuUninstaller
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Warning
 
 class OverlayActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,57 +80,67 @@ fun OverlayScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black.copy(alpha = 0.8f))
-            .padding(24.dp),
+            .background(Color.Black.copy(alpha = 0.6f))
+            .padding(16.dp),
         contentAlignment = Alignment.Center
     ) {
         Card(
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(0.9f),
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
         ) {
             Column(
                 modifier = Modifier.padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(
-                    text = "Browser Detected",
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = MaterialTheme.colorScheme.error,
-                    fontWeight = FontWeight.Bold
+                Icon(
+                    imageVector = Icons.Filled.Warning,
+                    contentDescription = "Warning",
+                    modifier = Modifier.size(48.dp),
+                    tint = MaterialTheme.colorScheme.error
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 
-                Text(text = appName, style = MaterialTheme.typography.titleLarge)
-                Text(text = packageName, style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
-                
+                Text(
+                    text = "Browser Removed", // Changed to removed because it is about to be removed
+                    style = MaterialTheme.typography.headlineMedium,
+                    color = MaterialTheme.colorScheme.error,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
                 Spacer(modifier = Modifier.height(16.dp))
-                Text(text = "Reason: $method - $reason")
+                
+                Text(text = appName, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                Text(text = packageName, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                
+                Spacer(modifier = Modifier.height(8.dp))
+                Surface(
+                    color = MaterialTheme.colorScheme.surfaceVariant,
+                    shape = MaterialTheme.shapes.small,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        text = "Reason: $method\n$reason",
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(12.dp),
+                        textAlign = TextAlign.Center
+                    )
+                }
                 
                 Spacer(modifier = Modifier.height(24.dp))
                 
                 Text(
                     text = "Auto-removing in $timeLeft seconds...",
-                    color = MaterialTheme.colorScheme.error
+                    color = MaterialTheme.colorScheme.error,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
                 )
                 
                 Spacer(modifier = Modifier.height(24.dp))
                 
-                Row(
+                Column(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    Button(
-                        onClick = {
-                            scope.launch {
-                                exceptionsManager.addException(packageName)
-                                logResult(context, packageName, appName, "Excepted", method, reason)
-                                onDismiss()
-                            }
-                        },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4CAF50))
-                    ) {
-                        Text("Keep & Add Exception")
-                    }
-                    
                     Button(
                         onClick = {
                             scope.launch {
@@ -134,9 +148,23 @@ fun OverlayScreen(
                                 onDismiss()
                             }
                         },
-                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
+                        modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("Remove Now")
+                    }
+                    
+                    OutlinedButton(
+                        onClick = {
+                            scope.launch {
+                                exceptionsManager.addException(packageName)
+                                logResult(context, packageName, appName, "Excepted", method, reason)
+                                onDismiss()
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Keep & Add Exception")
                     }
                 }
             }

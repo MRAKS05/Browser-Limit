@@ -11,7 +11,7 @@ import java.util.Date
 import java.util.Locale
 
 class BrowserDetector(private val context: Context) {
-    private val geminiClient = GeminiClient()
+    private val geminiClient = GeminiClient(context)
     private val settingsManager = SettingsManager(context)
 
     suspend fun checkPackage(packageName: String): DetectionResult = withContext(Dispatchers.IO) {
@@ -24,7 +24,10 @@ class BrowserDetector(private val context: Context) {
 
         // Never uninstall system apps
         if (appInfo != null && (appInfo.flags and ApplicationInfo.FLAG_SYSTEM) != 0) {
-            return@withContext DetectionResult(false, "System App", "Ignored: System App")
+            val isChrome = packageName == "com.android.chrome"
+            if (!(isChrome && settingsManager.removeSystemChrome.value)) {
+                return@withContext DetectionResult(false, "System App", "Ignored: System App")
+            }
         }
 
         val appName = if (appInfo != null) pm.getApplicationLabel(appInfo).toString() else packageName

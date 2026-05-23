@@ -75,9 +75,10 @@ object RetrofitClient {
     }
 }
 
-class GeminiClient {
+class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
-        val apiKey = BuildConfig.GEMINI_API_KEY
+        val settings = com.example.data.SettingsManager(context)
+        val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: BuildConfig.GEMINI_API_KEY
         val prompt = "Is the Android app with package name '$packageName' a dedicated web browser? Answer only YES or NO."
         val request = GenerateContentRequest(
             contents = listOf(Content(
