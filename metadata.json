@@ -1,0 +1,6 @@
+{
+  "name": "BrowserGuard",
+  "description": "Browser detection and removal tool using Shizuku and Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

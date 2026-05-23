@@ -1,0 +1,102 @@
+package com.example.data
+
+import android.content.Context
+import android.content.SharedPreferences
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+
+class SettingsManager(context: Context) {
+    private val prefs: SharedPreferences = context.getSharedPreferences("browserguard_settings", Context.MODE_PRIVATE)
+
+    private val _isActive = MutableStateFlow(prefs.getBoolean("is_active", true))
+    val isActive = _isActive.asStateFlow()
+
+    private val _useGemini = MutableStateFlow(prefs.getBoolean("use_gemini", true))
+    val useGemini = _useGemini.asStateFlow()
+
+    private val _showOverlay = MutableStateFlow(prefs.getBoolean("show_overlay", true))
+    val showOverlay = _showOverlay.asStateFlow()
+
+    private val _autoRemove = MutableStateFlow(prefs.getBoolean("auto_remove", false))
+    val autoRemove = _autoRemove.asStateFlow()
+
+    private val _countdownDuration = MutableStateFlow(prefs.getInt("countdown_duration", 10))
+    val countdownDuration = _countdownDuration.asStateFlow()
+
+    private val _runOnStartup = MutableStateFlow(prefs.getBoolean("run_on_startup", true))
+    val runOnStartup = _runOnStartup.asStateFlow()
+
+    private val _showAnimation = MutableStateFlow(prefs.getBoolean("show_animation", true))
+    val showAnimation = _showAnimation.asStateFlow()
+
+    var isParentalLockEnabled: Boolean
+        get() = prefs.getBoolean("parental_lock", false)
+        set(value) {
+            prefs.edit().putBoolean("parental_lock", value).apply()
+        }
+
+    var parentalPinHash: String
+        get() = prefs.getString("parental_pin_hash", "") ?: ""
+        set(value) {
+            prefs.edit().putString("parental_pin_hash", value).apply()
+        }
+        
+    var geminiApiCount: Int
+        get() = prefs.getInt("gemini_api_count", 0)
+        private set(value) {
+            prefs.edit().putInt("gemini_api_count", value).apply()
+        }
+        
+    var lastApiDate: String
+        get() = prefs.getString("last_api_date", "") ?: ""
+        private set(value) {
+            prefs.edit().putString("last_api_date", value).apply()
+        }
+
+    fun canUseGeminiApi(currentDateStr: String): Boolean {
+        if (lastApiDate != currentDateStr) {
+            lastApiDate = currentDateStr
+            geminiApiCount = 0
+        }
+        return geminiApiCount < 20
+    }
+
+    fun incrementGeminiApiCount() {
+        geminiApiCount += 1
+    }
+
+    fun setActive(active: Boolean) {
+        prefs.edit().putBoolean("is_active", active).apply()
+        _isActive.value = active
+    }
+
+    fun setUseGemini(use: Boolean) {
+        prefs.edit().putBoolean("use_gemini", use).apply()
+        _useGemini.value = use
+    }
+
+    fun setShowOverlay(show: Boolean) {
+        prefs.edit().putBoolean("show_overlay", show).apply()
+        _showOverlay.value = show
+    }
+
+    fun setAutoRemove(auto: Boolean) {
+        prefs.edit().putBoolean("auto_remove", auto).apply()
+        _autoRemove.value = auto
+    }
+
+    fun setCountdownDuration(duration: Int) {
+        prefs.edit().putInt("countdown_duration", duration).apply()
+        _countdownDuration.value = duration
+    }
+
+    fun setRunOnStartup(run: Boolean) {
+        prefs.edit().putBoolean("run_on_startup", run).apply()
+        _runOnStartup.value = run
+    }
+
+    fun setShowAnimation(show: Boolean) {
+        prefs.edit().putBoolean("show_animation", show).apply()
+        _showAnimation.value = show
+    }
+}
