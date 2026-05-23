@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:width="66dp"
-        android:height="66dp"
-        android:drawable="@drawable/browser_limit_icon_1779538771929"
-        android:gravity="center" />
-</layer-list>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:scaleX="1.1" android:scaleY="1.1" android:pivotX="54" android:pivotY="54">
+        <!-- White base to ensure no transparent holes in the slices -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 54,54 m -26,0 a 26,26 0 1,1 52,0 a 26,26 0 1,1 -52,0" />
+            
+        <!-- Red slice (Top) -->
+        <path
+            android:fillColor="#EA4335"
+            android:pathData="M 54,54 L 31.48,41 A 26,26 0 0,1 76.52,41 Z" />
+            
+        <!-- Yellow slice (Right) -->
+        <path
+            android:fillColor="#FBBC05"
+            android:pathData="M 54,54 L 76.52,41 A 26,26 0 0,1 54,80 Z" />
+            
+        <!-- Green slice (Left) -->
+        <path
+            android:fillColor="#34A853"
+            android:pathData="M 54,54 L 54,80 A 26,26 0 0,1 31.48,41 Z" />
+            
+        <!-- Inner white border -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 54,54 m -12,0 a 12,12 0 1,1 24,0 a 12,12 0 1,1 -24,0" />
+            
+        <!-- Inner blue circle -->
+        <path
+            android:fillColor="#4285F4"
+            android:pathData="M 54,54 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
+            
+        <!-- Ban overlay round cross -->
+        <path
+            android:strokeColor="#D32F2F"
+            android:strokeWidth="7"
+            android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
+        <path
+            android:strokeColor="#D32F2F"
+            android:strokeWidth="7"
+            android:strokeLineCap="round"
+            android:pathData="M 31.37,31.37 L 76.63,76.63" />
+    </group>
+</vector>
