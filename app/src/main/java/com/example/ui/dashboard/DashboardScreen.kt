@@ -35,8 +35,18 @@ fun DashboardScreen() {
     var missingNotifications by remember { mutableStateOf(false) }
     var missingOverlay by remember { mutableStateOf(false) }
     var missingShizuku by remember { mutableStateOf(false) }
+    var missingBattery by remember { mutableStateOf(false) }
     
     LaunchedEffect(Unit) {
+        val listener = Shizuku.OnBinderReceivedListener {
+            shizukuRunning.value = true
+        }
+        val deadListener = Shizuku.OnBinderDeadListener {
+            shizukuRunning.value = false
+        }
+        Shizuku.addBinderReceivedListener(listener)
+        Shizuku.addBinderDeadListener(deadListener)
+        
         while (true) {
             shizukuRunning.value = Shizuku.pingBinder()
             
@@ -47,7 +57,10 @@ fun DashboardScreen() {
             
             missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
             
-            delay(2000)
+            val pm = context.getSystemService(android.content.Context.POWER_SERVICE) as android.os.PowerManager
+            missingBattery = !pm.isIgnoringBatteryOptimizations(context.packageName)
+            
+            delay(1000)
         }
     }
     
@@ -114,21 +127,39 @@ fun DashboardScreen() {
             }
         }
         
-        if (missingNotifications || missingOverlay || missingShizuku) {
+        if (missingNotifications || missingOverlay || missingShizuku || missingBattery) {
             Card(modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text("Action Required", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onErrorContainer)
-                    if (missingNotifications) Text("• Notifications Permission Missing", color = MaterialTheme.colorScheme.onErrorContainer)
+                    if (missingNotifications) {
+                        Text("• Notifications Permission Missing", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
+                        Button(onClick = {
+                            val intent = Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
+                                putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName)
+                            }
+                            context.startActivity(intent)
+                        }, modifier = Modifier.padding(top = 4.dp)) { Text("Fix Notifications") }
+                    }
                     if (missingOverlay) {
-                        Text("• Overlay Permission Missing (Tap to fixing)", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
+                        Text("• Overlay Permission Missing (Tap to fix)", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
                         Button(onClick = {
                             val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:${context.packageName}"))
                             context.startActivity(intent)
                         }, modifier = Modifier.padding(top = 4.dp)) { Text("Fix Overlay") }
                     }
                     if (missingShizuku) {
-                        Text("• Shizuku Permission Missing (Tap to missing)", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
+                        Text("• Shizuku Permission Missing", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
                         Button(onClick = { Shizuku.requestPermission(0) }, modifier = Modifier.padding(top = 4.dp)) { Text("Fix Shizuku") }
+                    }
+                    if (missingBattery) {
+                        Text("• Battery Optimization Active", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
+                        Button(onClick = {
+                            val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
+                            intent.data = Uri.parse("package:${context.packageName}")
+                            if (intent.resolveActivity(context.packageManager) != null) {
+                                context.startActivity(intent)
+                            }
+                        }, modifier = Modifier.padding(top = 4.dp)) { Text("Disable Optimization") }
                     }
                 }
             }

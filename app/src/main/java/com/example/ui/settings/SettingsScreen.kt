@@ -125,7 +125,6 @@ fun SettingsScreen() {
         
         Spacer(modifier = Modifier.height(16.dp))
         SettingToggle("Run on device startup", runOnStartup) { settings.setRunOnStartup(it) }
-        SettingToggle("Show scanning animation", showAnimation) { settings.setShowAnimation(it) }
         
         Spacer(modifier = Modifier.height(24.dp))
         
