@@ -40,6 +40,8 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:showWhenLocked="true"
             android:turnScreenOn="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
             android:excludeFromRecents="true" />
         
         <service

@@ -8,94 +8,198 @@ import android.os.Build
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.*
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.data.SettingsManager
 import rikka.shizuku.Shizuku
 
+data class OnboardingStep(
+    val title: String,
+    val description: String,
+    val icon: ImageVector
+)
+
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun OnboardingScreen(onComplete: () -> Unit) {
     var currentStep by remember { mutableStateOf(0) }
     
     val steps = listOf(
-        "Welcome" to "BrowserGuard monitors installed apps and removes browsers automatically using Shizuku and Gemini AI.",
-        "Notifications" to "We need Notifications permission to run a background service that detects app installations.",
-        "Overlay" to "Overlay permission allows us to show a confirmation dialog when a browser is detected.",
-        "Shizuku" to "Shizuku enables us to uninstall apps automatically. Please ensure Shizuku is set up and running.",
-        "Battery Optimization" to "To ensure the background service doesn't get killed, please disable battery optimization for BrowserGuard."
+        OnboardingStep(
+            "Welcome to BrowserGuard",
+            "Monitors installed apps and removes browsers automatically using Shizuku and Gemini AI.",
+            Icons.Filled.CheckCircle
+        ),
+        OnboardingStep(
+            "Notifications",
+            "We need Notifications permission to run a background service that detects app installations securely.",
+            Icons.Filled.Notifications
+        ),
+        OnboardingStep(
+            "Display Over Other Apps",
+            "This overlay permission allows us to show a confirmation dialog when a browser is detected.",
+            Icons.Filled.Info
+        ),
+        OnboardingStep(
+            "Shizuku Setup",
+            "Shizuku enables us to uninstall apps automatically. Please ensure Shizuku is set up and running.",
+            Icons.Filled.Build
+        ),
+        OnboardingStep(
+            "Battery Optimization",
+            "To ensure the background service doesn't get killed, please disable battery optimization for BrowserGuard.",
+            Icons.Filled.Warning
+        )
     )
     
-    Column(
-        modifier = Modifier.fillMaxSize().padding(24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        val (title, desc) = steps[currentStep]
-        
-        Text(title, style = MaterialTheme.typography.headlineLarge, textAlign = TextAlign.Center)
-        Spacer(modifier = Modifier.height(16.dp))
-        Text(desc, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
-        
-        Spacer(modifier = Modifier.height(32.dp))
-        
-        val context = LocalContext.current
-        val settings = remember { SettingsManager(context) }
-        
-        val notificationLauncher = rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.RequestPermission(),
-            onResult = { currentStep++ }
-        )
-        
-        Button(
-            onClick = {
-                when (currentStep) {
-                    0 -> currentStep++
-                    1 -> {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                            if (context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                                notificationLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-                            } else {
-                                currentStep++
-                            }
-                        } else {
-                            currentStep++
-                        }
-                    }
-                    2 -> {
-                        if (!Settings.canDrawOverlays(context)) {
-                            val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:${context.packageName}"))
-                            context.startActivity(intent)
-                        }
-                        currentStep++
-                    }
-                    3 -> {
-                        try {
-                            if (Shizuku.pingBinder() && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED) {
-                                Shizuku.requestPermission(0)
-                            }
-                        } catch (e: Exception) {}
-                        currentStep++
-                    }
-                    4 -> {
-                        val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
-                        intent.data = Uri.parse("package:${context.packageName}")
-                        if (intent.resolveActivity(context.packageManager) != null) {
-                            context.startActivity(intent)
-                        }
-                        settings.hasCompletedSetup = true
-                        onComplete()
+    val context = LocalContext.current
+    val settings = remember { SettingsManager(context) }
+    
+    val notificationLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission(),
+        onResult = { currentStep++ }
+    )
+    
+    Scaffold(
+        bottomBar = {
+            Column(modifier = Modifier.padding(24.dp)) {
+                // Progress Indicators
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(bottom = 32.dp),
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    repeat(steps.size) { index ->
+                        Box(
+                            modifier = Modifier
+                                .padding(horizontal = 4.dp)
+                                .size(if (index == currentStep) 12.dp else 8.dp)
+                                .clip(CircleShape)
+                                .background(
+                                    if (index == currentStep) MaterialTheme.colorScheme.primary 
+                                    else MaterialTheme.colorScheme.surfaceVariant
+                                )
+                        )
                     }
                 }
-            },
-            modifier = Modifier.fillMaxWidth()
+                
+                Button(
+                    onClick = {
+                        when (currentStep) {
+                            0 -> currentStep++
+                            1 -> {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                                    if (context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                                        notificationLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                                    } else {
+                                        currentStep++
+                                    }
+                                } else {
+                                    currentStep++
+                                }
+                            }
+                            2 -> {
+                                if (!Settings.canDrawOverlays(context)) {
+                                    val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:${context.packageName}"))
+                                    context.startActivity(intent)
+                                }
+                                currentStep++
+                            }
+                            3 -> {
+                                try {
+                                    if (Shizuku.pingBinder() && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED) {
+                                        Shizuku.requestPermission(0)
+                                    }
+                                } catch (e: Exception) {}
+                                currentStep++
+                            }
+                            4 -> {
+                                val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
+                                intent.data = Uri.parse("package:${context.packageName}")
+                                if (intent.resolveActivity(context.packageManager) != null) {
+                                    context.startActivity(intent)
+                                }
+                                settings.hasCompletedSetup = true
+                                onComplete()
+                            }
+                        }
+                    },
+                    modifier = Modifier.fillMaxWidth().height(56.dp),
+                    shape = MaterialTheme.shapes.medium
+                ) {
+                    Text(
+                        if (currentStep == steps.size - 1) "Finish Setup" else "Grant & Continue",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
+            }
+        }
+    ) { innerPadding ->
+        Box(
+            modifier = Modifier.fillMaxSize().padding(innerPadding).padding(horizontal = 24.dp),
+            contentAlignment = Alignment.Center
         ) {
-            Text(if (currentStep == steps.size - 1) "Finish Setup" else "Grant & Continue")
+            AnimatedContent(
+                targetState = currentStep,
+                transitionSpec = {
+                    slideInHorizontally(initialOffsetX = { fullWidth -> fullWidth }) + fadeIn() with
+                    slideOutHorizontally(targetOffsetX = { fullWidth -> -fullWidth }) + fadeOut()
+                }
+            ) { targetStep ->
+                val step = steps[targetStep]
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Surface(
+                        shape = CircleShape,
+                        color = MaterialTheme.colorScheme.primaryContainer,
+                        modifier = Modifier.size(120.dp)
+                    ) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Icon(
+                                imageVector = step.icon,
+                                contentDescription = null,
+                                modifier = Modifier.size(56.dp),
+                                tint = MaterialTheme.colorScheme.onPrimaryContainer
+                            )
+                        }
+                    }
+                    
+                    Spacer(modifier = Modifier.height(32.dp))
+                    
+                    Text(
+                        text = step.title,
+                        style = MaterialTheme.typography.headlineMedium,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    
+                    Spacer(modifier = Modifier.height(16.dp))
+                    
+                    Text(
+                        text = step.description,
+                        style = MaterialTheme.typography.bodyLarge,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
         }
     }
 }

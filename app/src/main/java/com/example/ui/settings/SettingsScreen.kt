@@ -7,7 +7,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
@@ -41,6 +44,8 @@ fun SettingsScreen() {
     var parentalUnlockPin by remember { mutableStateOf("") }
     var isParentalLockEnabled by remember { mutableStateOf(settings.isParentalLockEnabled) }
 
+    var securityExpanded by remember { mutableStateOf(false) }
+
     Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Text("Settings", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(bottom = 16.dp))
         
@@ -57,38 +62,56 @@ fun SettingsScreen() {
         
         SettingToggle("Remove Chrome (even if system app)", removeSystemChrome) { settings.setRemoveSystemChrome(it) }
         
-        // Parental Lock Section
+        // Security Settings Section
         Card(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
             Column(modifier = Modifier.padding(16.dp)) {
-                Text("Parental Lock", style = MaterialTheme.typography.titleMedium)
-                Spacer(modifier = Modifier.height(8.dp))
-                SettingToggle("Enable Parental Lock", isParentalLockEnabled) { enabled ->
-                    if (enabled) {
-                        showParentalLockDialog = true
-                    } else {
-                        showParentalUnlockDialog = true
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Security Settings", style = MaterialTheme.typography.titleMedium)
+                    IconButton(onClick = { securityExpanded = !securityExpanded }) {
+                        Icon(Icons.Filled.ArrowDropDown, "Toggle", modifier = Modifier.rotate(if (securityExpanded) 180f else 0f))
                     }
                 }
-                if (isParentalLockEnabled) {
-                    Text("Settings are restricted. Overlay disabled, Auto-remove enabled.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
-                }
                 
-                SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
-                if (waitingModeEnabled) {
-                    Text("Wait Time: $parentalLockWaitTime seconds")
-                    Slider(
-                        value = parentalLockWaitTime.toFloat(),
-                        onValueChange = { settings.setParentalLockWaitTime(it.toInt()) },
-                        valueRange = 0f..300f,
-                        steps = 29
-                    )
+                if (securityExpanded) {
+                    Spacer(modifier = Modifier.height(8.dp))
+                    SettingToggle("Enable Parental Lock", isParentalLockEnabled) { enabled ->
+                        if (enabled) {
+                            showParentalLockDialog = true
+                        } else {
+                            showParentalUnlockDialog = true
+                        }
+                    }
+                    if (isParentalLockEnabled) {
+                        Text("Settings are restricted. Overlay disabled, Auto-remove enabled.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                    }
+                    
+                    SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
+                    if (waitingModeEnabled) {
+                        Text("Wait Time: $parentalLockWaitTime seconds")
+                        Slider(
+                            value = parentalLockWaitTime.toFloat(),
+                            onValueChange = { settings.setParentalLockWaitTime(it.toInt()) },
+                            valueRange = 0f..300f,
+                            steps = 29
+                        )
+                    }
                 }
             }
         }
         
         if (!isParentalLockEnabled) {
-            SettingToggle("Show confirmation overlay", showOverlay) { settings.setShowOverlay(it) }
-            SettingToggle("Auto-remove (No countdown)", autoRemove) { settings.setAutoRemove(it) }
+            SettingToggle("Show confirmation overlay", showOverlay) { 
+                settings.setShowOverlay(it)
+                if (it) settings.setAutoRemove(false)
+            }
+            SettingToggle("Auto-remove (No countdown)", autoRemove) { 
+                settings.setAutoRemove(it)
+                if (it) settings.setShowOverlay(false)
+            }
         }
         
         Spacer(modifier = Modifier.height(16.dp))
