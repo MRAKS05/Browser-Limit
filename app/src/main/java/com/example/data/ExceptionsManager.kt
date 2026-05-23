@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import org.json.JSONArray
 
 class ExceptionsManager(context: Context) {
-    private val prefs: SharedPreferences = context.getSharedPreferences("browserguard_exceptions", Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.getSharedPreferences("browserlimit_exceptions", Context.MODE_PRIVATE)
     private val EXCEPTIONS_KEY = "exceptions_list"
     
     private val _exceptionsFlow = MutableStateFlow<List<String>>(loadExceptions())
@@ -16,7 +16,7 @@ class ExceptionsManager(context: Context) {
 
     init {
         // Prepopulate with hardcoded permanent exception
-        addException("com.aistudio.browserguard.abxyz")
+        addException("com.aistudio.browserlimit.abxyz")
         addException("com.example")
     }
 
@@ -31,7 +31,7 @@ class ExceptionsManager(context: Context) {
     }
 
     fun isExcepted(packageName: String): Boolean {
-        if (packageName == "com.aistudio.browserguard.abxyz" || packageName == "com.example") return true
+        if (packageName == "com.aistudio.browserlimit.abxyz" || packageName == "com.example") return true
         return loadExceptions().contains(packageName)
     }
 
@@ -44,7 +44,7 @@ class ExceptionsManager(context: Context) {
     }
 
     fun removeException(packageName: String) {
-        if (packageName == "com.aistudio.browserguard.abxyz" || packageName == "com.example") return
+        if (packageName == "com.aistudio.browserlimit.abxyz" || packageName == "com.example") return
         val current = loadExceptions().toMutableList()
         current.remove(packageName)
         saveExceptions(current)

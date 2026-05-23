@@ -40,7 +40,7 @@ fun OnboardingScreen(onComplete: () -> Unit) {
     
     val steps = listOf(
         OnboardingStep(
-            "Welcome to BrowserGuard",
+            "Welcome to Browser Limit",
             "Monitors installed apps and removes browsers automatically using Shizuku and Gemini AI.",
             Icons.Filled.CheckCircle
         ),
@@ -61,7 +61,7 @@ fun OnboardingScreen(onComplete: () -> Unit) {
         ),
         OnboardingStep(
             "Battery Optimization",
-            "To ensure the background service doesn't get killed, please disable battery optimization for BrowserGuard.",
+            "To ensure the background service doesn't get killed, please disable battery optimization for Browser Limit.",
             Icons.Filled.Warning
         )
     )

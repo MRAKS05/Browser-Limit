@@ -83,7 +83,7 @@ fun DashboardScreen() {
             modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text("BrowserGuard Active", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
+            Text("Browser Limit Active", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
             Switch(
                 checked = isActive,
                 onCheckedChange = { 

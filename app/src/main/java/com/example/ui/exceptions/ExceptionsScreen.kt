@@ -56,7 +56,7 @@ fun ExceptionsScreen() {
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(packageName)
-                        if (packageName != "com.aistudio.browserguard.abxyz" && packageName != "com.example") {
+                        if (packageName != "com.aistudio.browserlimit.abxyz" && packageName != "com.example") {
                             IconButton(onClick = { exceptionsManager.removeException(packageName) }) {
                                 Icon(Icons.Filled.Close, contentDescription = "Remove")
                             }

@@ -41,7 +41,7 @@ fun LogsScreen() {
                 }
                 TextButton(onClick = {
                     val exportDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-                    val file = File(exportDir, "browserguard_logs.txt")
+                    val file = File(exportDir, "browserlimit_logs.txt")
                     file.writeText(logs.joinToString("\n") { "${it.timestamp} | ${it.appName} (${it.packageName}) | ${it.decision} | ${it.detectionMethod} - ${it.geminiResponse}" })
                     Toast.makeText(context, "Exported to Downloads", Toast.LENGTH_SHORT).show()
                 }) {

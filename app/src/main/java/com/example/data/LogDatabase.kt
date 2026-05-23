@@ -18,7 +18,7 @@ abstract class LogDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     LogDatabase::class.java,
-                    "browserguard_logs"
+                    "browserlimit_logs"
                 ).build()
                 INSTANCE = instance
                 instance

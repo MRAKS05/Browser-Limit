@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 class SettingsManager(context: Context) {
-    private val prefs: SharedPreferences = context.getSharedPreferences("browserguard_settings", Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.getSharedPreferences("browserlimit_settings", Context.MODE_PRIVATE)
 
     private val _isActive = MutableStateFlow(prefs.getBoolean("is_active", true))
     val isActive = _isActive.asStateFlow()

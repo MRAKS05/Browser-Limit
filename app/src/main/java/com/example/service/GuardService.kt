@@ -57,7 +57,7 @@ class GuardService : Service() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         
-        val title = if (settingsManager.isActive.value) "BrowserGuard is active" else "BrowserGuard is paused"
+        val title = if (settingsManager.isActive.value) "Browser Limit is active" else "Browser Limit is paused"
         val actionTitle = if (settingsManager.isActive.value) "Pause" else "Resume"
 
         return NotificationCompat.Builder(this, CHANNEL_ID)
@@ -73,7 +73,7 @@ class GuardService : Service() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 CHANNEL_ID,
-                "BrowserGuard Service",
+                "Browser Limit Service",
                 NotificationManager.IMPORTANCE_LOW
             )
             val manager = getSystemService(NotificationManager::class.java)

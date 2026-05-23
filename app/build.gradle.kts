@@ -12,7 +12,7 @@ android {
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.aistudio.browserguard.abxyz"
+    applicationId = "com.aistudio.browserlimit.abxyz"
     minSdk = 26
     targetSdk = 36
     versionCode = 1
