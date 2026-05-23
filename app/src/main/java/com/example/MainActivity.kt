@@ -42,8 +42,11 @@ import com.example.ui.theme.MyApplicationTheme
 import kotlinx.coroutines.delay
 import rikka.shizuku.Shizuku
 
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         
         // Start service automatically if it's active
