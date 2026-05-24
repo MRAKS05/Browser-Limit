@@ -141,7 +141,7 @@ fun OnboardingScreen(onComplete: () -> Unit) {
                     shape = MaterialTheme.shapes.medium
                 ) {
                     Text(
-                        if (currentStep == steps.size - 1) "Finish Setup" else "Grant & Continue",
+                        if (currentStep == steps.size - 1) "Finish Setup" else "Continue",
                         style = MaterialTheme.typography.titleMedium
                     )
                 }

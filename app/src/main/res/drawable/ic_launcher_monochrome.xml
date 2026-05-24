@@ -5,31 +5,32 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
     <group android:scaleX="1.1" android:scaleY="1.1" android:pivotX="54" android:pivotY="54">
-        <!-- Monochrome slices -->
+        <!-- Outer circle outline -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="4"
-            android:pathData="M 54,54 L 31.48,41 A 26,26 0 0,1 76.52,41 Z" />
+            android:pathData="M 54,54 m -26,0 a 26,26 0 1,1 52,0 a 26,26 0 1,1 -52,0" />
+            
+        <!-- Slice connecting lines -->
         <path
             android:strokeColor="#000000"
             android:strokeWidth="4"
-            android:pathData="M 54,54 L 76.52,41 A 26,26 0 0,1 54,80 Z" />
-        <path
-            android:strokeColor="#000000"
-            android:strokeWidth="4"
-            android:pathData="M 54,54 L 54,80 A 26,26 0 0,1 31.48,41 Z" />
+            android:strokeLineCap="round"
+            android:pathData="M 31.48,41 L 43.61,48 M 76.52,41 L 64.39,48 M 54,80 L 54,66" />
+
+        <!-- Inner circle -->
         <path
             android:fillColor="#000000"
-            android:pathData="M 54,54 m -8,0 a 8,8 0 1,1 16,0 a 8,8 0 1,1 -16,0" />
+            android:pathData="M 54,54 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
             
-        <!-- Ban symbol -->
+        <!-- Ban overlay round cross -->
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="6"
+            android:strokeWidth="7"
             android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="6"
+            android:strokeWidth="7"
             android:strokeLineCap="round"
             android:pathData="M 31.37,31.37 L 76.63,76.63" />
     </group>
