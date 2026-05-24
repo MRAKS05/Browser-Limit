@@ -181,28 +181,75 @@ fun SettingsScreen() {
     }
 
     if (showParentalUnlockDialog) {
+        var waitTimeLeft by remember { mutableStateOf(if (waitingModeEnabled) parentalLockWaitTime else 0) }
+        var isResumed by remember { mutableStateOf(true) }
+        val isWindowFocused = androidx.compose.ui.platform.LocalWindowInfo.current.isWindowFocused
+
+        val lifecycleOwner = androidx.lifecycle.compose.LocalLifecycleOwner.current
+
+        DisposableEffect(lifecycleOwner) {
+            val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
+                if (event == androidx.lifecycle.Lifecycle.Event.ON_RESUME) {
+                    isResumed = true
+                } else if (event == androidx.lifecycle.Lifecycle.Event.ON_PAUSE || event == androidx.lifecycle.Lifecycle.Event.ON_STOP) {
+                    isResumed = false
+                    waitTimeLeft = if (waitingModeEnabled) parentalLockWaitTime else 0
+                }
+            }
+            lifecycleOwner.lifecycle.addObserver(observer)
+            onDispose {
+                lifecycleOwner.lifecycle.removeObserver(observer)
+            }
+        }
+
+        LaunchedEffect(isWindowFocused) {
+            if (!isWindowFocused) {
+                waitTimeLeft = if (waitingModeEnabled) parentalLockWaitTime else 0
+            }
+        }
+
+        LaunchedEffect(waitingModeEnabled, parentalLockWaitTime, isResumed, isWindowFocused) {
+            if (isResumed && isWindowFocused) {
+                while (waitTimeLeft > 0) {
+                    kotlinx.coroutines.delay(1000)
+                    waitTimeLeft--
+                }
+            }
+        }
+
+        val showPinInput = waitTimeLeft == 0
+
         AlertDialog(
-            onDismissRequest = { showParentalUnlockDialog = false },
-            title = { Text("Enter PIN to Disable") },
+            onDismissRequest = { 
+                showParentalUnlockDialog = false 
+                parentalUnlockPin = ""
+            },
+            title = { Text(if (showPinInput) "Enter PIN to Disable" else "Waiting to Unlock...") },
             text = { 
-                OutlinedTextField(
-                    value = parentalUnlockPin, 
-                    onValueChange = { parentalUnlockPin = it },
-                    label = { Text("PIN") },
-                    visualTransformation = PasswordVisualTransformation()
-                )
+                if (showPinInput) {
+                    OutlinedTextField(
+                        value = parentalUnlockPin, 
+                        onValueChange = { parentalUnlockPin = it },
+                        label = { Text("PIN") },
+                        visualTransformation = PasswordVisualTransformation()
+                    )
+                } else {
+                    Text("Please keep this screen open for $waitTimeLeft seconds. Do not leave the app or the timer will reset.", modifier = Modifier.padding(16.dp))
+                }
             },
             confirmButton = {
-                TextButton(onClick = { 
-                    if (parentalUnlockPin == settings.parentalPinHash) {
-                        settings.isParentalLockEnabled = false
-                        isParentalLockEnabled = false
-                        showParentalUnlockDialog = false
-                        parentalUnlockPin = ""
-                    } else {
-                        Toast.makeText(context, "Incorrect PIN", Toast.LENGTH_SHORT).show()
-                    }
-                }) { Text("Confirm") }
+                if (showPinInput) {
+                    TextButton(onClick = { 
+                        if (parentalUnlockPin == settings.parentalPinHash) {
+                            settings.isParentalLockEnabled = false
+                            isParentalLockEnabled = false
+                            showParentalUnlockDialog = false
+                            parentalUnlockPin = ""
+                        } else {
+                            Toast.makeText(context, "Incorrect PIN", Toast.LENGTH_SHORT).show()
+                        }
+                    }) { Text("Confirm") }
+                }
             },
             dismissButton = {
                 TextButton(onClick = { 

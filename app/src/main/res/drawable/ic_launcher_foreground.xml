@@ -4,46 +4,44 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <group android:scaleX="1.1" android:scaleY="1.1" android:pivotX="54" android:pivotY="54">
-        <!-- White base to ensure no transparent holes in the slices -->
-        <path
-            android:fillColor="#FFFFFF"
-            android:pathData="M 54,54 m -26,0 a 26,26 0 1,1 52,0 a 26,26 0 1,1 -52,0" />
-            
-        <!-- Red slice (Top) -->
+    
+    <group>
+        <!-- Chrome Logo at R=32, r=16 (r/R = 0.5 perfectly) -->
+        <!-- Center = 54, 54 -->
+        <!-- Red Slice -->
         <path
             android:fillColor="#EA4335"
-            android:pathData="M 54,54 L 31.48,41 A 26,26 0 0,1 76.52,41 Z" />
+            android:pathData="M 54,38 L 81.713,38 A 32,32 0 0,0 26.287,38 L 40.144,62 A 16,16 0 0,1 54,38 Z" />
             
-        <!-- Yellow slice (Right) -->
+        <!-- Yellow Slice -->
         <path
             android:fillColor="#FBBC05"
-            android:pathData="M 54,54 L 76.52,41 A 26,26 0 0,1 54,80 Z" />
+            android:pathData="M 67.856,62 L 54,86 A 32,32 0 0,0 81.713,38 L 67.856,38 A 16,16 0 0,1 67.856,62 Z" />
             
-        <!-- Green slice (Left) -->
+        <!-- Green Slice -->
         <path
             android:fillColor="#34A853"
-            android:pathData="M 54,54 L 54,80 A 26,26 0 0,1 31.48,41 Z" />
+            android:pathData="M 40.144,62 L 26.287,38 A 32,32 0 0,0 54,86 L 67.856,62 A 16,16 0 0,1 40.144,62 Z" />
             
-        <!-- Inner white border -->
+        <!-- Center Hole -->
         <path
             android:fillColor="#FFFFFF"
-            android:pathData="M 54,54 m -12,0 a 12,12 0 1,1 24,0 a 12,12 0 1,1 -24,0" />
+            android:pathData="M 54,54 m -16,0 a 16,16 0 1,1 32,0 a 16,16 0 1,1 -32,0" />
             
-        <!-- Inner blue circle -->
+        <!-- Blue Center -->
         <path
             android:fillColor="#4285F4"
-            android:pathData="M 54,54 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
-            
+            android:pathData="M 54,54 m -12,0 a 12,12 0 1,1 24,0 a 12,12 0 1,1 -24,0" />
+
         <!-- Ban overlay round cross -->
         <path
             android:strokeColor="#D32F2F"
-            android:strokeWidth="7"
-            android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
+            android:strokeWidth="8"
+            android:pathData="M 54,54 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
         <path
             android:strokeColor="#D32F2F"
-            android:strokeWidth="7"
+            android:strokeWidth="8"
             android:strokeLineCap="round"
-            android:pathData="M 31.37,31.37 L 76.63,76.63" />
+            android:pathData="M 27.13,27.13 L 80.87,80.87" />
     </group>
 </vector>

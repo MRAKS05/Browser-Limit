@@ -4,34 +4,49 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <group android:scaleX="1.1" android:scaleY="1.1" android:pivotX="54" android:pivotY="54">
+
+    <group>
         <!-- Outer circle outline -->
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="4"
-            android:pathData="M 54,54 m -26,0 a 26,26 0 1,1 52,0 a 26,26 0 1,1 -52,0" />
+            android:strokeWidth="5"
+            android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
             
-        <!-- Slice connecting lines -->
+        <!-- Straight tangency lines defining the swirl -->
+        <!-- Red tangent -->
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="4"
-            android:strokeLineCap="round"
-            android:pathData="M 31.48,41 L 43.61,48 M 76.52,41 L 64.39,48 M 54,80 L 54,66" />
-
-        <!-- Inner circle -->
+            android:strokeWidth="5"
+            android:pathData="M 54,38 L 81.713,38" />
+            
+        <!-- Yellow tangent -->
         <path
-            android:fillColor="#000000"
-            android:pathData="M 54,54 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 67.856,62 L 54,86" />
+            
+        <!-- Green tangent -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 40.144,62 L 26.287,38" />
+
+        <!-- Inner circle outline -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 54,54 m -16,0 a 16,16 0 1,1 32,0 a 16,16 0 1,1 -32,0" />
             
         <!-- Ban overlay round cross -->
+        <!-- Radius of circle is 38 -->
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="7"
-            android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
+            android:strokeWidth="6"
+            android:pathData="M 54,54 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
         <path
             android:strokeColor="#000000"
-            android:strokeWidth="7"
+            android:strokeWidth="6"
             android:strokeLineCap="round"
-            android:pathData="M 31.37,31.37 L 76.63,76.63" />
+            android:pathData="M 27.13,27.13 L 80.87,80.87" />
     </group>
 </vector>
