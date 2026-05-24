@@ -24,6 +24,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -80,7 +82,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
-    val waitTime = settings.parentalLockWaitTime.collectAsState().value
+    val waitTime = settings.parentalLockWaitTime.collectAsState().value.coerceAtLeast(10)
     val isWaitingMode = settings.waitingModeEnabled.collectAsState().value
     var timeLeft by remember { mutableStateOf(if (isWaitingMode) waitTime else 0) }
     var pinValue by remember { mutableStateOf("") }
@@ -111,10 +113,11 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            androidx.compose.foundation.Image(
-                painter = androidx.compose.ui.res.painterResource(id = com.example.R.drawable.app_icon),
-                contentDescription = "App Icon",
-                modifier = Modifier.size(64.dp)
+            Icon(
+                imageVector = Icons.Filled.Lock,
+                contentDescription = "App Locked",
+                modifier = Modifier.size(64.dp),
+                tint = MaterialTheme.colorScheme.primary
             )
             Spacer(modifier = Modifier.height(16.dp))
             Text("App Locked", style = MaterialTheme.typography.headlineLarge)
@@ -126,11 +129,12 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
                 OutlinedTextField(
                     value = pinValue,
                     onValueChange = { 
-                        pinValue = it
+                        pinValue = it.filter { char -> char.isDigit() }
                         showError = false
                     },
                     label = { Text("Enter PIN") },
                     visualTransformation = PasswordVisualTransformation(),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
                     singleLine = true,
                     isError = showError
                 )

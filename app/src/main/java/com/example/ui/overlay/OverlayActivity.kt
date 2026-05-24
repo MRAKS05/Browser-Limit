@@ -93,10 +93,11 @@ fun OverlayScreen(
                 modifier = Modifier.padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                androidx.compose.foundation.Image(
-                    painter = androidx.compose.ui.res.painterResource(id = com.example.R.drawable.app_icon),
-                    contentDescription = "App Icon",
-                    modifier = Modifier.size(64.dp)
+                Icon(
+                    imageVector = Icons.Filled.Warning,
+                    contentDescription = "Warning",
+                    modifier = Modifier.size(64.dp),
+                    tint = MaterialTheme.colorScheme.error
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 

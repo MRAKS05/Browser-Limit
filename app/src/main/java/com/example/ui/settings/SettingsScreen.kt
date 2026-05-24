@@ -12,6 +12,8 @@ import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import com.example.data.SettingsManager
@@ -87,17 +89,17 @@ fun SettingsScreen() {
                     }
                     if (isParentalLockEnabled) {
                         Text("Settings are restricted. Overlay disabled, Auto-remove enabled.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
-                    }
-                    
-                    SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
-                    if (waitingModeEnabled) {
-                        Text("Wait Time: $parentalLockWaitTime seconds")
-                        Slider(
-                            value = parentalLockWaitTime.toFloat(),
-                            onValueChange = { settings.setParentalLockWaitTime(it.toInt()) },
-                            valueRange = 0f..300f,
-                            steps = 29
-                        )
+                        
+                        SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
+                        if (waitingModeEnabled) {
+                            Text("Wait Time: ${parentalLockWaitTime.coerceAtLeast(10)} seconds")
+                            Slider(
+                                value = parentalLockWaitTime.coerceIn(10, 300).toFloat(),
+                                onValueChange = { settings.setParentalLockWaitTime(it.toInt()) },
+                                valueRange = 10f..300f,
+                                steps = 28
+                            )
+                        }
                     }
                 }
             }
@@ -157,9 +159,11 @@ fun SettingsScreen() {
             text = { 
                 OutlinedTextField(
                     value = parentalLockPin, 
-                    onValueChange = { parentalLockPin = it },
+                    onValueChange = { parentalLockPin = it.filter { char -> char.isDigit() } },
                     label = { Text("PIN") },
-                    visualTransformation = PasswordVisualTransformation()
+                    visualTransformation = PasswordVisualTransformation(),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                    singleLine = true
                 )
             },
             confirmButton = {
@@ -181,16 +185,7 @@ fun SettingsScreen() {
     }
 
     if (showParentalUnlockDialog) {
-        var waitTimeLeft by remember { mutableStateOf(if (waitingModeEnabled) parentalLockWaitTime else 0) }
-
-        val isWindowFocused = androidx.compose.ui.platform.LocalWindowInfo.current.isWindowFocused
-
-        LaunchedEffect(isWindowFocused) {
-            if (!isWindowFocused) {
-                showParentalUnlockDialog = false
-                parentalUnlockPin = ""
-            }
-        }
+        var waitTimeLeft by remember { mutableStateOf(if (waitingModeEnabled) parentalLockWaitTime.coerceAtLeast(10) else 0) }
 
         LaunchedEffect(waitingModeEnabled, parentalLockWaitTime) {
             while (waitTimeLeft > 0) {
@@ -211,9 +206,11 @@ fun SettingsScreen() {
                 if (showPinInput) {
                     OutlinedTextField(
                         value = parentalUnlockPin, 
-                        onValueChange = { parentalUnlockPin = it },
+                        onValueChange = { parentalUnlockPin = it.filter { char -> char.isDigit() } },
                         label = { Text("PIN") },
-                        visualTransformation = PasswordVisualTransformation()
+                        visualTransformation = PasswordVisualTransformation(),
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                        singleLine = true
                     )
                 } else {
                     Text("Please keep this screen open for $waitTimeLeft seconds. Do not leave the app or the timer will reset.", modifier = Modifier.padding(16.dp))
@@ -246,7 +243,11 @@ fun SettingsScreen() {
         AlertDialog(
             onDismissRequest = { showLocalListDialog = false },
             title = { Text("Local Browser List") },
-            text = { Text(BrowserDatabase.KNOWN_BROWSERS.joinToString("\n")) },
+            text = { 
+                Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+                    Text(BrowserDatabase.KNOWN_BROWSERS.joinToString("\n"))
+                }
+            },
             confirmButton = {
                 TextButton(onClick = { showLocalListDialog = false }) { Text("Close") }
             }
