@@ -94,7 +94,7 @@ fun OverlayScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 androidx.compose.foundation.Image(
-                    painter = androidx.compose.ui.res.painterResource(id = com.example.R.mipmap.ic_launcher),
+                    painter = androidx.compose.ui.res.painterResource(id = com.example.R.drawable.app_icon),
                     contentDescription = "App Icon",
                     modifier = Modifier.size(64.dp)
                 )
