@@ -18,6 +18,7 @@ import com.example.data.LogDatabase
 import com.example.data.LogEntry
 import com.example.data.SettingsManager
 import com.example.engine.ShizukuUninstaller
+import com.example.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -92,11 +93,10 @@ fun OverlayScreen(
                 modifier = Modifier.padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Icon(
-                    imageVector = Icons.Filled.Warning,
-                    contentDescription = "Warning",
-                    modifier = Modifier.size(48.dp),
-                    tint = MaterialTheme.colorScheme.error
+                androidx.compose.foundation.Image(
+                    painter = androidx.compose.ui.res.painterResource(id = com.example.R.mipmap.ic_launcher),
+                    contentDescription = "App Icon",
+                    modifier = Modifier.size(64.dp)
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 

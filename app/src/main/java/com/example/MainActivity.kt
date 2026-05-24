@@ -39,6 +39,7 @@ import com.example.ui.exceptions.ExceptionsScreen
 import com.example.ui.logs.LogsScreen
 import com.example.ui.settings.SettingsScreen
 import com.example.ui.theme.MyApplicationTheme
+import com.example.R
 import kotlinx.coroutines.delay
 import rikka.shizuku.Shizuku
 
@@ -85,10 +86,22 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
     var pinValue by remember { mutableStateOf("") }
     var showError by remember { mutableStateOf(false) }
 
-    LaunchedEffect(timeLeft) {
-        if (timeLeft > 0) {
-            delay(1000)
-            timeLeft--
+    val isWindowFocused = androidx.compose.ui.platform.LocalWindowInfo.current.isWindowFocused
+
+    LaunchedEffect(isWindowFocused) {
+        if (!isWindowFocused) {
+            timeLeft = if (isWaitingMode) waitTime else 0
+            pinValue = ""
+            showError = false
+        }
+    }
+
+    LaunchedEffect(isWaitingMode, waitTime, isWindowFocused) {
+        if (isWindowFocused) {
+            while (timeLeft > 0) {
+                delay(1000)
+                timeLeft--
+            }
         }
     }
 
@@ -98,7 +111,11 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Icon(Icons.Filled.Lock, contentDescription = "Lock", modifier = Modifier.size(64.dp), tint = MaterialTheme.colorScheme.primary)
+            androidx.compose.foundation.Image(
+                painter = androidx.compose.ui.res.painterResource(id = com.example.R.mipmap.ic_launcher),
+                contentDescription = "App Icon",
+                modifier = Modifier.size(64.dp)
+            )
             Spacer(modifier = Modifier.height(16.dp))
             Text("App Locked", style = MaterialTheme.typography.headlineLarge)
             Spacer(modifier = Modifier.height(32.dp))

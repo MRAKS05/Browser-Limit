@@ -182,38 +182,20 @@ fun SettingsScreen() {
 
     if (showParentalUnlockDialog) {
         var waitTimeLeft by remember { mutableStateOf(if (waitingModeEnabled) parentalLockWaitTime else 0) }
-        var isResumed by remember { mutableStateOf(true) }
+
         val isWindowFocused = androidx.compose.ui.platform.LocalWindowInfo.current.isWindowFocused
-
-        val lifecycleOwner = androidx.lifecycle.compose.LocalLifecycleOwner.current
-
-        DisposableEffect(lifecycleOwner) {
-            val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
-                if (event == androidx.lifecycle.Lifecycle.Event.ON_RESUME) {
-                    isResumed = true
-                } else if (event == androidx.lifecycle.Lifecycle.Event.ON_PAUSE || event == androidx.lifecycle.Lifecycle.Event.ON_STOP) {
-                    isResumed = false
-                    waitTimeLeft = if (waitingModeEnabled) parentalLockWaitTime else 0
-                }
-            }
-            lifecycleOwner.lifecycle.addObserver(observer)
-            onDispose {
-                lifecycleOwner.lifecycle.removeObserver(observer)
-            }
-        }
 
         LaunchedEffect(isWindowFocused) {
             if (!isWindowFocused) {
-                waitTimeLeft = if (waitingModeEnabled) parentalLockWaitTime else 0
+                showParentalUnlockDialog = false
+                parentalUnlockPin = ""
             }
         }
 
-        LaunchedEffect(waitingModeEnabled, parentalLockWaitTime, isResumed, isWindowFocused) {
-            if (isResumed && isWindowFocused) {
-                while (waitTimeLeft > 0) {
-                    kotlinx.coroutines.delay(1000)
-                    waitTimeLeft--
-                }
+        LaunchedEffect(waitingModeEnabled, parentalLockWaitTime) {
+            while (waitTimeLeft > 0) {
+                kotlinx.coroutines.delay(1000)
+                waitTimeLeft--
             }
         }
 
