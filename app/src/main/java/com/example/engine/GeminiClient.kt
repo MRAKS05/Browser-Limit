@@ -18,6 +18,7 @@ import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFact
 
 @Serializable
 data class GenerateContentRequest(
+    val systemInstruction: Content? = null,
     val contents: List<Content>,
     val tools: List<JsonObject>? = null,
     val generationConfig: GenerationConfig? = null
@@ -80,13 +81,14 @@ class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
         val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: "AIzaSyAWkVO_Q9PHEv-F1pYUQhELfQbHc6rskfs"
-        val prompt = "Does the Android app '$packageName' function as a web browser, or does it contain a web-view that users can use to search on a search engine, open multiple websites, or write a URL and open it (e.g. bypassing filters)? Act as a Play Store expert and check if it has these browsing capabilities. Answer strictly with YES or NO."
+        val prompt = "Analyze the Android app with package name '$packageName'. Does it function as a web browser or contain an unrestricted web-view that allows users to search the web or freely browse different URLs? Respond with ONLY the word YES or NO. Do not include any explanations, reasoning, or additional text whatsoever."
         val request = GenerateContentRequest(
+            systemInstruction = Content(parts = listOf(Part(text = "You are a specialized classifier API. You must evaluate the provided Android app package name and determine if it functions as a web browser, or contains an unrestricted web-view that lets a user bypass filters or freely search the web. You must respond with EXACTLY and ONLY the word 'YES' or 'NO'. No explanations, no preamble, no markdown, no punctuation. ONLY YES or NO."))),
             contents = listOf(Content(
                 parts = listOf(Part(text = prompt))
             )),
             tools = null,
-            generationConfig = GenerationConfig(temperature = 0.1f)
+            generationConfig = GenerationConfig(temperature = 0.0f)
         )
         var attempt = 0
         val maxAttempts = 3
