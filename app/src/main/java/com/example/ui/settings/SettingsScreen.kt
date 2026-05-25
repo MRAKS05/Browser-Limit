@@ -9,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.platform.LocalContext
@@ -70,13 +71,27 @@ fun SettingsScreen() {
             singleLine = true,
             visualTransformation = PasswordVisualTransformation()
         )
-        TextButton(
+        Text(
+            text = "Need an API key? Follow these steps:",
+            style = MaterialTheme.typography.labelMedium,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(top = 8.dp, bottom = 4.dp)
+        )
+        Text(
+            text = "1. Click the button below to get your free key.\n2. Sign in with Google.\n3. Create a project and generate the key.\n4. Paste the key above to enable AI detection.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+        Button(
             onClick = {
                 val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://aistudio.google.com/app/apikey"))
                 context.startActivity(intent)
             },
             modifier = Modifier.align(Alignment.End)
         ) {
+            Icon(Icons.Filled.Info, contentDescription = "Get Key", modifier = Modifier.size(18.dp))
+            Spacer(modifier = Modifier.width(8.dp))
             Text("Get Gemini API Key")
         }
         
