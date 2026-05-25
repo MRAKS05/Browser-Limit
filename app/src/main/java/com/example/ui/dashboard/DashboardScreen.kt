@@ -49,17 +49,11 @@ fun DashboardScreen() {
         }
     }
     
-    LaunchedEffect(Unit) {
-        val listener = Shizuku.OnBinderReceivedListener {
-            shizukuRunning.value = true
-        }
-        val deadListener = Shizuku.OnBinderDeadListener {
-            shizukuRunning.value = false
-        }
-        Shizuku.addBinderReceivedListener(listener)
-        Shizuku.addBinderDeadListener(deadListener)
-        
-        while (true) {
+    val lifecycleOwner = androidx.lifecycle.compose.LocalLifecycleOwner.current
+    val lifecycleState by lifecycleOwner.lifecycle.currentStateFlow.collectAsState()
+
+    LaunchedEffect(lifecycleState) {
+        if (lifecycleState == androidx.lifecycle.Lifecycle.State.RESUMED) {
             shizukuRunning.value = Shizuku.pingBinder()
             
             missingNotifications = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
@@ -71,9 +65,18 @@ fun DashboardScreen() {
             
             val pm = context.getSystemService(android.content.Context.POWER_SERVICE) as android.os.PowerManager
             missingBattery = !pm.isIgnoringBatteryOptimizations(context.packageName)
-            
-            delay(1000)
         }
+    }
+
+    LaunchedEffect(Unit) {
+        val listener = Shizuku.OnBinderReceivedListener {
+            shizukuRunning.value = true
+        }
+        val deadListener = Shizuku.OnBinderDeadListener {
+            shizukuRunning.value = false
+        }
+        Shizuku.addBinderReceivedListener(listener)
+        Shizuku.addBinderDeadListener(deadListener)
     }
     
     val db = LogDatabase.getDatabase(context).logDao()
