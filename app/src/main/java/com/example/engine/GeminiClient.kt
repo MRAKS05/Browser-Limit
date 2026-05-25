@@ -19,7 +19,13 @@ import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFact
 @Serializable
 data class GenerateContentRequest(
     val contents: List<Content>,
+    val tools: List<Tool>? = null,
     val generationConfig: GenerationConfig? = null
+)
+
+@Serializable
+data class Tool(
+    val googleSearch: JsonObject? = null
 )
 
 @Serializable
@@ -48,7 +54,7 @@ data class Candidate(
 )
 
 interface GeminiApiService {
-    @POST("v1beta/models/gemini-3.5-flash:generateContent")
+    @POST("v1beta/models/gemini-1.5-flash:generateContent")
     suspend fun generateContent(
         @Query("key") apiKey: String,
         @Body request: GenerateContentRequest
@@ -59,9 +65,9 @@ object RetrofitClient {
     private const val BASE_URL = "https://generativelanguage.googleapis.com/"
 
     private val okHttpClient = OkHttpClient.Builder()
-        .connectTimeout(30, TimeUnit.SECONDS)
-        .readTimeout(30, TimeUnit.SECONDS)
-        .writeTimeout(30, TimeUnit.SECONDS)
+        .connectTimeout(4, TimeUnit.SECONDS)
+        .readTimeout(4, TimeUnit.SECONDS)
+        .writeTimeout(4, TimeUnit.SECONDS)
         .build()
 
     val service: GeminiApiService by lazy {
@@ -78,12 +84,13 @@ object RetrofitClient {
 class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
-        val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: BuildConfig.GEMINI_API_KEY
-        val prompt = "Is the Android app with package name '$packageName' acting primarily as a web browser or does it have unrestricted web access features (such as bypassing filters)? Search app info if needed. Answer exactly YES or NO."
+        val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: "AIzaSyAWkVO_Q9PHEv-F1pYUQhELfQbHc6rskfs"
+        val prompt = "Does the Android app '$packageName' function primarily as a web browser, or does it include a web-view to freely browse the internet, search engines, or bypass filters? Act as a Play Store expert and check if it has browsing capabilities. Answer strictly with YES or NO."
         val request = GenerateContentRequest(
             contents = listOf(Content(
                 parts = listOf(Part(text = prompt))
             )),
+            tools = listOf(Tool(googleSearch = JsonObject(emptyMap()))),
             generationConfig = GenerationConfig(temperature = 0.1f)
         )
         try {
