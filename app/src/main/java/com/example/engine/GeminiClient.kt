@@ -81,9 +81,49 @@ class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
         val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: "AIzaSyAWkVO_Q9PHEv-F1pYUQhELfQbHc6rskfs"
-        val prompt = "Analyze the Android app with package name '$packageName'. Does it function as a web browser or contain an unrestricted web-view that allows users to search the web or freely browse different URLs? Respond with ONLY the word YES or NO. Do not include any explanations, reasoning, or additional text whatsoever."
+        
+        var playStoreInfo = ""
+        try {
+            val url = java.net.URL("https://play.google.com/store/apps/details?id=$packageName&hl=en")
+            val conn = url.openConnection() as java.net.HttpURLConnection
+            conn.requestMethod = "GET"
+            // Set User-Agent so we don't get blocked
+            conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+            conn.connectTimeout = 3000
+            conn.readTimeout = 3000
+            if (conn.responseCode == 200) {
+                val html = conn.inputStream.bufferedReader().use { it.readText() }
+                val titleRegex = """<title>(.*?)</title>""".toRegex()
+                val metaRegex = """<meta name="description" content="([^"]+)">""".toRegex()
+                val titleMatch = titleRegex.find(html)
+                val descMatch = metaRegex.find(html)
+                
+                val title = titleMatch?.groupValues?.getOrNull(1) ?: packageName
+                val desc = descMatch?.groupValues?.getOrNull(1) ?: ""
+                if (desc.isNotEmpty()) {
+                    playStoreInfo = "\nApp Name: $title\nPlay Store Description:\n\"\"\"\n$desc\n\"\"\""
+                }
+            }
+        } catch (e: Exception) {
+            // Ignore network errors, fall back to packageName alone
+        }
+
+        val prompt = """
+            You are an app capability detector. Your job is to determine if the Android app with package name '$packageName' can be used to browse the internet freely.$playStoreInfo
+            
+            Analyze the app's known features and answer YES if the app has ANY of these:
+            1. Can open and render arbitrary web URLs
+            2. Contains a built-in WebView or browser component
+            3. User can type/paste a URL and visit any website
+            4. File manager, downloader, or media app with web browsing built in
+            5. Social or utility app with an in-app browser
+            6. App description mentions: "browser", "browse", "webview", "open URL", "visit websites", "web experience", "built-in browser"
+            
+            Answer NO only if NONE of the above are true.
+            Reply with only one word: YES or NO.
+        """.trimIndent()
         val request = GenerateContentRequest(
-            systemInstruction = Content(parts = listOf(Part(text = "You are a specialized classifier API. You must evaluate the provided Android app package name and determine if it functions as a web browser, or contains an unrestricted web-view that lets a user bypass filters or freely search the web. You must respond with EXACTLY and ONLY the word 'YES' or 'NO'. No explanations, no preamble, no markdown, no punctuation. ONLY YES or NO."))),
+            systemInstruction = Content(parts = listOf(Part(text = "You are an app capability detector. Respond with ONLY the word 'YES' or 'NO'. No explanations, no preamble, no markdown, no punctuation. ONLY YES or NO."))),
             contents = listOf(Content(
                 parts = listOf(Part(text = prompt))
             )),
