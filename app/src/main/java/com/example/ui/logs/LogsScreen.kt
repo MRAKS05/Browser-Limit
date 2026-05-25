@@ -47,10 +47,22 @@ fun LogsScreen() {
                     Text("Clear")
                 }
                 TextButton(onClick = {
-                    val exportDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-                    val file = File(exportDir, "browserlimit_logs.txt")
-                    file.writeText(logs.joinToString("\n") { "${it.timestamp} | ${it.appName} (${it.packageName}) | ${it.decision} | ${it.detectionMethod} - ${it.geminiResponse}" })
-                    Toast.makeText(context, "Exported to Downloads", Toast.LENGTH_SHORT).show()
+                    try {
+                        val logsText = logs.joinToString("\n") { "${it.timestamp} | ${it.appName} (${it.packageName}) | ${it.decision} | ${it.detectionMethod} - ${it.geminiResponse}" }
+                        try {
+                            val exportDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                            val file = File(exportDir, "browserlimit_logs_${System.currentTimeMillis()}.txt")
+                            file.writeText(logsText)
+                            Toast.makeText(context, "Exported to Downloads folder", Toast.LENGTH_LONG).show()
+                        } catch (e: Exception) {
+                            val backupDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
+                            val file2 = File(backupDir, "browserlimit_logs_${System.currentTimeMillis()}.txt")
+                            file2.writeText(logsText)
+                            Toast.makeText(context, "Exported to App Data / Downloads", Toast.LENGTH_LONG).show()
+                        }
+                    } catch (e: Exception) {
+                        Toast.makeText(context, "Export failed.", Toast.LENGTH_LONG).show()
+                    }
                 }) {
                     Text("Export")
                 }
@@ -61,8 +73,9 @@ fun LogsScreen() {
             items(logs) { log ->
                 Card(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp)) {
                     Column(modifier = Modifier.padding(12.dp)) {
-                        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                            Text(log.appName, style = MaterialTheme.typography.titleMedium)
+                        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                            Text(log.appName, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                            Spacer(modifier = Modifier.width(8.dp))
                             
                             val decisionColor = when (log.decision) {
                                 "Removed" -> MaterialTheme.colorScheme.error

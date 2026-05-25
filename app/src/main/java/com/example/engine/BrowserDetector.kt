@@ -37,11 +37,11 @@ class BrowserDetector(private val context: Context) {
 
         // Check Local Check first (unless forcing a recheck)
         if (!forceRecheck) {
+            if (settingsManager.geminiConfirmedNonBrowsers.contains(packageName)) {
+                return@withContext DetectionResult(false, "Local Cache", "User overrides or Gemini previously confirmed as NO")
+            }
             if (BrowserDatabase.KNOWN_BROWSERS.contains(packageName) || settingsManager.geminiConfirmedBrowsers.contains(packageName)) {
                 return@withContext DetectionResult(true, "Local Cache", "Found in local known browsers list")
-            }
-            if (settingsManager.geminiConfirmedNonBrowsers.contains(packageName)) {
-                return@withContext DetectionResult(false, "Local Cache", "Found in local non-browsers list")
             }
         }
 

@@ -109,18 +109,18 @@ class GeminiClient(private val context: android.content.Context) {
         }
 
         val prompt = """
-            You are an app capability detector. Your job is to determine if the Android app with package name '$packageName' can be used to browse the internet freely.$playStoreInfo
+            You are a strict App Capability Evaluator. Your job is to determine if the Android app with package name '$packageName' is a DEDICATED WEB BROWSER or an app designed to allow UNRESTRICTED open internet browsing.$playStoreInfo
             
-            Analyze the app's known features and answer YES if the app has ANY of these:
-            1. Can open and render arbitrary web URLs
-            2. Contains a built-in WebView or browser component
-            3. User can type/paste a URL and visit any website
-            4. File manager, downloader, or media app with web browsing built in
-            5. Social or utility app with an in-app browser
-            6. App description mentions: "browser", "browse", "webview", "open URL", "visit websites", "web experience", "built-in browser"
+            Do NOT flag an app as YES just because it contains a WebView, opens help pages, or has a basic in-app browser for clicking links (e.g., standard social media apps like Facebook/Telegram, messaging apps, or utility apps).
             
-            Answer NO only if NONE of the above are true.
-            Reply with only one word: YES or NO.
+            Answer YES ONLY if:
+            1. The app is a dedicated web browser (like Chrome, Firefox, Brave).
+            2. The app's primary purpose is proxying or unblocking websites.
+            3. The app is a video downloader or utility that explicitly features an unrestricted built-in browser with address bar for general web surfing.
+            
+            Answer NO for anything else, including regular apps, games, standard communication tools, or apps that only open specific links or safe in-app content.
+            
+            Reply with EXACTLY one word: YES or NO.
         """.trimIndent()
         val request = GenerateContentRequest(
             systemInstruction = Content(parts = listOf(Part(text = "You are an app capability detector. Respond with ONLY the word 'YES' or 'NO'. No explanations, no preamble, no markdown, no punctuation. ONLY YES or NO."))),
