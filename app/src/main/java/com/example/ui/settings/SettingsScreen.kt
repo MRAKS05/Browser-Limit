@@ -65,7 +65,7 @@ fun SettingsScreen() {
         OutlinedTextField(
             value = geminiApiKey,
             onValueChange = { settings.setGeminiApiKey(it) },
-            label = { Text("Gemini API Key (Leave empty to use default)") },
+            label = { Text("Gemini API Key") },
             modifier = Modifier.fillMaxWidth(),
             singleLine = true,
             visualTransformation = PasswordVisualTransformation()
