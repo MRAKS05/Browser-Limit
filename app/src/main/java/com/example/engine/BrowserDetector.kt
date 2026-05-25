@@ -49,12 +49,18 @@ class BrowserDetector(private val context: Context) {
         if (settingsManager.useGemini.value && settingsManager.canUseGeminiApi(todayStr)) {
             settingsManager.incrementGeminiApiCount()
             val response = geminiClient.isBrowser(packageName)
-            if (response.startsWith("YES") || response.contains(" YES") || response == "YES") {
+            if (response.contains("YES") && !response.contains("NO")) {
                 settingsManager.addConfirmedBrowser(packageName)
                 return@withContext DetectionResult(true, "Gemini", "Gemini returned YES")
-            } else if (response.startsWith("NO") || response.contains(" NO") || response == "NO") {
+            } else if (response.contains("NO") && !response.contains("YES")) {
                 settingsManager.addConfirmedNonBrowser(packageName)
                 return@withContext DetectionResult(false, "Gemini", "Gemini returned NO")
+            } else if (response.contains("YES") || response.startsWith("YES") || response.endsWith("YES.") || response.endsWith("YES")) {
+                settingsManager.addConfirmedBrowser(packageName)
+                return@withContext DetectionResult(true, "Gemini", "Gemini returned YES (parsed)")
+            } else if (response.contains("NO") || response.startsWith("NO") || response.endsWith("NO.") || response.endsWith("NO")) {
+                settingsManager.addConfirmedNonBrowser(packageName)
+                return@withContext DetectionResult(false, "Gemini", "Gemini returned NO (parsed)")
             } else {
                 // Fallback Mode if unexpected response
                 return@withContext checkLocalList(packageName, "Fallback (Error: $response)")
