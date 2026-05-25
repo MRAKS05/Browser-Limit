@@ -34,11 +34,11 @@
 
     <!-- Ban overlay round cross -->
     <path
-        android:strokeColor="#EA4335"
+        android:strokeColor="#B71C1C"
         android:strokeWidth="10"
         android:pathData="M 54,54 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
     <path
-        android:strokeColor="#EA4335"
+        android:strokeColor="#B71C1C"
         android:strokeWidth="10"
         android:strokeLineCap="square"
         android:pathData="M 27.13,27.13 L 80.87,80.87" />

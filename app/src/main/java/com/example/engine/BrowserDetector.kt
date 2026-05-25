@@ -14,7 +14,7 @@ class BrowserDetector(private val context: Context) {
     private val geminiClient = GeminiClient(context)
     private val settingsManager = SettingsManager(context)
 
-    suspend fun checkPackage(packageName: String): DetectionResult = withContext(Dispatchers.IO) {
+    suspend fun checkPackage(packageName: String, forceRecheck: Boolean = false): DetectionResult = withContext(Dispatchers.IO) {
         val pm = context.packageManager
         val appInfo: ApplicationInfo? = try {
             pm.getApplicationInfo(packageName, 0)
@@ -35,13 +35,25 @@ class BrowserDetector(private val context: Context) {
         val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
         val todayStr = sdf.format(Date())
 
-        // Primary Mode: Gemini API (if active and limit not reached)
+        // Check Local Check first (unless forcing a recheck)
+        if (!forceRecheck) {
+            if (BrowserDatabase.KNOWN_BROWSERS.contains(packageName) || settingsManager.geminiConfirmedBrowsers.contains(packageName)) {
+                return@withContext DetectionResult(true, "Local Cache", "Found in local known browsers list")
+            }
+            if (settingsManager.geminiConfirmedNonBrowsers.contains(packageName)) {
+                return@withContext DetectionResult(false, "Local Cache", "Found in local non-browsers list")
+            }
+        }
+
+        // Primary Mode: Gemini API (if active and limit not reached, or if forced)
         if (settingsManager.useGemini.value && settingsManager.canUseGeminiApi(todayStr)) {
             settingsManager.incrementGeminiApiCount()
             val response = geminiClient.isBrowser(packageName)
-            if (response == "YES") {
+            if (response.contains("YES")) {
+                settingsManager.addConfirmedBrowser(packageName)
                 return@withContext DetectionResult(true, "Gemini", "Gemini returned YES")
-            } else if (response == "NO") {
+            } else if (response.contains("NO")) {
+                settingsManager.addConfirmedNonBrowser(packageName)
                 return@withContext DetectionResult(false, "Gemini", "Gemini returned NO")
             } else {
                 // Fallback Mode if unexpected response

@@ -21,6 +21,7 @@ import com.example.engine.BrowserDatabase
 import com.example.engine.GeminiClient
 import rikka.shizuku.Shizuku
 import kotlinx.coroutines.launch
+import com.example.ui.components.ParentalUnlockDialog
 
 @Composable
 fun SettingsScreen() {
@@ -48,21 +49,40 @@ fun SettingsScreen() {
 
     var securityExpanded by remember { mutableStateOf(false) }
 
+    var pendingAction by remember { mutableStateOf<(() -> Unit)?>(null) }
+    
+    fun executeAction(action: () -> Unit) {
+        if (settings.isParentalLockEnabled) {
+            pendingAction = action
+        } else {
+            action()
+        }
+    }
+
     Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Text("Settings", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(bottom = 16.dp))
         
         OutlinedTextField(
             value = geminiApiKey,
             onValueChange = { settings.setGeminiApiKey(it) },
-            label = { Text("Gemini API Key") },
+            label = { Text("Gemini API Key (Leave empty to use default)") },
             modifier = Modifier.fillMaxWidth(),
             singleLine = true,
             visualTransformation = PasswordVisualTransformation()
         )
+        TextButton(
+            onClick = {
+                val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://aistudio.google.com/app/apikey"))
+                context.startActivity(intent)
+            },
+            modifier = Modifier.align(Alignment.End)
+        ) {
+            Text("Get Gemini API Key")
+        }
         
-        SettingToggle("Use Gemini AI detection", useGemini) { settings.setUseGemini(it) }
+        SettingToggle("Use Gemini AI detection", useGemini) { isChecked -> executeAction { settings.setUseGemini(isChecked) } }
         
-        SettingToggle("Remove Chrome (even if system app)", removeSystemChrome) { settings.setRemoveSystemChrome(it) }
+        SettingToggle("Remove Chrome (even if system app)", removeSystemChrome) { isChecked -> executeAction { settings.setRemoveSystemChrome(isChecked) } }
         
         // Security Settings Section
         Card(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
@@ -84,13 +104,15 @@ fun SettingsScreen() {
                         if (enabled) {
                             showParentalLockDialog = true
                         } else {
-                            showParentalUnlockDialog = true
+                            executeAction {
+                                settings.isParentalLockEnabled = false
+                                isParentalLockEnabled = false
+                            }
                         }
                     }
                     if (isParentalLockEnabled) {
-                        Text("Settings are restricted. Overlay disabled, Auto-remove enabled.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
-                        
-                        SettingToggle("Enable Waiting Mode", waitingModeEnabled) { settings.setWaitingModeEnabled(it) }
+                        Text("Settings are restricted. Require PIN to change.", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                        SettingToggle("Enable Waiting Mode", waitingModeEnabled) { isChecked -> executeAction { settings.setWaitingModeEnabled(isChecked) } }
                         if (waitingModeEnabled) {
                             Text("Wait Time: ${parentalLockWaitTime.coerceAtLeast(10)} seconds")
                             Slider(
@@ -106,27 +128,31 @@ fun SettingsScreen() {
         }
         
         if (!isParentalLockEnabled) {
-            SettingToggle("Show confirmation overlay", showOverlay) { 
-                settings.setShowOverlay(it)
-                if (it) settings.setAutoRemove(false)
+            SettingToggle("Show confirmation overlay", showOverlay) { isChecked ->
+                executeAction {
+                    settings.setShowOverlay(isChecked)
+                    if (isChecked) settings.setAutoRemove(false)
+                }
             }
-            SettingToggle("Auto-remove (No countdown)", autoRemove) { 
-                settings.setAutoRemove(it)
-                if (it) settings.setShowOverlay(false)
+            SettingToggle("Auto-remove (No countdown)", autoRemove) { isChecked ->
+                executeAction {
+                    settings.setAutoRemove(isChecked)
+                    if (isChecked) settings.setShowOverlay(false)
+                }
             }
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            Text("Countdown duration: $countdownDuration seconds")
+            Slider(
+                value = countdownDuration.toFloat(),
+                onValueChange = { settings.setCountdownDuration(it.toInt()) },
+                valueRange = 5f..30f,
+                steps = 25
+            )
         }
         
         Spacer(modifier = Modifier.height(16.dp))
-        Text("Countdown duration: $countdownDuration seconds")
-        Slider(
-            value = countdownDuration.toFloat(),
-            onValueChange = { settings.setCountdownDuration(it.toInt()) },
-            valueRange = 5f..30f,
-            steps = 25
-        )
-        
-        Spacer(modifier = Modifier.height(16.dp))
-        SettingToggle("Run on device startup", runOnStartup) { settings.setRunOnStartup(it) }
+        SettingToggle("Run on device startup", runOnStartup) { isChecked -> executeAction { settings.setRunOnStartup(isChecked) } }
         
         Spacer(modifier = Modifier.height(24.dp))
         
@@ -184,57 +210,15 @@ fun SettingsScreen() {
         )
     }
 
-    if (showParentalUnlockDialog) {
-        var waitTimeLeft by remember { mutableStateOf(if (waitingModeEnabled) parentalLockWaitTime.coerceAtLeast(10) else 0) }
-
-        LaunchedEffect(waitingModeEnabled, parentalLockWaitTime) {
-            while (waitTimeLeft > 0) {
-                kotlinx.coroutines.delay(1000)
-                waitTimeLeft--
-            }
-        }
-
-        val showPinInput = waitTimeLeft == 0
-
-        AlertDialog(
-            onDismissRequest = { 
-                showParentalUnlockDialog = false 
-                parentalUnlockPin = ""
+    if (pendingAction != null) {
+        ParentalUnlockDialog(
+            settings = settings,
+            onSuccess = {
+                pendingAction?.invoke()
+                pendingAction = null
             },
-            title = { Text(if (showPinInput) "Enter PIN to Disable" else "Waiting to Unlock...") },
-            text = { 
-                if (showPinInput) {
-                    OutlinedTextField(
-                        value = parentalUnlockPin, 
-                        onValueChange = { parentalUnlockPin = it.filter { char -> char.isDigit() } },
-                        label = { Text("PIN") },
-                        visualTransformation = PasswordVisualTransformation(),
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
-                        singleLine = true
-                    )
-                } else {
-                    Text("Please keep this screen open for $waitTimeLeft seconds. Do not leave the app or the timer will reset.", modifier = Modifier.padding(16.dp))
-                }
-            },
-            confirmButton = {
-                if (showPinInput) {
-                    TextButton(onClick = { 
-                        if (parentalUnlockPin == settings.parentalPinHash) {
-                            settings.isParentalLockEnabled = false
-                            isParentalLockEnabled = false
-                            showParentalUnlockDialog = false
-                            parentalUnlockPin = ""
-                        } else {
-                            Toast.makeText(context, "Incorrect PIN", Toast.LENGTH_SHORT).show()
-                        }
-                    }) { Text("Confirm") }
-                }
-            },
-            dismissButton = {
-                TextButton(onClick = { 
-                    showParentalUnlockDialog = false 
-                    parentalUnlockPin = ""
-                }) { Text("Cancel") }
+            onCancel = {
+                pendingAction = null
             }
         )
     }

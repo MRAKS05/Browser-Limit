@@ -137,4 +137,38 @@ class SettingsManager(context: Context) {
         prefs.edit().putBoolean("waiting_mode_enabled", enabled).apply()
         _waitingModeEnabled.value = enabled
     }
+
+    var geminiConfirmedBrowsers: Set<String>
+        get() = prefs.getStringSet("gemini_confirmed_browsers", emptySet()) ?: emptySet()
+        set(value) {
+            prefs.edit().putStringSet("gemini_confirmed_browsers", value).apply()
+        }
+
+    fun addConfirmedBrowser(packageName: String) {
+        val current = geminiConfirmedBrowsers.toMutableSet()
+        current.add(packageName)
+        geminiConfirmedBrowsers = current
+    }
+
+    var geminiConfirmedNonBrowsers: Set<String>
+        get() = prefs.getStringSet("gemini_confirmed_non_browsers", emptySet()) ?: emptySet()
+        set(value) {
+            prefs.edit().putStringSet("gemini_confirmed_non_browsers", value).apply()
+        }
+
+    fun addConfirmedNonBrowser(packageName: String) {
+        val current = geminiConfirmedNonBrowsers.toMutableSet()
+        current.add(packageName)
+        geminiConfirmedNonBrowsers = current
+    }
+
+    fun removeConfirmedCache(packageName: String) {
+        val browsers = geminiConfirmedBrowsers.toMutableSet()
+        browsers.remove(packageName)
+        geminiConfirmedBrowsers = browsers
+        
+        val nonBrowsers = geminiConfirmedNonBrowsers.toMutableSet()
+        nonBrowsers.remove(packageName)
+        geminiConfirmedNonBrowsers = nonBrowsers
+    }
 }

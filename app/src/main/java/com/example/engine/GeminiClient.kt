@@ -59,9 +59,9 @@ object RetrofitClient {
     private const val BASE_URL = "https://generativelanguage.googleapis.com/"
 
     private val okHttpClient = OkHttpClient.Builder()
-        .connectTimeout(8, TimeUnit.SECONDS)
-        .readTimeout(8, TimeUnit.SECONDS)
-        .writeTimeout(8, TimeUnit.SECONDS)
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
         .build()
 
     val service: GeminiApiService by lazy {
@@ -79,16 +79,16 @@ class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
         val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: BuildConfig.GEMINI_API_KEY
-        val prompt = "Is the Android app with package name '$packageName' a dedicated web browser? Answer only YES or NO."
+        val prompt = "Is the Android app with package name '$packageName' acting primarily as a web browser or does it have unrestricted web access features (such as bypassing filters)? Search app info if needed. Answer exactly YES or NO."
         val request = GenerateContentRequest(
             contents = listOf(Content(
                 parts = listOf(Part(text = prompt))
             )),
-            generationConfig = GenerationConfig(temperature = 0.2f)
+            generationConfig = GenerationConfig(temperature = 0.1f)
         )
         try {
             val response = RetrofitClient.service.generateContent(apiKey, request)
-            response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text?.trim() ?: "ERROR: Empty Response"
+            response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text?.trim()?.uppercase() ?: "ERROR: Empty Response"
         } catch (e: Exception) {
             "ERROR: ${e.message}"
         }

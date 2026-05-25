@@ -23,6 +23,8 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import java.util.Calendar
 
+import com.example.ui.components.ParentalUnlockDialog
+
 @Composable
 fun DashboardScreen() {
     val context = LocalContext.current
@@ -36,6 +38,16 @@ fun DashboardScreen() {
     var missingOverlay by remember { mutableStateOf(false) }
     var missingShizuku by remember { mutableStateOf(false) }
     var missingBattery by remember { mutableStateOf(false) }
+
+    var pendingAction by remember { mutableStateOf<(() -> Unit)?>(null) }
+    
+    fun executeAction(action: () -> Unit) {
+        if (settings.isParentalLockEnabled) {
+            pendingAction = action
+        } else {
+            action()
+        }
+    }
     
     LaunchedEffect(Unit) {
         val listener = Shizuku.OnBinderReceivedListener {
@@ -86,9 +98,9 @@ fun DashboardScreen() {
             Text("Browser Limit Active", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
             Switch(
                 checked = isActive,
-                onCheckedChange = { 
-                    if (!settings.isParentalLockEnabled) {
-                        settings.setActive(it) 
+                onCheckedChange = { isChecked ->
+                    executeAction {
+                        settings.setActive(isChecked) 
                         val intent = android.content.Intent(context, com.example.service.GuardService::class.java).apply {
                             action = "PAUSE_RESUME"
                         }
@@ -97,8 +109,6 @@ fun DashboardScreen() {
                         } else {
                             context.startService(intent)
                         }
-                    } else {
-                        // TODO show error
                     }
                 }
             )
@@ -127,10 +137,18 @@ fun DashboardScreen() {
             }
         }
         
-        if (missingNotifications || missingOverlay || missingShizuku || missingBattery) {
+        if (missingNotifications || missingOverlay || missingShizuku || missingBattery || !shizukuRunning.value) {
             Card(modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text("Action Required", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onErrorContainer)
+                    if (!shizukuRunning.value) {
+                        Text("• Shizuku is Not Running", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 8.dp), style = MaterialTheme.typography.titleSmall)
+                        Text("This app heavily relies on Shizuku for auto-removing packages. Without it, core functionalities will not work.", color = MaterialTheme.colorScheme.onErrorContainer, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 2.dp, bottom = 4.dp))
+                        Button(onClick = {
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://shizuku.rikka.app/guide/setup/"))
+                            context.startActivity(intent)
+                        }) { Text("Install / Start Shizuku Guide") }
+                    }
                     if (missingNotifications) {
                         Text("• Notifications Permission Missing", color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(top = 4.dp))
                         Button(onClick = {
@@ -179,5 +197,18 @@ fun DashboardScreen() {
                 }
             }
         }
+    }
+    
+    pendingAction?.let { action ->
+        ParentalUnlockDialog(
+            settings = settings,
+            onSuccess = {
+                action()
+                pendingAction = null
+            },
+            onCancel = {
+                pendingAction = null
+            }
+        )
     }
 }

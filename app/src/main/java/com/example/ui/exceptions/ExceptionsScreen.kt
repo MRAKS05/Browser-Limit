@@ -13,13 +13,26 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.data.ExceptionsManager
 
+import com.example.ui.components.ParentalUnlockDialog
+import com.example.data.SettingsManager
+
 @Composable
 fun ExceptionsScreen() {
     val context = LocalContext.current
     val exceptionsManager = remember { ExceptionsManager(context) }
+    val settings = remember { SettingsManager(context) }
     val exceptions by exceptionsManager.exceptionsFlow.collectAsState()
     
     var newException by remember { mutableStateOf("") }
+    var pendingAction by remember { mutableStateOf<(() -> Unit)?>(null) }
+    
+    fun executeAction(action: () -> Unit) {
+        if (settings.isParentalLockEnabled) {
+            pendingAction = action
+        } else {
+            action()
+        }
+    }
     
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Text("Exceptions Manager", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(bottom = 16.dp))
@@ -34,8 +47,10 @@ fun ExceptionsScreen() {
                 Button(
                     onClick = { 
                         if (newException.isNotBlank()) {
-                            exceptionsManager.addException(newException)
-                            newException = ""
+                            executeAction {
+                                exceptionsManager.addException(newException)
+                                newException = ""
+                            }
                         }
                     },
                     modifier = Modifier.padding(end = 4.dp)
@@ -47,6 +62,8 @@ fun ExceptionsScreen() {
         
         Spacer(modifier = Modifier.height(16.dp))
         
+        var packageToRemove by remember { mutableStateOf<String?>(null) }
+
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(exceptions) { packageName ->
                 Card(modifier = Modifier.fillMaxWidth().padding(bottom = 4.dp)) {
@@ -57,7 +74,9 @@ fun ExceptionsScreen() {
                     ) {
                         Text(packageName)
                         if (packageName != "com.aistudio.browserlimit.abxyz" && packageName != "com.example") {
-                            IconButton(onClick = { exceptionsManager.removeException(packageName) }) {
+                            IconButton(onClick = { 
+                                packageToRemove = packageName
+                            }) {
                                 Icon(Icons.Filled.Close, contentDescription = "Remove")
                             }
                         } else {
@@ -67,5 +86,39 @@ fun ExceptionsScreen() {
                 }
             }
         }
+        
+        if (packageToRemove != null) {
+            AlertDialog(
+                onDismissRequest = { packageToRemove = null },
+                title = { Text("Confirm Removal") },
+                text = { Text("Are you sure you want to remove $packageToRemove from exceptions?") },
+                confirmButton = {
+                    TextButton(onClick = { 
+                        packageToRemove?.let { exceptionsManager.removeException(it) }
+                        packageToRemove = null
+                    }) {
+                        Text("Remove")
+                    }
+                },
+                dismissButton = {
+                    TextButton(onClick = { packageToRemove = null }) {
+                        Text("Cancel")
+                    }
+                }
+            )
+        }
+    }
+    
+    pendingAction?.let { action ->
+        ParentalUnlockDialog(
+            settings = settings,
+            onSuccess = {
+                action()
+                pendingAction = null
+            },
+            onCancel = {
+                pendingAction = null
+            }
+        )
     }
 }

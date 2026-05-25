@@ -47,6 +47,10 @@ import rikka.shizuku.Shizuku
 
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
@@ -66,6 +70,21 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 val isUnlocked = remember { mutableStateOf(!settings.isParentalLockEnabled) }
+                
+                val lifecycleOwner = LocalLifecycleOwner.current
+                DisposableEffect(lifecycleOwner) {
+                    val observer = LifecycleEventObserver { _, event ->
+                        if (event == Lifecycle.Event.ON_STOP) {
+                            if (settings.isParentalLockEnabled) {
+                                isUnlocked.value = false
+                            }
+                        }
+                    }
+                    lifecycleOwner.lifecycle.addObserver(observer)
+                    onDispose {
+                        lifecycleOwner.lifecycle.removeObserver(observer)
+                    }
+                }
                 
                 if (isUnlocked.value) {
                     MainScreen()
@@ -101,7 +120,7 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
     LaunchedEffect(isWaitingMode, waitTime, isWindowFocused) {
         if (isWindowFocused) {
             while (timeLeft > 0) {
-                delay(1000)
+                kotlinx.coroutines.delay(1000)
                 timeLeft--
             }
         }

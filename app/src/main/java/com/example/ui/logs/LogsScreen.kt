@@ -17,12 +17,19 @@ import com.example.data.LogDatabase
 import kotlinx.coroutines.launch
 import java.io.File
 
+import com.example.engine.BrowserDetector
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
 @Composable
 fun LogsScreen() {
     val context = LocalContext.current
     val db = remember { LogDatabase.getDatabase(context).logDao() }
     val logs by db.getAllLogs().collectAsState(initial = emptyList())
     val scope = rememberCoroutineScope()
+    val browserDetector = remember { BrowserDetector(context) }
+    
+    var recheckingPackage by remember { mutableStateOf<String?>(null) }
     
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Row(
@@ -70,6 +77,33 @@ fun LogsScreen() {
                         Text("Method: ${log.detectionMethod}")
                         if (log.geminiResponse.isNotEmpty()) {
                             Text("Detail: ${log.geminiResponse}", style = MaterialTheme.typography.bodySmall)
+                        }
+                        
+                        OutlinedButton(
+                            onClick = {
+                                if (recheckingPackage == null) {
+                                    recheckingPackage = log.packageName
+                                    scope.launch {
+                                        val settings = com.example.data.SettingsManager(context)
+                                        settings.removeConfirmedCache(log.packageName)
+                                        val result = browserDetector.checkPackage(log.packageName, forceRecheck = true)
+                                        withContext(Dispatchers.Main) {
+                                            Toast.makeText(context, "Recheck result: ${if (result.isBrowser) "Browser" else "Not Browser"} (${result.method})", Toast.LENGTH_LONG).show()
+                                            recheckingPackage = null
+                                        }
+                                    }
+                                }
+                            },
+                            modifier = Modifier.padding(top = 8.dp).fillMaxWidth(),
+                            enabled = recheckingPackage != log.packageName
+                        ) {
+                            if (recheckingPackage == log.packageName) {
+                                CircularProgressIndicator(modifier = Modifier.size(16.dp), strokeWidth = 2.dp)
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Text("Rechecking...")
+                            } else {
+                                Text("Recheck with Gemini")
+                            }
                         }
                     }
                 }
