@@ -19,13 +19,8 @@ import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFact
 @Serializable
 data class GenerateContentRequest(
     val contents: List<Content>,
-    val tools: List<Tool>? = null,
+    val tools: List<JsonObject>? = null,
     val generationConfig: GenerationConfig? = null
-)
-
-@Serializable
-data class Tool(
-    val googleSearch: JsonObject? = null
 )
 
 @Serializable
@@ -54,7 +49,7 @@ data class Candidate(
 )
 
 interface GeminiApiService {
-    @POST("v1beta/models/gemini-1.5-flash:generateContent")
+    @POST("v1beta/models/gemini-flash-lite-latest:generateContent")
     suspend fun generateContent(
         @Query("key") apiKey: String,
         @Body request: GenerateContentRequest
@@ -65,9 +60,9 @@ object RetrofitClient {
     private const val BASE_URL = "https://generativelanguage.googleapis.com/"
 
     private val okHttpClient = OkHttpClient.Builder()
-        .connectTimeout(4, TimeUnit.SECONDS)
-        .readTimeout(4, TimeUnit.SECONDS)
-        .writeTimeout(4, TimeUnit.SECONDS)
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
         .build()
 
     val service: GeminiApiService by lazy {
@@ -85,19 +80,35 @@ class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
         val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: "AIzaSyAWkVO_Q9PHEv-F1pYUQhELfQbHc6rskfs"
-        val prompt = "Does the Android app '$packageName' function primarily as a web browser, or does it include a web-view to freely browse the internet, search engines, or bypass filters? Act as a Play Store expert and check if it has browsing capabilities. Answer strictly with YES or NO."
+        val prompt = "Does the Android app '$packageName' function as a web browser, or does it contain a web-view that users can use to search on a search engine, open multiple websites, or write a URL and open it (e.g. bypassing filters)? Act as a Play Store expert and check if it has these browsing capabilities. Answer strictly with YES or NO."
         val request = GenerateContentRequest(
             contents = listOf(Content(
                 parts = listOf(Part(text = prompt))
             )),
-            tools = listOf(Tool(googleSearch = JsonObject(emptyMap()))),
+            tools = null,
             generationConfig = GenerationConfig(temperature = 0.1f)
         )
-        try {
-            val response = RetrofitClient.service.generateContent(apiKey, request)
-            response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text?.trim()?.uppercase() ?: "ERROR: Empty Response"
-        } catch (e: Exception) {
-            "ERROR: ${e.message}"
+        var attempt = 0
+        val maxAttempts = 3
+        var lastErrorUrl: String? = null
+        
+        while (attempt < maxAttempts) {
+            try {
+                val response = RetrofitClient.service.generateContent(apiKey, request)
+                return@withContext response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text?.trim()?.uppercase() ?: "ERROR: Empty Response"
+            } catch (e: retrofit2.HttpException) {
+                if (e.code() == 429) {
+                    attempt++
+                    if (attempt < maxAttempts) {
+                        kotlinx.coroutines.delay(1000L * attempt)
+                        continue
+                    }
+                }
+                return@withContext "ERROR: HTTP ${e.code()} ${e.message()}"
+            } catch (e: Exception) {
+                return@withContext "ERROR: ${e.message}"
+            }
         }
+        return@withContext "ERROR: HTTP 429 Too Many Requests"
     }
 }
