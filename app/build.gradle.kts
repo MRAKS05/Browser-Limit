@@ -22,13 +22,6 @@ android {
   }
 
   signingConfigs {
-    create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
-      storeFile = file(keystorePath)
-      storePassword = System.getenv("STORE_PASSWORD")
-      keyAlias = "upload"
-      keyPassword = System.getenv("KEY_PASSWORD")
-    }
     create("debugConfig") {
       storeFile = file("${rootDir}/debug.keystore")
       storePassword = "android"
@@ -42,7 +35,6 @@ android {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-      signingConfig = signingConfigs.getByName("debugConfig")
     }
     debug {
       signingConfig = signingConfigs.getByName("debugConfig")
@@ -66,9 +58,10 @@ secrets {
   defaultPropertiesFileName = ".env.example"
 }
 
-tasks.register<Copy>("copyReleaseApk") {
-  from(layout.buildDirectory.file("outputs/apk/release/app-release.apk"))
-  into(rootProject.layout.projectDirectory.dir("releases"))
+tasks.register<Copy>("copyToAppRelease") {
+  from(layout.buildDirectory.file("outputs/apk/release/app-release-unsigned.apk"))
+  into(layout.projectDirectory.dir("release"))
+  rename("app-release-unsigned.apk", "app-release.apk")
 }
 
 // Some unused dependencies are commented out below instead of being removed.
