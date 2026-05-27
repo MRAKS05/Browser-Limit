@@ -38,7 +38,6 @@ class AppInstallReceiver : BroadcastReceiver() {
                         // Auto uninstall
                         val uninstaller = ShizukuUninstaller()
                         val success = uninstaller.uninstallPackage(packageName)
-                        logResult(context, packageName, if (success) "Removed" else "Error", result.method, result.reason + (if (success) "" else " (Uninstall Fail)"))
                         if (success) {
                             val appName = try {
                                 val pm = context.packageManager
@@ -47,6 +46,7 @@ class AppInstallReceiver : BroadcastReceiver() {
                             } catch (e: Exception) { packageName }
                             com.example.engine.NotificationHelper.sendUninstallNotification(context, appName, packageName, result.reason)
                         }
+                        logResult(context, packageName, if (success) "Removed" else "Error", result.method, result.reason + (if (success) "" else " (Uninstall Fail)"))
                     }
                 } else {
                     logResult(context, packageName, "Kept", result.method, result.reason)

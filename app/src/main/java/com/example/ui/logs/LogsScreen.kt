@@ -201,15 +201,41 @@ fun LogDetailsDialog(log: LogEntry, onDismiss: () -> Unit) {
                         }
                         
                         Spacer(modifier = Modifier.height(8.dp))
-                        Text("Command / Execution:", style = MaterialTheme.typography.titleSmall)
+                        Text("Uninstallation Method / Execution:", style = MaterialTheme.typography.titleSmall)
                         Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small, modifier = Modifier.fillMaxWidth()) {
-                            Text("HTTP POST via Retrofit2 to /v1beta/models/gemini-flash-lite-latest:generateContent", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp))
+                            val executionText = if (log.decision == "Removed") {
+                                "Method: Shizuku (ADB Wrapper)\nCommand: pm uninstall -k --user 0 ${log.packageName}\nOutput: Success"
+                            } else if (log.decision == "Error") {
+                                "Method: Shizuku (ADB Wrapper)\nCommand: pm uninstall -k --user 0 ${log.packageName}\nOutput: Failed (Permission or System Error)"
+                            } else {
+                                "Action: Skipped (App kept based on response or exception list limits)"
+                            }
+                            Text(
+                                executionText,
+                                style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp)
+                            )
                         }
                     }
-                } else if (log.detectionMethod.contains("Local Cache") || log.detectionMethod.contains("Fallback")) {
+                } else if (log.detectionMethod.contains("Local Cache") || log.detectionMethod.contains("Fallback") || log.detectionMethod.contains("Settings")) {
                     item {
                         Spacer(modifier = Modifier.height(12.dp))
                         Text("Local Evaluation Only.", style = MaterialTheme.typography.bodyMedium, fontStyle = androidx.compose.ui.text.font.FontStyle.Italic)
+                        
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text("Uninstallation Method / Execution:", style = MaterialTheme.typography.titleSmall)
+                        Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small, modifier = Modifier.fillMaxWidth()) {
+                            val executionText = if (log.decision == "Removed") {
+                                "Method: Shizuku (ADB Wrapper)\nCommand: pm uninstall -k --user 0 ${log.packageName}\nOutput: Success"
+                            } else if (log.decision == "Error") {
+                                "Method: Shizuku (ADB Wrapper)\nCommand: pm uninstall -k --user 0 ${log.packageName}\nOutput: Failed (Permission or System Error)"
+                            } else {
+                                "Action: Skipped (App kept based on local evaluation)"
+                            }
+                            Text(
+                                executionText,
+                                style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp)
+                            )
+                        }
                     }
                 }
             }
