@@ -35,6 +35,7 @@ android {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+      signingConfig = signingConfigs.getByName("debugConfig")
     }
     debug {
       signingConfig = signingConfigs.getByName("debugConfig")
@@ -59,9 +60,9 @@ secrets {
 }
 
 tasks.register<Copy>("copyToAppRelease") {
-  from(layout.buildDirectory.file("outputs/apk/release/app-release-unsigned.apk"))
+  dependsOn("assembleRelease")
+  from(layout.buildDirectory.file("outputs/apk/release/app-release.apk"))
   into(layout.projectDirectory.dir("release"))
-  rename("app-release-unsigned.apk", "app-release.apk")
 }
 
 // Some unused dependencies are commented out below instead of being removed.
