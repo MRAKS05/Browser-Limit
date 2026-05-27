@@ -1,22 +1,32 @@
-# Browser Limit
+# BrowserLimit
 
-## What is it?
-Browser Limit is a powerful Android utility designed to monitor app installations and automatically remove browser applications. Powered by Shizuku for seamless rootless uninstallation and Gemini AI for intelligent browser detection, it acts as a robust tool to keep devices free from web browsers.
+BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism and parental control by automatically detecting and eliminating web browsers from the device.
 
-## Who is this for and why?
-This application is perfect for parents, digital minimalists, and productivity enthusiasts who want to create a focused, distraction-free environment on an Android device.
+Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a locked-down, focused environment. 
 
-**Why use Browser Limit?**
-* **Parental Control:** Prevent children from navigating the open web, reducing exposure to inappropriate content and infinite scrolling.
-* **Digital Minimalism:** Turn a standard Android device into a dedicated "dumbphone" or utility device without the temptation of a web browser.
-* **Focus & Productivity:** Create a locked-down workspace tablet where only specific offline or productivity apps are allowed.
+## Core Capabilities
 
-## Key Features & Functions
-1. **Automated Browser Removal:** Leverages Shizuku to silently and automatically uninstall any app identified as a browser.
-2. **AI-Powered Detection:** Integrates Google's Gemini AI to accurately determine if a newly installed app functions as a web browser.
-3. **Chrome Removal Mode:** A dedicated toggle allowing the uninstallation of Google Chrome, even if it is pre-installed as a system app.
-4. **Interactive Setup Phase:** Provides a professional, step-by-step onboarding experience to properly configure all required permissions (Notifications, Overlays, Shizuku, and Battery Optimization).
-5. **Parental Lock:** Secure the app's settings behind a PIN code. Once locked, the tool can enforce automatic removals without any confirmation dialogs.
-6. **Smart Delay / Waiting Mode:** To deter impulsive bypass attempts, disabling the Parental Lock can enforce a mandatory, customizable waiting period.
-7. **Custom Appearance:** Supports both Light and Dark mode, utilizing Android's Material Design 3 for a native, polished, and adaptive look.
-8. **Exceptions List:** Allows whitelisting specific applications you wish to keep, so they aren't removed even if they have browser-like features.
+- **Automated Rootless Uninstallation (Shizuku)**
+  Operates at the system level via Shizuku (ADB Wrapper). When a browser is detected, it is immediately and silently uninstalled (`pm uninstall -k --user 0`) without requiring root access or user interaction.
+  
+- **Heuristic AI Package Evaluation (Gemini)**
+  Integrates Google's Gemini AI model to evaluate newly installed applications. The engine analyzes package semantics to determine if an app is a dedicated browser or designed for unrestricted open internet browsing, dynamically detecting workarounds that bypass static blocklists.
+  
+- **System Browser Eradication**
+  Equipped with specialized handling to remove immutable, pre-installed system browsers like Google Chrome, ensuring a strict zero-browser ecosystem.
+  
+- **Enforced Parental Lock with Smart Delay**
+  Configuration states and exception lists are cryptographically secured behind a PIN. Disabling the lock dynamically triggers a mandatory waiting period, drastically deterring impulsive bypass attempts.
+
+- **Offline Inference & Exception Bypasses**
+  Maintains a comprehensive local evaluation cache and explicit exception arrays, ensuring uninterrupted automated uninstallation sequences even without internet access.
+  
+- **Cryptographic & Execution Transparency**
+  Maintains an auditable, granular execution database. Each event logs exact package identities, Gemini inference rationale, execution methods, and ADB shell outputs for complete system transparency.
+
+## Infrastructure
+
+- **Language:** Kotlin
+- **Architecture:** Jetpack Compose / MVVM
+- **Database:** Room Database (Local Persistence)
+- **Execution:** Shizuku API (System-level management)

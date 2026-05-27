@@ -245,24 +245,30 @@ fun LogDetailsDialog(log: LogEntry, onDismiss: () -> Unit) {
         },
         dismissButton = {
             TextButton(onClick = {
+                val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+                val timeStr = sdf.format(Date(log.timestamp))
+                val exportText = """
+                    |App Name: ${log.appName}
+                    |Package Name: ${log.packageName}
+                    |Time: $timeStr
+                    |Decision: ${log.decision}
+                    |Method: ${log.detectionMethod}
+                    |Reason: ${log.geminiResponse}
+                """.trimMargin()
                 try {
-                    val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
-                    val timeStr = sdf.format(Date(log.timestamp))
-                    val exportText = """
-                        |App Name: ${log.appName}
-                        |Package Name: ${log.packageName}
-                        |Time: $timeStr
-                        |Decision: ${log.decision}
-                        |Method: ${log.detectionMethod}
-                        |Reason: ${log.geminiResponse}
-                    """.trimMargin()
-                    
                     val exportDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
                     val file = File(exportDir, "browserlimit_log_${log.packageName}_${log.timestamp}.txt")
                     file.writeText(exportText)
                     Toast.makeText(context, "Exported individual log to Downloads", Toast.LENGTH_LONG).show()
                 } catch (e: Exception) {
-                    Toast.makeText(context, "Export failed.", Toast.LENGTH_SHORT).show()
+                    try {
+                        val backupDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
+                        val file2 = File(backupDir, "browserlimit_log_${log.packageName}_${log.timestamp}.txt")
+                        file2.writeText(exportText)
+                        Toast.makeText(context, "Exported individual log to App Data / Downloads", Toast.LENGTH_LONG).show()
+                    } catch (e2: Exception) {
+                        Toast.makeText(context, "Export failed.", Toast.LENGTH_SHORT).show()
+                    }
                 }
             }) { Text("Export Log") }
         }
