@@ -1,8 +1,16 @@
 # BrowserLimit
 
-BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism and parental control by automatically detecting and eliminating web browsers from the device.
+<p align="center">
+  <!-- When pushing to GitHub, replace this placeholder with an actual image link or upload your icon directly -->
+  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" width="128" height="128" alt="BrowserLimit Icon" />
+</p>
 
-Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a locked-down, focused environment. 
+[![Release](https://img.shields.io/github/v/release/yourusername/BrowserLimit?label=Release&style=flat-square)](#) 
+[![Platform](https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=flat-square&logo=android)](#)
+
+BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism by automatically detecting and eliminating web browsers from your device.
+
+Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a rigorously locked-down, focused environment. 
 
 ## Core Capabilities
 
