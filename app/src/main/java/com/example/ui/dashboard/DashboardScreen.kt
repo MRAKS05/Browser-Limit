@@ -32,7 +32,7 @@ fun DashboardScreen() {
     val isActive by settings.isActive.collectAsState()
     val useGemini by settings.useGemini.collectAsState()
     
-    val shizukuRunning = remember { mutableStateOf(false) }
+    val shizukuRunning = remember { mutableStateOf(Shizuku.pingBinder()) }
     
     var missingNotifications by remember { mutableStateOf(false) }
     var missingOverlay by remember { mutableStateOf(false) }
@@ -54,17 +54,21 @@ fun DashboardScreen() {
 
     LaunchedEffect(lifecycleState) {
         if (lifecycleState == androidx.lifecycle.Lifecycle.State.RESUMED) {
-            shizukuRunning.value = Shizuku.pingBinder()
-            
             missingNotifications = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
                     context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
                     
             missingOverlay = !Settings.canDrawOverlays(context)
             
-            missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
-            
             val pm = context.getSystemService(android.content.Context.POWER_SERVICE) as android.os.PowerManager
             missingBattery = !pm.isIgnoringBatteryOptimizations(context.packageName)
+            
+            while (true) {
+                if (!shizukuRunning.value) {
+                    shizukuRunning.value = Shizuku.pingBinder()
+                }
+                missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
+                kotlinx.coroutines.delay(2000)
+            }
         }
     }
 
