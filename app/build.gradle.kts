@@ -66,6 +66,11 @@ secrets {
   defaultPropertiesFileName = ".env.example"
 }
 
+tasks.register<Copy>("copyReleaseApk") {
+  from(layout.buildDirectory.file("outputs/apk/release/app-release.apk"))
+  into(rootProject.layout.projectDirectory.dir("releases"))
+}
+
 // Some unused dependencies are commented out below instead of being removed.
 // This makes it easy to add them back in the future if needed.
 dependencies {
