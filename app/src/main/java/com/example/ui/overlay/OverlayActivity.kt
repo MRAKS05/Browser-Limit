@@ -183,6 +183,9 @@ private suspend fun performUninstall(context: android.content.Context, packageNa
     } catch (e: Exception) { packageName }
     
     logResult(context, packageName, appName, if (success) "Removed" else "Error", method, reason + (if (success) "" else " (Uninstall Fail)"))
+    if (success) {
+        com.example.engine.NotificationHelper.sendUninstallNotification(context, appName, packageName, reason)
+    }
 }
 
 private suspend fun logResult(context: android.content.Context, packageName: String, appName: String, decision: String, method: String, reason: String) {
