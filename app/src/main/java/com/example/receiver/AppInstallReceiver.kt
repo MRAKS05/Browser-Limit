@@ -39,6 +39,14 @@ class AppInstallReceiver : BroadcastReceiver() {
                         val uninstaller = ShizukuUninstaller()
                         val success = uninstaller.uninstallPackage(packageName)
                         logResult(context, packageName, if (success) "Removed" else "Error", result.method, result.reason + (if (success) "" else " (Uninstall Fail)"))
+                        if (success) {
+                            val appName = try {
+                                val pm = context.packageManager
+                                val info = pm.getApplicationInfo(packageName, 0)
+                                pm.getApplicationLabel(info).toString()
+                            } catch (e: Exception) { packageName }
+                            com.example.engine.NotificationHelper.sendUninstallNotification(context, appName, packageName, result.reason)
+                        }
                     }
                 } else {
                     logResult(context, packageName, "Kept", result.method, result.reason)

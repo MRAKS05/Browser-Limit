@@ -17,6 +17,11 @@ import com.example.data.LogDatabase
 import kotlinx.coroutines.launch
 import java.io.File
 
+import androidx.compose.foundation.clickable
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import com.example.data.LogEntry
 import com.example.engine.BrowserDetector
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -30,6 +35,11 @@ fun LogsScreen() {
     val browserDetector = remember { BrowserDetector(context) }
     
     var recheckingPackage by remember { mutableStateOf<String?>(null) }
+    var selectedLog by remember { mutableStateOf<LogEntry?>(null) }
+    
+    if (selectedLog != null) {
+        LogDetailsDialog(log = selectedLog!!, onDismiss = { selectedLog = null })
+    }
     
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Row(
@@ -71,7 +81,12 @@ fun LogsScreen() {
         
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(logs) { log ->
-                Card(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp)) {
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 8.dp)
+                        .clickable { selectedLog = log }
+                ) {
                     Column(modifier = Modifier.padding(12.dp)) {
                         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                             Text(log.appName, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
@@ -100,8 +115,25 @@ fun LogsScreen() {
                                         val settings = com.example.data.SettingsManager(context)
                                         settings.removeConfirmedCache(log.packageName)
                                         val result = browserDetector.checkPackage(log.packageName, forceRecheck = true)
+                                        
+                                        db.insertLog(
+                                            LogEntry(
+                                                timestamp = System.currentTimeMillis(),
+                                                appName = log.appName,
+                                                packageName = log.packageName,
+                                                detectionMethod = result.method + " (Recheck)",
+                                                decision = if (result.isBrowser) "Removed" else "Kept",
+                                                geminiResponse = result.reason
+                                            )
+                                        )
+                                        
+                                        if (result.isBrowser) {
+                                            val uninstaller = com.example.engine.ShizukuUninstaller()
+                                            uninstaller.uninstallPackage(log.packageName)
+                                        }
+
                                         withContext(Dispatchers.Main) {
-                                            Toast.makeText(context, "Recheck result: ${if (result.isBrowser) "Browser" else "Not Browser"} (${result.method})", Toast.LENGTH_LONG).show()
+                                            Toast.makeText(context, "Recheck result: ${if (result.isBrowser) "Browser (Removed)" else "Not Browser (Allowed)"} (${result.method})", Toast.LENGTH_LONG).show()
                                             recheckingPackage = null
                                         }
                                     }
@@ -123,4 +155,90 @@ fun LogsScreen() {
             }
         }
     }
+}
+
+@Composable
+fun LogDetailsDialog(log: LogEntry, onDismiss: () -> Unit) {
+    val context = LocalContext.current
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = {
+            Text(text = log.appName, style = MaterialTheme.typography.titleLarge)
+        },
+        text = {
+            LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                item {
+                    val sdf = remember { SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()) }
+                    val timeStr = sdf.format(Date(log.timestamp))
+                    Text("Time: $timeStr", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("Package: ${log.packageName}", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("Decision: ${log.decision}", style = MaterialTheme.typography.bodyMedium, fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                    Text("Method: ${log.detectionMethod}", style = MaterialTheme.typography.bodyMedium)
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text("Reason:", style = MaterialTheme.typography.titleSmall)
+                    Text(log.geminiResponse.ifEmpty { "N/A" }, style = MaterialTheme.typography.bodySmall)
+                }
+                
+                if (log.detectionMethod.startsWith("Gemini")) {
+                    item {
+                        Spacer(modifier = Modifier.height(12.dp))
+                        HorizontalDivider()
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text("Gemini API Details:", style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
+                        Spacer(modifier = Modifier.height(4.dp))
+                        
+                        Text("Prompt Used:", style = MaterialTheme.typography.titleSmall)
+                        Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small, modifier = Modifier.fillMaxWidth()) {
+                            Text("You are a strict App Capability Evaluator. Your job is to determine if the Android app with package name '${log.packageName}' is a DEDICATED WEB BROWSER or an app designed to allow UNRESTRICTED open internet browsing...", 
+                                style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp))
+                        }
+                        
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text("Output Got:", style = MaterialTheme.typography.titleSmall)
+                        Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small, modifier = Modifier.fillMaxWidth()) {
+                            Text(log.geminiResponse, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp))
+                        }
+                        
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text("Command / Execution:", style = MaterialTheme.typography.titleSmall)
+                        Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small, modifier = Modifier.fillMaxWidth()) {
+                            Text("HTTP POST via Retrofit2 to /v1beta/models/gemini-flash-lite-latest:generateContent", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(8.dp))
+                        }
+                    }
+                } else if (log.detectionMethod.contains("Local Cache") || log.detectionMethod.contains("Fallback")) {
+                    item {
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text("Local Evaluation Only.", style = MaterialTheme.typography.bodyMedium, fontStyle = androidx.compose.ui.text.font.FontStyle.Italic)
+                    }
+                }
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = onDismiss) { Text("Close") }
+        },
+        dismissButton = {
+            TextButton(onClick = {
+                try {
+                    val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+                    val timeStr = sdf.format(Date(log.timestamp))
+                    val exportText = """
+                        |App Name: ${log.appName}
+                        |Package Name: ${log.packageName}
+                        |Time: $timeStr
+                        |Decision: ${log.decision}
+                        |Method: ${log.detectionMethod}
+                        |Reason: ${log.geminiResponse}
+                    """.trimMargin()
+                    
+                    val exportDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                    val file = File(exportDir, "browserlimit_log_${log.packageName}_${log.timestamp}.txt")
+                    file.writeText(exportText)
+                    Toast.makeText(context, "Exported individual log to Downloads", Toast.LENGTH_LONG).show()
+                } catch (e: Exception) {
+                    Toast.makeText(context, "Export failed.", Toast.LENGTH_SHORT).show()
+                }
+            }) { Text("Export Log") }
+        }
+    )
 }
