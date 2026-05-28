@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
-    <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge&color=blue&label=Latest%20Release" alt="Latest Release">
+    <img src="https://img.shields.io/badge/Latest%20Release-v1.0.0-blue?style=for-the-badge" alt="Latest Release">
   </a>
   <img src="https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android" alt="Platform">
 </p>
 
-BrowserLimit is an advanced Android utility engineered to enforce digital minimalism by automatically detecting and eliminating web browsers from the device environment. Built upon the Shizuku API for system-level execution and Gemini AI for heuristic package evaluation, BrowserLimit provides a rigorously controlled, focused environment.
+BrowserLimit is an advanced Android utility engineered to enforce digital minimalism by automatically detecting and eliminating web browsers from the device environment. Built upon the Shizuku API for system-level operations, it combines automated detection with AI-powered analysis to maintain a browser-free environment.
 
 ## Core Capabilities
 
@@ -35,4 +35,4 @@ This project is licensed under the Creative Commons Attribution-NonCommercial 4.
 
 ## AI Development Disclosure
 
-This software was developed autonomously by Artificial Intelligence. The human developer acted in a supervisory capacity with minimal direct intervention in the codebase. This project demonstrates the efficacy of AI-driven end-to-end software engineering.
+This software was developed autonomously by Artificial Intelligence. The human developer acted in a supervisory capacity with minimal direct intervention in the codebase. This project demonstrates the capabilities of AI-driven software development.
