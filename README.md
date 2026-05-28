@@ -4,7 +4,7 @@
   <img src="app_icon.svg" width="128" height="128" alt="BrowserLimit Icon" />
 </p>
 
-[![Release](https://img.shields.io/github/v/release/yourusername/BrowserLimit?label=Release&style=flat-square)](#) 
+[![Release](https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?label=Release&style=flat-square&color=blue)](https://github.com/MRAKS05/Browser-Limit/releases/latest) 
 [![Platform](https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=flat-square&logo=android)](#)
 
 BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism by automatically detecting and eliminating web browsers from your device.
