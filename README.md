@@ -1,7 +1,7 @@
 # BrowserLimit
 
 <p align="center">
-  <img src="app/test_icon.svg" width="128" height="128" alt="BrowserLimit Icon" />
+  <img src="app_icon.svg" width="128" height="128" alt="BrowserLimit Icon" />
 </p>
 
 [![Release](https://img.shields.io/github/v/release/yourusername/BrowserLimit?label=Release&style=flat-square)](#) 
