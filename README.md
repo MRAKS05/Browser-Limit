@@ -4,46 +4,35 @@
   <img src="app_icon.svg" width="128" height="128" alt="BrowserLimit Icon" />
 </p>
 
-[![Latest Release](https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?label=Latest%20Release&style=for-the-badge&color=blue)](https://github.com/MRAKS05/Browser-Limit/releases/latest) 
-[![Platform](https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=flat-square&logo=android)](#)
+<p align="center">
+  <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
+    <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge&color=blue&label=Latest%20Release" alt="Latest Release">
+  </a>
+  <img src="https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android" alt="Platform">
+</p>
 
-BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism by automatically detecting and eliminating web browsers from your device.
-
-Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a rigorously locked-down, focused environment. 
+BrowserLimit is an advanced Android utility engineered to enforce digital minimalism by automatically detecting and eliminating web browsers from the device environment. Built upon the Shizuku API for system-level execution and Gemini AI for heuristic package evaluation, BrowserLimit provides a rigorously controlled, focused environment.
 
 ## Core Capabilities
 
-- **Automated Rootless Uninstallation (Shizuku)**
-  Operates at the system level via Shizuku (ADB Wrapper). When a browser is detected, it is immediately and silently uninstalled (`pm uninstall -k --user 0`) without requiring root access or user interaction.
-  
-- **Heuristic AI Package Evaluation (Gemini)**
-  Integrates Google's Gemini AI model to evaluate newly installed applications. The engine analyzes package semantics to determine if an app is a dedicated browser or designed for unrestricted open internet browsing, dynamically detecting workarounds that bypass static blocklists.
-  
-- **System Browser Eradication**
-  Equipped with specialized handling to remove immutable, pre-installed system browsers like Google Chrome, ensuring a strict zero-browser ecosystem.
-  
-- **Enforced Parental Lock with Smart Delay**
-  Configuration states and exception lists are cryptographically secured behind a PIN. Disabling the lock dynamically triggers a mandatory waiting period, drastically deterring impulsive bypass attempts.
-
-- **Offline Inference & Exception Bypasses**
-  Maintains a comprehensive local evaluation cache and explicit exception arrays, ensuring uninterrupted automated uninstallation sequences even without internet access.
-  
-- **Cryptographic & Execution Transparency**
-  Maintains an auditable, granular execution database. Each event logs exact package identities, Gemini inference rationale, execution methods, and ADB shell outputs for complete system transparency.
+- **Automated Rootless Uninstallation**: Utilizes the Shizuku API to execute system-level commands, enabling the silent removal of detected browsers without requiring root access.
+- **Heuristic AI Evaluation**: Integrates Google Gemini AI to analyze application semantics, dynamically identifying browsers or unrestricted access tools that bypass static blocklists.
+- **System Browser Management**: Specialized protocols for the removal of pre-installed system browsers, ensuring a comprehensive zero-browser ecosystem.
+- **Enforced Security Protocols**: Configuration states are secured via cryptographic PIN protection, featuring a mandatory waiting period for configuration changes to deter impulsive bypass attempts.
+- **Offline Resilience**: Maintains a local evaluation cache and explicit exception arrays to ensure continuous operation without an active internet connection.
+- **Execution Transparency**: Provides a granular audit trail of all system actions, including AI inference rationale and execution outputs.
 
 ## Infrastructure
 
-- **Language:** Kotlin
-- **Architecture:** Jetpack Compose / MVVM
-- **Database:** Room Database (Local Persistence)
-- **Execution:** Shizuku API (System-level management)
+- **Language**: Kotlin
+- **Architecture**: Jetpack Compose / MVVM
+- **Database**: Room (Local Persistence)
+- **Execution**: Shizuku API
 
----
+## License
 
-## ⚖️ License
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. 
-- **Attribution Required:** Any use or modification of this application must attribute the original work to **MRAKS05**.
-- **Non-Commercial:** This application and its derivatives may **not** be used for commercial purposes or to generate profit.
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License. See the [LICENSE](LICENSE) file for details.
 
-## 🤖 AI Development Disclosure
-This application was fully developed using **Artificial Intelligence**. The human developer provided minimal intervention, primarily acting as a supervisor and architect. This project serves as a testament to the capabilities of modern AI in end-to-end software engineering.
+## AI Development Disclosure
+
+This software was developed autonomously by Artificial Intelligence. The human developer acted in a supervisory capacity with minimal direct intervention in the codebase. This project demonstrates the efficacy of AI-driven end-to-end software engineering.
