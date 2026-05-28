@@ -59,10 +59,20 @@ secrets {
   defaultPropertiesFileName = ".env.example"
 }
 
-tasks.register<Copy>("copyToAppRelease") {
+tasks.register<Copy>("copyReleaseApk") {
   dependsOn("assembleRelease")
   from(layout.buildDirectory.file("outputs/apk/release/app-release.apk"))
-  into(layout.projectDirectory.dir("release"))
+  into(rootProject.layout.projectDirectory.dir("apk_releases_for_github"))
+}
+
+tasks.register<Copy>("copyDebugApk") {
+  dependsOn("assembleDebug")
+  from(layout.buildDirectory.file("outputs/apk/debug/app-debug.apk"))
+  into(rootProject.layout.projectDirectory.dir("apk_releases_for_github"))
+}
+
+tasks.register("copyAllApks") {
+  dependsOn("copyReleaseApk", "copyDebugApk")
 }
 
 // Some unused dependencies are commented out below instead of being removed.
