@@ -1,7 +1,7 @@
 # BrowserLimit
 
 <p align="center">
-  <img src="app_icon.png" width="128" height="128" alt="BrowserLimit Icon" />
+  <img src="https://raw.githubusercontent.com/MRAKS05/Browser-Limit/main/app_icon.png" width="128" height="128" alt="BrowserLimit Icon" />
 </p>
 
 [![Release](https://img.shields.io/github/v/release/yourusername/BrowserLimit?label=Release&style=flat-square)](#) 
@@ -9,15 +9,15 @@
 
 BrowserLimit is an advanced, uncompromising Android utility engineered to enforce strict digital minimalism by automatically detecting and eliminating web browsers from your device.
 
-Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a rigorously locked-down, focused environment. 
+Built on top of Shizuku for system-level execution and Gemini AI for intelligent package evaluation, BrowserLimit transforms any standard Android device into a rigorously locked-down, focused environment.
 
 ## Core Capabilities
 
 - **Automated Rootless Uninstallation (Shizuku)**
-  Operates at the system level via Shizuku (ADB Wrapper). When a browser is detected, it is immediately and silently uninstalled (`pm uninstall -k --user 0`) without requiring root access or user interaction.
+  Operates at the system level via Shizuku (ADB Wrapper). When a browser is detected, it is immediately and silently uninstalled (`pm uninstall -k --user 0`) without requiring root access or user intervention.
   
 - **Heuristic AI Package Evaluation (Gemini)**
-  Integrates Google's Gemini AI model to evaluate newly installed applications. The engine analyzes package semantics to determine if an app is a dedicated browser or designed for unrestricted open internet browsing, dynamically detecting workarounds that bypass static blocklists.
+  Integrates Google's Gemini AI model to evaluate newly installed applications. The engine analyzes package semantics to determine if an app is a dedicated browser or designed for unrestricted open web access.
   
 - **System Browser Eradication**
   Equipped with specialized handling to remove immutable, pre-installed system browsers like Google Chrome, ensuring a strict zero-browser ecosystem.
