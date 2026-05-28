@@ -1,8 +1,7 @@
 # BrowserLimit
 
 <p align="center">
-  <!-- When pushing to GitHub, replace this placeholder with an actual image link or upload your icon directly -->
-  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" width="128" height="128" alt="BrowserLimit Icon" />
+  <img src="app_icon.png" width="128" height="128" alt="BrowserLimit Icon" />
 </p>
 
 [![Release](https://img.shields.io/github/v/release/yourusername/BrowserLimit?label=Release&style=flat-square)](#) 

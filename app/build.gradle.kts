@@ -35,7 +35,6 @@ android {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-      signingConfig = signingConfigs.getByName("debugConfig")
     }
     debug {
       signingConfig = signingConfigs.getByName("debugConfig")
@@ -57,22 +56,6 @@ android {
 secrets {
   propertiesFileName = ".env"
   defaultPropertiesFileName = ".env.example"
-}
-
-tasks.register<Copy>("copyReleaseApk") {
-  dependsOn("assembleRelease")
-  from(layout.buildDirectory.file("outputs/apk/release/app-release.apk"))
-  into(rootProject.layout.projectDirectory.dir("apk_releases_for_github"))
-}
-
-tasks.register<Copy>("copyDebugApk") {
-  dependsOn("assembleDebug")
-  from(layout.buildDirectory.file("outputs/apk/debug/app-debug.apk"))
-  into(rootProject.layout.projectDirectory.dir("apk_releases_for_github"))
-}
-
-tasks.register("copyAllApks") {
-  dependsOn("copyReleaseApk", "copyDebugApk")
 }
 
 // Some unused dependencies are commented out below instead of being removed.
