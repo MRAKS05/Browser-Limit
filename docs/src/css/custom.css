@@ -1,0 +1,16 @@
+/* Custom styles for BrowserLimit Docusaurus docs site */
+
+:root {
+  --ifm-color-primary: #316cff;
+  --ifm-color-primary-dark: #0048bb;
+  --ifm-color-primary-light: #78aaff;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar__title {
+  font-weight: bold;
+}
+/* Add additional styles as needed */
