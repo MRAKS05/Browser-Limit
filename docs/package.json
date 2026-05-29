@@ -1,0 +1,15 @@
+{
+  "name": "browserlimit-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve --dir build"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.4.3",
+    "@docusaurus/preset-classic": "^2.4.3"
+  }
+}
