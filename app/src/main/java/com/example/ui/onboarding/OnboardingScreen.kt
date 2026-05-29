@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
+import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.*
@@ -22,6 +23,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.data.SettingsManager
@@ -60,6 +62,11 @@ fun OnboardingScreen(onComplete: () -> Unit) {
             Icons.Filled.Build
         ),
         OnboardingStep(
+            "Gemini API Key",
+            "Enter your Gemini API key to enable AI-based browser detection, or skip this step to continue without Gemini.",
+            Icons.Filled.Lock
+        ),
+        OnboardingStep(
             "Battery Optimization",
             "To ensure the background service doesn't get killed, please disable battery optimization for Browser Limit.",
             Icons.Filled.Warning
@@ -68,6 +75,7 @@ fun OnboardingScreen(onComplete: () -> Unit) {
     
     val context = LocalContext.current
     val settings = remember { SettingsManager(context) }
+    var geminiApiKeyInput by remember { mutableStateOf(settings.geminiApiKey.value) }
     
     val notificationLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission(),
@@ -127,6 +135,15 @@ fun OnboardingScreen(onComplete: () -> Unit) {
                                 currentStep++
                             }
                             4 -> {
+                                if (geminiApiKeyInput.isBlank()) {
+                                    Toast.makeText(context, "Enter Gemini API key or choose Do it later", Toast.LENGTH_LONG).show()
+                                } else {
+                                    settings.setGeminiApiKey(geminiApiKeyInput.trim())
+                                    settings.setUseGemini(true)
+                                    currentStep++
+                                }
+                            }
+                            5 -> {
                                 val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
                                 intent.data = Uri.parse("package:${context.packageName}")
                                 if (intent.resolveActivity(context.packageManager) != null) {
@@ -198,6 +215,44 @@ fun OnboardingScreen(onComplete: () -> Unit) {
                         textAlign = TextAlign.Center,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                    Spacer(modifier = Modifier.height(16.dp))
+                    if (targetStep == 4) {
+                        OutlinedTextField(
+                            value = geminiApiKeyInput,
+                            onValueChange = { geminiApiKeyInput = it },
+                            label = { Text("Gemini API Key") },
+                            modifier = Modifier.fillMaxWidth(),
+                            singleLine = true,
+                            visualTransformation = PasswordVisualTransformation()
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text(
+                            text = "Create an API key using the button below, then paste it here to enable Gemini.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            textAlign = TextAlign.Center
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Button(
+                            onClick = {
+                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://aistudio.google.com/app/apikey"))
+                                context.startActivity(intent)
+                            },
+                            modifier = Modifier.fillMaxWidth().height(52.dp)
+                        ) {
+                            Text("Get Gemini API Key")
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+                        TextButton(
+                            onClick = {
+                                settings.setUseGemini(false)
+                                currentStep++
+                            },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text("Do it later")
+                        }
+                    }
                 }
             }
         }

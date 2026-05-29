@@ -80,7 +80,10 @@ object RetrofitClient {
 class GeminiClient(private val context: android.content.Context) {
     suspend fun isBrowser(packageName: String): String = withContext(Dispatchers.IO) {
         val settings = com.example.data.SettingsManager(context)
-        val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() } ?: "***REMOVED***"
+        val apiKey = settings.geminiApiKey.value.takeIf { it.isNotBlank() }
+        if (apiKey == null) {
+            return@withContext "ERROR: Gemini API key is not configured"
+        }
         
         var playStoreInfo = ""
         try {
@@ -139,16 +142,31 @@ class GeminiClient(private val context: android.content.Context) {
                 val response = RetrofitClient.service.generateContent(apiKey, request)
                 return@withContext response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text?.trim()?.uppercase() ?: "ERROR: Empty Response"
             } catch (e: retrofit2.HttpException) {
-                if (e.code() == 429) {
+                val status = e.code()
+                val message = e.message() ?: "HTTP error"
+                if (status == 429) {
                     attempt++
                     if (attempt < maxAttempts) {
                         kotlinx.coroutines.delay(1000L * attempt)
                         continue
                     }
+                    return@withContext "ERROR: HTTP 429 Too Many Requests"
                 }
-                return@withContext "ERROR: HTTP ${e.code()} ${e.message()}"
+                val detail = when (status) {
+                    401 -> "Unauthorized - check your Gemini API key"
+                    403 -> "Forbidden - invalid API key or access denied"
+                    404 -> "Not Found - invalid endpoint"
+                    else -> message
+                }
+                return@withContext "ERROR: HTTP $status $detail"
+            } catch (e: java.net.SocketTimeoutException) {
+                return@withContext "ERROR: Gemini not responding (timeout)"
+            } catch (e: java.net.ConnectException) {
+                return@withContext "ERROR: Connection refused"
+            } catch (e: java.net.UnknownHostException) {
+                return@withContext "ERROR: Network failure - unable to resolve Gemini host"
             } catch (e: Exception) {
-                return@withContext "ERROR: ${e.message}"
+                return@withContext "ERROR: ${e.message ?: "Unexpected error"}"
             }
         }
         return@withContext "ERROR: HTTP 429 Too Many Requests"
