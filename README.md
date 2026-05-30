@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
-    <img src="https://img.shields.io/badge/Latest%20Release-v1.0.0-blue?style=for-the-badge" alt="Latest Release">
+    <img src="https://img.shields.io/badge/Latest%20Release-v1.1.0-blue?style=for-the-badge" alt="Latest Release">
   </a>
   <img src="https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android" alt="Platform">
 </p>
