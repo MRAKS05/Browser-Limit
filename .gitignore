@@ -50,6 +50,9 @@ Thumbs.db
 .env
 .env.local
 
+# AI memory and local analysis cache
+.ai_memory/
+
 # Keep built APKs for distribution (explicitly allow this folder)
 !apks/
 !apks/*.apk
