@@ -56,14 +56,8 @@ Thumbs.db
 # Local release signing keystore; do not commit secret key material
 /release.keystore
 
-# Keep built APKs for distribution (explicitly allow this folder)
-!apks/
-!apks/*.apk
+# Local build outputs (untracked)
+.build_output/
 
-# Keep build output APKs in our staging folder
-!.build_output/
-!.build_output/*.apk
-
-# Allow our debug APK output folder
-!.build_output/
-!.build_output/*.apk
+# Previously used `apks/` (removed) - do not re-add
+# apks/ (deleted and replaced by .build_output/)
