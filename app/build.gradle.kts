@@ -28,12 +28,20 @@ android {
       keyAlias = "androiddebugkey"
       keyPassword = "android"
     }
+    create("releaseConfig") {
+      storeFile = file("${rootDir}/release.keystore")
+      storePassword = "android"
+      keyAlias = "releasekey"
+      keyPassword = "android"
+    }
   }
 
   buildTypes {
     release {
       isCrunchPngs = false
-      isMinifyEnabled = true
+      isMinifyEnabled = false
+      isShrinkResources = false
+      signingConfig = signingConfigs.getByName("releaseConfig")
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
     debug {

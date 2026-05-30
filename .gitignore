@@ -53,9 +53,16 @@ Thumbs.db
 # AI memory and local analysis cache
 .ai_memory/
 
+# Local release signing keystore; do not commit secret key material
+/release.keystore
+
 # Keep built APKs for distribution (explicitly allow this folder)
 !apks/
 !apks/*.apk
+
+# Keep build output APKs in our staging folder
+!.build_output/
+!.build_output/*.apk
 
 # Allow our debug APK output folder
 !.build_output/
