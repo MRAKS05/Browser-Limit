@@ -53,3 +53,7 @@ Thumbs.db
 # Keep built APKs for distribution (explicitly allow this folder)
 !apks/
 !apks/*.apk
+
+# Allow our debug APK output folder
+!.build_output/
+!.build_output/*.apk
