@@ -130,8 +130,6 @@ const config = {
         copyright: `Copyright \u00a9 ${new Date().getFullYear()} Browser Limit. Built with Docusaurus.`,
       },
       prism: {
-        theme: require('prism-react-renderer/themes/github'),
-        darkTheme: require('prism-react-renderer/themes/dracula'),
         additionalLanguages: ['kotlin', 'bash', 'json', 'xml'],
       },
     }),
