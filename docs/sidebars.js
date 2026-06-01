@@ -1,17 +1,36 @@
-// Sidebar configuration for Browser-Limit Documentation
-module.exports = {
+// @ts-check
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
   docs: [
     'index',
-    'usage',
-    'features',
+    'getting-started',
     {
       type: 'category',
-      label: 'Advanced',
+      label: 'Guides',
+      collapsed: false,
       items: [
-        'infra',
-        'api',
+        'detection',
+        'gemini',
+        'shizuku',
+        'security',
+        'exceptions',
+        'audit-log',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      collapsed: false,
+      items: [
+        'architecture',
+        'api-reference',
+        'permissions',
       ],
     },
     'faq',
+    'troubleshooting',
   ],
 };
+
+module.exports = sidebars;

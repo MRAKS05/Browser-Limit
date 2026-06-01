@@ -1,16 +1,144 @@
-/* Custom styles for BrowserLimit Docusaurus docs site */
+/* Custom styles for Browser Limit Docusaurus docs site */
 
 :root {
-  --ifm-color-primary: #316cff;
-  --ifm-color-primary-dark: #0048bb;
-  --ifm-color-primary-light: #78aaff;
+  --ifm-color-primary: #316CFF;
+  --ifm-color-primary-dark: #1A5AEE;
+  --ifm-color-primary-darker: #0D4FDD;
+  --ifm-color-primary-darkest: #003CB5;
+  --ifm-color-primary-light: #4D80FF;
+  --ifm-color-primary-lighter: #5E8CFF;
+  --ifm-color-primary-lightest: #85A8FF;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(49, 108, 255, 0.1);
 }
 
-body {
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+[data-theme='dark'] {
+  --ifm-color-primary: #4D80FF;
+  --ifm-color-primary-dark: #316CFF;
+  --ifm-color-primary-darker: #1A5AEE;
+  --ifm-color-primary-darkest: #003CB5;
+  --ifm-color-primary-light: #6994FF;
+  --ifm-color-primary-lighter: #759FFF;
+  --ifm-color-primary-lightest: #9DBBFF;
+  --docusaurus-highlighted-code-line-bg: rgba(77, 128, 255, 0.1);
 }
 
 .navbar__title {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
-/* Add additional styles as needed */
+
+.navbar__logo img {
+  height: 32px;
+}
+
+/* Admonition styles */
+.admonition {
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+/* Table styles */
+table {
+  display: table;
+  width: 100%;
+}
+
+table th {
+  font-weight: 600;
+  background: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] table th {
+  background: rgba(77, 128, 255, 0.15);
+}
+
+/* Code block improvements */
+code {
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+pre code {
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+/* Mermaid diagram container */
+.mermaid {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+/* Footer styles */
+.footer__title {
+  font-weight: 600;
+}
+
+/* Badge styles */
+.badge {
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+
+/* Heading anchor link styling */
+.header-link {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-left: 0.5em;
+}
+
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link {
+  opacity: 0.6;
+}
+
+.header-link:hover {
+  opacity: 1;
+}
+
+/* Card-like styling for feature items */
+.markdown h3 + ul {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  margin-top: 0.5em;
+}
+
+/* Local search styles */
+.navbar__search-input {
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  min-width: 200px;
+}
+
+.navbar__search-input:focus {
+  min-width: 280px;
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-light);
+}
+
+/* Search modal styles */
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  font-weight: 600;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory {
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Highlighted search terms */
+mark {
+  background: rgba(49, 108, 255, 0.2);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 2px;
+}
