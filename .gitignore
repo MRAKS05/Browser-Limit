@@ -55,6 +55,7 @@ node_modules/
 
 # AI memory and local analysis cache
 .ai-memory/
+.open-mem/
 
 # opencode configuration
 .opencode/
