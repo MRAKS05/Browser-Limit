@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/readable-stream/GOVERNANCE",
+  "title": "GOVERNANCE",
+  "description": "Streams Working Group",
+  "source": "@site/node_modules/readable-stream/GOVERNANCE.md",
+  "sourceDirName": "node_modules/readable-stream",
+  "slug": "/node_modules/readable-stream/GOVERNANCE",
+  "permalink": "/node_modules/readable-stream/GOVERNANCE",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

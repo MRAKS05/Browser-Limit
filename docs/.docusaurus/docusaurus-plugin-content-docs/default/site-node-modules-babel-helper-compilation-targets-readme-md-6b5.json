@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-compilation-targets/README",
+  "title": "@babel/helper-compilation-targets",
+  "description": "Helper functions on Babel compilation targets",
+  "source": "@site/node_modules/@babel/helper-compilation-targets/README.md",
+  "sourceDirName": "node_modules/@babel/helper-compilation-targets",
+  "slug": "/node_modules/@babel/helper-compilation-targets/",
+  "permalink": "/node_modules/@babel/helper-compilation-targets/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

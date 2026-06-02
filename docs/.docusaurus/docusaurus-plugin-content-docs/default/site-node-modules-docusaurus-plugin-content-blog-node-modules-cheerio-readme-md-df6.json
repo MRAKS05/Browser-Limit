@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/plugin-content-blog/node_modules/cheerio/Readme",
+  "title": "Readme",
+  "description": "cheerio",
+  "source": "@site/node_modules/@docusaurus/plugin-content-blog/node_modules/cheerio/Readme.md",
+  "sourceDirName": "node_modules/@docusaurus/plugin-content-blog/node_modules/cheerio",
+  "slug": "/node_modules/@docusaurus/plugin-content-blog/node_modules/cheerio/",
+  "permalink": "/node_modules/@docusaurus/plugin-content-blog/node_modules/cheerio/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

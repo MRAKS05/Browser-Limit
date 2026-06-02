@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/html-tags/readme",
+  "title": "html-tags",
+  "description": "List of standard HTML tags",
+  "source": "@site/node_modules/html-tags/readme.md",
+  "sourceDirName": "node_modules/html-tags",
+  "slug": "/node_modules/html-tags/",
+  "permalink": "/node_modules/html-tags/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

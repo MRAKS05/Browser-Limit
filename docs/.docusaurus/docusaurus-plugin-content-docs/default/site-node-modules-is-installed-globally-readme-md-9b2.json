@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-installed-globally/readme",
+  "title": "is-installed-globally",
+  "description": "Check if your package was installed globally",
+  "source": "@site/node_modules/is-installed-globally/readme.md",
+  "sourceDirName": "node_modules/is-installed-globally",
+  "slug": "/node_modules/is-installed-globally/",
+  "permalink": "/node_modules/is-installed-globally/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

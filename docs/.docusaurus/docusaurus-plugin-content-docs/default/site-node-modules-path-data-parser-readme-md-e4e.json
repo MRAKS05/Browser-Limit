@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/path-data-parser/README",
+  "title": "path-data-parser",
+  "description": "I know there are a bunch of SVG path parsers out there, but here's one that I have been using for a few years now. It's small, tree-shakable and provides four simple functions that I have needed in several graphics projects.",
+  "source": "@site/node_modules/path-data-parser/README.md",
+  "sourceDirName": "node_modules/path-data-parser",
+  "slug": "/node_modules/path-data-parser/",
+  "permalink": "/node_modules/path-data-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "architecture",
+  "title": "Architecture",
+  "description": "Browser Limit follows a single-module architecture with Jetpack Compose for the UI layer, Room for persistence, and Shizuku for system-level operations. The app uses a reactive data flow pattern with SharedPreferences wrapped in MutableStateFlow.",
+  "source": "@site/architecture.md",
+  "sourceDirName": ".",
+  "slug": "/architecture",
+  "permalink": "/architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "architecture",
+    "title": "Architecture",
+    "sidebar_label": "Architecture"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audit Log",
+    "permalink": "/audit-log"
+  },
+  "next": {
+    "title": "API Reference",
+    "permalink": "/api-reference"
+  }
+}

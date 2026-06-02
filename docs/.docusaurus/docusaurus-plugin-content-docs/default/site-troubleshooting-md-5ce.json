@@ -1,0 +1,23 @@
+{
+  "id": "troubleshooting",
+  "title": "Troubleshooting",
+  "description": "This page covers common issues and their solutions when using Browser Limit.",
+  "source": "@site/troubleshooting.md",
+  "sourceDirName": ".",
+  "slug": "/troubleshooting",
+  "permalink": "/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "troubleshooting",
+    "title": "Troubleshooting",
+    "sidebar_label": "Troubleshooting"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/faq"
+  }
+}

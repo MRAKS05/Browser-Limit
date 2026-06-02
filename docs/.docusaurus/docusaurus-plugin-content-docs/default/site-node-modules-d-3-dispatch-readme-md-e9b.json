@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-dispatch/README",
+  "title": "d3-dispatch",
+  "description": "Dispatching is a convenient mechanism for separating concerns with loosely-coupled code: register named callbacks and then call them with arbitrary arguments. A variety of D3 components, such as d3-drag, use this mechanism to emit events to listeners. Think of this like Node’s EventEmitter, except every listener has a well-defined name so it’s easy to remove or replace them.",
+  "source": "@site/node_modules/d3-dispatch/README.md",
+  "sourceDirName": "node_modules/d3-dispatch",
+  "slug": "/node_modules/d3-dispatch/",
+  "permalink": "/node_modules/d3-dispatch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

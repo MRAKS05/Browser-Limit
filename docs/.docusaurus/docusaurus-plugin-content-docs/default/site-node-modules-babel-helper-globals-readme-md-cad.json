@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-globals/README",
+  "title": "@babel/helper-globals",
+  "description": "A collection of JavaScript globals for Babel internal usage",
+  "source": "@site/node_modules/@babel/helper-globals/README.md",
+  "sourceDirName": "node_modules/@babel/helper-globals",
+  "slug": "/node_modules/@babel/helper-globals/",
+  "permalink": "/node_modules/@babel/helper-globals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

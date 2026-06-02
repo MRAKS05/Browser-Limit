@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/preset-react/README",
+  "title": "@babel/preset-react",
+  "description": "Babel preset for all React plugins.",
+  "source": "@site/node_modules/@babel/preset-react/README.md",
+  "sourceDirName": "node_modules/@babel/preset-react",
+  "slug": "/node_modules/@babel/preset-react/",
+  "permalink": "/node_modules/@babel/preset-react/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "audit-log",
+  "title": "Audit Log System",
+  "description": "Browser Limit maintains a complete audit trail of every detection decision, AI classification, and uninstallation attempt. The log is stored in a local Room database and can be viewed, searched, and exported.",
+  "source": "@site/audit-log.md",
+  "sourceDirName": ".",
+  "slug": "/audit-log",
+  "permalink": "/audit-log",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "audit-log",
+    "title": "Audit Log System",
+    "sidebar_label": "Audit Log"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Exceptions",
+    "permalink": "/exceptions"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/architecture"
+  }
+}

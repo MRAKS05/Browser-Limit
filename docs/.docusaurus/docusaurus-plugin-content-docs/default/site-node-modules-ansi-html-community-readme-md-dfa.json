@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ansi-html-community/README",
+  "title": "ansi-html [![NPM version](https://badge.fury.io/js/ansi-html-community.svg)](http://badge.fury.io/js/ansi-html) [![Build Status](https://app.travis-ci.com/mahdyar/ansi-html-community.svg?branch=master)](https://app.travis-ci.com/mahdyar/ansi-html-community)",
+  "description": "An elegant lib that converts the chalked (ANSI) text to HTML.",
+  "source": "@site/node_modules/ansi-html-community/README.md",
+  "sourceDirName": "node_modules/ansi-html-community",
+  "slug": "/node_modules/ansi-html-community/",
+  "permalink": "/node_modules/ansi-html-community/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

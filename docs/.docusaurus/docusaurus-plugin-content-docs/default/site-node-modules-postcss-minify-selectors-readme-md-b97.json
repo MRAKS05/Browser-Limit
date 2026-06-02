@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-minify-selectors/README",
+  "title": "[postcss][postcss]-minify-selectors",
+  "description": "Minify selectors with PostCSS.",
+  "source": "@site/node_modules/postcss-minify-selectors/README.md",
+  "sourceDirName": "node_modules/postcss-minify-selectors",
+  "slug": "/node_modules/postcss-minify-selectors/",
+  "permalink": "/node_modules/postcss-minify-selectors/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

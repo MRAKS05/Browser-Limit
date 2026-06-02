@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/react-router/README",
+  "title": "react-router",
+  "description": "Declarative routing for React.",
+  "source": "@site/node_modules/react-router/README.md",
+  "sourceDirName": "node_modules/react-router",
+  "slug": "/node_modules/react-router/",
+  "permalink": "/node_modules/react-router/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

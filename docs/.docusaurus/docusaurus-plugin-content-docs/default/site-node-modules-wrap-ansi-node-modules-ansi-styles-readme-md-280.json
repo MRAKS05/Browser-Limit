@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/wrap-ansi/node_modules/ansi-styles/readme",
+  "title": "ansi-styles",
+  "description": "ANSI escape codes for styling strings in the terminal",
+  "source": "@site/node_modules/wrap-ansi/node_modules/ansi-styles/readme.md",
+  "sourceDirName": "node_modules/wrap-ansi/node_modules/ansi-styles",
+  "slug": "/node_modules/wrap-ansi/node_modules/ansi-styles/",
+  "permalink": "/node_modules/wrap-ansi/node_modules/ansi-styles/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

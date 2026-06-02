@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mdn-data/README",
+  "title": "MDN data",
+  "description": "Note: We are in the process of deprecating the mdn/data package in favor of w3c/webref. If this could present a problem to your project, please contact us via our GitHub discussions. Thank you.",
+  "source": "@site/node_modules/mdn-data/README.md",
+  "sourceDirName": "node_modules/mdn-data",
+  "slug": "/node_modules/mdn-data/",
+  "permalink": "/node_modules/mdn-data/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

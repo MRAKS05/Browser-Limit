@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/traverse/README",
+  "title": "@babel/traverse",
+  "description": "The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes",
+  "source": "@site/node_modules/@babel/traverse/README.md",
+  "sourceDirName": "node_modules/@babel/traverse",
+  "slug": "/node_modules/@babel/traverse/",
+  "permalink": "/node_modules/@babel/traverse/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

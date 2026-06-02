@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/utilities/README",
+  "title": "Utilities",
+  "description": "Helpers that we use in many PostCSS plugins.",
+  "source": "@site/node_modules/@csstools/utilities/README.md",
+  "sourceDirName": "node_modules/@csstools/utilities",
+  "slug": "/node_modules/@csstools/utilities/",
+  "permalink": "/node_modules/@csstools/utilities/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

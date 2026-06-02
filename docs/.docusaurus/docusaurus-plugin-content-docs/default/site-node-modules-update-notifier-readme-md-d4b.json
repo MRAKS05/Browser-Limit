@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/update-notifier/readme",
+  "title": "update-notifier",
+  "description": "Update notifications for your CLI app",
+  "source": "@site/node_modules/update-notifier/readme.md",
+  "sourceDirName": "node_modules/update-notifier",
+  "slug": "/node_modules/update-notifier/",
+  "permalink": "/node_modules/update-notifier/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

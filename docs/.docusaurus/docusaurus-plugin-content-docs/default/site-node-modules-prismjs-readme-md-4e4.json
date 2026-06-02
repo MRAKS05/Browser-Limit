@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/prismjs/README",
+  "title": "[Prism](https://prismjs.com/)",
+  "description": "Build Status",
+  "source": "@site/node_modules/prismjs/README.md",
+  "sourceDirName": "node_modules/prismjs",
+  "slug": "/node_modules/prismjs/",
+  "permalink": "/node_modules/prismjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

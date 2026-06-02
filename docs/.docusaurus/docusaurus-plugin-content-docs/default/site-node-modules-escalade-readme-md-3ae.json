@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/escalade/readme",
+  "title": "escalade [![CI](https://github.com/lukeed/escalade/workflows/CI/badge.svg)](https://github.com/lukeed/escalade/actions) [![licenses](https://licenses.dev/b/npm/escalade)](https://licenses.dev/npm/escalade) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/escalade)](https://codecov.io/gh/lukeed/escalade)",
+  "description": "A tiny (183B to 210B) and fast utility to ascend parent directories",
+  "source": "@site/node_modules/escalade/readme.md",
+  "sourceDirName": "node_modules/escalade",
+  "slug": "/node_modules/escalade/",
+  "permalink": "/node_modules/escalade/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

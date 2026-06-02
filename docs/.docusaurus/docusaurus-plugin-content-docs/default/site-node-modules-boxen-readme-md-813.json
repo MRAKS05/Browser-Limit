@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/boxen/readme",
+  "title": "boxen",
+  "description": "Create boxes in the terminal",
+  "source": "@site/node_modules/boxen/readme.md",
+  "sourceDirName": "node_modules/boxen",
+  "slug": "/node_modules/boxen/",
+  "permalink": "/node_modules/boxen/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

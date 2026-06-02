@@ -1,0 +1,27 @@
+{
+  "id": "permissions",
+  "title": "Permissions",
+  "description": "Browser Limit requests several Android permissions to function correctly. This page explains each permission, why it is needed, and whether it is required or optional.",
+  "source": "@site/permissions.md",
+  "sourceDirName": ".",
+  "slug": "/permissions",
+  "permalink": "/permissions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "permissions",
+    "title": "Permissions",
+    "sidebar_label": "Permissions"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "API Reference",
+    "permalink": "/api-reference"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/faq"
+  }
+}

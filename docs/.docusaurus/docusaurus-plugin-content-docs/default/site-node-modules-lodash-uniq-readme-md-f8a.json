@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/lodash.uniq/README",
+  "title": "lodash.uniq v4.5.0",
+  "description": "The lodash method _.uniq exported as a Node.js module.",
+  "source": "@site/node_modules/lodash.uniq/README.md",
+  "sourceDirName": "node_modules/lodash.uniq",
+  "slug": "/node_modules/lodash.uniq/",
+  "permalink": "/node_modules/lodash.uniq/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/tree-dump/README",
+  "title": "tree-dump",
+  "description": "Prints a tree structure to the console. Can print a binary tree or a tree with any number of children.",
+  "source": "@site/node_modules/tree-dump/README.md",
+  "sourceDirName": "node_modules/tree-dump",
+  "slug": "/node_modules/tree-dump/",
+  "permalink": "/node_modules/tree-dump/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

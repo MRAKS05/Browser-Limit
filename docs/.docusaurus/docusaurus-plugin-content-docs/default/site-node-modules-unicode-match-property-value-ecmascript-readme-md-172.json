@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/unicode-match-property-value-ecmascript/README",
+  "title": "unicode-match-property-value-ecmascript [![unicode-match-property-value-ecmascript on npm](https://img.shields.io/npm/v/unicode-match-property-value-ecmascript)](https://www.npmjs.com/package/unicode-match-property-value-ecmascript)",
+  "description": "unicode-match-property-value-ecmascript matches a given Unicode property value or property value alias to its canonical property value without applying loose matching, per the algorithm used for RegExp Unicode property escapes in ECMAScript. Consider it a strict alternative to loose matching.",
+  "source": "@site/node_modules/unicode-match-property-value-ecmascript/README.md",
+  "sourceDirName": "node_modules/unicode-match-property-value-ecmascript",
+  "slug": "/node_modules/unicode-match-property-value-ecmascript/",
+  "permalink": "/node_modules/unicode-match-property-value-ecmascript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

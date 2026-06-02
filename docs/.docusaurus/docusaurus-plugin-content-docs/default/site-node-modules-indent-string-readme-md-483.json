@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/indent-string/readme",
+  "title": "indent-string [![Build Status](https://travis-ci.org/sindresorhus/indent-string.svg?branch=master)](https://travis-ci.org/sindresorhus/indent-string)",
+  "description": "Indent each line in a string",
+  "source": "@site/node_modules/indent-string/readme.md",
+  "sourceDirName": "node_modules/indent-string",
+  "slug": "/node_modules/indent-string/",
+  "permalink": "/node_modules/indent-string/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

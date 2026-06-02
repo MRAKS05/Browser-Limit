@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/preset-typescript/README",
+  "title": "@babel/preset-typescript",
+  "description": "Babel preset for TypeScript.",
+  "source": "@site/node_modules/@babel/preset-typescript/README.md",
+  "sourceDirName": "node_modules/@babel/preset-typescript",
+  "slug": "/node_modules/@babel/preset-typescript/",
+  "permalink": "/node_modules/@babel/preset-typescript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/jest-util/Readme",
+  "title": "@jest/utils",
+  "description": "This packages is a collection of utilities and helper functions",
+  "source": "@site/node_modules/jest-util/Readme.md",
+  "sourceDirName": "node_modules/jest-util",
+  "slug": "/node_modules/jest-util/",
+  "permalink": "/node_modules/jest-util/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

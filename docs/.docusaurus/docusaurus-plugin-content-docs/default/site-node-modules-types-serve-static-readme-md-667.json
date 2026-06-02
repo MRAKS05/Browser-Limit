@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/serve-static/README",
+  "title": "Installation",
+  "description": "npm install --save @types/serve-static",
+  "source": "@site/node_modules/@types/serve-static/README.md",
+  "sourceDirName": "node_modules/@types/serve-static",
+  "slug": "/node_modules/@types/serve-static/",
+  "permalink": "/node_modules/@types/serve-static/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-modules-systemjs/README",
+  "title": "@babel/plugin-transform-modules-systemjs",
+  "description": "This plugin transforms ES2015 modules to SystemJS",
+  "source": "@site/node_modules/@babel/plugin-transform-modules-systemjs/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-modules-systemjs",
+  "slug": "/node_modules/@babel/plugin-transform-modules-systemjs/",
+  "permalink": "/node_modules/@babel/plugin-transform-modules-systemjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

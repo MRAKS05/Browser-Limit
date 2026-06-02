@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/js-tokens/README",
+  "title": "Overview [![Build Status](https://travis-ci.org/lydell/js-tokens.svg?branch=master)](https://travis-ci.org/lydell/js-tokens)",
+  "description": "A regex that tokenizes JavaScript.",
+  "source": "@site/node_modules/js-tokens/README.md",
+  "sourceDirName": "node_modules/js-tokens",
+  "slug": "/node_modules/js-tokens/",
+  "permalink": "/node_modules/js-tokens/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

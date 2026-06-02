@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-module-imports/README",
+  "title": "@babel/helper-module-imports",
+  "description": "Babel helper functions for inserting module loads",
+  "source": "@site/node_modules/@babel/helper-module-imports/README.md",
+  "sourceDirName": "node_modules/@babel/helper-module-imports",
+  "slug": "/node_modules/@babel/helper-module-imports/",
+  "permalink": "/node_modules/@babel/helper-module-imports/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

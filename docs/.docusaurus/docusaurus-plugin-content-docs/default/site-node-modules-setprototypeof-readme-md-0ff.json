@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/setprototypeof/README",
+  "title": "Polyfill for Object.setPrototypeOf",
+  "description": "NPM Version",
+  "source": "@site/node_modules/setprototypeof/README.md",
+  "sourceDirName": "node_modules/setprototypeof",
+  "slug": "/node_modules/setprototypeof/",
+  "permalink": "/node_modules/setprototypeof/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

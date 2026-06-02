@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-spread/README",
+  "title": "@babel/plugin-transform-spread",
+  "description": "Compile ES2015 spread to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-spread/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-spread",
+  "slug": "/node_modules/@babel/plugin-transform-spread/",
+  "permalink": "/node_modules/@babel/plugin-transform-spread/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-oklab-function/README",
+  "title": "PostCSS OKLab Function [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS OKLab Function] lets you use oklab and oklch color functions in",
+  "source": "@site/node_modules/@csstools/postcss-oklab-function/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-oklab-function",
+  "slug": "/node_modules/@csstools/postcss-oklab-function/",
+  "permalink": "/node_modules/@csstools/postcss-oklab-function/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

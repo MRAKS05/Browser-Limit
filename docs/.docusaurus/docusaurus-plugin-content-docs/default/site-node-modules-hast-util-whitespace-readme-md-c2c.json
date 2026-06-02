@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/hast-util-whitespace/readme",
+  "title": "hast-util-whitespace",
+  "description": "Build",
+  "source": "@site/node_modules/hast-util-whitespace/readme.md",
+  "sourceDirName": "node_modules/hast-util-whitespace",
+  "slug": "/node_modules/hast-util-whitespace/",
+  "permalink": "/node_modules/hast-util-whitespace/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

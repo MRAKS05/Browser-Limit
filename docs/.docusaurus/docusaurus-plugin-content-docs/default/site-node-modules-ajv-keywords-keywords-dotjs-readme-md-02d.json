@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ajv-keywords/keywords/dotjs/README",
+  "title": "README",
+  "description": "These files are compiled dot templates from dot folder.",
+  "source": "@site/node_modules/ajv-keywords/keywords/dotjs/README.md",
+  "sourceDirName": "node_modules/ajv-keywords/keywords/dotjs",
+  "slug": "/node_modules/ajv-keywords/keywords/dotjs/",
+  "permalink": "/node_modules/ajv-keywords/keywords/dotjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

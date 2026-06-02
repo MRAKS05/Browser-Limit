@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@slorber/remark-comment/README",
+  "title": "remark-comment",
+  "description": "Parse HTML style comments as a different node type so it can be ignored during",
+  "source": "@site/node_modules/@slorber/remark-comment/README.md",
+  "sourceDirName": "node_modules/@slorber/remark-comment",
+  "slug": "/node_modules/@slorber/remark-comment/",
+  "permalink": "/node_modules/@slorber/remark-comment/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-selector-parser/CHANGELOG",
+  "title": "7.1.1",
+  "description": "- perf: replace startsWith with strict equality (#308)",
+  "source": "@site/node_modules/postcss-selector-parser/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-selector-parser",
+  "slug": "/node_modules/postcss-selector-parser/CHANGELOG",
+  "permalink": "/node_modules/postcss-selector-parser/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

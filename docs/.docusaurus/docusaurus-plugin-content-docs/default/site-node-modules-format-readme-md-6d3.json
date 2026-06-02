@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/format/Readme",
+  "title": "format",
+  "description": "printf, sprintf, and vsprintf for JavaScript",
+  "source": "@site/node_modules/format/Readme.md",
+  "sourceDirName": "node_modules/format",
+  "slug": "/node_modules/format/",
+  "permalink": "/node_modules/format/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

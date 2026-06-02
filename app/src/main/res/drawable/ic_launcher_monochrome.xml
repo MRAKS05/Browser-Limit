@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group>
+        <!-- Outer circle outline -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 54,54 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0" />
+            
+        <!-- Straight tangency lines defining the swirl -->
+        <!-- Red tangent -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 54,38 L 81.713,38" />
+            
+        <!-- Yellow tangent -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 67.856,62 L 54,86" />
+            
+        <!-- Green tangent -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 40.144,62 L 26.287,38" />
+
+        <!-- Inner circle outline -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="5"
+            android:pathData="M 54,54 m -16,0 a 16,16 0 1,1 32,0 a 16,16 0 1,1 -32,0" />
+            
+        <!-- Ban overlay round cross -->
+        <!-- Radius of circle is 38 -->
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="6"
+            android:pathData="M 54,54 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+        <path
+            android:strokeColor="#000000"
+            android:strokeWidth="6"
+            android:strokeLineCap="round"
+            android:pathData="M 27.13,27.13 L 80.87,80.87" />
+    </group>
+</vector>

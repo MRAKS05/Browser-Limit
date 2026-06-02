@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/web-worker/README",
+  "title": "README",
+  "description": "web-worker",
+  "source": "@site/node_modules/web-worker/README.md",
+  "sourceDirName": "node_modules/web-worker",
+  "slug": "/node_modules/web-worker/",
+  "permalink": "/node_modules/web-worker/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

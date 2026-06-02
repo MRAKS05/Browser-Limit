@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/vfile/readme",
+  "title": "readme",
+  "description": "Build",
+  "source": "@site/node_modules/vfile/readme.md",
+  "sourceDirName": "node_modules/vfile",
+  "slug": "/node_modules/vfile/",
+  "permalink": "/node_modules/vfile/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

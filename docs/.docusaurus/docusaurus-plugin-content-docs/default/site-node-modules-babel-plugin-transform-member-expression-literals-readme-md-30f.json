@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-member-expression-literals/README",
+  "title": "@babel/plugin-transform-member-expression-literals",
+  "description": "Ensure that reserved words are quoted in property accesses",
+  "source": "@site/node_modules/@babel/plugin-transform-member-expression-literals/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-member-expression-literals",
+  "slug": "/node_modules/@babel/plugin-transform-member-expression-literals/",
+  "permalink": "/node_modules/@babel/plugin-transform-member-expression-literals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

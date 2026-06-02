@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/type-fest/readme",
+  "title": "readme",
+  "description": "A collection of essential TypeScript types",
+  "source": "@site/node_modules/type-fest/readme.md",
+  "sourceDirName": "node_modules/type-fest",
+  "slug": "/node_modules/type-fest/",
+  "permalink": "/node_modules/type-fest/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

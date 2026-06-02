@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-discard-unused/README",
+  "title": "[postcss][postcss]-discard-unused",
+  "description": "Discard unused counter styles, keyframes and fonts.",
+  "source": "@site/node_modules/postcss-discard-unused/README.md",
+  "sourceDirName": "node_modules/postcss-discard-unused",
+  "slug": "/node_modules/postcss-discard-unused/",
+  "permalink": "/node_modules/postcss-discard-unused/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

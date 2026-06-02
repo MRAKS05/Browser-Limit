@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-sankey/node_modules/d3-array/README",
+  "title": "d3-array",
+  "description": "Data in JavaScript is often represented by an iterable (such as an array, set or generator), and so iterable manipulation is a common task when analyzing or visualizing data. For example, you might take a contiguous slice (subset) of an array, filter an array using a predicate function, or map an array to a parallel set of values using a transform function. Before looking at the methods that d3-array provides, familiarize yourself with the powerful array methods built-in to JavaScript.",
+  "source": "@site/node_modules/d3-sankey/node_modules/d3-array/README.md",
+  "sourceDirName": "node_modules/d3-sankey/node_modules/d3-array",
+  "slug": "/node_modules/d3-sankey/node_modules/d3-array/",
+  "permalink": "/node_modules/d3-sankey/node_modules/d3-array/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/thunky/README",
+  "title": "thunky",
+  "description": "Delay the evaluation of a paramless async function and cache the result (see thunk).",
+  "source": "@site/node_modules/thunky/README.md",
+  "sourceDirName": "node_modules/thunky",
+  "slug": "/node_modules/thunky/",
+  "permalink": "/node_modules/thunky/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

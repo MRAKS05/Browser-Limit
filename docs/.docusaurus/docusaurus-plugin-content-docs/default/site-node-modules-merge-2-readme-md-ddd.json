@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/merge2/README",
+  "title": "merge2",
+  "description": "Merge multiple streams into one stream in sequence or parallel.",
+  "source": "@site/node_modules/merge2/README.md",
+  "sourceDirName": "node_modules/merge2",
+  "slug": "/node_modules/merge2/",
+  "permalink": "/node_modules/merge2/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

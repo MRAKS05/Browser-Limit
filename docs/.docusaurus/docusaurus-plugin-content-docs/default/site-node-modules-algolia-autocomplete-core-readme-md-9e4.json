@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@algolia/autocomplete-core/README",
+  "title": "@algolia/autocomplete-core",
+  "description": "The autocomplete-core package is the foundation of Autocomplete. It exposes primitives to build an autocomplete experience.",
+  "source": "@site/node_modules/@algolia/autocomplete-core/README.md",
+  "sourceDirName": "node_modules/@algolia/autocomplete-core",
+  "slug": "/node_modules/@algolia/autocomplete-core/",
+  "permalink": "/node_modules/@algolia/autocomplete-core/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-colormin/README",
+  "title": "[postcss][postcss]-colormin",
+  "description": "Minify colors in your CSS files with PostCSS.",
+  "source": "@site/node_modules/postcss-colormin/README.md",
+  "sourceDirName": "node_modules/postcss-colormin",
+  "slug": "/node_modules/postcss-colormin/",
+  "permalink": "/node_modules/postcss-colormin/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

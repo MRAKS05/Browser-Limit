@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-path/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-path",
+  "source": "@site/node_modules/@types/d3-path/README.md",
+  "sourceDirName": "node_modules/@types/d3-path",
+  "slug": "/node_modules/@types/d3-path/",
+  "permalink": "/node_modules/@types/d3-path/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

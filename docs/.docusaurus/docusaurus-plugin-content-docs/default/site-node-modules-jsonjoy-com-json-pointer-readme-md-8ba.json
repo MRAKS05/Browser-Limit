@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/json-pointer/README",
+  "title": "JSON Pointer - json-pointer",
+  "description": "Fast implementation of JSON Pointer (RFC 6901)",
+  "source": "@site/node_modules/@jsonjoy.com/json-pointer/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/json-pointer",
+  "slug": "/node_modules/@jsonjoy.com/json-pointer/",
+  "permalink": "/node_modules/@jsonjoy.com/json-pointer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

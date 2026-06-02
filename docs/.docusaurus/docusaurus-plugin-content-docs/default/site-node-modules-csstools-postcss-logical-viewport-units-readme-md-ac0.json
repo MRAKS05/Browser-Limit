@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-logical-viewport-units/README",
+  "title": "PostCSS Logical Viewport Units [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install @csstools/postcss-logical-viewport-units --save-dev",
+  "source": "@site/node_modules/@csstools/postcss-logical-viewport-units/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-logical-viewport-units",
+  "slug": "/node_modules/@csstools/postcss-logical-viewport-units/",
+  "permalink": "/node_modules/@csstools/postcss-logical-viewport-units/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

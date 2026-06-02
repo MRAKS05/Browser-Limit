@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-arrayish/README",
+  "title": "node-is-arrayish [![Travis-CI.org Build Status](https://img.shields.io/travis/Qix-/node-is-arrayish.svg?style=flat-square)](https://travis-ci.org/Qix-/node-is-arrayish) [![Coveralls.io Coverage Rating](https://img.shields.io/coveralls/Qix-/node-is-arrayish.svg?style=flat-square)](https://coveralls.io/r/Qix-/node-is-arrayish)",
+  "description": "Determines if an object can be used like an Array",
+  "source": "@site/node_modules/is-arrayish/README.md",
+  "sourceDirName": "node_modules/is-arrayish",
+  "slug": "/node_modules/is-arrayish/",
+  "permalink": "/node_modules/is-arrayish/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

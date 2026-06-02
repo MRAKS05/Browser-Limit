@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-time-format/README",
+  "title": "d3-time-format",
+  "description": "This module provides a JavaScript implementation of the venerable strptime and strftime functions from the C standard library, and can be used to parse or format dates in a variety of locale-specific representations. To format a date, create a formatter from a specifier (a string with the desired format directives, indicated by %); then pass a date to the formatter, which returns a string. For example, to convert the current date to a human-readable string:",
+  "source": "@site/node_modules/d3-time-format/README.md",
+  "sourceDirName": "node_modules/d3-time-format",
+  "slug": "/node_modules/d3-time-format/",
+  "permalink": "/node_modules/d3-time-format/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

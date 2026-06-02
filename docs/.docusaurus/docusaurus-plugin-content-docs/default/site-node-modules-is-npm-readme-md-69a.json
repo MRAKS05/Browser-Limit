@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-npm/readme",
+  "title": "is-npm",
+  "description": "Check if your code is running as an npm, yarn, pnpm, or bun script",
+  "source": "@site/node_modules/is-npm/readme.md",
+  "sourceDirName": "node_modules/is-npm",
+  "slug": "/node_modules/is-npm/",
+  "permalink": "/node_modules/is-npm/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

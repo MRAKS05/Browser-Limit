@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/demo/fsa-to-node-sync-tests/README",
+  "title": "Synchronous fs in browser",
+  "description": "This demo executes tests of synchronous Node.js API built on top of File",
+  "source": "@site/node_modules/memfs/demo/fsa-to-node-sync-tests/README.md",
+  "sourceDirName": "node_modules/memfs/demo/fsa-to-node-sync-tests",
+  "slug": "/node_modules/memfs/demo/fsa-to-node-sync-tests/",
+  "permalink": "/node_modules/memfs/demo/fsa-to-node-sync-tests/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

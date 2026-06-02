@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/katex/contrib/auto-render/README",
+  "title": "Auto-render extension",
+  "description": "This is an extension to automatically render all of the math inside of text. It",
+  "source": "@site/node_modules/katex/contrib/auto-render/README.md",
+  "sourceDirName": "node_modules/katex/contrib/auto-render",
+  "slug": "/node_modules/katex/contrib/auto-render/",
+  "permalink": "/node_modules/katex/contrib/auto-render/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/utils/README",
+  "title": "@docusaurus/utils",
+  "description": "Node utility functions for Docusaurus packages.",
+  "source": "@site/node_modules/@docusaurus/utils/README.md",
+  "sourceDirName": "node_modules/@docusaurus/utils",
+  "slug": "/node_modules/@docusaurus/utils/",
+  "permalink": "/node_modules/@docusaurus/utils/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

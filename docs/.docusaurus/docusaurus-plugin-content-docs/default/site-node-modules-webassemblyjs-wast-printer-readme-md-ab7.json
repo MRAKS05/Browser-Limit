@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@webassemblyjs/wast-printer/README",
+  "title": "@webassemblyjs/wast-parser",
+  "description": "WebAssembly text format printer",
+  "source": "@site/node_modules/@webassemblyjs/wast-printer/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/wast-printer",
+  "slug": "/node_modules/@webassemblyjs/wast-printer/",
+  "permalink": "/node_modules/@webassemblyjs/wast-printer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

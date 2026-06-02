@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/astring/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file. See standard-version for commit guidelines.",
+  "source": "@site/node_modules/astring/CHANGELOG.md",
+  "sourceDirName": "node_modules/astring",
+  "slug": "/node_modules/astring/CHANGELOG",
+  "permalink": "/node_modules/astring/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

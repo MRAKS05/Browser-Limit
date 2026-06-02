@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/minimatch/README",
+  "title": "minimatch",
+  "description": "A minimal matching utility.",
+  "source": "@site/node_modules/minimatch/README.md",
+  "sourceDirName": "node_modules/minimatch",
+  "slug": "/node_modules/minimatch/",
+  "permalink": "/node_modules/minimatch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

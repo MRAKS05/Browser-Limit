@@ -1,0 +1,27 @@
+{
+  "id": "shizuku",
+  "title": "Shizuku Integration",
+  "description": "Browser Limit uses the Shizuku API to perform rootless package uninstallation. Shizuku provides ADB-level permissions without requiring device root, making it the ideal solution for automated app removal.",
+  "source": "@site/shizuku.md",
+  "sourceDirName": ".",
+  "slug": "/shizuku",
+  "permalink": "/shizuku",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "shizuku",
+    "title": "Shizuku Integration",
+    "sidebar_label": "Shizuku"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Gemini AI",
+    "permalink": "/gemini"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/security"
+  }
+}

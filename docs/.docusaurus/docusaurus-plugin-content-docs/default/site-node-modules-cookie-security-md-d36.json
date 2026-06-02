@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cookie/SECURITY",
+  "title": "Security Policies and Procedures",
+  "description": "Reporting a Bug",
+  "source": "@site/node_modules/cookie/SECURITY.md",
+  "sourceDirName": "node_modules/cookie",
+  "slug": "/node_modules/cookie/SECURITY",
+  "permalink": "/node_modules/cookie/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

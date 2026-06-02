@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/opener/README",
+  "title": "It Opens Stuff",
+  "description": "That is, in your desktop environment. This will make actual windows pop up, with stuff in them:",
+  "source": "@site/node_modules/opener/README.md",
+  "sourceDirName": "node_modules/opener",
+  "slug": "/node_modules/opener/",
+  "permalink": "/node_modules/opener/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

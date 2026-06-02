@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/es-module-lexer/README",
+  "title": "ES Module Lexer",
+  "description": "Build Status",
+  "source": "@site/node_modules/es-module-lexer/README.md",
+  "sourceDirName": "node_modules/es-module-lexer",
+  "slug": "/node_modules/es-module-lexer/",
+  "permalink": "/node_modules/es-module-lexer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

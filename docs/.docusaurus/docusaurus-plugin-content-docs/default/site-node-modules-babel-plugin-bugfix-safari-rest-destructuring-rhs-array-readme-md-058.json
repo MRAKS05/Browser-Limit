@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-safari-rest-destructuring-rhs-array/README",
+  "title": "@babel/plugin-bugfix-safari-rest-destructuring-rhs-array",
+  "description": "Workaround a Safari bug where rest destructuring with an array literal on the rhs can yield incorrect results",
+  "source": "@site/node_modules/@babel/plugin-bugfix-safari-rest-destructuring-rhs-array/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-safari-rest-destructuring-rhs-array",
+  "slug": "/node_modules/@babel/plugin-bugfix-safari-rest-destructuring-rhs-array/",
+  "permalink": "/node_modules/@babel/plugin-bugfix-safari-rest-destructuring-rhs-array/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-class-properties/README",
+  "title": "@babel/plugin-transform-class-properties",
+  "description": "This plugin transforms static class properties as well as properties declared with the property initializer syntax",
+  "source": "@site/node_modules/@babel/plugin-transform-class-properties/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-class-properties",
+  "slug": "/node_modules/@babel/plugin-transform-class-properties/",
+  "permalink": "/node_modules/@babel/plugin-transform-class-properties/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

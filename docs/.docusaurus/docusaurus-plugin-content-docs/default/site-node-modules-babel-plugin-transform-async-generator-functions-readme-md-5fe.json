@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-async-generator-functions/README",
+  "title": "@babel/plugin-transform-async-generator-functions",
+  "description": "Turn async generator functions into ES2015 generators",
+  "source": "@site/node_modules/@babel/plugin-transform-async-generator-functions/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-async-generator-functions",
+  "slug": "/node_modules/@babel/plugin-transform-async-generator-functions/",
+  "permalink": "/node_modules/@babel/plugin-transform-async-generator-functions/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

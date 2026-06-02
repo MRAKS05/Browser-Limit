@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-typedarray/README",
+  "title": "is-typedarray [![locked](http://badges.github.io/stability-badges/dist/locked.svg)](http://github.com/badges/stability-badges)",
+  "description": "Detect whether or not an object is a",
+  "source": "@site/node_modules/is-typedarray/README.md",
+  "sourceDirName": "node_modules/is-typedarray",
+  "slug": "/node_modules/is-typedarray/",
+  "permalink": "/node_modules/is-typedarray/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

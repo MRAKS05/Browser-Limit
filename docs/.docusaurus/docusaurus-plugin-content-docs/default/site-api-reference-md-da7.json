@@ -1,0 +1,27 @@
+{
+  "id": "api-reference",
+  "title": "API Reference",
+  "description": "Complete class and schema documentation for the Browser Limit codebase.",
+  "source": "@site/api-reference.md",
+  "sourceDirName": ".",
+  "slug": "/api-reference",
+  "permalink": "/api-reference",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "api-reference",
+    "title": "API Reference",
+    "sidebar_label": "API Reference"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/architecture"
+  },
+  "next": {
+    "title": "Permissions",
+    "permalink": "/permissions"
+  }
+}

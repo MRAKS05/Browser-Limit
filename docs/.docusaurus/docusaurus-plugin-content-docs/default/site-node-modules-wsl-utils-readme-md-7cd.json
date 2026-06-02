@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/wsl-utils/readme",
+  "title": "wsl-utils",
+  "description": "Utilities for working with Windows Subsystem for Linux (WSL)",
+  "source": "@site/node_modules/wsl-utils/readme.md",
+  "sourceDirName": "node_modules/wsl-utils",
+  "slug": "/node_modules/wsl-utils/",
+  "permalink": "/node_modules/wsl-utils/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

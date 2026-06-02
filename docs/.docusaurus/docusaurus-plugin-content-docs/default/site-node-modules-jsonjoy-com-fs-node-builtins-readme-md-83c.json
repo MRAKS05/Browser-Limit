@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-node-builtins/README",
+  "title": "Node.js fs Dependencies",
+  "description": "Built-in Node.js standard library dependencies for fs-related packages.",
+  "source": "@site/node_modules/@jsonjoy.com/fs-node-builtins/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-node-builtins",
+  "slug": "/node_modules/@jsonjoy.com/fs-node-builtins/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-node-builtins/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/resolve-alpn/README",
+  "title": "resolve-alpn",
+  "description": "Node CI",
+  "source": "@site/node_modules/resolve-alpn/README.md",
+  "sourceDirName": "node_modules/resolve-alpn",
+  "slug": "/node_modules/resolve-alpn/",
+  "permalink": "/node_modules/resolve-alpn/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

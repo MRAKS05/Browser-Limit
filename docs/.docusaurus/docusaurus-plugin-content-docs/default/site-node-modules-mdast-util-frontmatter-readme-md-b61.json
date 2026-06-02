@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mdast-util-frontmatter/readme",
+  "title": "mdast-util-frontmatter",
+  "description": "Build",
+  "source": "@site/node_modules/mdast-util-frontmatter/readme.md",
+  "sourceDirName": "node_modules/mdast-util-frontmatter",
+  "slug": "/node_modules/mdast-util-frontmatter/",
+  "permalink": "/node_modules/mdast-util-frontmatter/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

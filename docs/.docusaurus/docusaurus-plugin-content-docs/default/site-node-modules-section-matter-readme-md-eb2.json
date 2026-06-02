@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/section-matter/README",
+  "title": "section-matter [![NPM version](https://img.shields.io/npm/v/section-matter.svg?style=flat)](https://www.npmjs.com/package/section-matter) [![NPM monthly downloads](https://img.shields.io/npm/dm/section-matter.svg?style=flat)](https://npmjs.org/package/section-matter) [![NPM total downloads](https://img.shields.io/npm/dt/section-matter.svg?style=flat)](https://npmjs.org/package/section-matter) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/section-matter.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/section-matter)",
+  "description": "Like front-matter, but supports multiple sections in a document.",
+  "source": "@site/node_modules/section-matter/README.md",
+  "sourceDirName": "node_modules/section-matter",
+  "slug": "/node_modules/section-matter/",
+  "permalink": "/node_modules/section-matter/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

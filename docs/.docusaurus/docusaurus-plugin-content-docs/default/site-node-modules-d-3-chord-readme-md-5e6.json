@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-chord/README",
+  "title": "d3-chord",
+  "description": "Visualize relationships or network flow with an aesthetically-pleasing circular layout.",
+  "source": "@site/node_modules/d3-chord/README.md",
+  "sourceDirName": "node_modules/d3-chord",
+  "slug": "/node_modules/d3-chord/",
+  "permalink": "/node_modules/d3-chord/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

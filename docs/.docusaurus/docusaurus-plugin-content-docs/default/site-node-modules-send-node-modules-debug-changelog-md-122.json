@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/send/node_modules/debug/CHANGELOG",
+  "title": "2.6.9 / 2017-09-22",
+  "description": "* remove ReDoS regexp in %o formatter (#504)",
+  "source": "@site/node_modules/send/node_modules/debug/CHANGELOG.md",
+  "sourceDirName": "node_modules/send/node_modules/debug",
+  "slug": "/node_modules/send/node_modules/debug/CHANGELOG",
+  "permalink": "/node_modules/send/node_modules/debug/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

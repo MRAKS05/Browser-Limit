@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-optimise-call-expression/README",
+  "title": "@babel/helper-optimise-call-expression",
+  "description": "Helper function to optimise call expression",
+  "source": "@site/node_modules/@babel/helper-optimise-call-expression/README.md",
+  "sourceDirName": "node_modules/@babel/helper-optimise-call-expression",
+  "slug": "/node_modules/@babel/helper-optimise-call-expression/",
+  "permalink": "/node_modules/@babel/helper-optimise-call-expression/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

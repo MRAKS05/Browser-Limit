@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/queue-microtask/README",
+  "title": "queue-microtask [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+  "description": "[ci-image]//img.shields.io/github/workflow/status/feross/queue-microtask/ci/master",
+  "source": "@site/node_modules/queue-microtask/README.md",
+  "sourceDirName": "node_modules/queue-microtask",
+  "slug": "/node_modules/queue-microtask/",
+  "permalink": "/node_modules/queue-microtask/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

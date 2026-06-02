@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/domutils/readme",
+  "title": "domutils [![Node.js CI](https://github.com/fb55/domutils/actions/workflows/nodejs-test.yml/badge.svg)](https://github.com/fb55/domutils/actions/workflows/nodejs-test.yml)",
+  "description": "Utilities for working with htmlparser2's DOM.",
+  "source": "@site/node_modules/domutils/readme.md",
+  "sourceDirName": "node_modules/domutils",
+  "slug": "/node_modules/domutils/",
+  "permalink": "/node_modules/domutils/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

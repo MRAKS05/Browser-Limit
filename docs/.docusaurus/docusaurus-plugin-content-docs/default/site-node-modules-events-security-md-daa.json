@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/events/security",
+  "title": "Security Policy",
+  "description": "Supported Versions",
+  "source": "@site/node_modules/events/security.md",
+  "sourceDirName": "node_modules/events",
+  "slug": "/node_modules/events/security",
+  "permalink": "/node_modules/events/security",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

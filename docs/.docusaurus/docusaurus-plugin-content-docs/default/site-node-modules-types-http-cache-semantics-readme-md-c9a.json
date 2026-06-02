@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/http-cache-semantics/README",
+  "title": "Installation",
+  "description": "npm install --save @types/http-cache-semantics",
+  "source": "@site/node_modules/@types/http-cache-semantics/README.md",
+  "sourceDirName": "node_modules/@types/http-cache-semantics",
+  "slug": "/node_modules/@types/http-cache-semantics/",
+  "permalink": "/node_modules/@types/http-cache-semantics/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

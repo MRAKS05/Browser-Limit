@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/path-type/readme",
+  "title": "path-type [![Build Status](https://travis-ci.org/sindresorhus/path-type.svg?branch=master)](https://travis-ci.org/sindresorhus/path-type)",
+  "description": "Check if a path is a file, directory, or symlink",
+  "source": "@site/node_modules/path-type/readme.md",
+  "sourceDirName": "node_modules/path-type",
+  "slug": "/node_modules/path-type/",
+  "permalink": "/node_modules/path-type/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

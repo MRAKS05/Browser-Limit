@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/README",
+  "title": "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining",
+  "description": "Transform optional chaining operators to workaround https://crbug.com/v8/11558",
+  "source": "@site/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining",
+  "slug": "/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/",
+  "permalink": "/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

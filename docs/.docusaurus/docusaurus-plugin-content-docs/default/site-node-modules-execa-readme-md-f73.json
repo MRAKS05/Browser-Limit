@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/execa/readme",
+  "title": "readme",
+  "description": "Coverage Status",
+  "source": "@site/node_modules/execa/readme.md",
+  "sourceDirName": "node_modules/execa",
+  "slug": "/node_modules/execa/",
+  "permalink": "/node_modules/execa/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

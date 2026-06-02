@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-geo/README",
+  "title": "d3-geo",
+  "description": "This module uses spherical GeoJSON to represent geographic features in JavaScript. D3 supports a wide variety of common and unusual map projections. And because D3 uses spherical geometry to represent data, you can apply any aspect to any projection by rotating geometry.",
+  "source": "@site/node_modules/d3-geo/README.md",
+  "sourceDirName": "node_modules/d3-geo",
+  "slug": "/node_modules/d3-geo/",
+  "permalink": "/node_modules/d3-geo/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

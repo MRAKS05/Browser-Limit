@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-logical/README",
+  "title": "PostCSS Logical Properties and Values [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-logical --save-dev",
+  "source": "@site/node_modules/postcss-logical/README.md",
+  "sourceDirName": "node_modules/postcss-logical",
+  "slug": "/node_modules/postcss-logical/",
+  "permalink": "/node_modules/postcss-logical/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

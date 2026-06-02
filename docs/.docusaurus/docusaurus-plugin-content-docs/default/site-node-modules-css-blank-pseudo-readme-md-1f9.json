@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/css-blank-pseudo/README",
+  "title": "PostCSS Blank Pseudo [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install css-blank-pseudo --save-dev",
+  "source": "@site/node_modules/css-blank-pseudo/README.md",
+  "sourceDirName": "node_modules/css-blank-pseudo",
+  "slug": "/node_modules/css-blank-pseudo/",
+  "permalink": "/node_modules/css-blank-pseudo/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

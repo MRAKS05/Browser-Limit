@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/path-exists/readme",
+  "title": "path-exists",
+  "description": "Check if a path exists",
+  "source": "@site/node_modules/path-exists/readme.md",
+  "sourceDirName": "node_modules/path-exists",
+  "slug": "/node_modules/path-exists/",
+  "permalink": "/node_modules/path-exists/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

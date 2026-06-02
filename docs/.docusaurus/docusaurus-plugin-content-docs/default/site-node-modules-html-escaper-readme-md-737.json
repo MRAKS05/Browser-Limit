@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/html-escaper/README",
+  "title": "html-escaper [![Build Status](https://travis-ci.org/WebReflection/html-escaper.svg?branch=master)](https://travis-ci.org/WebReflection/html-escaper) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/html-escaper/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/html-escaper?branch=master)",
+  "description": "A simple module to escape/unescape common problematic entities.",
+  "source": "@site/node_modules/html-escaper/README.md",
+  "sourceDirName": "node_modules/html-escaper",
+  "slug": "/node_modules/html-escaper/",
+  "permalink": "/node_modules/html-escaper/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/buffers/README",
+  "title": "buffers",
+  "description": "Various helper utilities for working with buffers and binary data in TypeScript.",
+  "source": "@site/node_modules/@jsonjoy.com/buffers/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/buffers",
+  "slug": "/node_modules/@jsonjoy.com/buffers/",
+  "permalink": "/node_modules/@jsonjoy.com/buffers/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

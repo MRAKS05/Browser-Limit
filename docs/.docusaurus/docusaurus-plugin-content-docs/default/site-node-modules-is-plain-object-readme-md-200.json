@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-plain-object/README",
+  "title": "is-plain-object [![NPM version](https://img.shields.io/npm/v/is-plain-object.svg?style=flat)](https://www.npmjs.com/package/is-plain-object) [![NPM monthly downloads](https://img.shields.io/npm/dm/is-plain-object.svg?style=flat)](https://npmjs.org/package/is-plain-object) [![NPM total downloads](https://img.shields.io/npm/dt/is-plain-object.svg?style=flat)](https://npmjs.org/package/is-plain-object) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/is-plain-object.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/is-plain-object)",
+  "description": "Returns true if an object was created by the Object constructor.",
+  "source": "@site/node_modules/is-plain-object/README.md",
+  "sourceDirName": "node_modules/is-plain-object",
+  "slug": "/node_modules/is-plain-object/",
+  "permalink": "/node_modules/is-plain-object/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

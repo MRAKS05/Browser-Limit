@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/anymatch/README",
+  "title": "anymatch [![Build Status](https://travis-ci.org/micromatch/anymatch.svg?branch=master)](https://travis-ci.org/micromatch/anymatch) [![Coverage Status](https://img.shields.io/coveralls/micromatch/anymatch.svg?branch=master)](https://coveralls.io/r/micromatch/anymatch?branch=master)",
+  "description": "Javascript module to match a string against a regular expression, glob, string,",
+  "source": "@site/node_modules/anymatch/README.md",
+  "sourceDirName": "node_modules/anymatch",
+  "slug": "/node_modules/anymatch/",
+  "permalink": "/node_modules/anymatch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-dotall-regex/README",
+  "title": "@babel/plugin-transform-dotall-regex",
+  "description": "Compile regular expressions using the s (dotAll) flag to ES5.",
+  "source": "@site/node_modules/@babel/plugin-transform-dotall-regex/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-dotall-regex",
+  "slug": "/node_modules/@babel/plugin-transform-dotall-regex/",
+  "permalink": "/node_modules/@babel/plugin-transform-dotall-regex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

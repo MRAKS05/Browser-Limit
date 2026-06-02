@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/dot-prop/readme",
+  "title": "dot-prop [![Build Status](https://travis-ci.com/sindresorhus/dot-prop.svg?branch=master)](https://travis-ci.com/github/sindresorhus/dot-prop)",
+  "description": "Get, set, or delete a property from a nested object using a dot path",
+  "source": "@site/node_modules/dot-prop/readme.md",
+  "sourceDirName": "node_modules/dot-prop",
+  "slug": "/node_modules/dot-prop/",
+  "permalink": "/node_modules/dot-prop/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

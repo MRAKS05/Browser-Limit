@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/pretty-time/README",
+  "title": "pretty-time [![NPM version](https://img.shields.io/npm/v/pretty-time.svg?style=flat)](https://www.npmjs.com/package/pretty-time) [![NPM monthly downloads](https://img.shields.io/npm/dm/pretty-time.svg?style=flat)](https://npmjs.org/package/pretty-time) [![NPM total downloads](https://img.shields.io/npm/dt/pretty-time.svg?style=flat)](https://npmjs.org/package/pretty-time) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/pretty-time.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/pretty-time)",
+  "description": "Easily format the time from node.js process.hrtime. Works with timescales ranging from weeks to nanoseconds.",
+  "source": "@site/node_modules/pretty-time/README.md",
+  "sourceDirName": "node_modules/pretty-time",
+  "slug": "/node_modules/pretty-time/",
+  "permalink": "/node_modules/pretty-time/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

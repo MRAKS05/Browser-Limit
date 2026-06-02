@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/demo/git-fsa/README",
+  "title": "README",
+  "description": "This demo showcase how to run Git in browser but write to a real user file system",
+  "source": "@site/node_modules/memfs/demo/git-fsa/README.md",
+  "sourceDirName": "node_modules/memfs/demo/git-fsa",
+  "slug": "/node_modules/memfs/demo/git-fsa/",
+  "permalink": "/node_modules/memfs/demo/git-fsa/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

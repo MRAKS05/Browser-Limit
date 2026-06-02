@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/demo/git/README",
+  "title": "isomorphic-git running on memfs in-memory file system",
+  "description": "This demo shows how to run isomorphic-git on memfs in-memory file system. It",
+  "source": "@site/node_modules/memfs/demo/git/README.md",
+  "sourceDirName": "node_modules/memfs/demo/git",
+  "slug": "/node_modules/memfs/demo/git/",
+  "permalink": "/node_modules/memfs/demo/git/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

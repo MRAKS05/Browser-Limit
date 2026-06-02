@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/batch/History",
+  "title": "0.6.1 / 2017-05-16",
+  "description": "* fix process.nextTick detection in Node.js",
+  "source": "@site/node_modules/batch/History.md",
+  "sourceDirName": "node_modules/batch",
+  "slug": "/node_modules/batch/History",
+  "permalink": "/node_modules/batch/History",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

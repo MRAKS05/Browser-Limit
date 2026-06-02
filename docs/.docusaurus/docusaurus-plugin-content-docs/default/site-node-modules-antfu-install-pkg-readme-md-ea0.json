@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@antfu/install-pkg/README",
+  "title": "install-pkg",
+  "description": "NPM version",
+  "source": "@site/node_modules/@antfu/install-pkg/README.md",
+  "sourceDirName": "node_modules/@antfu/install-pkg",
+  "slug": "/node_modules/@antfu/install-pkg/",
+  "permalink": "/node_modules/@antfu/install-pkg/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

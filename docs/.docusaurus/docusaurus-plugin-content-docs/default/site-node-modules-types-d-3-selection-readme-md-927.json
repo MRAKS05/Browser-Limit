@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-selection/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-selection",
+  "source": "@site/node_modules/@types/d3-selection/README.md",
+  "sourceDirName": "node_modules/@types/d3-selection",
+  "slug": "/node_modules/@types/d3-selection/",
+  "permalink": "/node_modules/@types/d3-selection/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

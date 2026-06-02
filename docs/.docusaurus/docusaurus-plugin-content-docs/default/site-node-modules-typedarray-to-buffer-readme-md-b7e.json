@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/typedarray-to-buffer/README",
+  "title": "typedarray-to-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+  "description": "[travis-image]//img.shields.io/travis/feross/typedarray-to-buffer/master.svg",
+  "source": "@site/node_modules/typedarray-to-buffer/README.md",
+  "sourceDirName": "node_modules/typedarray-to-buffer",
+  "slug": "/node_modules/typedarray-to-buffer/",
+  "permalink": "/node_modules/typedarray-to-buffer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

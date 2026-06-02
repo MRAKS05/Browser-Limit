@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/buffer-from/readme",
+  "title": "Buffer From",
+  "description": "A ponyfill for Buffer.from, uses native implementation if available.",
+  "source": "@site/node_modules/buffer-from/readme.md",
+  "sourceDirName": "node_modules/buffer-from",
+  "slug": "/node_modules/buffer-from/",
+  "permalink": "/node_modules/buffer-from/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

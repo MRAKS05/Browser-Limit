@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/serve-static/README",
+  "title": "serve-static",
+  "description": "NPM Version",
+  "source": "@site/node_modules/serve-static/README.md",
+  "sourceDirName": "node_modules/serve-static",
+  "slug": "/node_modules/serve-static/",
+  "permalink": "/node_modules/serve-static/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

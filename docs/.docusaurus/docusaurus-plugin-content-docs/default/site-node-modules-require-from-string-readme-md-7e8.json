@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/require-from-string/readme",
+  "title": "require-from-string [![Build Status](https://travis-ci.org/floatdrop/require-from-string.svg?branch=master)](https://travis-ci.org/floatdrop/require-from-string)",
+  "description": "Load module from string in Node.",
+  "source": "@site/node_modules/require-from-string/readme.md",
+  "sourceDirName": "node_modules/require-from-string",
+  "slug": "/node_modules/require-from-string/",
+  "permalink": "/node_modules/require-from-string/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

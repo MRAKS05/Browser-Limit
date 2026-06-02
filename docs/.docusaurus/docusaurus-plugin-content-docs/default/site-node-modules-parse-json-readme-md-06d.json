@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/parse-json/readme",
+  "title": "parse-json",
+  "description": "Parse JSON with more helpful errors",
+  "source": "@site/node_modules/parse-json/readme.md",
+  "sourceDirName": "node_modules/parse-json",
+  "slug": "/node_modules/parse-json/",
+  "permalink": "/node_modules/parse-json/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

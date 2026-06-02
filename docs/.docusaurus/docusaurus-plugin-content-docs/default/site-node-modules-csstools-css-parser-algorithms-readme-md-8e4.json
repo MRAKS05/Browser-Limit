@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/css-parser-algorithms/README",
+  "title": "CSS Parser Algorithms <img src=\"https://cssdb.org/images/css.svg\" alt=\"for CSS\" width=\"90\" height=\"90\" align=\"right\">",
+  "description": "Implemented from//www.w3.org/TR/2021/CRD-css-syntax-3-20211224/",
+  "source": "@site/node_modules/@csstools/css-parser-algorithms/README.md",
+  "sourceDirName": "node_modules/@csstools/css-parser-algorithms",
+  "slug": "/node_modules/@csstools/css-parser-algorithms/",
+  "permalink": "/node_modules/@csstools/css-parser-algorithms/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

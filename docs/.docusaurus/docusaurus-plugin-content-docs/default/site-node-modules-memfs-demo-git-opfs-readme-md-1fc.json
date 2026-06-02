@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/demo/git-opfs/README",
+  "title": "README",
+  "description": "This demo showcase how to run Git in browser built-int OPFS file system. OPFS",
+  "source": "@site/node_modules/memfs/demo/git-opfs/README.md",
+  "sourceDirName": "node_modules/memfs/demo/git-opfs",
+  "slug": "/node_modules/memfs/demo/git-opfs/",
+  "permalink": "/node_modules/memfs/demo/git-opfs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

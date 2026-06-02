@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/README",
+  "title": "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression",
+  "description": "Rename destructuring parameter to workaround https://bugs.webkit.org/show_bug.cgi?id=220517",
+  "source": "@site/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression",
+  "slug": "/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/",
+  "permalink": "/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

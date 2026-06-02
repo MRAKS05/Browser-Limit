@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-modules-umd/README",
+  "title": "@babel/plugin-transform-modules-umd",
+  "description": "This plugin transforms ES2015 modules to UMD",
+  "source": "@site/node_modules/@babel/plugin-transform-modules-umd/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-modules-umd",
+  "slug": "/node_modules/@babel/plugin-transform-modules-umd/",
+  "permalink": "/node_modules/@babel/plugin-transform-modules-umd/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/base64/README",
+  "title": "Base64",
+  "description": "Fast Base64 encoder and decoder for browser and Node.js.",
+  "source": "@site/node_modules/@jsonjoy.com/base64/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/base64",
+  "slug": "/node_modules/@jsonjoy.com/base64/",
+  "permalink": "/node_modules/@jsonjoy.com/base64/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

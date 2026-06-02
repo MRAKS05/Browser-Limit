@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-block-scoped-functions/README",
+  "title": "@babel/plugin-transform-block-scoped-functions",
+  "description": "Babel plugin to ensure function declarations at the block level are block scoped",
+  "source": "@site/node_modules/@babel/plugin-transform-block-scoped-functions/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-block-scoped-functions",
+  "slug": "/node_modules/@babel/plugin-transform-block-scoped-functions/",
+  "permalink": "/node_modules/@babel/plugin-transform-block-scoped-functions/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

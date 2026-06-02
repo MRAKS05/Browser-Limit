@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cli-boxes/readme",
+  "title": "cli-boxes",
+  "description": "Boxes for use in the terminal",
+  "source": "@site/node_modules/cli-boxes/readme.md",
+  "sourceDirName": "node_modules/cli-boxes",
+  "slug": "/node_modules/cli-boxes/",
+  "permalink": "/node_modules/cli-boxes/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

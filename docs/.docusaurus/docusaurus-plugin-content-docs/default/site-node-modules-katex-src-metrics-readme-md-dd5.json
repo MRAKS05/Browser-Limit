@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/katex/src/metrics/README",
+  "title": "README",
+  "description": "How to generate new metrics",
+  "source": "@site/node_modules/katex/src/metrics/README.md",
+  "sourceDirName": "node_modules/katex/src/metrics",
+  "slug": "/node_modules/katex/src/metrics/",
+  "permalink": "/node_modules/katex/src/metrics/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromatch/README",
+  "title": "micromatch [![NPM version](https://img.shields.io/npm/v/micromatch.svg?style=flat)](https://www.npmjs.com/package/micromatch) [![NPM monthly downloads](https://img.shields.io/npm/dm/micromatch.svg?style=flat)](https://npmjs.org/package/micromatch) [![NPM total downloads](https://img.shields.io/npm/dt/micromatch.svg?style=flat)](https://npmjs.org/package/micromatch)  [![Tests](https://github.com/micromatch/micromatch/actions/workflows/test.yml/badge.svg)](https://github.com/micromatch/micromatch/actions/workflows/test.yml)",
+  "description": "Glob matching for javascript/node.js. A replacement and faster alternative to minimatch and multimatch.",
+  "source": "@site/node_modules/micromatch/README.md",
+  "sourceDirName": "node_modules/micromatch",
+  "slug": "/node_modules/micromatch/",
+  "permalink": "/node_modules/micromatch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/babel-loader/CHANGELOG",
+  "title": "Changelog",
+  "description": "For changes in version v7.0.0 and up please go to release",
+  "source": "@site/node_modules/babel-loader/CHANGELOG.md",
+  "sourceDirName": "node_modules/babel-loader",
+  "slug": "/node_modules/babel-loader/CHANGELOG",
+  "permalink": "/node_modules/babel-loader/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

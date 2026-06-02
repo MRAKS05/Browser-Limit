@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@algolia/client-insights/README",
+  "title": "README",
+  "description": "The perfect starting point to integrate Algolia within your JavaScript project",
+  "source": "@site/node_modules/@algolia/client-insights/README.md",
+  "sourceDirName": "node_modules/@algolia/client-insights",
+  "slug": "/node_modules/@algolia/client-insights/",
+  "permalink": "/node_modules/@algolia/client-insights/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

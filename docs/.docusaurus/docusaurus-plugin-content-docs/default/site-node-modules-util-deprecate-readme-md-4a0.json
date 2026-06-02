@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/util-deprecate/README",
+  "title": "util-deprecate",
+  "description": "The Node.js util.deprecate() function with browser support",
+  "source": "@site/node_modules/util-deprecate/README.md",
+  "sourceDirName": "node_modules/util-deprecate",
+  "slug": "/node_modules/util-deprecate/",
+  "permalink": "/node_modules/util-deprecate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

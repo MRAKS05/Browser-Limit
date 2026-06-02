@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/bonjour/README",
+  "title": "Installation",
+  "description": "npm install --save @types/bonjour",
+  "source": "@site/node_modules/@types/bonjour/README.md",
+  "sourceDirName": "node_modules/@types/bonjour",
+  "slug": "/node_modules/@types/bonjour/",
+  "permalink": "/node_modules/@types/bonjour/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

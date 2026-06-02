@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/plugin-content-docs/src/sidebars/README",
+  "title": "Sidebars",
+  "description": "This part is very complicated and hard to navigate. Sidebars are loaded through the following steps:",
+  "source": "@site/node_modules/@docusaurus/plugin-content-docs/src/sidebars/README.md",
+  "sourceDirName": "node_modules/@docusaurus/plugin-content-docs/src/sidebars",
+  "slug": "/node_modules/@docusaurus/plugin-content-docs/src/sidebars/",
+  "permalink": "/node_modules/@docusaurus/plugin-content-docs/src/sidebars/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/lodash.memoize/README",
+  "title": "lodash.memoize v4.1.2",
+  "description": "The lodash method _.memoize exported as a Node.js module.",
+  "source": "@site/node_modules/lodash.memoize/README.md",
+  "sourceDirName": "node_modules/lodash.memoize",
+  "slug": "/node_modules/lodash.memoize/",
+  "permalink": "/node_modules/lodash.memoize/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

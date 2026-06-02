@@ -1,0 +1,19 @@
+{
+  "id": "node_modules/@pnpm/config.env-replace/env-replace.docs",
+  "title": "env-replace.docs",
+  "description": "A function for repacing env variables in configuration settings",
+  "source": "@site/node_modules/@pnpm/config.env-replace/env-replace.docs.mdx",
+  "sourceDirName": "node_modules/@pnpm/config.env-replace",
+  "slug": "/node_modules/@pnpm/config.env-replace/env-replace.docs",
+  "permalink": "/node_modules/@pnpm/config.env-replace/env-replace.docs",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "labels": [
+      "configuration"
+    ],
+    "description": "A function for repacing env variables in configuration settings"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/emoji-regex/README",
+  "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=main)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+  "description": "emoji-regex offers a regular expression to match all emoji symbols and sequences (including textual representations of emoji) as per the Unicode Standard.",
+  "source": "@site/node_modules/emoji-regex/README.md",
+  "sourceDirName": "node_modules/emoji-regex",
+  "slug": "/node_modules/emoji-regex/",
+  "permalink": "/node_modules/emoji-regex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

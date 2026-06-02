@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jridgewell/trace-mapping/README",
+  "title": "@jridgewell/trace-mapping",
+  "description": "Trace the original position through a source map",
+  "source": "@site/node_modules/@jridgewell/trace-mapping/README.md",
+  "sourceDirName": "node_modules/@jridgewell/trace-mapping",
+  "slug": "/node_modules/@jridgewell/trace-mapping/",
+  "permalink": "/node_modules/@jridgewell/trace-mapping/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

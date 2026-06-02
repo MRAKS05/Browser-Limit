@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-attribute-case-insensitive/README",
+  "title": "PostCSS Attribute Case Insensitive [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-attribute-case-insensitive --save-dev",
+  "source": "@site/node_modules/postcss-attribute-case-insensitive/README.md",
+  "sourceDirName": "node_modules/postcss-attribute-case-insensitive",
+  "slug": "/node_modules/postcss-attribute-case-insensitive/",
+  "permalink": "/node_modules/postcss-attribute-case-insensitive/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

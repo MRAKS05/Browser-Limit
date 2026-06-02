@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/points-on-curve/README",
+  "title": "points-on-curve",
+  "description": "This package calculate the points on a curve with a certain tolerance. It can also simplify the shape to use fewer points.",
+  "source": "@site/node_modules/points-on-curve/README.md",
+  "sourceDirName": "node_modules/points-on-curve",
+  "slug": "/node_modules/points-on-curve/",
+  "permalink": "/node_modules/points-on-curve/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

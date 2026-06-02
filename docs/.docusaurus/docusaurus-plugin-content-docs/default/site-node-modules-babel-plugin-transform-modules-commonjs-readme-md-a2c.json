@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-modules-commonjs/README",
+  "title": "@babel/plugin-transform-modules-commonjs",
+  "description": "This plugin transforms ES2015 modules to CommonJS",
+  "source": "@site/node_modules/@babel/plugin-transform-modules-commonjs/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-modules-commonjs",
+  "slug": "/node_modules/@babel/plugin-transform-modules-commonjs/",
+  "permalink": "/node_modules/@babel/plugin-transform-modules-commonjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

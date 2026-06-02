@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@nodelib/fs.stat/README",
+  "title": "@nodelib/fs.stat",
+  "description": "Get the status of a file with some features.",
+  "source": "@site/node_modules/@nodelib/fs.stat/README.md",
+  "sourceDirName": "node_modules/@nodelib/fs.stat",
+  "slug": "/node_modules/@nodelib/fs.stat/",
+  "permalink": "/node_modules/@nodelib/fs.stat/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

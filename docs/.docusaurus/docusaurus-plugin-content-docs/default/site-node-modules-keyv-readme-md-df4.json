@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/keyv/README",
+  "title": "README",
+  "description": "Simple key-value storage with support for multiple backends",
+  "source": "@site/node_modules/keyv/README.md",
+  "sourceDirName": "node_modules/keyv",
+  "slug": "/node_modules/keyv/",
+  "permalink": "/node_modules/keyv/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

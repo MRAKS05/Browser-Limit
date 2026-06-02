@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/plugin-google-gtag/README",
+  "title": "@docusaurus/plugin-google-gtag",
+  "description": "Global Site Tag (gtag.js) plugin for Docusaurus.",
+  "source": "@site/node_modules/@docusaurus/plugin-google-gtag/README.md",
+  "sourceDirName": "node_modules/@docusaurus/plugin-google-gtag",
+  "slug": "/node_modules/@docusaurus/plugin-google-gtag/",
+  "permalink": "/node_modules/@docusaurus/plugin-google-gtag/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

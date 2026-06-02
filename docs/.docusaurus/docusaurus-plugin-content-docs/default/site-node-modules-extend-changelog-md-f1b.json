@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/extend/CHANGELOG",
+  "title": "3.0.2 / 2018-07-19",
+  "description": "* [Fix] Prevent merging proto property (#48)",
+  "source": "@site/node_modules/extend/CHANGELOG.md",
+  "sourceDirName": "node_modules/extend",
+  "slug": "/node_modules/extend/CHANGELOG",
+  "permalink": "/node_modules/extend/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

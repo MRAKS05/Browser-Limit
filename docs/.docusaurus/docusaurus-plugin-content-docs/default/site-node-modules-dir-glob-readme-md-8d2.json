@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/dir-glob/readme",
+  "title": "dir-glob [![Build Status](https://travis-ci.org/kevva/dir-glob.svg?branch=master)](https://travis-ci.org/kevva/dir-glob)",
+  "description": "Convert directories to glob compatible strings",
+  "source": "@site/node_modules/dir-glob/readme.md",
+  "sourceDirName": "node_modules/dir-glob",
+  "slug": "/node_modules/dir-glob/",
+  "permalink": "/node_modules/dir-glob/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

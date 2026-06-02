@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-path-inside/readme",
+  "title": "is-path-inside",
+  "description": "Check if a path is inside another path",
+  "source": "@site/node_modules/is-path-inside/readme.md",
+  "sourceDirName": "node_modules/is-path-inside",
+  "slug": "/node_modules/is-path-inside/",
+  "permalink": "/node_modules/is-path-inside/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

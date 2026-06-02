@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-force/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-force",
+  "source": "@site/node_modules/@types/d3-force/README.md",
+  "sourceDirName": "node_modules/@types/d3-force",
+  "slug": "/node_modules/@types/d3-force/",
+  "permalink": "/node_modules/@types/d3-force/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

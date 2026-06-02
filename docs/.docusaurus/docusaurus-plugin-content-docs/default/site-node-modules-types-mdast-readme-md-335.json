@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/mdast/README",
+  "title": "Installation",
+  "description": "npm install --save @types/mdast",
+  "source": "@site/node_modules/@types/mdast/README.md",
+  "sourceDirName": "node_modules/@types/mdast",
+  "slug": "/node_modules/@types/mdast/",
+  "permalink": "/node_modules/@types/mdast/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

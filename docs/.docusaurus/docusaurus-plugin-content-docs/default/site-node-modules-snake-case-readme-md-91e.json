@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/snake-case/README",
+  "title": "Snake Case",
+  "description": "NPM version",
+  "source": "@site/node_modules/snake-case/README.md",
+  "sourceDirName": "node_modules/snake-case",
+  "slug": "/node_modules/snake-case/",
+  "permalink": "/node_modules/snake-case/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

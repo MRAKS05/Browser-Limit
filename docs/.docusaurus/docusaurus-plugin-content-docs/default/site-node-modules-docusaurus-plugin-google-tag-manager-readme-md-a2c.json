@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/plugin-google-tag-manager/README",
+  "title": "@docusaurus/plugin-google-tag-manager",
+  "description": "Google Tag Manager plugin for Docusaurus.",
+  "source": "@site/node_modules/@docusaurus/plugin-google-tag-manager/README.md",
+  "sourceDirName": "node_modules/@docusaurus/plugin-google-tag-manager",
+  "slug": "/node_modules/@docusaurus/plugin-google-tag-manager/",
+  "permalink": "/node_modules/@docusaurus/plugin-google-tag-manager/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

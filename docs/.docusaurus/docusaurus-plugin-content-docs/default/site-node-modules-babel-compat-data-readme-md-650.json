@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/compat-data/README",
+  "title": "@babel/compat-data",
+  "description": "The compat-data to determine required Babel plugins",
+  "source": "@site/node_modules/@babel/compat-data/README.md",
+  "sourceDirName": "node_modules/@babel/compat-data",
+  "slug": "/node_modules/@babel/compat-data/",
+  "permalink": "/node_modules/@babel/compat-data/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,9 @@
+# Docusaurus build output
+build/
+.docusaurus/
+
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store

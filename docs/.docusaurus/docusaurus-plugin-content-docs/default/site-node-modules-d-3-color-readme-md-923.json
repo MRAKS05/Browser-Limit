@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-color/README",
+  "title": "d3-color",
+  "description": "Even though your browser understands a lot about colors, it doesn’t offer much help in manipulating colors through JavaScript. The d3-color module therefore provides representations for various color spaces, allowing specification, conversion and manipulation. (Also see d3-interpolate for color interpolation.)",
+  "source": "@site/node_modules/d3-color/README.md",
+  "sourceDirName": "node_modules/d3-color",
+  "slug": "/node_modules/d3-color/",
+  "permalink": "/node_modules/d3-color/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

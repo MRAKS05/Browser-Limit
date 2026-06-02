@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/acorn-walk/README",
+  "title": "Acorn AST walker",
+  "description": "An abstract syntax tree walker for the",
+  "source": "@site/node_modules/acorn-walk/README.md",
+  "sourceDirName": "node_modules/acorn-walk",
+  "slug": "/node_modules/acorn-walk/",
+  "permalink": "/node_modules/acorn-walk/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

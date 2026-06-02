@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/p-finally/readme",
+  "title": "p-finally [![Build Status](https://travis-ci.org/sindresorhus/p-finally.svg?branch=master)](https://travis-ci.org/sindresorhus/p-finally)",
+  "description": "Promise#finally() ponyfill - Invoked when the promise is settled regardless of outcome",
+  "source": "@site/node_modules/p-finally/readme.md",
+  "sourceDirName": "node_modules/p-finally",
+  "slug": "/node_modules/p-finally/",
+  "permalink": "/node_modules/p-finally/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

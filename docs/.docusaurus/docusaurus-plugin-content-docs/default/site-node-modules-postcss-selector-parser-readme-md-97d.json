@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-selector-parser/README",
+  "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+  "description": "Selector parser with built in methods for working with selector strings.",
+  "source": "@site/node_modules/postcss-selector-parser/README.md",
+  "sourceDirName": "node_modules/postcss-selector-parser",
+  "slug": "/node_modules/postcss-selector-parser/",
+  "permalink": "/node_modules/postcss-selector-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

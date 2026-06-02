@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/core-js/stage/README",
+  "title": "README",
+  "description": "This folder contains entry points for ECMAScript proposals with dependencies.",
+  "source": "@site/node_modules/core-js/stage/README.md",
+  "sourceDirName": "node_modules/core-js/stage",
+  "slug": "/node_modules/core-js/stage/",
+  "permalink": "/node_modules/core-js/stage/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

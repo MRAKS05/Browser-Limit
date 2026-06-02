@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mrmime/readme",
+  "title": "readme",
+  "description": "A tiny (2.8kB) and fast utility for getting a MIME type from an extension or filename",
+  "source": "@site/node_modules/mrmime/readme.md",
+  "sourceDirName": "node_modules/mrmime",
+  "slug": "/node_modules/mrmime/",
+  "permalink": "/node_modules/mrmime/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

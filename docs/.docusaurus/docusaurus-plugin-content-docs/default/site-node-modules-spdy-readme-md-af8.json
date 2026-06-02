@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/spdy/README",
+  "title": "SPDY Server for node.js",
+  "description": "Build Status",
+  "source": "@site/node_modules/spdy/README.md",
+  "sourceDirName": "node_modules/spdy",
+  "slug": "/node_modules/spdy/",
+  "permalink": "/node_modules/spdy/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

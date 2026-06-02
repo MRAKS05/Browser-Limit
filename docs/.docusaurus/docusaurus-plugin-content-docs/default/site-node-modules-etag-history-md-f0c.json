@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/etag/HISTORY",
+  "title": "1.8.1 / 2017-09-12",
+  "description": "* perf: replace regular expression with substring",
+  "source": "@site/node_modules/etag/HISTORY.md",
+  "sourceDirName": "node_modules/etag",
+  "slug": "/node_modules/etag/HISTORY",
+  "permalink": "/node_modules/etag/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

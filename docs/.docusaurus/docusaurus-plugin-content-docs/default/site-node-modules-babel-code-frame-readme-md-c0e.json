@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/code-frame/README",
+  "title": "@babel/code-frame",
+  "description": "Generate errors that contain a code frame that point to source locations.",
+  "source": "@site/node_modules/@babel/code-frame/README.md",
+  "sourceDirName": "node_modules/@babel/code-frame",
+  "slug": "/node_modules/@babel/code-frame/",
+  "permalink": "/node_modules/@babel/code-frame/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

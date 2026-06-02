@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-function-name/README",
+  "title": "@babel/plugin-transform-function-name",
+  "description": "Apply ES2015 function.name semantics to all functions",
+  "source": "@site/node_modules/@babel/plugin-transform-function-name/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-function-name",
+  "slug": "/node_modules/@babel/plugin-transform-function-name/",
+  "permalink": "/node_modules/@babel/plugin-transform-function-name/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

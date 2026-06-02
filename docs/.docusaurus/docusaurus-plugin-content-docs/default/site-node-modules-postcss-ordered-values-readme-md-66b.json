@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-ordered-values/README",
+  "title": "[postcss][postcss]-ordered-values",
+  "description": "Ensure values are ordered consistently in your CSS.",
+  "source": "@site/node_modules/postcss-ordered-values/README.md",
+  "sourceDirName": "node_modules/postcss-ordered-values",
+  "slug": "/node_modules/postcss-ordered-values/",
+  "permalink": "/node_modules/postcss-ordered-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

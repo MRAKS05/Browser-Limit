@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ajv-keywords/README",
+  "title": "ajv-keywords",
+  "description": "Custom JSON-Schema keywords for Ajv validator",
+  "source": "@site/node_modules/ajv-keywords/README.md",
+  "sourceDirName": "node_modules/ajv-keywords",
+  "slug": "/node_modules/ajv-keywords/",
+  "permalink": "/node_modules/ajv-keywords/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

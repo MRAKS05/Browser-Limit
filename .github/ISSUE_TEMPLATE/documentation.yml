@@ -1,0 +1,58 @@
+name: Documentation Improvement
+description: Report an issue or suggest an improvement for the documentation site
+title: "[Docs]: "
+labels: ["documentation", "status: needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the documentation! The docs site lives at `docs/` in the repository and is built with Docusaurus.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What kind of documentation issue is this?
+      options:
+        - Typo or grammar fix
+        - Outdated or incorrect information
+        - Missing documentation
+        - Unclear or confusing explanation
+        - Broken link or missing page
+        - Diagram or screenshot needed
+        - Search / discoverability issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Which page is affected? (provide the docs.browser-limit.com URL or the source file path under docs/)
+      placeholder: https://browser-limit-docs.pages.dev/getting-started or docs/usage.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be changed or added?
+      placeholder: "The installation instructions don't mention that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Change
+      description: If applicable, suggest what the corrected text should say
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I have searched for existing documentation issues before filing this
+          required: true

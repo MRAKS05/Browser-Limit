@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-string-parser/README",
+  "title": "@babel/helper-string-parser",
+  "description": "A utility package to parse strings",
+  "source": "@site/node_modules/@babel/helper-string-parser/README.md",
+  "sourceDirName": "node_modules/@babel/helper-string-parser",
+  "slug": "/node_modules/@babel/helper-string-parser/",
+  "permalink": "/node_modules/@babel/helper-string-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

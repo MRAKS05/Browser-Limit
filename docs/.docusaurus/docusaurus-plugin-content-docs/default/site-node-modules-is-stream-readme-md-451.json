@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-stream/readme",
+  "title": "is-stream",
+  "description": "Check if something is a Node.js stream",
+  "source": "@site/node_modules/is-stream/readme.md",
+  "sourceDirName": "node_modules/is-stream",
+  "slug": "/node_modules/is-stream/",
+  "permalink": "/node_modules/is-stream/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

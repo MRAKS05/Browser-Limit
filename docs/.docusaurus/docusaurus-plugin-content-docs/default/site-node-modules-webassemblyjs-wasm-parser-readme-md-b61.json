@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@webassemblyjs/wasm-parser/README",
+  "title": "@webassemblyjs/wasm-parser",
+  "description": "WebAssembly binary format parser",
+  "source": "@site/node_modules/@webassemblyjs/wasm-parser/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/wasm-parser",
+  "slug": "/node_modules/@webassemblyjs/wasm-parser/",
+  "permalink": "/node_modules/@webassemblyjs/wasm-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

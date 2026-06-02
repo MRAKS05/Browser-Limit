@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mdn-data/css/readme",
+  "title": "MDN CSS data",
+  "description": "This folder contains data about the different features of the CSS language.",
+  "source": "@site/node_modules/mdn-data/css/readme.md",
+  "sourceDirName": "node_modules/mdn-data/css",
+  "slug": "/node_modules/mdn-data/css/",
+  "permalink": "/node_modules/mdn-data/css/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

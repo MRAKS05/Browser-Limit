@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/define-lazy-prop/readme",
+  "title": "define-lazy-prop [![Build Status](https://travis-ci.org/sindresorhus/define-lazy-prop.svg?branch=master)](https://travis-ci.org/sindresorhus/define-lazy-prop)",
+  "description": "Define a lazily evaluated property on an object",
+  "source": "@site/node_modules/define-lazy-prop/readme.md",
+  "sourceDirName": "node_modules/define-lazy-prop",
+  "slug": "/node_modules/define-lazy-prop/",
+  "permalink": "/node_modules/define-lazy-prop/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

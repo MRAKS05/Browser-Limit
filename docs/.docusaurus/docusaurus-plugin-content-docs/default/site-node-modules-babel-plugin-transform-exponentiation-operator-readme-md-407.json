@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-exponentiation-operator/README",
+  "title": "@babel/plugin-transform-exponentiation-operator",
+  "description": "Compile exponentiation operator to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-exponentiation-operator/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-exponentiation-operator",
+  "slug": "/node_modules/@babel/plugin-transform-exponentiation-operator/",
+  "permalink": "/node_modules/@babel/plugin-transform-exponentiation-operator/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

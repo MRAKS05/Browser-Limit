@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/totalist/readme",
+  "title": "totalist [![build status](https://badgen.now.sh/github/status/lukeed/totalist)](https://github.com/lukeed/totalist/actions) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/totalist)](https://codecov.io/gh/lukeed/totalist)",
+  "description": "A tiny (195B to 224B) utility to recursively list all (total) files in a directory",
+  "source": "@site/node_modules/totalist/readme.md",
+  "sourceDirName": "node_modules/totalist",
+  "slug": "/node_modules/totalist/",
+  "permalink": "/node_modules/totalist/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

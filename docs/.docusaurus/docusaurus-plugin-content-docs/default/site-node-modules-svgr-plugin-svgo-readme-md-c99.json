@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@svgr/plugin-svgo/README",
+  "title": "@svgr/plugin-svgo",
+  "description": "Build Status",
+  "source": "@site/node_modules/@svgr/plugin-svgo/README.md",
+  "sourceDirName": "node_modules/@svgr/plugin-svgo",
+  "slug": "/node_modules/@svgr/plugin-svgo/",
+  "permalink": "/node_modules/@svgr/plugin-svgo/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

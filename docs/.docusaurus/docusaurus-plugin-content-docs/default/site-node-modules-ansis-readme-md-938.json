@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ansis/README",
+  "title": "README",
+  "description": "ANSI color lib. Docs on GitHub",
+  "source": "@site/node_modules/ansis/README.md",
+  "sourceDirName": "node_modules/ansis",
+  "slug": "/node_modules/ansis/",
+  "permalink": "/node_modules/ansis/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

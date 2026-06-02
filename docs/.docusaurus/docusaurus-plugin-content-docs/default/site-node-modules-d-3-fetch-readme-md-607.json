@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-fetch/README",
+  "title": "d3-fetch",
+  "description": "This module provides convenient parsing on top of Fetch. For example, to load a text file:",
+  "source": "@site/node_modules/d3-fetch/README.md",
+  "sourceDirName": "node_modules/d3-fetch",
+  "slug": "/node_modules/d3-fetch/",
+  "permalink": "/node_modules/d3-fetch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

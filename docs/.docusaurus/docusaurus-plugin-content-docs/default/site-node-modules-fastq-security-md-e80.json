@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/fastq/SECURITY",
+  "title": "Security Policy",
+  "description": "Supported Versions",
+  "source": "@site/node_modules/fastq/SECURITY.md",
+  "sourceDirName": "node_modules/fastq",
+  "slug": "/node_modules/fastq/SECURITY",
+  "permalink": "/node_modules/fastq/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

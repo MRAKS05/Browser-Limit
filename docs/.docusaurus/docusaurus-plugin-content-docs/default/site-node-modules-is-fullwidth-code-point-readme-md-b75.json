@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-fullwidth-code-point/readme",
+  "title": "is-fullwidth-code-point [![Build Status](https://travis-ci.org/sindresorhus/is-fullwidth-code-point.svg?branch=master)](https://travis-ci.org/sindresorhus/is-fullwidth-code-point)",
+  "description": "Check if the character represented by a given Unicode code point is fullwidth",
+  "source": "@site/node_modules/is-fullwidth-code-point/readme.md",
+  "sourceDirName": "node_modules/is-fullwidth-code-point",
+  "slug": "/node_modules/is-fullwidth-code-point/",
+  "permalink": "/node_modules/is-fullwidth-code-point/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

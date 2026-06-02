@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/isexe/README",
+  "title": "isexe",
+  "description": "Minimal module to check if a file is executable, and a normal file.",
+  "source": "@site/node_modules/isexe/README.md",
+  "sourceDirName": "node_modules/isexe",
+  "slug": "/node_modules/isexe/",
+  "permalink": "/node_modules/isexe/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

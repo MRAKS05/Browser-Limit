@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-scale/README",
+  "title": "d3-scale",
+  "description": "Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. Although most often used for position-encoding quantitative data, such as mapping a measurement in meters to a position in pixels for dots in a scatterplot, scales can represent virtually any visual encoding, such as diverging colors, stroke widths, or symbol size. Scales can also be used with virtually any type of data, such as named categorical data or discrete data that requires sensible breaks.",
+  "source": "@site/node_modules/d3-scale/README.md",
+  "sourceDirName": "node_modules/d3-scale",
+  "slug": "/node_modules/d3-scale/",
+  "permalink": "/node_modules/d3-scale/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

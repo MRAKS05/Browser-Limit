@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jridgewell/resolve-uri/README",
+  "title": "@jridgewell/resolve-uri",
+  "description": "Resolve a URI relative to an optional base URI",
+  "source": "@site/node_modules/@jridgewell/resolve-uri/README.md",
+  "sourceDirName": "node_modules/@jridgewell/resolve-uri",
+  "slug": "/node_modules/@jridgewell/resolve-uri/",
+  "permalink": "/node_modules/@jridgewell/resolve-uri/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

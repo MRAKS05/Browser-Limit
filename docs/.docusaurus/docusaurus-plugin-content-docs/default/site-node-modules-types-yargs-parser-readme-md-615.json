@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/yargs-parser/README",
+  "title": "Installation",
+  "description": "npm install --save @types/yargs-parser",
+  "source": "@site/node_modules/@types/yargs-parser/README.md",
+  "sourceDirName": "node_modules/@types/yargs-parser",
+  "slug": "/node_modules/@types/yargs-parser/",
+  "permalink": "/node_modules/@types/yargs-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

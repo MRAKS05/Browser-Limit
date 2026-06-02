@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/gensync/README",
+  "title": "gensync",
+  "description": "This module allows for developers to write common code that can share",
+  "source": "@site/node_modules/gensync/README.md",
+  "sourceDirName": "node_modules/gensync",
+  "slug": "/node_modules/gensync/",
+  "permalink": "/node_modules/gensync/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

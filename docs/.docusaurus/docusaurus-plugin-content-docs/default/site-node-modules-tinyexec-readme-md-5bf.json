@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/tinyexec/README",
+  "title": "tinyexec 📟",
+  "description": "A minimal package for executing commands",
+  "source": "@site/node_modules/tinyexec/README.md",
+  "sourceDirName": "node_modules/tinyexec",
+  "slug": "/node_modules/tinyexec/",
+  "permalink": "/node_modules/tinyexec/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

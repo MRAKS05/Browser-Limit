@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/joi/README",
+  "title": "joi",
+  "description": "The most powerful schema description language and data validator for JavaScript.",
+  "source": "@site/node_modules/joi/README.md",
+  "sourceDirName": "node_modules/joi",
+  "slug": "/node_modules/joi/",
+  "permalink": "/node_modules/joi/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

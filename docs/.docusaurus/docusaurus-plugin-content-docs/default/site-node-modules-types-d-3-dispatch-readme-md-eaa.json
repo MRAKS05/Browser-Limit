@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-dispatch/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-dispatch",
+  "source": "@site/node_modules/@types/d3-dispatch/README.md",
+  "sourceDirName": "node_modules/@types/d3-dispatch",
+  "slug": "/node_modules/@types/d3-dispatch/",
+  "permalink": "/node_modules/@types/d3-dispatch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

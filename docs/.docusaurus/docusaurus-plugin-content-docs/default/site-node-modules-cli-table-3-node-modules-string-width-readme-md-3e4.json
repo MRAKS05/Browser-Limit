@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cli-table3/node_modules/string-width/readme",
+  "title": "string-width",
+  "description": "Get the visual width of a string - the number of columns required to display it",
+  "source": "@site/node_modules/cli-table3/node_modules/string-width/readme.md",
+  "sourceDirName": "node_modules/cli-table3/node_modules/string-width",
+  "slug": "/node_modules/cli-table3/node_modules/string-width/",
+  "permalink": "/node_modules/cli-table3/node_modules/string-width/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/batch/Readme",
+  "title": "batch",
+  "description": "Simple async batch with concurrency control and progress reporting.",
+  "source": "@site/node_modules/batch/Readme.md",
+  "sourceDirName": "node_modules/batch",
+  "slug": "/node_modules/batch/",
+  "permalink": "/node_modules/batch/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

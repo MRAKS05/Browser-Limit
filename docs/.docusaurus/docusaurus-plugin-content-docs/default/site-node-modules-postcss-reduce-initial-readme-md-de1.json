@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-reduce-initial/README",
+  "title": "[postcss][postcss]-reduce-initial",
+  "description": "Reduce initial definitions to the actual initial value, where possible.",
+  "source": "@site/node_modules/postcss-reduce-initial/README.md",
+  "sourceDirName": "node_modules/postcss-reduce-initial",
+  "slug": "/node_modules/postcss-reduce-initial/",
+  "permalink": "/node_modules/postcss-reduce-initial/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

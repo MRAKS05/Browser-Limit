@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/markdown-extensions/readme",
+  "title": "markdown-extensions",
+  "description": "List of Markdown file extensions",
+  "source": "@site/node_modules/markdown-extensions/readme.md",
+  "sourceDirName": "node_modules/markdown-extensions",
+  "slug": "/node_modules/markdown-extensions/",
+  "permalink": "/node_modules/markdown-extensions/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/npm-run-path/readme",
+  "title": "npm-run-path [![Build Status](https://travis-ci.org/sindresorhus/npm-run-path.svg?branch=master)](https://travis-ci.org/sindresorhus/npm-run-path)",
+  "description": "Get your PATH) prepended with locally installed binaries",
+  "source": "@site/node_modules/npm-run-path/readme.md",
+  "sourceDirName": "node_modules/npm-run-path",
+  "slug": "/node_modules/npm-run-path/",
+  "permalink": "/node_modules/npm-run-path/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

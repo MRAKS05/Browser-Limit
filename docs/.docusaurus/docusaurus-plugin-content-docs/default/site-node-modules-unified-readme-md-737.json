@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/unified/readme",
+  "title": "[![unified][logo]][site]",
+  "description": "Build",
+  "source": "@site/node_modules/unified/readme.md",
+  "sourceDirName": "node_modules/unified",
+  "slug": "/node_modules/unified/",
+  "permalink": "/node_modules/unified/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

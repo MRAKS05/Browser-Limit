@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/shell-quote/README",
+  "title": "shell-quote <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/node_modules/shell-quote/README.md",
+  "sourceDirName": "node_modules/shell-quote",
+  "slug": "/node_modules/shell-quote/",
+  "permalink": "/node_modules/shell-quote/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

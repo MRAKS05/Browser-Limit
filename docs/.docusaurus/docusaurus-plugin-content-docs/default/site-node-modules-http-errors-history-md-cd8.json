@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/http-errors/HISTORY",
+  "title": "2.0.1 / 2025-11-20",
+  "description": "* deps: use tilde notation for dependencies",
+  "source": "@site/node_modules/http-errors/HISTORY.md",
+  "sourceDirName": "node_modules/http-errors",
+  "slug": "/node_modules/http-errors/HISTORY",
+  "permalink": "/node_modules/http-errors/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

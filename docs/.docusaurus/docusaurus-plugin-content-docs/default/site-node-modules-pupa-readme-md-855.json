@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/pupa/readme",
+  "title": "pupa",
+  "description": "Simple micro templating",
+  "source": "@site/node_modules/pupa/readme.md",
+  "sourceDirName": "node_modules/pupa",
+  "slug": "/node_modules/pupa/",
+  "permalink": "/node_modules/pupa/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

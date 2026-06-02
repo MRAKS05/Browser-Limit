@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/rw/README",
+  "title": "rw - Now stdin and stdout are files.",
+  "description": "How do you read a file from stdin? If you thought,",
+  "source": "@site/node_modules/rw/README.md",
+  "sourceDirName": "node_modules/rw",
+  "slug": "/node_modules/rw/",
+  "permalink": "/node_modules/rw/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

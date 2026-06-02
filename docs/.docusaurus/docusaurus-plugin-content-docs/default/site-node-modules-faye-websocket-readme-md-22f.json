@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/faye-websocket/README",
+  "title": "faye-websocket",
+  "description": "This is a general-purpose WebSocket implementation extracted from the",
+  "source": "@site/node_modules/faye-websocket/README.md",
+  "sourceDirName": "node_modules/faye-websocket",
+  "slug": "/node_modules/faye-websocket/",
+  "permalink": "/node_modules/faye-websocket/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/readme",
+  "title": "escape-string-regexp",
+  "description": "Escape RegExp special characters",
+  "source": "@site/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/readme.md",
+  "sourceDirName": "node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp",
+  "slug": "/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/",
+  "permalink": "/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

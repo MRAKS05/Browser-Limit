@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/trusted-types/README",
+  "title": "Installation",
+  "description": "npm install --save @types/trusted-types",
+  "source": "@site/node_modules/@types/trusted-types/README.md",
+  "sourceDirName": "node_modules/@types/trusted-types",
+  "slug": "/node_modules/@types/trusted-types/",
+  "permalink": "/node_modules/@types/trusted-types/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

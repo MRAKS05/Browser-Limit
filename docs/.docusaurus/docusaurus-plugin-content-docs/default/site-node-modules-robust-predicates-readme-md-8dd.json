@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/robust-predicates/README",
+  "title": "robust-predicates",
+  "description": "Fast robust predicates for computational geometry in JavaScript. Provides reliable 2D and 3D point orientation tests (orient2d, orient3d, incircle, insphere) that are not susceptible to floating point errors (without sacrificing performance). A modern port of Jonathan R Shewchuk's C code, an industry standard since 1996.",
+  "source": "@site/node_modules/robust-predicates/README.md",
+  "sourceDirName": "node_modules/robust-predicates",
+  "slug": "/node_modules/robust-predicates/",
+  "permalink": "/node_modules/robust-predicates/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-syntax-dynamic-import/README",
+  "title": "@babel/plugin-syntax-dynamic-import",
+  "description": "Allow parsing of import()",
+  "source": "@site/node_modules/@babel/plugin-syntax-dynamic-import/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-syntax-dynamic-import",
+  "slug": "/node_modules/@babel/plugin-syntax-dynamic-import/",
+  "permalink": "/node_modules/@babel/plugin-syntax-dynamic-import/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

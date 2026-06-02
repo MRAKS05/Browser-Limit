@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-sankey/node_modules/d3-shape/README",
+  "title": "d3-shape",
+  "description": "Visualizations typically consist of discrete graphical marks, such as symbols, arcs, lines and areas. While the rectangles of a bar chart may be easy enough to generate directly using SVG or Canvas, other shapes are complex, such as rounded annular sectors and centripetal Catmull–Rom splines. This module provides a variety of shape generators for your convenience.",
+  "source": "@site/node_modules/d3-sankey/node_modules/d3-shape/README.md",
+  "sourceDirName": "node_modules/d3-sankey/node_modules/d3-shape",
+  "slug": "/node_modules/d3-sankey/node_modules/d3-shape/",
+  "permalink": "/node_modules/d3-sankey/node_modules/d3-shape/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

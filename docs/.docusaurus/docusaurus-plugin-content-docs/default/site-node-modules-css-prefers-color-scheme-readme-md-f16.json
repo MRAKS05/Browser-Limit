@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/css-prefers-color-scheme/README",
+  "title": "Prefers Color Scheme [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install css-prefers-color-scheme --save-dev",
+  "source": "@site/node_modules/css-prefers-color-scheme/README.md",
+  "sourceDirName": "node_modules/css-prefers-color-scheme",
+  "slug": "/node_modules/css-prefers-color-scheme/",
+  "permalink": "/node_modules/css-prefers-color-scheme/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

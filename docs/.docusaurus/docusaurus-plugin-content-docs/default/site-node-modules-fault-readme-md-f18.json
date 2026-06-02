@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/fault/readme",
+  "title": "fault",
+  "description": "Build",
+  "source": "@site/node_modules/fault/readme.md",
+  "sourceDirName": "node_modules/fault",
+  "slug": "/node_modules/fault/",
+  "permalink": "/node_modules/fault/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

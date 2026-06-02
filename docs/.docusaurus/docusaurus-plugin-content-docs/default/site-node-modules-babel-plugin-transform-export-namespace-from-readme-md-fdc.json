@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-export-namespace-from/README",
+  "title": "@babel/plugin-transform-export-namespace-from",
+  "description": "Compile export namespace to ES2015",
+  "source": "@site/node_modules/@babel/plugin-transform-export-namespace-from/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-export-namespace-from",
+  "slug": "/node_modules/@babel/plugin-transform-export-namespace-from/",
+  "permalink": "/node_modules/@babel/plugin-transform-export-namespace-from/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

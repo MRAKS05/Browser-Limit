@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/kleur/readme",
+  "title": "readme",
+  "description": "The fastest Node.js library for formatting terminal text with ANSI colors~!",
+  "source": "@site/node_modules/kleur/readme.md",
+  "sourceDirName": "node_modules/kleur",
+  "slug": "/node_modules/kleur/",
+  "permalink": "/node_modules/kleur/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

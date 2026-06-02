@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-unicode-escapes/README",
+  "title": "@babel/plugin-transform-unicode-escapes",
+  "description": "Compile ES2015 Unicode escapes to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-unicode-escapes/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-unicode-escapes",
+  "slug": "/node_modules/@babel/plugin-transform-unicode-escapes/",
+  "permalink": "/node_modules/@babel/plugin-transform-unicode-escapes/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

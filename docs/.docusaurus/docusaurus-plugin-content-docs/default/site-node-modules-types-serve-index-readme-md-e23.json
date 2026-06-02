@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/serve-index/README",
+  "title": "Installation",
+  "description": "npm install --save @types/serve-index",
+  "source": "@site/node_modules/@types/serve-index/README.md",
+  "sourceDirName": "node_modules/@types/serve-index",
+  "slug": "/node_modules/@types/serve-index/",
+  "permalink": "/node_modules/@types/serve-index/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

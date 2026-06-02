@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/template/README",
+  "title": "@babel/template",
+  "description": "Generate an AST from a string template.",
+  "source": "@site/node_modules/@babel/template/README.md",
+  "sourceDirName": "node_modules/@babel/template",
+  "slug": "/node_modules/@babel/template/",
+  "permalink": "/node_modules/@babel/template/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/recma-parse/readme",
+  "title": "recma-parse",
+  "description": "Build",
+  "source": "@site/node_modules/recma-parse/readme.md",
+  "sourceDirName": "node_modules/recma-parse",
+  "slug": "/node_modules/recma-parse/",
+  "permalink": "/node_modules/recma-parse/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/latest-version/readme",
+  "title": "latest-version",
+  "description": "Get the latest version of an npm package",
+  "source": "@site/node_modules/latest-version/readme.md",
+  "sourceDirName": "node_modules/latest-version",
+  "slug": "/node_modules/latest-version/",
+  "permalink": "/node_modules/latest-version/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

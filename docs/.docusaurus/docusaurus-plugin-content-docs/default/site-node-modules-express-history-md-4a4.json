@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/express/History",
+  "title": "4.22.2 / 2026-05-011",
+  "description": "* fix: restore >20 array parsing for req.query repeated keys (8d09bfe6)",
+  "source": "@site/node_modules/express/History.md",
+  "sourceDirName": "node_modules/express",
+  "slug": "/node_modules/express/History",
+  "permalink": "/node_modules/express/History",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

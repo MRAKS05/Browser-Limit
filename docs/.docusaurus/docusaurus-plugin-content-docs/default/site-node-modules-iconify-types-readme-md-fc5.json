@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@iconify/types/README",
+  "title": "Iconify Types",
+  "description": "Type definitions for using Iconify icon sets with TypeScript.",
+  "source": "@site/node_modules/@iconify/types/README.md",
+  "sourceDirName": "node_modules/@iconify/types",
+  "slug": "/node_modules/@iconify/types/",
+  "permalink": "/node_modules/@iconify/types/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

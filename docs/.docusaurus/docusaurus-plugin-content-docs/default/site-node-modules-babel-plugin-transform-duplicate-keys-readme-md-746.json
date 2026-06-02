@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-duplicate-keys/README",
+  "title": "@babel/plugin-transform-duplicate-keys",
+  "description": "Compile objects with duplicate keys to valid strict ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-duplicate-keys/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-duplicate-keys",
+  "slug": "/node_modules/@babel/plugin-transform-duplicate-keys/",
+  "permalink": "/node_modules/@babel/plugin-transform-duplicate-keys/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

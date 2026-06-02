@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/isarray/README",
+  "title": "isarray",
+  "description": "Array#isArray for older browsers.",
+  "source": "@site/node_modules/isarray/README.md",
+  "sourceDirName": "node_modules/isarray",
+  "slug": "/node_modules/isarray/",
+  "permalink": "/node_modules/isarray/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

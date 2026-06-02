@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/remark-parse/readme",
+  "title": "remark-parse",
+  "description": "Build",
+  "source": "@site/node_modules/remark-parse/readme.md",
+  "sourceDirName": "node_modules/remark-parse",
+  "slug": "/node_modules/remark-parse/",
+  "permalink": "/node_modules/remark-parse/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

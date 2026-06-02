@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-scale-chromatic/README",
+  "title": "d3-scale-chromatic",
+  "description": "This module provides sequential, diverging and categorical color schemes designed to work with d3-scale’s scaleOrdinal and scaleSequential. Most of these schemes are derived from Cynthia A. Brewer’s ColorBrewer. Since ColorBrewer publishes only discrete color schemes, the sequential and diverging scales are interpolated using uniform B-splines.",
+  "source": "@site/node_modules/d3-scale-chromatic/README.md",
+  "sourceDirName": "node_modules/d3-scale-chromatic",
+  "slug": "/node_modules/d3-scale-chromatic/",
+  "permalink": "/node_modules/d3-scale-chromatic/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

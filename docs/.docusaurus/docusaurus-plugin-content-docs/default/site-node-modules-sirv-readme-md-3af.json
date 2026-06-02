@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sirv/readme",
+  "title": "sirv ![CI](https://github.com/lukeed/sirv/workflows/CI/badge.svg)",
+  "description": "The optimized and lightweight middleware for serving requests to static assets",
+  "source": "@site/node_modules/sirv/readme.md",
+  "sourceDirName": "node_modules/sirv",
+  "slug": "/node_modules/sirv/",
+  "permalink": "/node_modules/sirv/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

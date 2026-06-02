@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/pkijs/README",
+  "title": "README",
+  "description": "PKIjs",
+  "source": "@site/node_modules/pkijs/README.md",
+  "sourceDirName": "node_modules/pkijs",
+  "slug": "/node_modules/pkijs/",
+  "permalink": "/node_modules/pkijs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

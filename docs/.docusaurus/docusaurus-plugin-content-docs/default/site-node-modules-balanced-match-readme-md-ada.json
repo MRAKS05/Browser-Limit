@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/balanced-match/README",
+  "title": "balanced-match",
+  "description": "Match balanced string pairs, like { and } or ` and `. Supports regular expressions as well!",
+  "source": "@site/node_modules/balanced-match/README.md",
+  "sourceDirName": "node_modules/balanced-match",
+  "slug": "/node_modules/balanced-match/",
+  "permalink": "/node_modules/balanced-match/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

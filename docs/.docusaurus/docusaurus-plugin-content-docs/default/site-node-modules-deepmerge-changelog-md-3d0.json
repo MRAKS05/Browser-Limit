@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/deepmerge/changelog",
+  "title": "[4.3.1](https://github.com/TehShrike/deepmerge/releases/tag/v4.3.1)",
+  "description": "- Fix type definition for arrayMerge options.  #239",
+  "source": "@site/node_modules/deepmerge/changelog.md",
+  "sourceDirName": "node_modules/deepmerge",
+  "slug": "/node_modules/deepmerge/changelog",
+  "permalink": "/node_modules/deepmerge/changelog",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

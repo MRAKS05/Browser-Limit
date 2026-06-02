@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/deepmerge/readme",
+  "title": "deepmerge",
+  "description": "Merges the enumerable properties of two or more objects deeply.",
+  "source": "@site/node_modules/deepmerge/readme.md",
+  "sourceDirName": "node_modules/deepmerge",
+  "slug": "/node_modules/deepmerge/",
+  "permalink": "/node_modules/deepmerge/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

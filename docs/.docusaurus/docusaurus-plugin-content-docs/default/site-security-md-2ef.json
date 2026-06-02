@@ -1,0 +1,27 @@
+{
+  "id": "security",
+  "title": "Security and Parental Lock",
+  "description": "Browser Limit includes a parental lock system designed to prevent unauthorized or impulsive changes to the app's configuration. This is particularly useful in environments where the app is used for digital wellness or parental control.",
+  "source": "@site/security.md",
+  "sourceDirName": ".",
+  "slug": "/security",
+  "permalink": "/security",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "security",
+    "title": "Security and Parental Lock",
+    "sidebar_label": "Security"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Shizuku",
+    "permalink": "/shizuku"
+  },
+  "next": {
+    "title": "Exceptions",
+    "permalink": "/exceptions"
+  }
+}

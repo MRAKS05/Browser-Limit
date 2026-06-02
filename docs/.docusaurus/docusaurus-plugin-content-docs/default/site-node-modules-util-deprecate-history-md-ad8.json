@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/util-deprecate/History",
+  "title": "1.0.2 / 2015-10-07",
+  "description": "* use try/catch when checking localStorage (#3, @kumavis)",
+  "source": "@site/node_modules/util-deprecate/History.md",
+  "sourceDirName": "node_modules/util-deprecate",
+  "slug": "/node_modules/util-deprecate/History",
+  "permalink": "/node_modules/util-deprecate/History",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

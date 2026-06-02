@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/core-js/es/README",
+  "title": "README",
+  "description": "This folder contains entry points for stable ECMAScript features with dependencies.",
+  "source": "@site/node_modules/core-js/es/README.md",
+  "sourceDirName": "node_modules/core-js/es",
+  "slug": "/node_modules/core-js/es/",
+  "permalink": "/node_modules/core-js/es/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

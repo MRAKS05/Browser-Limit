@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-create-regexp-features-plugin/README",
+  "title": "@babel/helper-create-regexp-features-plugin",
+  "description": "Compile ESNext Regular Expressions to ES5",
+  "source": "@site/node_modules/@babel/helper-create-regexp-features-plugin/README.md",
+  "sourceDirName": "node_modules/@babel/helper-create-regexp-features-plugin",
+  "slug": "/node_modules/@babel/helper-create-regexp-features-plugin/",
+  "permalink": "/node_modules/@babel/helper-create-regexp-features-plugin/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

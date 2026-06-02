@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/thingies/README",
+  "title": "thingies",
+  "description": "Useful TypeScript utilities.",
+  "source": "@site/node_modules/thingies/README.md",
+  "sourceDirName": "node_modules/thingies",
+  "slug": "/node_modules/thingies/",
+  "permalink": "/node_modules/thingies/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

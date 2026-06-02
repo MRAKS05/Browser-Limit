@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/webpack-dev-server/README",
+  "title": "README",
+  "description": "npm",
+  "source": "@site/node_modules/webpack-dev-server/README.md",
+  "sourceDirName": "node_modules/webpack-dev-server",
+  "slug": "/node_modules/webpack-dev-server/",
+  "permalink": "/node_modules/webpack-dev-server/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

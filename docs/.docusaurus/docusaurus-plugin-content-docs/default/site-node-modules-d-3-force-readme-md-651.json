@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-force/README",
+  "title": "d3-force",
+  "description": "This module implements a velocity Verlet numerical integrator for simulating physical forces on particles. The simulation is simplified: it assumes a constant unit time step Δt = 1 for each step, and a constant unit mass m = 1 for all particles. As a result, a force F acting on a particle is equivalent to a constant acceleration a over the time interval Δt, and can be simulated simply by adding to the particle’s velocity, which is then added to the particle’s position.",
+  "source": "@site/node_modules/d3-force/README.md",
+  "sourceDirName": "node_modules/d3-force",
+  "slug": "/node_modules/d3-force/",
+  "permalink": "/node_modules/d3-force/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

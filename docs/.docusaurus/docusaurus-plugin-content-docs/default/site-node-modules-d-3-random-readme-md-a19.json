@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-random/README",
+  "title": "d3-random",
+  "description": "Generate random numbers from various distributions.",
+  "source": "@site/node_modules/d3-random/README.md",
+  "sourceDirName": "node_modules/d3-random",
+  "slug": "/node_modules/d3-random/",
+  "permalink": "/node_modules/d3-random/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

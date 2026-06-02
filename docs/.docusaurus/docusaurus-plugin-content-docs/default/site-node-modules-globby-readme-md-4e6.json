@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/globby/readme",
+  "title": "globby",
+  "description": "User-friendly glob matching",
+  "source": "@site/node_modules/globby/readme.md",
+  "sourceDirName": "node_modules/globby",
+  "slug": "/node_modules/globby/",
+  "permalink": "/node_modules/globby/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

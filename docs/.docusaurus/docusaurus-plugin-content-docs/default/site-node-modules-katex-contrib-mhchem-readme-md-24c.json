@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/katex/contrib/mhchem/README",
+  "title": "mhchem extension",
+  "description": "This extension adds to KaTeX the \\ce and \\pu functions from the mhchem package.",
+  "source": "@site/node_modules/katex/contrib/mhchem/README.md",
+  "sourceDirName": "node_modules/katex/contrib/mhchem",
+  "slug": "/node_modules/katex/contrib/mhchem/",
+  "permalink": "/node_modules/katex/contrib/mhchem/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

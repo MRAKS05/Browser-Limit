@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cssnano-preset-advanced/README",
+  "title": "cssnano-preset-advanced",
+  "description": "Advanced optimisations for cssnano; may or may not break your CSS!",
+  "source": "@site/node_modules/cssnano-preset-advanced/README.md",
+  "sourceDirName": "node_modules/cssnano-preset-advanced",
+  "slug": "/node_modules/cssnano-preset-advanced/",
+  "permalink": "/node_modules/cssnano-preset-advanced/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

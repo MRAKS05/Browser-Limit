@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@sinclair/typebox/readme",
+  "title": "readme",
+  "description": "TypeBox",
+  "source": "@site/node_modules/@sinclair/typebox/readme.md",
+  "sourceDirName": "node_modules/@sinclair/typebox",
+  "slug": "/node_modules/@sinclair/typebox/",
+  "permalink": "/node_modules/@sinclair/typebox/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

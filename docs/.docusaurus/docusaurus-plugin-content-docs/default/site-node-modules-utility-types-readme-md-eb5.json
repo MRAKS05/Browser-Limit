@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/utility-types/README",
+  "title": "README",
+  "description": "Collection of utility types, complementing TypeScript built-in mapped types and aliases (think \"lodash\" for static types).",
+  "source": "@site/node_modules/utility-types/README.md",
+  "sourceDirName": "node_modules/utility-types",
+  "slug": "/node_modules/utility-types/",
+  "permalink": "/node_modules/utility-types/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

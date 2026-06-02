@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-private-methods/README",
+  "title": "@babel/plugin-transform-private-methods",
+  "description": "This plugin transforms private class methods",
+  "source": "@site/node_modules/@babel/plugin-transform-private-methods/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-private-methods",
+  "slug": "/node_modules/@babel/plugin-transform-private-methods/",
+  "permalink": "/node_modules/@babel/plugin-transform-private-methods/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

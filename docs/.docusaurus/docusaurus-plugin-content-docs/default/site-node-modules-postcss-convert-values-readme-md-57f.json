@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-convert-values/README",
+  "title": "[postcss][postcss]-convert-values",
+  "description": "Convert values with PostCSS (e.g. ms -> s)",
+  "source": "@site/node_modules/postcss-convert-values/README.md",
+  "sourceDirName": "node_modules/postcss-convert-values",
+  "slug": "/node_modules/postcss-convert-values/",
+  "permalink": "/node_modules/postcss-convert-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

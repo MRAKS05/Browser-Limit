@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@ungap/structured-clone/README",
+  "title": "structuredClone polyfill",
+  "description": "Downloads build status Coverage Status",
+  "source": "@site/node_modules/@ungap/structured-clone/README.md",
+  "sourceDirName": "node_modules/@ungap/structured-clone",
+  "slug": "/node_modules/@ungap/structured-clone/",
+  "permalink": "/node_modules/@ungap/structured-clone/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

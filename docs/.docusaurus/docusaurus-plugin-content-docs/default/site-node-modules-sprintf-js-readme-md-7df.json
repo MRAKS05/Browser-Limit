@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sprintf-js/README",
+  "title": "sprintf.js",
+  "description": "sprintf.js is a complete open source JavaScript sprintf implementation for the browser and node.js.",
+  "source": "@site/node_modules/sprintf-js/README.md",
+  "sourceDirName": "node_modules/sprintf-js",
+  "slug": "/node_modules/sprintf-js/",
+  "permalink": "/node_modules/sprintf-js/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/mdx/README",
+  "title": "Installation",
+  "description": "npm install --save @types/mdx",
+  "source": "@site/node_modules/@types/mdx/README.md",
+  "sourceDirName": "node_modules/@types/mdx",
+  "slug": "/node_modules/@types/mdx/",
+  "permalink": "/node_modules/@types/mdx/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

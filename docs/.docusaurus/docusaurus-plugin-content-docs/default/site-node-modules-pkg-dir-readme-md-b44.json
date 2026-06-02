@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/pkg-dir/readme",
+  "title": "pkg-dir",
+  "description": "Find the root directory of a Node.js project or npm package",
+  "source": "@site/node_modules/pkg-dir/readme.md",
+  "sourceDirName": "node_modules/pkg-dir",
+  "slug": "/node_modules/pkg-dir/",
+  "permalink": "/node_modules/pkg-dir/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

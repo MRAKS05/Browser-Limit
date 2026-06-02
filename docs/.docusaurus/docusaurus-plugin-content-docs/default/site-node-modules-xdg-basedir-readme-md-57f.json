@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/xdg-basedir/readme",
+  "title": "xdg-basedir",
+  "description": "Get XDG Base Directory paths",
+  "source": "@site/node_modules/xdg-basedir/readme.md",
+  "sourceDirName": "node_modules/xdg-basedir",
+  "slug": "/node_modules/xdg-basedir/",
+  "permalink": "/node_modules/xdg-basedir/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

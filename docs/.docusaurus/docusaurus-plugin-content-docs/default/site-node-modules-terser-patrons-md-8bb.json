@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/terser/PATRONS",
+  "title": "Our patrons",
+  "description": "These are the first-tier patrons from Patreon (notice: The Terser Patreon is shutting down in favor of opencollective). My appreciation goes to everyone on this list for supporting the project!",
+  "source": "@site/node_modules/terser/PATRONS.md",
+  "sourceDirName": "node_modules/terser",
+  "slug": "/node_modules/terser/PATRONS",
+  "permalink": "/node_modules/terser/PATRONS",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

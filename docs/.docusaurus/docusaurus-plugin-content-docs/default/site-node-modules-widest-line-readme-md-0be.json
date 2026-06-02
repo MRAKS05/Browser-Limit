@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/widest-line/readme",
+  "title": "widest-line",
+  "description": "Get the visual width of the widest line in a string - the number of columns required to display it",
+  "source": "@site/node_modules/widest-line/readme.md",
+  "sourceDirName": "node_modules/widest-line",
+  "slug": "/node_modules/widest-line/",
+  "permalink": "/node_modules/widest-line/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

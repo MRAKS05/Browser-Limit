@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-template-literals/README",
+  "title": "@babel/plugin-transform-template-literals",
+  "description": "Compile ES2015 template literals to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-template-literals/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-template-literals",
+  "slug": "/node_modules/@babel/plugin-transform-template-literals/",
+  "permalink": "/node_modules/@babel/plugin-transform-template-literals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

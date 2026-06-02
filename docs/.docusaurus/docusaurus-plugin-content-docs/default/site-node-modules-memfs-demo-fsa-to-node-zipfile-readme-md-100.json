@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/demo/fsa-to-node-zipfile/README",
+  "title": "README",
+  "description": "This demo shows how tar-stream package can be used to create a zip file from",
+  "source": "@site/node_modules/memfs/demo/fsa-to-node-zipfile/README.md",
+  "sourceDirName": "node_modules/memfs/demo/fsa-to-node-zipfile",
+  "slug": "/node_modules/memfs/demo/fsa-to-node-zipfile/",
+  "permalink": "/node_modules/memfs/demo/fsa-to-node-zipfile/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

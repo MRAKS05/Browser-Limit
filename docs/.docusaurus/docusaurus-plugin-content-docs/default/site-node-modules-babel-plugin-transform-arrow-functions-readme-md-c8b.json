@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-arrow-functions/README",
+  "title": "@babel/plugin-transform-arrow-functions",
+  "description": "Compile ES2015 arrow functions to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-arrow-functions/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-arrow-functions",
+  "slug": "/node_modules/@babel/plugin-transform-arrow-functions/",
+  "permalink": "/node_modules/@babel/plugin-transform-arrow-functions/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

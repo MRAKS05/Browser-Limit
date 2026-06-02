@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@sideway/pinpoint/README",
+  "title": "@sideway/pinpoint",
+  "description": "Return the filename and line number of the calling function.",
+  "source": "@site/node_modules/@sideway/pinpoint/README.md",
+  "sourceDirName": "node_modules/@sideway/pinpoint",
+  "slug": "/node_modules/@sideway/pinpoint/",
+  "permalink": "/node_modules/@sideway/pinpoint/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

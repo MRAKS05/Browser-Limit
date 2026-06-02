@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/error-ex/README",
+  "title": "node-error-ex [![Travis-CI.org Build Status](https://img.shields.io/travis/Qix-/node-error-ex.svg?style=flat-square)](https://travis-ci.org/Qix-/node-error-ex) [![Coveralls.io Coverage Rating](https://img.shields.io/coveralls/Qix-/node-error-ex.svg?style=flat-square)](https://coveralls.io/r/Qix-/node-error-ex)",
+  "description": "Easily subclass and customize new Error types",
+  "source": "@site/node_modules/error-ex/README.md",
+  "sourceDirName": "node_modules/error-ex",
+  "slug": "/node_modules/error-ex/",
+  "permalink": "/node_modules/error-ex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

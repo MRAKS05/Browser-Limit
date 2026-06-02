@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-plain-obj/readme",
+  "title": "is-plain-obj",
+  "description": "Check if a value is a plain object",
+  "source": "@site/node_modules/is-plain-obj/readme.md",
+  "sourceDirName": "node_modules/is-plain-obj",
+  "slug": "/node_modules/is-plain-obj/",
+  "permalink": "/node_modules/is-plain-obj/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

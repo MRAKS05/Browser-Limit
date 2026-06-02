@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/typescript/README",
+  "title": "TypeScript",
+  "description": "CI",
+  "source": "@site/node_modules/typescript/README.md",
+  "sourceDirName": "node_modules/typescript",
+  "slug": "/node_modules/typescript/",
+  "permalink": "/node_modules/typescript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

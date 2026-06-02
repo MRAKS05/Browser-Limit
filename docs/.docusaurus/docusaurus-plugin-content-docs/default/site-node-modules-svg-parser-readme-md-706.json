@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/svg-parser/README",
+  "title": "svg-parser",
+  "description": "Take a string representing an SVG document or fragment, turn it into HAST JavaScript object.",
+  "source": "@site/node_modules/svg-parser/README.md",
+  "sourceDirName": "node_modules/svg-parser",
+  "slug": "/node_modules/svg-parser/",
+  "permalink": "/node_modules/svg-parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

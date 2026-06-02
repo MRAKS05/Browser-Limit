@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/glob-to-regex.js/README",
+  "title": "glob-to-regex.js",
+  "description": "Transform GLOB patterns to JavaScript regular expressions for fast file path matching.",
+  "source": "@site/node_modules/glob-to-regex.js/README.md",
+  "sourceDirName": "node_modules/glob-to-regex.js",
+  "slug": "/node_modules/glob-to-regex.js/",
+  "permalink": "/node_modules/glob-to-regex.js/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

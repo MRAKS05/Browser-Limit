@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-interpolate/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-interpolate",
+  "source": "@site/node_modules/@types/d3-interpolate/README.md",
+  "sourceDirName": "node_modules/@types/d3-interpolate",
+  "slug": "/node_modules/@types/d3-interpolate/",
+  "permalink": "/node_modules/@types/d3-interpolate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

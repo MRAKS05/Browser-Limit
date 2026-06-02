@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/configstore/readme",
+  "title": "configstore",
+  "description": "Easily load and persist config without having to think about where and how",
+  "source": "@site/node_modules/configstore/readme.md",
+  "sourceDirName": "node_modules/configstore",
+  "slug": "/node_modules/configstore/",
+  "permalink": "/node_modules/configstore/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

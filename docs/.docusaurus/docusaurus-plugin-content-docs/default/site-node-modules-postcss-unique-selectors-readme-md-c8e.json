@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-unique-selectors/README",
+  "title": "[postcss][postcss]-unique-selectors",
+  "description": "Ensure CSS selectors are unique.",
+  "source": "@site/node_modules/postcss-unique-selectors/README.md",
+  "sourceDirName": "node_modules/postcss-unique-selectors",
+  "slug": "/node_modules/postcss-unique-selectors/",
+  "permalink": "/node_modules/postcss-unique-selectors/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jest/types/README",
+  "title": "@jest/types",
+  "description": "This package contains shared types of Jest's packages.",
+  "source": "@site/node_modules/@jest/types/README.md",
+  "sourceDirName": "node_modules/@jest/types",
+  "slug": "/node_modules/@jest/types/",
+  "permalink": "/node_modules/@jest/types/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

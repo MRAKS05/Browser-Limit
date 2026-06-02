@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@webassemblyjs/ast/README",
+  "title": "@webassemblyjs/ast",
+  "description": "AST utils for webassemblyjs",
+  "source": "@site/node_modules/@webassemblyjs/ast/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/ast",
+  "slug": "/node_modules/@webassemblyjs/ast/",
+  "permalink": "/node_modules/@webassemblyjs/ast/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

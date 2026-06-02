@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/esast-util-from-estree/readme",
+  "title": "esast-util-from-estree",
+  "description": "Build",
+  "source": "@site/node_modules/esast-util-from-estree/readme.md",
+  "sourceDirName": "node_modules/esast-util-from-estree",
+  "slug": "/node_modules/esast-util-from-estree/",
+  "permalink": "/node_modules/esast-util-from-estree/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mime/README",
+  "title": "mime",
+  "description": "Comprehensive MIME type mapping API based on mime-db module.",
+  "source": "@site/node_modules/mime/README.md",
+  "sourceDirName": "node_modules/mime",
+  "slug": "/node_modules/mime/",
+  "permalink": "/node_modules/mime/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

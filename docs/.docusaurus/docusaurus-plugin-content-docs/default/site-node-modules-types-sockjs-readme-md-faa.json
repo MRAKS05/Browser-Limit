@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/sockjs/README",
+  "title": "Installation",
+  "description": "npm install --save @types/sockjs",
+  "source": "@site/node_modules/@types/sockjs/README.md",
+  "sourceDirName": "node_modules/@types/sockjs",
+  "slug": "/node_modules/@types/sockjs/",
+  "permalink": "/node_modules/@types/sockjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

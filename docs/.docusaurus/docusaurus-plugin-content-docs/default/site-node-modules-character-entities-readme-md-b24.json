@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/character-entities/readme",
+  "title": "character-entities",
+  "description": "Build",
+  "source": "@site/node_modules/character-entities/readme.md",
+  "sourceDirName": "node_modules/character-entities",
+  "slug": "/node_modules/character-entities/",
+  "permalink": "/node_modules/character-entities/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

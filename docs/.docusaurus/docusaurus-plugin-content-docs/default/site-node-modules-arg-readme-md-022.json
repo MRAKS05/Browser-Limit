@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/arg/README",
+  "title": "Arg",
+  "description": "arg is an unopinionated, no-frills CLI argument parser.",
+  "source": "@site/node_modules/arg/README.md",
+  "sourceDirName": "node_modules/arg",
+  "slug": "/node_modules/arg/",
+  "permalink": "/node_modules/arg/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

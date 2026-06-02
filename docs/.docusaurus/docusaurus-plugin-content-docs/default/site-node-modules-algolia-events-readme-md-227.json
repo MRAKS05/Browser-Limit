@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@algolia/events/Readme",
+  "title": "events [![Build Status](https://travis-ci.org/Gozala/events.png?branch=master)](https://travis-ci.org/Gozala/events)",
+  "description": "Algolia's fork of Node's event emitter for all engines.",
+  "source": "@site/node_modules/@algolia/events/Readme.md",
+  "sourceDirName": "node_modules/@algolia/events",
+  "slug": "/node_modules/@algolia/events/",
+  "permalink": "/node_modules/@algolia/events/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

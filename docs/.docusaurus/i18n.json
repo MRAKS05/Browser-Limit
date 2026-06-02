@@ -1,0 +1,20 @@
+{
+  "defaultLocale": "en",
+  "locales": [
+    "en"
+  ],
+  "path": "i18n",
+  "currentLocale": "en",
+  "localeConfigs": {
+    "en": {
+      "label": "English",
+      "direction": "ltr",
+      "htmlLang": "en",
+      "calendar": "gregory",
+      "path": "en",
+      "translate": false,
+      "url": "https://11bf55ff-558c-401c-9bd1-541c034cd042-00-10ofahh9rpdan.riker.replit.dev",
+      "baseUrl": "/"
+    }
+  }
+}

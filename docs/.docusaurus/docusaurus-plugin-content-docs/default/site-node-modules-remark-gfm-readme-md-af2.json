@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/remark-gfm/readme",
+  "title": "remark-gfm",
+  "description": "Build",
+  "source": "@site/node_modules/remark-gfm/readme.md",
+  "sourceDirName": "node_modules/remark-gfm",
+  "slug": "/node_modules/remark-gfm/",
+  "permalink": "/node_modules/remark-gfm/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

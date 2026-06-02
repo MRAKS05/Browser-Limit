@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@mdx-js/mdx/readme",
+  "title": "@mdx-js/mdx",
+  "description": "Build",
+  "source": "@site/node_modules/@mdx-js/mdx/readme.md",
+  "sourceDirName": "node_modules/@mdx-js/mdx",
+  "slug": "/node_modules/@mdx-js/mdx/",
+  "permalink": "/node_modules/@mdx-js/mdx/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

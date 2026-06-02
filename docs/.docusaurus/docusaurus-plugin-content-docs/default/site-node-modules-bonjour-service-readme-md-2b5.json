@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/bonjour-service/README",
+  "title": "bonjour-service",
+  "description": "GitHub Actions Workflow Status",
+  "source": "@site/node_modules/bonjour-service/README.md",
+  "sourceDirName": "node_modules/bonjour-service",
+  "slug": "/node_modules/bonjour-service/",
+  "permalink": "/node_modules/bonjour-service/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

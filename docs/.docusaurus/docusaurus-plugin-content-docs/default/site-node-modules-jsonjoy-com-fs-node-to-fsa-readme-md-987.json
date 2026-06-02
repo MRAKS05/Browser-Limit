@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-node-to-fsa/README",
+  "title": "@jsonjoy.com/fs-node-to-fsa",
+  "description": "Adapter to convert Node.js fs API to File System Access API (FSA).",
+  "source": "@site/node_modules/@jsonjoy.com/fs-node-to-fsa/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-node-to-fsa",
+  "slug": "/node_modules/@jsonjoy.com/fs-node-to-fsa/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-node-to-fsa/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

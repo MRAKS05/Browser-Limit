@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/feed/CONTRIBUTING",
+  "title": "How to contribute",
+  "description": "We'd love to accept your patches and contributions to this project. There are a just a few small guidelines you need to follow.",
+  "source": "@site/node_modules/feed/CONTRIBUTING.md",
+  "sourceDirName": "node_modules/feed",
+  "slug": "/node_modules/feed/CONTRIBUTING",
+  "permalink": "/node_modules/feed/CONTRIBUTING",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

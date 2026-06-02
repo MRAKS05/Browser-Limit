@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/open/readme",
+  "title": "open",
+  "description": "Open stuff like URLs, files, executables. Cross-platform.",
+  "source": "@site/node_modules/open/readme.md",
+  "sourceDirName": "node_modules/open",
+  "slug": "/node_modules/open/",
+  "permalink": "/node_modules/open/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

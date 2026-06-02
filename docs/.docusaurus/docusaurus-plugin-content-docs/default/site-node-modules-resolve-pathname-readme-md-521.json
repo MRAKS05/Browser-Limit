@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/resolve-pathname/README",
+  "title": "resolve-pathname [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]",
+  "description": "[build-badge]//img.shields.io/travis/mjackson/resolve-pathname/master.svg?style=flat-square",
+  "source": "@site/node_modules/resolve-pathname/README.md",
+  "sourceDirName": "node_modules/resolve-pathname",
+  "slug": "/node_modules/resolve-pathname/",
+  "permalink": "/node_modules/resolve-pathname/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

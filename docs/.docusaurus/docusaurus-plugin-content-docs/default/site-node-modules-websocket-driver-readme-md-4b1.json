@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/websocket-driver/README",
+  "title": "websocket-driver [![Build Status](https://travis-ci.org/faye/websocket-driver-node.svg)](https://travis-ci.org/faye/websocket-driver-node)",
+  "description": "This module provides a complete implementation of the WebSocket protocols that",
+  "source": "@site/node_modules/websocket-driver/README.md",
+  "sourceDirName": "node_modules/websocket-driver",
+  "slug": "/node_modules/websocket-driver/",
+  "permalink": "/node_modules/websocket-driver/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

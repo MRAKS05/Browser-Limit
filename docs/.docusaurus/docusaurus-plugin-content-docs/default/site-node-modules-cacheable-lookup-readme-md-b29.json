@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cacheable-lookup/README",
+  "title": "cacheable-lookup",
+  "description": "A cacheable dns.lookup(…) that respects TTL",
+  "source": "@site/node_modules/cacheable-lookup/README.md",
+  "sourceDirName": "node_modules/cacheable-lookup",
+  "slug": "/node_modules/cacheable-lookup/",
+  "permalink": "/node_modules/cacheable-lookup/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

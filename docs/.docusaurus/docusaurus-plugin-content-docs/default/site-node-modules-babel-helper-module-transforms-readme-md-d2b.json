@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-module-transforms/README",
+  "title": "@babel/helper-module-transforms",
+  "description": "Babel helper functions for implementing ES6 module transformations",
+  "source": "@site/node_modules/@babel/helper-module-transforms/README.md",
+  "sourceDirName": "node_modules/@babel/helper-module-transforms",
+  "slug": "/node_modules/@babel/helper-module-transforms/",
+  "permalink": "/node_modules/@babel/helper-module-transforms/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

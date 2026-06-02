@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/inherits/README",
+  "title": "README",
+  "description": "Browser-friendly inheritance fully compatible with standard node.js",
+  "source": "@site/node_modules/inherits/README.md",
+  "sourceDirName": "node_modules/inherits",
+  "slug": "/node_modules/inherits/",
+  "permalink": "/node_modules/inherits/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

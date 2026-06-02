@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/encodeurl/README",
+  "title": "Encode URL",
+  "description": "Encode a URL to a percent-encoded form, excluding already-encoded sequences.",
+  "source": "@site/node_modules/encodeurl/README.md",
+  "sourceDirName": "node_modules/encodeurl",
+  "slug": "/node_modules/encodeurl/",
+  "permalink": "/node_modules/encodeurl/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

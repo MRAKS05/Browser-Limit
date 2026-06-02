@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-object-rest-spread/README",
+  "title": "@babel/plugin-transform-object-rest-spread",
+  "description": "Compile object rest and spread to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-object-rest-spread/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-object-rest-spread",
+  "slug": "/node_modules/@babel/plugin-transform-object-rest-spread/",
+  "permalink": "/node_modules/@babel/plugin-transform-object-rest-spread/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/form-data-encoder/readme",
+  "title": "form-data-encoder",
+  "description": "Encode FormData content into the multipart/form-data format",
+  "source": "@site/node_modules/form-data-encoder/readme.md",
+  "sourceDirName": "node_modules/form-data-encoder",
+  "slug": "/node_modules/form-data-encoder/",
+  "permalink": "/node_modules/form-data-encoder/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/hast/README",
+  "title": "Installation",
+  "description": "npm install --save @types/hast",
+  "source": "@site/node_modules/@types/hast/README.md",
+  "sourceDirName": "node_modules/@types/hast",
+  "slug": "/node_modules/@types/hast/",
+  "permalink": "/node_modules/@types/hast/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

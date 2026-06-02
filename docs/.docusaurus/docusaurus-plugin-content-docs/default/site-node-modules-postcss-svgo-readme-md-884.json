@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-svgo/README",
+  "title": "[postcss][postcss]-svgo",
+  "description": "Optimise inline SVG with PostCSS.",
+  "source": "@site/node_modules/postcss-svgo/README.md",
+  "sourceDirName": "node_modules/postcss-svgo",
+  "slug": "/node_modules/postcss-svgo/",
+  "permalink": "/node_modules/postcss-svgo/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

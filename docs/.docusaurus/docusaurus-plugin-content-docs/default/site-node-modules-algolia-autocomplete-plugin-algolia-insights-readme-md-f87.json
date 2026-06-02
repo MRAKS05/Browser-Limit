@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@algolia/autocomplete-plugin-algolia-insights/README",
+  "title": "@algolia/autocomplete-plugin-algolia-insights",
+  "description": "The Algolia Insights plugin automatically sends click and conversion events to the Algolia Insights API) whenever a user interacts with the autocomplete.",
+  "source": "@site/node_modules/@algolia/autocomplete-plugin-algolia-insights/README.md",
+  "sourceDirName": "node_modules/@algolia/autocomplete-plugin-algolia-insights",
+  "slug": "/node_modules/@algolia/autocomplete-plugin-algolia-insights/",
+  "permalink": "/node_modules/@algolia/autocomplete-plugin-algolia-insights/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

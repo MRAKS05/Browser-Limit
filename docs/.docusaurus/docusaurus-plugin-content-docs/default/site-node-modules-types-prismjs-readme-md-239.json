@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/prismjs/README",
+  "title": "Installation",
+  "description": "npm install --save @types/prismjs",
+  "source": "@site/node_modules/@types/prismjs/README.md",
+  "sourceDirName": "node_modules/@types/prismjs",
+  "slug": "/node_modules/@types/prismjs/",
+  "permalink": "/node_modules/@types/prismjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

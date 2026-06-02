@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cookie-signature/History",
+  "title": "1.0.7 / 2023-04-12",
+  "description": "* backport the buffer support from the 1.2.x release branch (thanks @FadhiliNjagi!)",
+  "source": "@site/node_modules/cookie-signature/History.md",
+  "sourceDirName": "node_modules/cookie-signature",
+  "slug": "/node_modules/cookie-signature/History",
+  "permalink": "/node_modules/cookie-signature/History",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

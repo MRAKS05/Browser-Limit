@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-plugin-utils/README",
+  "title": "@babel/helper-plugin-utils",
+  "description": "General utilities for plugins to use",
+  "source": "@site/node_modules/@babel/helper-plugin-utils/README.md",
+  "sourceDirName": "node_modules/@babel/helper-plugin-utils",
+  "slug": "/node_modules/@babel/helper-plugin-utils/",
+  "permalink": "/node_modules/@babel/helper-plugin-utils/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

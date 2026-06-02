@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/ws/README",
+  "title": "Installation",
+  "description": "npm install --save @types/ws",
+  "source": "@site/node_modules/@types/ws/README.md",
+  "sourceDirName": "node_modules/@types/ws",
+  "slug": "/node_modules/@types/ws/",
+  "permalink": "/node_modules/@types/ws/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

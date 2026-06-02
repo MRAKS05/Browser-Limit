@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@iconify/utils/readme",
+  "title": "Iconify Utils",
+  "description": "This is a set of helper functions that deal with Iconify icon sets.",
+  "source": "@site/node_modules/@iconify/utils/readme.md",
+  "sourceDirName": "node_modules/@iconify/utils",
+  "slug": "/node_modules/@iconify/utils/",
+  "permalink": "/node_modules/@iconify/utils/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

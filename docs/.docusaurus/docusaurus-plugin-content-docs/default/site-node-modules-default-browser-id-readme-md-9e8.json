@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/default-browser-id/readme",
+  "title": "default-browser-id",
+  "description": "Get the bundle identifier of the default browser (macOS)\\",
+  "source": "@site/node_modules/default-browser-id/readme.md",
+  "sourceDirName": "node_modules/default-browser-id",
+  "slug": "/node_modules/default-browser-id/",
+  "permalink": "/node_modules/default-browser-id/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

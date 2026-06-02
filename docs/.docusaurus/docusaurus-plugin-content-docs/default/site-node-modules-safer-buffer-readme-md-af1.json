@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/safer-buffer/Readme",
+  "title": "safer-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![javascript style guide][standard-image]][standard-url] [![Security Responsible Disclosure][secuirty-image]][secuirty-url]",
+  "description": "[travis-image]//travis-ci.org/ChALkeR/safer-buffer.svg?branch=master",
+  "source": "@site/node_modules/safer-buffer/Readme.md",
+  "sourceDirName": "node_modules/safer-buffer",
+  "slug": "/node_modules/safer-buffer/",
+  "permalink": "/node_modules/safer-buffer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark-extension-gfm-footnote/readme",
+  "title": "micromark-extension-gfm-footnote",
+  "description": "Build",
+  "source": "@site/node_modules/micromark-extension-gfm-footnote/readme.md",
+  "sourceDirName": "node_modules/micromark-extension-gfm-footnote",
+  "slug": "/node_modules/micromark-extension-gfm-footnote/",
+  "permalink": "/node_modules/micromark-extension-gfm-footnote/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

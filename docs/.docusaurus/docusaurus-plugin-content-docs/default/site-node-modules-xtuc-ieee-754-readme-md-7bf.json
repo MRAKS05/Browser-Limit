@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@xtuc/ieee754/README",
+  "title": "ieee754 [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+  "description": "[travis-image]//img.shields.io/travis/feross/ieee754/master.svg",
+  "source": "@site/node_modules/@xtuc/ieee754/README.md",
+  "sourceDirName": "node_modules/@xtuc/ieee754",
+  "slug": "/node_modules/@xtuc/ieee754/",
+  "permalink": "/node_modules/@xtuc/ieee754/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

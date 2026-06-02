@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-node/README",
+  "title": "@jsonjoy.com/fs-node",
+  "description": "In-memory filesystem with Node.js fs-compatible API.",
+  "source": "@site/node_modules/@jsonjoy.com/fs-node/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-node",
+  "slug": "/node_modules/@jsonjoy.com/fs-node/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-node/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

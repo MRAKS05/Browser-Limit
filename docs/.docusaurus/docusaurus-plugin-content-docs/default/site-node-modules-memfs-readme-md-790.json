@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/memfs/README",
+  "title": "memfs",
+  "description": "In-memory file system with Node.js fs API and browser File System (Access) API.",
+  "source": "@site/node_modules/memfs/README.md",
+  "sourceDirName": "node_modules/memfs",
+  "slug": "/node_modules/memfs/",
+  "permalink": "/node_modules/memfs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

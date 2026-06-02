@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/svgo/README",
+  "title": "README",
+  "description": "SVGO, short for SVG Optimizer, is a Node.js library and command-line application for optimizing SVG files.",
+  "source": "@site/node_modules/svgo/README.md",
+  "sourceDirName": "node_modules/svgo",
+  "slug": "/node_modules/svgo/",
+  "permalink": "/node_modules/svgo/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

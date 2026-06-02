@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-ease/README",
+  "title": "d3-ease",
+  "description": "Easing is a method of distorting time to control apparent motion in animation. It is most commonly used for slow-in, slow-out. By easing time, animated transitions are smoother and exhibit more plausible motion.",
+  "source": "@site/node_modules/d3-ease/README.md",
+  "sourceDirName": "node_modules/d3-ease",
+  "slug": "/node_modules/d3-ease/",
+  "permalink": "/node_modules/d3-ease/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

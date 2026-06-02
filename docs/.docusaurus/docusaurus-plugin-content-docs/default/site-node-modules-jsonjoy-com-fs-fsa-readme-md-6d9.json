@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-fsa/README",
+  "title": "@jsonjoy.com/fs-fsa",
+  "description": "File System Access API implementation backed by @jsonjoy.com/fs-core primitives.",
+  "source": "@site/node_modules/@jsonjoy.com/fs-fsa/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-fsa",
+  "slug": "/node_modules/@jsonjoy.com/fs-fsa/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-fsa/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/process-nextick-args/readme",
+  "title": "process-nextick-args",
+  "description": "Build Status",
+  "source": "@site/node_modules/process-nextick-args/readme.md",
+  "sourceDirName": "node_modules/process-nextick-args",
+  "slug": "/node_modules/process-nextick-args/",
+  "permalink": "/node_modules/process-nextick-args/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

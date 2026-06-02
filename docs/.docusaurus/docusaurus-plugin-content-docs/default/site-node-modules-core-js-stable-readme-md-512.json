@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/core-js/stable/README",
+  "title": "README",
+  "description": "This folder contains entry points for all stable core-js features with dependencies. It's the recommended way for usage only required features.",
+  "source": "@site/node_modules/core-js/stable/README.md",
+  "sourceDirName": "node_modules/core-js/stable",
+  "slug": "/node_modules/core-js/stable/",
+  "permalink": "/node_modules/core-js/stable/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

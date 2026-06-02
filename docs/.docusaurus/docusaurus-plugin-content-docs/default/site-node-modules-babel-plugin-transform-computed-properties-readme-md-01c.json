@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-computed-properties/README",
+  "title": "@babel/plugin-transform-computed-properties",
+  "description": "Compile ES2015 computed properties to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-computed-properties/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-computed-properties",
+  "slug": "/node_modules/@babel/plugin-transform-computed-properties/",
+  "permalink": "/node_modules/@babel/plugin-transform-computed-properties/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

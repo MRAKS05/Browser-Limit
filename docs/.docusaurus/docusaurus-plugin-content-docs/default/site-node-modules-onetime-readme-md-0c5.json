@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/onetime/readme",
+  "title": "onetime [![Build Status](https://travis-ci.com/sindresorhus/onetime.svg?branch=master)](https://travis-ci.com/github/sindresorhus/onetime)",
+  "description": "Ensure a function is only called once",
+  "source": "@site/node_modules/onetime/readme.md",
+  "sourceDirName": "node_modules/onetime",
+  "slug": "/node_modules/onetime/",
+  "permalink": "/node_modules/onetime/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

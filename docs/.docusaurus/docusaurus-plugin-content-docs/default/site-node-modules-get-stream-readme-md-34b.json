@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/get-stream/readme",
+  "title": "get-stream",
+  "description": "Get a stream as a string, buffer, or array",
+  "source": "@site/node_modules/get-stream/readme.md",
+  "sourceDirName": "node_modules/get-stream",
+  "slug": "/node_modules/get-stream/",
+  "permalink": "/node_modules/get-stream/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

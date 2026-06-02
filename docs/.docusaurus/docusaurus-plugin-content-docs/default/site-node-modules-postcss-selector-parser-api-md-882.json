@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-selector-parser/API",
+  "title": "API Documentation",
+  "description": "*Please use only this documented API when working with the parser. Methods",
+  "source": "@site/node_modules/postcss-selector-parser/API.md",
+  "sourceDirName": "node_modules/postcss-selector-parser",
+  "slug": "/node_modules/postcss-selector-parser/API",
+  "permalink": "/node_modules/postcss-selector-parser/API",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

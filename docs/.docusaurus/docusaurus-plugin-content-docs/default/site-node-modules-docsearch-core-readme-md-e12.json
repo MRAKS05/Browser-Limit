@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docsearch/core/README",
+  "title": "@docsearch/core",
+  "description": "Core logic and state package for DocSearch, the best search experience for docs.",
+  "source": "@site/node_modules/@docsearch/core/README.md",
+  "sourceDirName": "node_modules/@docsearch/core",
+  "slug": "/node_modules/@docsearch/core/",
+  "permalink": "/node_modules/@docsearch/core/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

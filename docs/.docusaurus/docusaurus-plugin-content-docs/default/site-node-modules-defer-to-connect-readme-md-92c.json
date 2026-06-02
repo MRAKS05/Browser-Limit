@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/defer-to-connect/README",
+  "title": "defer-to-connect",
+  "description": "The safe way to handle the connect socket event",
+  "source": "@site/node_modules/defer-to-connect/README.md",
+  "sourceDirName": "node_modules/defer-to-connect",
+  "slug": "/node_modules/defer-to-connect/",
+  "permalink": "/node_modules/defer-to-connect/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

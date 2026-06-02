@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-docker/readme",
+  "title": "is-docker",
+  "description": "Check if the process is running inside a Docker container",
+  "source": "@site/node_modules/is-docker/readme.md",
+  "sourceDirName": "node_modules/is-docker",
+  "slug": "/node_modules/is-docker/",
+  "permalink": "/node_modules/is-docker/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

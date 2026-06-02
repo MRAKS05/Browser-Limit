@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mimic-fn/readme",
+  "title": "mimic-fn [![Build Status](https://travis-ci.org/sindresorhus/mimic-fn.svg?branch=master)](https://travis-ci.org/sindresorhus/mimic-fn)",
+  "description": "Make a function mimic another one",
+  "source": "@site/node_modules/mimic-fn/readme.md",
+  "sourceDirName": "node_modules/mimic-fn",
+  "slug": "/node_modules/mimic-fn/",
+  "permalink": "/node_modules/mimic-fn/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

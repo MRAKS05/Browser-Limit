@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/jsonfile/README",
+  "title": "Node.js - jsonfile",
+  "description": "Easily read/write JSON files in Node.js. Note: this module cannot be used in the browser.",
+  "source": "@site/node_modules/jsonfile/README.md",
+  "sourceDirName": "node_modules/jsonfile",
+  "slug": "/node_modules/jsonfile/",
+  "permalink": "/node_modules/jsonfile/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

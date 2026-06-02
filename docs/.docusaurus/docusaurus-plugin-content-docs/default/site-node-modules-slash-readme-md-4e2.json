@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/slash/readme",
+  "title": "slash [![Build Status](https://travis-ci.org/sindresorhus/slash.svg?branch=master)](https://travis-ci.org/sindresorhus/slash)",
+  "description": "Convert Windows backslash paths to slash paths: foo\\\\bar ➔ foo/bar",
+  "source": "@site/node_modules/slash/readme.md",
+  "sourceDirName": "node_modules/slash",
+  "slug": "/node_modules/slash/",
+  "permalink": "/node_modules/slash/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

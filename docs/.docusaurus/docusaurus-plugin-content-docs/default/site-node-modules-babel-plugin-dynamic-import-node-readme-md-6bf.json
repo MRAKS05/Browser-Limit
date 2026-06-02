@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/babel-plugin-dynamic-import-node/README",
+  "title": "babel-plugin-dynamic-import-node",
+  "description": "Babel plugin to transpile import() to a deferred require(), for node. Matches the proposed spec.",
+  "source": "@site/node_modules/babel-plugin-dynamic-import-node/README.md",
+  "sourceDirName": "node_modules/babel-plugin-dynamic-import-node",
+  "slug": "/node_modules/babel-plugin-dynamic-import-node/",
+  "permalink": "/node_modules/babel-plugin-dynamic-import-node/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

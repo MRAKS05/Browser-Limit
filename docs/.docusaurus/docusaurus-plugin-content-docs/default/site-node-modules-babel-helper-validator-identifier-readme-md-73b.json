@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-validator-identifier/README",
+  "title": "@babel/helper-validator-identifier",
+  "description": "Validate identifier/keywords name",
+  "source": "@site/node_modules/@babel/helper-validator-identifier/README.md",
+  "sourceDirName": "node_modules/@babel/helper-validator-identifier",
+  "slug": "/node_modules/@babel/helper-validator-identifier/",
+  "permalink": "/node_modules/@babel/helper-validator-identifier/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

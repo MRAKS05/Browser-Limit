@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/unicode-canonical-property-names-ecmascript/README",
+  "title": "unicode-canonical-property-names-ecmascript [![unicode-canonical-property-names-ecmascript on npm](https://img.shields.io/npm/v/unicode-canonical-property-names-ecmascript)](https://www.npmjs.com/package/unicode-canonical-property-names-ecmascript)",
+  "description": "unicode-canonical-property-names-ecmascript exports the set of canonical Unicode property names that are supported in ECMAScript RegExp property escapes.",
+  "source": "@site/node_modules/unicode-canonical-property-names-ecmascript/README.md",
+  "sourceDirName": "node_modules/unicode-canonical-property-names-ecmascript",
+  "slug": "/node_modules/unicode-canonical-property-names-ecmascript/",
+  "permalink": "/node_modules/unicode-canonical-property-names-ecmascript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

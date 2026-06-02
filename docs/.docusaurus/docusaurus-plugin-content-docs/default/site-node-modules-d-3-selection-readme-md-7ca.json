@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-selection/README",
+  "title": "d3-selection",
+  "description": "Selections allow powerful data-driven transformation of the document object model (DOM): set attributes, styles, properties, HTML or text content, and more. Using the data join’s enter and exit selections, you can also add or remove elements to correspond to data.",
+  "source": "@site/node_modules/d3-selection/README.md",
+  "sourceDirName": "node_modules/d3-selection",
+  "slug": "/node_modules/d3-selection/",
+  "permalink": "/node_modules/d3-selection/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/uvu/readme",
+  "title": "readme",
+  "description": "uvu is an extremely fast and lightweight test runner for Node.js and the browser",
+  "source": "@site/node_modules/uvu/readme.md",
+  "sourceDirName": "node_modules/uvu",
+  "slug": "/node_modules/uvu/",
+  "permalink": "/node_modules/uvu/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

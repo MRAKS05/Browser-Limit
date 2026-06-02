@@ -1,0 +1,6 @@
+{
+  "name": "Browser Limit",
+  "description": "Browser detection and removal tool using Shizuku and Gemini AI, designed to limit distractions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

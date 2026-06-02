@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/istanbul-lib-report/README",
+  "title": "Installation",
+  "description": "npm install --save @types/istanbul-lib-report",
+  "source": "@site/node_modules/@types/istanbul-lib-report/README.md",
+  "sourceDirName": "node_modules/@types/istanbul-lib-report",
+  "slug": "/node_modules/@types/istanbul-lib-report/",
+  "permalink": "/node_modules/@types/istanbul-lib-report/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

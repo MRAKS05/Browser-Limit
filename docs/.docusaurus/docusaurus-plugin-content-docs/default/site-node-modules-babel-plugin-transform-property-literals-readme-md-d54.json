@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-property-literals/README",
+  "title": "@babel/plugin-transform-property-literals",
+  "description": "Ensure that reserved words are quoted in object property keys",
+  "source": "@site/node_modules/@babel/plugin-transform-property-literals/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-property-literals",
+  "slug": "/node_modules/@babel/plugin-transform-property-literals/",
+  "permalink": "/node_modules/@babel/plugin-transform-property-literals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

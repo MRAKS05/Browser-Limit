@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/import-lazy/readme",
+  "title": "import-lazy [![Build Status](https://travis-ci.org/sindresorhus/import-lazy.svg?branch=master)](https://travis-ci.org/sindresorhus/import-lazy)",
+  "description": "Import a module lazily",
+  "source": "@site/node_modules/import-lazy/readme.md",
+  "sourceDirName": "node_modules/import-lazy",
+  "slug": "/node_modules/import-lazy/",
+  "permalink": "/node_modules/import-lazy/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

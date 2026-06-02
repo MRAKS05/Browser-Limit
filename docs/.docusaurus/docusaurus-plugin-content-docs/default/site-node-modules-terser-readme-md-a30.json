@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/terser/README",
+  "title": "README",
+  "description": "NPM Version",
+  "source": "@site/node_modules/terser/README.md",
+  "sourceDirName": "node_modules/terser",
+  "slug": "/node_modules/terser/",
+  "permalink": "/node_modules/terser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

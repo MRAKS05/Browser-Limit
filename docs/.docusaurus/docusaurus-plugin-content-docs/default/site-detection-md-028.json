@@ -1,0 +1,27 @@
+{
+  "id": "detection",
+  "title": "Detection System",
+  "description": "Browser Limit uses a two-tier detection architecture to classify newly installed applications as browsers or non-browsers. The system is designed to be accurate, fast, and resilient to network conditions.",
+  "source": "@site/detection.md",
+  "sourceDirName": ".",
+  "slug": "/detection",
+  "permalink": "/detection",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "detection",
+    "title": "Detection System",
+    "sidebar_label": "Detection"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/getting-started"
+  },
+  "next": {
+    "title": "Gemini AI",
+    "permalink": "/gemini"
+  }
+}

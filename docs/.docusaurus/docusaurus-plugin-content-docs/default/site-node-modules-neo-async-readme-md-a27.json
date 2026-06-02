@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/neo-async/README",
+  "title": "README",
+  "description": "Neo-Async",
+  "source": "@site/node_modules/neo-async/README.md",
+  "sourceDirName": "node_modules/neo-async",
+  "slug": "/node_modules/neo-async/",
+  "permalink": "/node_modules/neo-async/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/content-type/HISTORY",
+  "title": "1.0.5 / 2023-01-29",
+  "description": "* perf: skip value escaping when unnecessary",
+  "source": "@site/node_modules/content-type/HISTORY.md",
+  "sourceDirName": "node_modules/content-type",
+  "slug": "/node_modules/content-type/HISTORY",
+  "permalink": "/node_modules/content-type/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

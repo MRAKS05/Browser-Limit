@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/eslint-scope/README",
+  "title": "ESLint Scope",
+  "description": "ESLint Scope is the ECMAScript scope analyzer used in ESLint. It is a fork of escope.",
+  "source": "@site/node_modules/eslint-scope/README.md",
+  "sourceDirName": "node_modules/eslint-scope",
+  "slug": "/node_modules/eslint-scope/",
+  "permalink": "/node_modules/eslint-scope/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

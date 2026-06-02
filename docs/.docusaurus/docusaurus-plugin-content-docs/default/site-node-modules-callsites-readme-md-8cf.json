@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/callsites/readme",
+  "title": "callsites [![Build Status](https://travis-ci.org/sindresorhus/callsites.svg?branch=master)](https://travis-ci.org/sindresorhus/callsites)",
+  "description": "Get callsites from the V8 stack trace API",
+  "source": "@site/node_modules/callsites/readme.md",
+  "sourceDirName": "node_modules/callsites",
+  "slug": "/node_modules/callsites/",
+  "permalink": "/node_modules/callsites/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

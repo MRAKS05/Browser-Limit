@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-normalize-charset/README",
+  "title": "postcss-normalize-charset",
+  "description": "Add necessary or remove extra charset with PostCSS",
+  "source": "@site/node_modules/postcss-normalize-charset/README.md",
+  "sourceDirName": "node_modules/postcss-normalize-charset",
+  "slug": "/node_modules/postcss-normalize-charset/",
+  "permalink": "/node_modules/postcss-normalize-charset/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

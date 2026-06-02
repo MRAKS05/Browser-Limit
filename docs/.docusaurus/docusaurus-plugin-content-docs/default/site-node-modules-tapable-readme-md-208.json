@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/tapable/README",
+  "title": "Tapable",
+  "description": "The tapable package exposes many Hook classes, which can be used to create hooks for plugins.",
+  "source": "@site/node_modules/tapable/README.md",
+  "sourceDirName": "node_modules/tapable",
+  "slug": "/node_modules/tapable/",
+  "permalink": "/node_modules/tapable/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

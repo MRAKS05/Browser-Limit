@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/resolve/SECURITY",
+  "title": "Security",
+  "description": "Please file a private vulnerability report,",
+  "source": "@site/node_modules/resolve/SECURITY.md",
+  "sourceDirName": "node_modules/resolve",
+  "slug": "/node_modules/resolve/SECURITY",
+  "permalink": "/node_modules/resolve/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/generator/README",
+  "title": "@babel/generator",
+  "description": "Turns an AST into code.",
+  "source": "@site/node_modules/@babel/generator/README.md",
+  "sourceDirName": "node_modules/@babel/generator",
+  "slug": "/node_modules/@babel/generator/",
+  "permalink": "/node_modules/@babel/generator/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

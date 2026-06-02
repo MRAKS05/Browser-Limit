@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/srcset/readme",
+  "title": "srcset",
+  "description": "Parse and stringify the HTML `` srcset attribute.",
+  "source": "@site/node_modules/srcset/readme.md",
+  "sourceDirName": "node_modules/srcset",
+  "slug": "/node_modules/srcset/",
+  "permalink": "/node_modules/srcset/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

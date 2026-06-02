@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/skin-tone/readme",
+  "title": "skin-tone [![Build Status](https://travis-ci.org/sindresorhus/skin-tone.svg?branch=master)](https://travis-ci.org/sindresorhus/skin-tone)",
+  "description": "Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿",
+  "source": "@site/node_modules/skin-tone/readme.md",
+  "sourceDirName": "node_modules/skin-tone",
+  "slug": "/node_modules/skin-tone/",
+  "permalink": "/node_modules/skin-tone/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

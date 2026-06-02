@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-yarn-global/README",
+  "title": "is-yarn-global",
+  "description": "Check if installed by yarn globally without any fs calls",
+  "source": "@site/node_modules/is-yarn-global/README.md",
+  "sourceDirName": "node_modules/is-yarn-global",
+  "slug": "/node_modules/is-yarn-global/",
+  "permalink": "/node_modules/is-yarn-global/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

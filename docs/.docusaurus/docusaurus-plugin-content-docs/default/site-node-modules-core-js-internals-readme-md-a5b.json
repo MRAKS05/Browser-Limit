@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/core-js/internals/README",
+  "title": "README",
+  "description": "This folder contains internal parts of core-js like helpers.",
+  "source": "@site/node_modules/core-js/internals/README.md",
+  "sourceDirName": "node_modules/core-js/internals",
+  "slug": "/node_modules/core-js/internals/",
+  "permalink": "/node_modules/core-js/internals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

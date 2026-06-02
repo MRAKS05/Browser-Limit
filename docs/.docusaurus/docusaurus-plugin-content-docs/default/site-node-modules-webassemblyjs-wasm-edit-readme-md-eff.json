@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@webassemblyjs/wasm-edit/README",
+  "title": "@webassemblyjs/wasm-edit",
+  "description": "Rewrite a WASM binary",
+  "source": "@site/node_modules/@webassemblyjs/wasm-edit/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/wasm-edit",
+  "slug": "/node_modules/@webassemblyjs/wasm-edit/",
+  "permalink": "/node_modules/@webassemblyjs/wasm-edit/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/fill-range/README",
+  "title": "fill-range [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/fill-range.svg?style=flat)](https://www.npmjs.com/package/fill-range) [![NPM monthly downloads](https://img.shields.io/npm/dm/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![NPM total downloads](https://img.shields.io/npm/dt/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/fill-range.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/fill-range)",
+  "description": "Fill in a range of numbers or letters, optionally passing an increment or step to use, or create a regex-compatible range with options.toRegex",
+  "source": "@site/node_modules/fill-range/README.md",
+  "sourceDirName": "node_modules/fill-range",
+  "slug": "/node_modules/fill-range/",
+  "permalink": "/node_modules/fill-range/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

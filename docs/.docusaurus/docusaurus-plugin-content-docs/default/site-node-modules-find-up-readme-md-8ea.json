@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/find-up/readme",
+  "title": "find-up",
+  "description": "Find a file or directory by walking up parent directories",
+  "source": "@site/node_modules/find-up/readme.md",
+  "sourceDirName": "node_modules/find-up",
+  "slug": "/node_modules/find-up/",
+  "permalink": "/node_modules/find-up/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

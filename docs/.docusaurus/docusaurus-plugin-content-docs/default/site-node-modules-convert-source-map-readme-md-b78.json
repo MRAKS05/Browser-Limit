@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/convert-source-map/README",
+  "title": "convert-source-map [![Build Status][ci-image]][ci-url]",
+  "description": "Converts a source-map from/to  different formats and allows adding/changing properties.",
+  "source": "@site/node_modules/convert-source-map/README.md",
+  "sourceDirName": "node_modules/convert-source-map",
+  "slug": "/node_modules/convert-source-map/",
+  "permalink": "/node_modules/convert-source-map/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

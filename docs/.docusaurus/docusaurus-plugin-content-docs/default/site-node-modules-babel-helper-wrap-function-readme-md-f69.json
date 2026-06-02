@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-wrap-function/README",
+  "title": "@babel/helper-wrap-function",
+  "description": "Helper to wrap functions inside a function call.",
+  "source": "@site/node_modules/@babel/helper-wrap-function/README.md",
+  "sourceDirName": "node_modules/@babel/helper-wrap-function",
+  "slug": "/node_modules/@babel/helper-wrap-function/",
+  "permalink": "/node_modules/@babel/helper-wrap-function/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/yocto-queue/readme",
+  "title": "yocto-queue [![](https://badgen.net/bundlephobia/minzip/yocto-queue)](https://bundlephobia.com/result?p=yocto-queue)",
+  "description": "Tiny queue data structure",
+  "source": "@site/node_modules/yocto-queue/readme.md",
+  "sourceDirName": "node_modules/yocto-queue",
+  "slug": "/node_modules/yocto-queue/",
+  "permalink": "/node_modules/yocto-queue/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

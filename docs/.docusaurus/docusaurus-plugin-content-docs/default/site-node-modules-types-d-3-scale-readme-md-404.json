@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-scale/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-scale",
+  "source": "@site/node_modules/@types/d3-scale/README.md",
+  "sourceDirName": "node_modules/@types/d3-scale",
+  "slug": "/node_modules/@types/d3-scale/",
+  "permalink": "/node_modules/@types/d3-scale/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

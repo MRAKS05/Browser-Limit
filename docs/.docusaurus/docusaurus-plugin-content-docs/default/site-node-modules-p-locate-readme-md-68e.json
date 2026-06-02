@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/p-locate/readme",
+  "title": "p-locate",
+  "description": "Get the first fulfilled promise that satisfies the provided testing function",
+  "source": "@site/node_modules/p-locate/readme.md",
+  "sourceDirName": "node_modules/p-locate",
+  "slug": "/node_modules/p-locate/",
+  "permalink": "/node_modules/p-locate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

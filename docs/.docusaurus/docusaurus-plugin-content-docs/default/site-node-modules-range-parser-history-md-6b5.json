@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/range-parser/HISTORY",
+  "title": "1.2.0 / 2016-06-01",
+  "description": "* Add combine option to combine overlapping ranges",
+  "source": "@site/node_modules/range-parser/HISTORY.md",
+  "sourceDirName": "node_modules/range-parser",
+  "slug": "/node_modules/range-parser/HISTORY",
+  "permalink": "/node_modules/range-parser/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-private-property-in-object/README",
+  "title": "@babel/plugin-transform-private-property-in-object",
+  "description": "This plugin transforms checks for a private property in an object",
+  "source": "@site/node_modules/@babel/plugin-transform-private-property-in-object/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-private-property-in-object",
+  "slug": "/node_modules/@babel/plugin-transform-private-property-in-object/",
+  "permalink": "/node_modules/@babel/plugin-transform-private-property-in-object/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

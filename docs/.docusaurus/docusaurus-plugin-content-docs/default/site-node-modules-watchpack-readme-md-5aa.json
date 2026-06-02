@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/watchpack/README",
+  "title": "watchpack",
+  "description": "Wrapper library for directory and file watching.",
+  "source": "@site/node_modules/watchpack/README.md",
+  "sourceDirName": "node_modules/watchpack",
+  "slug": "/node_modules/watchpack/",
+  "permalink": "/node_modules/watchpack/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-normalize-unicode/README",
+  "title": "[postcss][postcss]-normalize-unicode",
+  "description": "Normalize unicode with PostCSS.",
+  "source": "@site/node_modules/postcss-normalize-unicode/README.md",
+  "sourceDirName": "node_modules/postcss-normalize-unicode",
+  "slug": "/node_modules/postcss-normalize-unicode/",
+  "permalink": "/node_modules/postcss-normalize-unicode/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

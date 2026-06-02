@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/acorn/README",
+  "title": "Acorn",
+  "description": "A tiny, fast JavaScript parser written in JavaScript.",
+  "source": "@site/node_modules/acorn/README.md",
+  "sourceDirName": "node_modules/acorn",
+  "slug": "/node_modules/acorn/",
+  "permalink": "/node_modules/acorn/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/find-cache-dir/readme",
+  "title": "find-cache-dir",
+  "description": "Finds the common standard cache directory",
+  "source": "@site/node_modules/find-cache-dir/readme.md",
+  "sourceDirName": "node_modules/find-cache-dir",
+  "slug": "/node_modules/find-cache-dir/",
+  "permalink": "/node_modules/find-cache-dir/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

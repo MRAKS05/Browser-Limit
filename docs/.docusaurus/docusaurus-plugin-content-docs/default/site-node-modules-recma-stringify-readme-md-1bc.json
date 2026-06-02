@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/recma-stringify/readme",
+  "title": "recma-stringify",
+  "description": "Build",
+  "source": "@site/node_modules/recma-stringify/readme.md",
+  "sourceDirName": "node_modules/recma-stringify",
+  "slug": "/node_modules/recma-stringify/",
+  "permalink": "/node_modules/recma-stringify/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

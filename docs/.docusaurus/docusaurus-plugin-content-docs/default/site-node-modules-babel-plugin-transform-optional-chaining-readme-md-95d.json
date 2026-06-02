@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-optional-chaining/README",
+  "title": "@babel/plugin-transform-optional-chaining",
+  "description": "Transform optional chaining operators into a series of nil checks",
+  "source": "@site/node_modules/@babel/plugin-transform-optional-chaining/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-optional-chaining",
+  "slug": "/node_modules/@babel/plugin-transform-optional-chaining/",
+  "permalink": "/node_modules/@babel/plugin-transform-optional-chaining/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/is-wsl/readme",
+  "title": "is-wsl [![Build Status](https://travis-ci.org/sindresorhus/is-wsl.svg?branch=master)](https://travis-ci.org/sindresorhus/is-wsl)",
+  "description": "Check if the process is running inside Windows Subsystem for Linux (Bash on Windows)",
+  "source": "@site/node_modules/is-wsl/readme.md",
+  "sourceDirName": "node_modules/is-wsl",
+  "slug": "/node_modules/is-wsl/",
+  "permalink": "/node_modules/is-wsl/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/global-dirs/readme",
+  "title": "global-dirs",
+  "description": "Get the directory of globally installed packages and binaries",
+  "source": "@site/node_modules/global-dirs/readme.md",
+  "sourceDirName": "node_modules/global-dirs",
+  "slug": "/node_modules/global-dirs/",
+  "permalink": "/node_modules/global-dirs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@pnpm/npm-conf/readme",
+  "title": "@pnpm/npm-conf [![Build Status](https://travis-ci.com/pnpm/npm-conf.svg?branch=master)](https://travis-ci.com/pnpm/npm-conf)",
+  "description": "Get the npm config",
+  "source": "@site/node_modules/@pnpm/npm-conf/readme.md",
+  "sourceDirName": "node_modules/@pnpm/npm-conf",
+  "slug": "/node_modules/@pnpm/npm-conf/",
+  "permalink": "/node_modules/@pnpm/npm-conf/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

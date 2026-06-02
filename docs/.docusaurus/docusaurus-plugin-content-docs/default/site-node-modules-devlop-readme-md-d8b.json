@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/devlop/readme",
+  "title": "devlop",
+  "description": "Build",
+  "source": "@site/node_modules/devlop/readme.md",
+  "sourceDirName": "node_modules/devlop",
+  "slug": "/node_modules/devlop/",
+  "permalink": "/node_modules/devlop/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

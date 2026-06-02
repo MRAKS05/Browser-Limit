@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-normalize-whitespace/README",
+  "title": "[postcss][postcss]-normalize-whitespace",
+  "description": "Normalize whitespace with PostCSS.",
+  "source": "@site/node_modules/postcss-normalize-whitespace/README.md",
+  "sourceDirName": "node_modules/postcss-normalize-whitespace",
+  "slug": "/node_modules/postcss-normalize-whitespace/",
+  "permalink": "/node_modules/postcss-normalize-whitespace/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

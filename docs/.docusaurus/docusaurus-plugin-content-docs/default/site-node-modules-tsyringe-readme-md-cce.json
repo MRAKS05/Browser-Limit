@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/tsyringe/README",
+  "title": "README",
+  "description": "Travis",
+  "source": "@site/node_modules/tsyringe/README.md",
+  "sourceDirName": "node_modules/tsyringe",
+  "slug": "/node_modules/tsyringe/",
+  "permalink": "/node_modules/tsyringe/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

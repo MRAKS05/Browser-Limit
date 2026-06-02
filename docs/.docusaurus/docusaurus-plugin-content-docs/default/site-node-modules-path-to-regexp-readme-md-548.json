@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/path-to-regexp/Readme",
+  "title": "Path-to-RegExp",
+  "description": "Turn an Express-style path string such as /user/:name into a regular expression.",
+  "source": "@site/node_modules/path-to-regexp/Readme.md",
+  "sourceDirName": "node_modules/path-to-regexp",
+  "slug": "/node_modules/path-to-regexp/",
+  "permalink": "/node_modules/path-to-regexp/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

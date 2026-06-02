@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/estree-jsx/README",
+  "title": "Installation",
+  "description": "npm install --save @types/estree-jsx",
+  "source": "@site/node_modules/@types/estree-jsx/README.md",
+  "sourceDirName": "node_modules/@types/estree-jsx",
+  "slug": "/node_modules/@types/estree-jsx/",
+  "permalink": "/node_modules/@types/estree-jsx/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

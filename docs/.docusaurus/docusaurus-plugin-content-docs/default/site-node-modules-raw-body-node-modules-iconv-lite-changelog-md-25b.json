@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/raw-body/node_modules/iconv-lite/Changelog",
+  "title": "0.4.24 / 2018-08-22",
+  "description": "* Added MIK encoding (#196, by @Ivan-Kalatchev)",
+  "source": "@site/node_modules/raw-body/node_modules/iconv-lite/Changelog.md",
+  "sourceDirName": "node_modules/raw-body/node_modules/iconv-lite",
+  "slug": "/node_modules/raw-body/node_modules/iconv-lite/Changelog",
+  "permalink": "/node_modules/raw-body/node_modules/iconv-lite/Changelog",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

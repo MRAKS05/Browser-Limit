@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-normalize-display-values/README",
+  "title": "[postcss][postcss]-normalize-display-values",
+  "description": "Normalize display property values with PostCSS.",
+  "source": "@site/node_modules/postcss-normalize-display-values/README.md",
+  "sourceDirName": "node_modules/postcss-normalize-display-values",
+  "slug": "/node_modules/postcss-normalize-display-values/",
+  "permalink": "/node_modules/postcss-normalize-display-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

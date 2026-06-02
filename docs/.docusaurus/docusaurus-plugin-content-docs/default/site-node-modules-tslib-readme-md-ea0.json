@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/tslib/README",
+  "title": "tslib",
+  "description": "This is a runtime library for TypeScript that contains all of the TypeScript helper functions.",
+  "source": "@site/node_modules/tslib/README.md",
+  "sourceDirName": "node_modules/tslib",
+  "slug": "/node_modules/tslib/",
+  "permalink": "/node_modules/tslib/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

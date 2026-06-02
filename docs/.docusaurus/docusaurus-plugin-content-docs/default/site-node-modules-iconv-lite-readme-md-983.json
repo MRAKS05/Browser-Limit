@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/iconv-lite/README",
+  "title": "README",
+  "description": "iconv-lite: Pure JS character encoding conversion",
+  "source": "@site/node_modules/iconv-lite/README.md",
+  "sourceDirName": "node_modules/iconv-lite",
+  "slug": "/node_modules/iconv-lite/",
+  "permalink": "/node_modules/iconv-lite/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/strip-ansi/readme",
+  "title": "strip-ansi [![Build Status](https://travis-ci.org/chalk/strip-ansi.svg?branch=master)](https://travis-ci.org/chalk/strip-ansi)",
+  "description": "Strip ANSI escape codes from a string",
+  "source": "@site/node_modules/strip-ansi/readme.md",
+  "sourceDirName": "node_modules/strip-ansi",
+  "slug": "/node_modules/strip-ansi/",
+  "permalink": "/node_modules/strip-ansi/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

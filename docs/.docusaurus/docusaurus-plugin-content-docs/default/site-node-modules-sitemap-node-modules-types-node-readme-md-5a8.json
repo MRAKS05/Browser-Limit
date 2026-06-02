@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sitemap/node_modules/@types/node/README",
+  "title": "Installation",
+  "description": "npm install --save @types/node",
+  "source": "@site/node_modules/sitemap/node_modules/@types/node/README.md",
+  "sourceDirName": "node_modules/sitemap/node_modules/@types/node",
+  "slug": "/node_modules/sitemap/node_modules/@types/node/",
+  "permalink": "/node_modules/sitemap/node_modules/@types/node/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

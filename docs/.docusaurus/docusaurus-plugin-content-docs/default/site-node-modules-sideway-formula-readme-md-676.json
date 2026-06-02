@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@sideway/formula/README",
+  "title": "@sideway/formula",
+  "description": "Math and string formula parser.",
+  "source": "@site/node_modules/@sideway/formula/README.md",
+  "sourceDirName": "node_modules/@sideway/formula",
+  "slug": "/node_modules/@sideway/formula/",
+  "permalink": "/node_modules/@sideway/formula/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

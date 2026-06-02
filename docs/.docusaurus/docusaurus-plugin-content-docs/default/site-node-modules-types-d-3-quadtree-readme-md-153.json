@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-quadtree/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-quadtree",
+  "source": "@site/node_modules/@types/d3-quadtree/README.md",
+  "sourceDirName": "node_modules/@types/d3-quadtree",
+  "slug": "/node_modules/@types/d3-quadtree/",
+  "permalink": "/node_modules/@types/d3-quadtree/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

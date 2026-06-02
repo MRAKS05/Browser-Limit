@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-core/README",
+  "title": "@jsonjoy.com/fs-core",
+  "description": "Core filesystem primitives for building in-memory and virtual filesystems.",
+  "source": "@site/node_modules/@jsonjoy.com/fs-core/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-core",
+  "slug": "/node_modules/@jsonjoy.com/fs-core/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-core/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

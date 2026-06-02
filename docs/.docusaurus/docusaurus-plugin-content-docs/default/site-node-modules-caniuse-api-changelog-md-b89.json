@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/caniuse-api/CHANGELOG",
+  "title": "3.0.0 - 2018-07-10",
+  "description": "- Upgraded: browserslist",
+  "source": "@site/node_modules/caniuse-api/CHANGELOG.md",
+  "sourceDirName": "node_modules/caniuse-api",
+  "slug": "/node_modules/caniuse-api/CHANGELOG",
+  "permalink": "/node_modules/caniuse-api/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

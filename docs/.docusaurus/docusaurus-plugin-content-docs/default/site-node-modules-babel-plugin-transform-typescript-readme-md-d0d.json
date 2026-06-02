@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-typescript/README",
+  "title": "@babel/plugin-transform-typescript",
+  "description": "Transform TypeScript into ES.next",
+  "source": "@site/node_modules/@babel/plugin-transform-typescript/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-typescript",
+  "slug": "/node_modules/@babel/plugin-transform-typescript/",
+  "permalink": "/node_modules/@babel/plugin-transform-typescript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

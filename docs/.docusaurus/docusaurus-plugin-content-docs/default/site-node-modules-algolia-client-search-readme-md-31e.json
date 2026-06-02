@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@algolia/client-search/README",
+  "title": "README",
+  "description": "The perfect starting point to integrate Algolia within your JavaScript project",
+  "source": "@site/node_modules/@algolia/client-search/README.md",
+  "sourceDirName": "node_modules/@algolia/client-search",
+  "slug": "/node_modules/@algolia/client-search/",
+  "permalink": "/node_modules/@algolia/client-search/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

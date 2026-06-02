@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/renderkid/node_modules/dom-serializer/README",
+  "title": "dom-serializer [![Build Status](https://travis-ci.com/cheeriojs/dom-serializer.svg?branch=master)](https://travis-ci.com/cheeriojs/dom-serializer)",
+  "description": "Renders a domhandler DOM node or an array of domhandler DOM nodes to a string.",
+  "source": "@site/node_modules/renderkid/node_modules/dom-serializer/README.md",
+  "sourceDirName": "node_modules/renderkid/node_modules/dom-serializer",
+  "slug": "/node_modules/renderkid/node_modules/dom-serializer/",
+  "permalink": "/node_modules/renderkid/node_modules/dom-serializer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

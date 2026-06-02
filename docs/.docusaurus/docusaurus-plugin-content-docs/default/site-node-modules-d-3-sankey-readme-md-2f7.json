@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-sankey/README",
+  "title": "d3-sankey",
+  "description": "Sankey diagrams visualize the directed flow between nodes in an acyclic network. For example, this diagram shows a possible scenario of UK energy production and consumption in 2050:",
+  "source": "@site/node_modules/d3-sankey/README.md",
+  "sourceDirName": "node_modules/d3-sankey",
+  "slug": "/node_modules/d3-sankey/",
+  "permalink": "/node_modules/d3-sankey/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

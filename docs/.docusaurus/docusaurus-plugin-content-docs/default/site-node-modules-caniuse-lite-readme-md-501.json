@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/caniuse-lite/README",
+  "title": "caniuse-lite",
+  "description": "A smaller version of caniuse-db, with only the essentials!",
+  "source": "@site/node_modules/caniuse-lite/README.md",
+  "sourceDirName": "node_modules/caniuse-lite",
+  "slug": "/node_modules/caniuse-lite/",
+  "permalink": "/node_modules/caniuse-lite/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/on-finished/HISTORY",
+  "title": "2.4.1 / 2022-02-22",
+  "description": "* Fix error on early async hooks implementations",
+  "source": "@site/node_modules/on-finished/HISTORY.md",
+  "sourceDirName": "node_modules/on-finished",
+  "slug": "/node_modules/on-finished/HISTORY",
+  "permalink": "/node_modules/on-finished/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

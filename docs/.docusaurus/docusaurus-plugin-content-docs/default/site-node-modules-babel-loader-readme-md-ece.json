@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/babel-loader/README",
+  "title": "README",
+  "description": "This README is for babel-loader v8/v9 with Babel v7",
+  "source": "@site/node_modules/babel-loader/README.md",
+  "sourceDirName": "node_modules/babel-loader",
+  "slug": "/node_modules/babel-loader/",
+  "permalink": "/node_modules/babel-loader/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

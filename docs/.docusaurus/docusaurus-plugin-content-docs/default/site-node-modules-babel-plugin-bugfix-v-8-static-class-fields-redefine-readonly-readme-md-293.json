@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README",
+  "title": "@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly",
+  "description": "Transform static class fields assignments that are affected by https://crbug.com/v8/12421",
+  "source": "@site/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly",
+  "slug": "/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/",
+  "permalink": "/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

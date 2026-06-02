@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mdast-util-gfm/readme",
+  "title": "mdast-util-gfm",
+  "description": "Build",
+  "source": "@site/node_modules/mdast-util-gfm/readme.md",
+  "sourceDirName": "node_modules/mdast-util-gfm",
+  "slug": "/node_modules/mdast-util-gfm/",
+  "permalink": "/node_modules/mdast-util-gfm/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

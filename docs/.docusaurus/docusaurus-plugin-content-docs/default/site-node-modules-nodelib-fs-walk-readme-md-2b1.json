@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@nodelib/fs.walk/README",
+  "title": "@nodelib/fs.walk",
+  "description": "A library for efficiently walking a directory recursively.",
+  "source": "@site/node_modules/@nodelib/fs.walk/README.md",
+  "sourceDirName": "node_modules/@nodelib/fs.walk",
+  "slug": "/node_modules/@nodelib/fs.walk/",
+  "permalink": "/node_modules/@nodelib/fs.walk/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

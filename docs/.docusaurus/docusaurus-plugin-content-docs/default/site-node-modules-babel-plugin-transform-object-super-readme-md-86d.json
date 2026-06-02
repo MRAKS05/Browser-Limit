@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-object-super/README",
+  "title": "@babel/plugin-transform-object-super",
+  "description": "Compile ES2015 object super to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-object-super/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-object-super",
+  "slug": "/node_modules/@babel/plugin-transform-object-super/",
+  "permalink": "/node_modules/@babel/plugin-transform-object-super/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

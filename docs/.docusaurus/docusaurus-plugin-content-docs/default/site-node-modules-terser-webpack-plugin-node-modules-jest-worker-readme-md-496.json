@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/terser-webpack-plugin/node_modules/jest-worker/README",
+  "title": "jest-worker",
+  "description": "Module for executing heavy tasks under forked processes in parallel, by providing a Promise based interface, minimum overhead, and bound workers.",
+  "source": "@site/node_modules/terser-webpack-plugin/node_modules/jest-worker/README.md",
+  "sourceDirName": "node_modules/terser-webpack-plugin/node_modules/jest-worker",
+  "slug": "/node_modules/terser-webpack-plugin/node_modules/jest-worker/",
+  "permalink": "/node_modules/terser-webpack-plugin/node_modules/jest-worker/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

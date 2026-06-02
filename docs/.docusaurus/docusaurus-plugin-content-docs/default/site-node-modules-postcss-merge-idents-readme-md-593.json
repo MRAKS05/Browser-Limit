@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-merge-idents/README",
+  "title": "[postcss][postcss]-merge-idents",
+  "description": "Merge keyframe and counter style identifiers.",
+  "source": "@site/node_modules/postcss-merge-idents/README.md",
+  "sourceDirName": "node_modules/postcss-merge-idents",
+  "slug": "/node_modules/postcss-merge-idents/",
+  "permalink": "/node_modules/postcss-merge-idents/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

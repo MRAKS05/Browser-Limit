@@ -1,0 +1,23 @@
+{
+  "id": "index",
+  "title": "Overview",
+  "description": "An Android application that automatically detects and removes web browsers from your device using Shizuku for rootless uninstallation and Gemini AI for semantic classification. Enforce digital minimalism with zero configuration.",
+  "source": "@site/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "index",
+    "title": "Overview",
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/getting-started"
+  }
+}

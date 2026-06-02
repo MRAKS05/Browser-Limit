@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/eventemitter3/README",
+  "title": "EventEmitter3",
+  "description": "Version npmBuild StatusDependenciesCoverage StatusIRC channel",
+  "source": "@site/node_modules/eventemitter3/README.md",
+  "sourceDirName": "node_modules/eventemitter3",
+  "slug": "/node_modules/eventemitter3/",
+  "permalink": "/node_modules/eventemitter3/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

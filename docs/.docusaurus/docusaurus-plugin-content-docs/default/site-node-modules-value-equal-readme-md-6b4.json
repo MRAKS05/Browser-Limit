@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/value-equal/README",
+  "title": "value-equal [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]",
+  "description": "[build-badge]//img.shields.io/travis/mjackson/value-equal/master.svg?style=flat-square",
+  "source": "@site/node_modules/value-equal/README.md",
+  "sourceDirName": "node_modules/value-equal",
+  "slug": "/node_modules/value-equal/",
+  "permalink": "/node_modules/value-equal/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

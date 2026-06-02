@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/babel-plugin-polyfill-corejs3/core-js-compat/README",
+  "title": "README",
+  "description": "core-js-compat exposes some files as JSON, and they cannot be",
+  "source": "@site/node_modules/babel-plugin-polyfill-corejs3/core-js-compat/README.md",
+  "sourceDirName": "node_modules/babel-plugin-polyfill-corejs3/core-js-compat",
+  "slug": "/node_modules/babel-plugin-polyfill-corejs3/core-js-compat/",
+  "permalink": "/node_modules/babel-plugin-polyfill-corejs3/core-js-compat/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

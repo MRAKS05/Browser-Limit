@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/bundle-name/readme",
+  "title": "bundle-name",
+  "description": "Get bundle name from a bundle identifier (macOS): com.apple.Safari → Safari",
+  "source": "@site/node_modules/bundle-name/readme.md",
+  "sourceDirName": "node_modules/bundle-name",
+  "slug": "/node_modules/bundle-name/",
+  "permalink": "/node_modules/bundle-name/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/http2-wrapper/README",
+  "title": "http2-wrapper",
+  "description": "HTTP/2 client, just with the familiar https API",
+  "source": "@site/node_modules/http2-wrapper/README.md",
+  "sourceDirName": "node_modules/http2-wrapper",
+  "slug": "/node_modules/http2-wrapper/",
+  "permalink": "/node_modules/http2-wrapper/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

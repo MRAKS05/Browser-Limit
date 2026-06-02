@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ci-info/README",
+  "title": "ci-info",
+  "description": "Get details about the current Continuous Integration environment.",
+  "source": "@site/node_modules/ci-info/README.md",
+  "sourceDirName": "node_modules/ci-info",
+  "slug": "/node_modules/ci-info/",
+  "permalink": "/node_modules/ci-info/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

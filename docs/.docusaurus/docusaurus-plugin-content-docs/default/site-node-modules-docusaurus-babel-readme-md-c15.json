@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/babel/README",
+  "title": "@docusaurus/babel",
+  "description": "Docusaurus package for Babel-related utils.",
+  "source": "@site/node_modules/@docusaurus/babel/README.md",
+  "sourceDirName": "node_modules/@docusaurus/babel",
+  "slug": "/node_modules/@docusaurus/babel/",
+  "permalink": "/node_modules/@docusaurus/babel/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

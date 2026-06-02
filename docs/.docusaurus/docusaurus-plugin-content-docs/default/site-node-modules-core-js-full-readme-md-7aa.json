@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/core-js/full/README",
+  "title": "README",
+  "description": "This folder contains entry points for all core-js features with dependencies. It's the recommended way for usage only required features.",
+  "source": "@site/node_modules/core-js/full/README.md",
+  "sourceDirName": "node_modules/core-js/full",
+  "slug": "/node_modules/core-js/full/",
+  "permalink": "/node_modules/core-js/full/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

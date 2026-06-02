@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-modules-scope/README",
+  "title": "CSS Modules: Scope Locals & Extend",
+  "description": "Build Status",
+  "source": "@site/node_modules/postcss-modules-scope/README.md",
+  "sourceDirName": "node_modules/postcss-modules-scope",
+  "slug": "/node_modules/postcss-modules-scope/",
+  "permalink": "/node_modules/postcss-modules-scope/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

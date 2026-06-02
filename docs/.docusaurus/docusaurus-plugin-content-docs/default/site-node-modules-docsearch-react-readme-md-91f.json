@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docsearch/react/README",
+  "title": "@docsearch/react",
+  "description": "React package for DocSearch, the best search experience for docs.",
+  "source": "@site/node_modules/@docsearch/react/README.md",
+  "sourceDirName": "node_modules/@docsearch/react",
+  "slug": "/node_modules/@docsearch/react/",
+  "permalink": "/node_modules/@docsearch/react/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/p-timeout/readme",
+  "title": "p-timeout [![Build Status](https://travis-ci.org/sindresorhus/p-timeout.svg?branch=master)](https://travis-ci.org/sindresorhus/p-timeout)",
+  "description": "Timeout a promise after a specified amount of time",
+  "source": "@site/node_modules/p-timeout/readme.md",
+  "sourceDirName": "node_modules/p-timeout",
+  "slug": "/node_modules/p-timeout/",
+  "permalink": "/node_modules/p-timeout/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

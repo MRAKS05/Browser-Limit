@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/trim-lines/readme",
+  "title": "trim-lines",
+  "description": "Build",
+  "source": "@site/node_modules/trim-lines/readme.md",
+  "sourceDirName": "node_modules/trim-lines",
+  "slug": "/node_modules/trim-lines/",
+  "permalink": "/node_modules/trim-lines/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

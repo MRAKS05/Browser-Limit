@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/body-parser/HISTORY",
+  "title": "1.20.5 / 2026-04-24",
+  "description": "* refactor(json): simplify strict mode error string construction",
+  "source": "@site/node_modules/body-parser/HISTORY.md",
+  "sourceDirName": "node_modules/body-parser",
+  "slug": "/node_modules/body-parser/HISTORY",
+  "permalink": "/node_modules/body-parser/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

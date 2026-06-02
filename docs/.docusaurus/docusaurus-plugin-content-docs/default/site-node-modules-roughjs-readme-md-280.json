@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/roughjs/README",
+  "title": "Rough.js",
+  "description": "Rough.js is a small (\\<9 kB) graphics library that lets you draw in a sketchy, hand-drawn-like, style.",
+  "source": "@site/node_modules/roughjs/README.md",
+  "sourceDirName": "node_modules/roughjs",
+  "slug": "/node_modules/roughjs/",
+  "permalink": "/node_modules/roughjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

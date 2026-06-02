@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sax/README",
+  "title": "sax js",
+  "description": "A sax-style parser for XML and HTML.",
+  "source": "@site/node_modules/sax/README.md",
+  "sourceDirName": "node_modules/sax",
+  "slug": "/node_modules/sax/",
+  "permalink": "/node_modules/sax/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

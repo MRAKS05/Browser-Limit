@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/stylehacks/README",
+  "title": "stylehacks",
+  "description": "Detect/remove browser hacks from CSS files.",
+  "source": "@site/node_modules/stylehacks/README.md",
+  "sourceDirName": "node_modules/stylehacks",
+  "slug": "/node_modules/stylehacks/",
+  "permalink": "/node_modules/stylehacks/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

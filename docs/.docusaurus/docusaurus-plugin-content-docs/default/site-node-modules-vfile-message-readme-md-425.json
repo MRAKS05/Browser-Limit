@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/vfile-message/readme",
+  "title": "vfile-message",
+  "description": "Build",
+  "source": "@site/node_modules/vfile-message/readme.md",
+  "sourceDirName": "node_modules/vfile-message",
+  "slug": "/node_modules/vfile-message/",
+  "permalink": "/node_modules/vfile-message/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

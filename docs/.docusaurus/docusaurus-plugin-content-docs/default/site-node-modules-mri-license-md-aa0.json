@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mri/license",
+  "title": "license",
+  "description": "The MIT License (MIT)",
+  "source": "@site/node_modules/mri/license.md",
+  "sourceDirName": "node_modules/mri",
+  "slug": "/node_modules/mri/license",
+  "permalink": "/node_modules/mri/license",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-normalize-display-values/README",
+  "title": "PostCSS Normalize Display Values [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS Normalize Display Values] lets you specify definition of outer and inner displays types for an element.",
+  "source": "@site/node_modules/@csstools/postcss-normalize-display-values/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-normalize-display-values",
+  "slug": "/node_modules/@csstools/postcss-normalize-display-values/",
+  "permalink": "/node_modules/@csstools/postcss-normalize-display-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

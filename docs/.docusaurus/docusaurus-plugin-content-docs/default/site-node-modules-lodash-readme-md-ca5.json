@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/lodash/README",
+  "title": "lodash v4.18.1",
+  "description": "The Lodash library exported as Node.js modules.",
+  "source": "@site/node_modules/lodash/README.md",
+  "sourceDirName": "node_modules/lodash",
+  "slug": "/node_modules/lodash/",
+  "permalink": "/node_modules/lodash/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

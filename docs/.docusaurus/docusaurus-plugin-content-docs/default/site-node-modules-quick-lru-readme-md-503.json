@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/quick-lru/readme",
+  "title": "quick-lru [![Build Status](https://travis-ci.org/sindresorhus/quick-lru.svg?branch=master)](https://travis-ci.org/sindresorhus/quick-lru) [![Coverage Status](https://coveralls.io/repos/github/sindresorhus/quick-lru/badge.svg?branch=master)](https://coveralls.io/github/sindresorhus/quick-lru?branch=master)",
+  "description": "Simple “Least Recently Used” (LRU) cache",
+  "source": "@site/node_modules/quick-lru/readme.md",
+  "sourceDirName": "node_modules/quick-lru",
+  "slug": "/node_modules/quick-lru/",
+  "permalink": "/node_modules/quick-lru/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

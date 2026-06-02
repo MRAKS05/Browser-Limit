@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-new-target/README",
+  "title": "@babel/plugin-transform-new-target",
+  "description": "Transforms new.target meta property",
+  "source": "@site/node_modules/@babel/plugin-transform-new-target/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-new-target",
+  "slug": "/node_modules/@babel/plugin-transform-new-target/",
+  "permalink": "/node_modules/@babel/plugin-transform-new-target/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

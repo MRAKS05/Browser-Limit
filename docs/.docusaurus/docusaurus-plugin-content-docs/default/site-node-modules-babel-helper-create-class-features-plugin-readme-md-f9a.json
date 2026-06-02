@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-create-class-features-plugin/README",
+  "title": "@babel/helper-create-class-features-plugin",
+  "description": "Compile class public and private fields, private methods and decorators to ES6",
+  "source": "@site/node_modules/@babel/helper-create-class-features-plugin/README.md",
+  "sourceDirName": "node_modules/@babel/helper-create-class-features-plugin",
+  "slug": "/node_modules/@babel/helper-create-class-features-plugin/",
+  "permalink": "/node_modules/@babel/helper-create-class-features-plugin/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

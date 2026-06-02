@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/react-loadable/README",
+  "title": "README",
+  "description": "IMPORTANT: this is a minimalistic fork to solve the componentWillMount warning for the facebook/docusaurus project.",
+  "source": "@site/node_modules/react-loadable/README.md",
+  "sourceDirName": "node_modules/react-loadable",
+  "slug": "/node_modules/react-loadable/",
+  "permalink": "/node_modules/react-loadable/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/forwarded/HISTORY",
+  "title": "0.2.0 / 2021-05-31",
+  "description": "* Use req.socket over deprecated req.connection",
+  "source": "@site/node_modules/forwarded/HISTORY.md",
+  "sourceDirName": "node_modules/forwarded",
+  "slug": "/node_modules/forwarded/HISTORY",
+  "permalink": "/node_modules/forwarded/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

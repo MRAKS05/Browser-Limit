@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/has-yarn/readme",
+  "title": "has-yarn",
+  "description": "Check if a project is using Yarn",
+  "source": "@site/node_modules/has-yarn/readme.md",
+  "sourceDirName": "node_modules/has-yarn",
+  "slug": "/node_modules/has-yarn/",
+  "permalink": "/node_modules/has-yarn/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

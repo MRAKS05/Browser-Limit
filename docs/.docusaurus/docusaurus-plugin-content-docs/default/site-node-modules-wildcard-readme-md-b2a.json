@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/wildcard/README",
+  "title": "wildcard",
+  "description": "Very simple wildcard matching, which is designed to provide the same",
+  "source": "@site/node_modules/wildcard/README.md",
+  "sourceDirName": "node_modules/wildcard",
+  "slug": "/node_modules/wildcard/",
+  "permalink": "/node_modules/wildcard/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

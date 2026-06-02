@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/webpack-bundle-analyzer/README",
+  "title": "README",
+  "description": "npm",
+  "source": "@site/node_modules/webpack-bundle-analyzer/README.md",
+  "sourceDirName": "node_modules/webpack-bundle-analyzer",
+  "slug": "/node_modules/webpack-bundle-analyzer/",
+  "permalink": "/node_modules/webpack-bundle-analyzer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

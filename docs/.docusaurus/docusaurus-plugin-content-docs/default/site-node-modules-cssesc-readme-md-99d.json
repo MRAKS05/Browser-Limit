@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cssesc/README",
+  "title": "cssesc [![Build status](https://travis-ci.org/mathiasbynens/cssesc.svg?branch=master)](https://travis-ci.org/mathiasbynens/cssesc) [![Code coverage status](https://img.shields.io/codecov/c/github/mathiasbynens/cssesc.svg)](https://codecov.io/gh/mathiasbynens/cssesc)",
+  "description": "A JavaScript library for escaping CSS strings and identifiers while generating the shortest possible ASCII-only output.",
+  "source": "@site/node_modules/cssesc/README.md",
+  "sourceDirName": "node_modules/cssesc",
+  "slug": "/node_modules/cssesc/",
+  "permalink": "/node_modules/cssesc/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

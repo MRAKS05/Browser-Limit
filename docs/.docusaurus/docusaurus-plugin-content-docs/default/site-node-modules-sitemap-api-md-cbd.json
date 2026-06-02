@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sitemap/api",
+  "title": "API",
+  "description": "- API",
+  "source": "@site/node_modules/sitemap/api.md",
+  "sourceDirName": "node_modules/sitemap",
+  "slug": "/node_modules/sitemap/api",
+  "permalink": "/node_modules/sitemap/api",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

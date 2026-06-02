@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-discard-overridden/README",
+  "title": "PostCSS Discard Overridden",
+  "description": "[PostCSS] plugin to discard overridden @keyframes or @counter-style.",
+  "source": "@site/node_modules/postcss-discard-overridden/README.md",
+  "sourceDirName": "node_modules/postcss-discard-overridden",
+  "slug": "/node_modules/postcss-discard-overridden/",
+  "permalink": "/node_modules/postcss-discard-overridden/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

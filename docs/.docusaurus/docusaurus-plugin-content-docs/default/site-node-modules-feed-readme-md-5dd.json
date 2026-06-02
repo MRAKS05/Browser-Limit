@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/feed/README",
+  "title": "README",
+  "description": "jpmonette/feed - RSS 2.0, JSON Feed 1.0, and Atom 1.0 generator for Node.js",
+  "source": "@site/node_modules/feed/README.md",
+  "sourceDirName": "node_modules/feed",
+  "slug": "/node_modules/feed/",
+  "permalink": "/node_modules/feed/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

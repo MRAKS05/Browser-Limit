@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-optional-catch-binding/README",
+  "title": "@babel/plugin-transform-optional-catch-binding",
+  "description": "Compile optional catch bindings",
+  "source": "@site/node_modules/@babel/plugin-transform-optional-catch-binding/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-optional-catch-binding",
+  "slug": "/node_modules/@babel/plugin-transform-optional-catch-binding/",
+  "permalink": "/node_modules/@babel/plugin-transform-optional-catch-binding/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

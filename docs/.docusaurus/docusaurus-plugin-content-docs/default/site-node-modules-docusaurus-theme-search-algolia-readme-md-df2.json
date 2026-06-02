@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/theme-search-algolia/README",
+  "title": "@docusaurus/theme-search-algolia",
+  "description": "Algolia search component for Docusaurus.",
+  "source": "@site/node_modules/@docusaurus/theme-search-algolia/README.md",
+  "sourceDirName": "node_modules/@docusaurus/theme-search-algolia",
+  "slug": "/node_modules/@docusaurus/theme-search-algolia/",
+  "permalink": "/node_modules/@docusaurus/theme-search-algolia/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

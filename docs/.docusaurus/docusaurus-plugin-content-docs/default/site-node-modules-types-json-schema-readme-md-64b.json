@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/json-schema/README",
+  "title": "Installation",
+  "description": "npm install --save @types/json-schema",
+  "source": "@site/node_modules/@types/json-schema/README.md",
+  "sourceDirName": "node_modules/@types/json-schema",
+  "slug": "/node_modules/@types/json-schema/",
+  "permalink": "/node_modules/@types/json-schema/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

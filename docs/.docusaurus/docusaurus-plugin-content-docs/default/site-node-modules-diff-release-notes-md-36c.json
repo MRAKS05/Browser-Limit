@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/diff/release-notes",
+  "title": "Release Notes",
+  "description": "v5.2.0",
+  "source": "@site/node_modules/diff/release-notes.md",
+  "sourceDirName": "node_modules/diff",
+  "slug": "/node_modules/diff/release-notes",
+  "permalink": "/node_modules/diff/release-notes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

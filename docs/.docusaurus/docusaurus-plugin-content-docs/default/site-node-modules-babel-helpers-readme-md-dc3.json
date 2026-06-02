@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helpers/README",
+  "title": "@babel/helpers",
+  "description": "Collection of helper functions used by Babel transforms.",
+  "source": "@site/node_modules/@babel/helpers/README.md",
+  "sourceDirName": "node_modules/@babel/helpers",
+  "slug": "/node_modules/@babel/helpers/",
+  "permalink": "/node_modules/@babel/helpers/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

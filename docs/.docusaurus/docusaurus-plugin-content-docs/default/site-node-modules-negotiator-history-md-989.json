@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/negotiator/HISTORY",
+  "title": "unreleased",
+  "description": "* Added an option preferred encodings array #59",
+  "source": "@site/node_modules/negotiator/HISTORY.md",
+  "sourceDirName": "node_modules/negotiator",
+  "slug": "/node_modules/negotiator/HISTORY",
+  "permalink": "/node_modules/negotiator/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

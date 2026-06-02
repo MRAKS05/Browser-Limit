@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/webpack-sources/README",
+  "title": "webpack-sources",
+  "description": "Contains multiple classes which represent a Source. A Source can be asked for source code, size, source map and hash.",
+  "source": "@site/node_modules/webpack-sources/README.md",
+  "sourceDirName": "node_modules/webpack-sources",
+  "slug": "/node_modules/webpack-sources/",
+  "permalink": "/node_modules/webpack-sources/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

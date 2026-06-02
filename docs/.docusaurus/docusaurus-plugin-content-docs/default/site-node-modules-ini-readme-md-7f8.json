@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ini/README",
+  "title": "README",
+  "description": "An ini format parser and serializer for node.",
+  "source": "@site/node_modules/ini/README.md",
+  "sourceDirName": "node_modules/ini",
+  "slug": "/node_modules/ini/",
+  "permalink": "/node_modules/ini/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

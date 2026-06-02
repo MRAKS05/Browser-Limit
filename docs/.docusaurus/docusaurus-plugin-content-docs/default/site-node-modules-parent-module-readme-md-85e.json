@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/parent-module/readme",
+  "title": "parent-module [![Build Status](https://travis-ci.org/sindresorhus/parent-module.svg?branch=master)](https://travis-ci.org/sindresorhus/parent-module)",
+  "description": "Get the path of the parent module",
+  "source": "@site/node_modules/parent-module/readme.md",
+  "sourceDirName": "node_modules/parent-module",
+  "slug": "/node_modules/parent-module/",
+  "permalink": "/node_modules/parent-module/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

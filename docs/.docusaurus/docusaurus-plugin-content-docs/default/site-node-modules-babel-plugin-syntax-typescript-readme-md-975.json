@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-syntax-typescript/README",
+  "title": "@babel/plugin-syntax-typescript",
+  "description": "Allow parsing of TypeScript syntax",
+  "source": "@site/node_modules/@babel/plugin-syntax-typescript/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-syntax-typescript",
+  "slug": "/node_modules/@babel/plugin-syntax-typescript/",
+  "permalink": "/node_modules/@babel/plugin-syntax-typescript/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

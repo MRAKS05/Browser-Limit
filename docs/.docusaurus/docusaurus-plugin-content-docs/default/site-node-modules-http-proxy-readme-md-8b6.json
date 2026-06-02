@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/http-proxy/README",
+  "title": "README",
+  "description": "node-http-proxy is an HTTP programmable proxying library that supports",
+  "source": "@site/node_modules/http-proxy/README.md",
+  "sourceDirName": "node_modules/http-proxy",
+  "slug": "/node_modules/http-proxy/",
+  "permalink": "/node_modules/http-proxy/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

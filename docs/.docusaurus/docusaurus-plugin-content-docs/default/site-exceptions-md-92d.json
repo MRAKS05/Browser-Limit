@@ -1,0 +1,27 @@
+{
+  "id": "exceptions",
+  "title": "Exception Management",
+  "description": "Browser Limit allows you to exempt specific apps from browser detection and removal. The exceptions list is managed through the Exceptions screen and is checked before any detection runs.",
+  "source": "@site/exceptions.md",
+  "sourceDirName": ".",
+  "slug": "/exceptions",
+  "permalink": "/exceptions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "exceptions",
+    "title": "Exception Management",
+    "sidebar_label": "Exceptions"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security",
+    "permalink": "/security"
+  },
+  "next": {
+    "title": "Audit Log",
+    "permalink": "/audit-log"
+  }
+}

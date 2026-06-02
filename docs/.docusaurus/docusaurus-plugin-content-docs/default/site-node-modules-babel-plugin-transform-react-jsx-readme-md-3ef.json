@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-react-jsx/README",
+  "title": "@babel/plugin-transform-react-jsx",
+  "description": "Turn JSX into React function calls",
+  "source": "@site/node_modules/@babel/plugin-transform-react-jsx/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-react-jsx",
+  "slug": "/node_modules/@babel/plugin-transform-react-jsx/",
+  "permalink": "/node_modules/@babel/plugin-transform-react-jsx/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

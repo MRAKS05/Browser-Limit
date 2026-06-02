@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-logical-assignment-operators/README",
+  "title": "@babel/plugin-transform-logical-assignment-operators",
+  "description": "Transforms logical assignment operators into short-circuited assignments",
+  "source": "@site/node_modules/@babel/plugin-transform-logical-assignment-operators/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-logical-assignment-operators",
+  "slug": "/node_modules/@babel/plugin-transform-logical-assignment-operators/",
+  "permalink": "/node_modules/@babel/plugin-transform-logical-assignment-operators/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

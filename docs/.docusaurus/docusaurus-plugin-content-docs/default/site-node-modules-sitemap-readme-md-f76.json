@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sitemap/README",
+  "title": "sitemap ![MIT License](https://img.shields.io/npm/l/sitemap)[![Build Status](https://travis-ci.org/ekalinin/sitemap.js.svg?branch=master)](https://travis-ci.org/ekalinin/sitemap.js)![Monthly Downloads](https://img.shields.io/npm/dm/sitemap)",
+  "description": "sitemap is a high-level streaming sitemap-generating library/CLI that",
+  "source": "@site/node_modules/sitemap/README.md",
+  "sourceDirName": "node_modules/sitemap",
+  "slug": "/node_modules/sitemap/",
+  "permalink": "/node_modules/sitemap/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

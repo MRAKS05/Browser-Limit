@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@polka/url/readme",
+  "title": "@polka/url [![npm](https://badgen.now.sh/npm/v/@polka/url)](https://npmjs.org/package/@polka/url) [![licenses](https://licenses.dev/b/npm/%40polka%2Furl)](https://licenses.dev/npm/%40polka%2Furl)",
+  "description": "Super fast, memoized req.url parser; not limited to Polka!",
+  "source": "@site/node_modules/@polka/url/readme.md",
+  "sourceDirName": "node_modules/@polka/url",
+  "slug": "/node_modules/@polka/url/",
+  "permalink": "/node_modules/@polka/url/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

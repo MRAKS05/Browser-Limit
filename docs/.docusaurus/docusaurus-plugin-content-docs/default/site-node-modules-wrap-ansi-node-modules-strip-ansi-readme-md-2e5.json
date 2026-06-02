@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/wrap-ansi/node_modules/strip-ansi/readme",
+  "title": "strip-ansi",
+  "description": "Strip ANSI escape codes from a string",
+  "source": "@site/node_modules/wrap-ansi/node_modules/strip-ansi/readme.md",
+  "sourceDirName": "node_modules/wrap-ansi/node_modules/strip-ansi",
+  "slug": "/node_modules/wrap-ansi/node_modules/strip-ansi/",
+  "permalink": "/node_modules/wrap-ansi/node_modules/strip-ansi/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/p-queue/readme",
+  "title": "p-queue [![Build Status](https://travis-ci.com/sindresorhus/p-queue.svg?branch=master)](https://travis-ci.com/github/sindresorhus/p-queue) [![codecov](https://codecov.io/gh/sindresorhus/p-queue/branch/master/graph/badge.svg)](https://codecov.io/gh/sindresorhus/p-queue)",
+  "description": "Promise queue with concurrency control",
+  "source": "@site/node_modules/p-queue/readme.md",
+  "sourceDirName": "node_modules/p-queue",
+  "slug": "/node_modules/p-queue/",
+  "permalink": "/node_modules/p-queue/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

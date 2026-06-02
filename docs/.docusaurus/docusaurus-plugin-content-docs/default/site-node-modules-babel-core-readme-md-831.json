@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/core/README",
+  "title": "@babel/core",
+  "description": "Babel compiler core.",
+  "source": "@site/node_modules/@babel/core/README.md",
+  "sourceDirName": "node_modules/@babel/core",
+  "slug": "/node_modules/@babel/core/",
+  "permalink": "/node_modules/@babel/core/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

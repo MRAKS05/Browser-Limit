@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/caniuse-api/README",
+  "title": "caniuse-api [![Build Status](https://travis-ci.org/Nyalab/caniuse-api.svg?branch=master)](https://travis-ci.org/Nyalab/caniuse-api) [![Build status](https://ci.appveyor.com/api/projects/status/6j3na522bv3bxfa5/branch/master?svg=true)](https://ci.appveyor.com/project/MoOx/caniuse-api/branch/master)",
+  "description": "request the caniuse data to check browsers compatibilities",
+  "source": "@site/node_modules/caniuse-api/README.md",
+  "sourceDirName": "node_modules/caniuse-api",
+  "slug": "/node_modules/caniuse-api/",
+  "permalink": "/node_modules/caniuse-api/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

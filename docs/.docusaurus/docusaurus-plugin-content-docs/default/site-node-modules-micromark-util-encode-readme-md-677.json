@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark-util-encode/readme",
+  "title": "micromark-util-encode",
+  "description": "Build",
+  "source": "@site/node_modules/micromark-util-encode/readme.md",
+  "sourceDirName": "node_modules/micromark-util-encode",
+  "slug": "/node_modules/micromark-util-encode/",
+  "permalink": "/node_modules/micromark-util-encode/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

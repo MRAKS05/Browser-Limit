@@ -1,0 +1,69 @@
+# Gradle files
+.gradle/
+/build
+/*/build
+
+# Build outputs (APKs, AABs)
+*.apk
+*.aab
+*.so
+
+# IDE files (machine-specific workspace)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/caches/
+.idea/*.iml
+*.iml
+
+# IDE (but keep project structure for contributors)
+.vscode/
+.vs/
+
+# Local machine configuration
+local.properties
+
+# SDK and toolchain directories
+/android-sdk/
+
+# Security sensitive files
+*.keystore
+*.jks
+debug.keystore
+debug.keystore.base64
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+
+# Log files
+*.log
+
+# Native builds
+.externalNativeBuild/
+.cxx/
+
+# Environment-specific
+.env
+.env.local
+
+# Dependencies
+node_modules/
+
+# AI memory and local analysis cache
+.ai-memory/
+
+# opencode configuration
+.opencode/
+
+# Local release signing keystore; do not commit secret key material
+/release.keystore
+
+# Local build outputs (untracked)
+.build_output/
+
+# Previously used `apks/` (removed) - do not re-add
+# apks/ (deleted and replaced by .build_output/)

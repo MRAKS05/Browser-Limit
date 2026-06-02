@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-clamp/INSTALL",
+  "title": "Installing PostCSS Clamp",
+  "description": "[PostCSS Clamp] runs in all Node environments, with special instructions for:",
+  "source": "@site/node_modules/postcss-clamp/INSTALL.md",
+  "sourceDirName": "node_modules/postcss-clamp",
+  "slug": "/node_modules/postcss-clamp/INSTALL",
+  "permalink": "/node_modules/postcss-clamp/INSTALL",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/invariant/CHANGELOG",
+  "title": "2.2.4 / 2018-03-13",
+  "description": "* Use flow strict mode (i.e. @flow strict).",
+  "source": "@site/node_modules/invariant/CHANGELOG.md",
+  "sourceDirName": "node_modules/invariant",
+  "slug": "/node_modules/invariant/CHANGELOG",
+  "permalink": "/node_modules/invariant/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

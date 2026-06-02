@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/p-retry/readme",
+  "title": "p-retry",
+  "description": "Retry a promise-returning or async function",
+  "source": "@site/node_modules/p-retry/readme.md",
+  "sourceDirName": "node_modules/p-retry",
+  "slug": "/node_modules/p-retry/",
+  "permalink": "/node_modules/p-retry/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

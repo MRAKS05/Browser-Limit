@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/send/HISTORY",
+  "title": "0.19.2 / 2025-12-15",
+  "description": "* deps: use tilde notation for dependencies",
+  "source": "@site/node_modules/send/HISTORY.md",
+  "sourceDirName": "node_modules/send",
+  "slug": "/node_modules/send/HISTORY",
+  "permalink": "/node_modules/send/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

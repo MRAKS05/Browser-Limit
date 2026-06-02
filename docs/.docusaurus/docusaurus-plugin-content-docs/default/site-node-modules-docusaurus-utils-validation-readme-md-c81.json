@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/utils-validation/README",
+  "title": "@docusaurus/utils-validation",
+  "description": "Node validation utility functions for Docusaurus packages.",
+  "source": "@site/node_modules/@docusaurus/utils-validation/README.md",
+  "sourceDirName": "node_modules/@docusaurus/utils-validation",
+  "slug": "/node_modules/@docusaurus/utils-validation/",
+  "permalink": "/node_modules/@docusaurus/utils-validation/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

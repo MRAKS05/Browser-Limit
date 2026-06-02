@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/scheduler/README",
+  "title": "scheduler",
+  "description": "This is a package for cooperative scheduling in a browser environment. It is currently used internally by React, but we plan to make it more generic.",
+  "source": "@site/node_modules/scheduler/README.md",
+  "sourceDirName": "node_modules/scheduler",
+  "slug": "/node_modules/scheduler/",
+  "permalink": "/node_modules/scheduler/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

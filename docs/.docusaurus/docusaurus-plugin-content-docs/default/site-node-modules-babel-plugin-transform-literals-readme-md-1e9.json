@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-literals/README",
+  "title": "@babel/plugin-transform-literals",
+  "description": "Compile ES2015 unicode string and number literals to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-literals/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-literals",
+  "slug": "/node_modules/@babel/plugin-transform-literals/",
+  "permalink": "/node_modules/@babel/plugin-transform-literals/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/picocolors/README",
+  "title": "picocolors",
+  "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors.",
+  "source": "@site/node_modules/picocolors/README.md",
+  "sourceDirName": "node_modules/picocolors",
+  "slug": "/node_modules/picocolors/",
+  "permalink": "/node_modules/picocolors/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

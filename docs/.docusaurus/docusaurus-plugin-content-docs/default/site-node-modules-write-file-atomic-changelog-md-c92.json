@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/write-file-atomic/CHANGELOG",
+  "title": "3.0.0",
+  "description": "* Implement options.tmpfileCreated callback.",
+  "source": "@site/node_modules/write-file-atomic/CHANGELOG.md",
+  "sourceDirName": "node_modules/write-file-atomic",
+  "slug": "/node_modules/write-file-atomic/CHANGELOG",
+  "permalink": "/node_modules/write-file-atomic/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

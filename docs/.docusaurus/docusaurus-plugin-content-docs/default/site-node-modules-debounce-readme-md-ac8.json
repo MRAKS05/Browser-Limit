@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/debounce/Readme",
+  "title": "debounce",
+  "description": "Useful for implementing behavior that should only happen after a repeated",
+  "source": "@site/node_modules/debounce/Readme.md",
+  "sourceDirName": "node_modules/debounce",
+  "slug": "/node_modules/debounce/",
+  "permalink": "/node_modules/debounce/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

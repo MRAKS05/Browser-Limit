@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@sideway/address/README",
+  "title": "@sideway/address",
+  "description": "Validate email address and domain.",
+  "source": "@site/node_modules/@sideway/address/README.md",
+  "sourceDirName": "node_modules/@sideway/address",
+  "slug": "/node_modules/@sideway/address/",
+  "permalink": "/node_modules/@sideway/address/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

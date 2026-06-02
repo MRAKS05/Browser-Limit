@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/connect/README",
+  "title": "Installation",
+  "description": "npm install --save @types/connect",
+  "source": "@site/node_modules/@types/connect/README.md",
+  "sourceDirName": "node_modules/@types/connect",
+  "slug": "/node_modules/@types/connect/",
+  "permalink": "/node_modules/@types/connect/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

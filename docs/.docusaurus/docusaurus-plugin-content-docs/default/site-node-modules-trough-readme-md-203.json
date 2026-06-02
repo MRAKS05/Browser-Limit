@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/trough/readme",
+  "title": "trough",
+  "description": "Build",
+  "source": "@site/node_modules/trough/readme.md",
+  "sourceDirName": "node_modules/trough",
+  "slug": "/node_modules/trough/",
+  "permalink": "/node_modules/trough/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-timer/README",
+  "title": "d3-timer",
+  "description": "This module provides an efficient queue capable of managing thousands of concurrent animations, while guaranteeing consistent, synchronized timing with concurrent or staged animations. Internally, it uses requestAnimationFrame for fluid animation (if available), switching to setTimeout for delays longer than 24ms.",
+  "source": "@site/node_modules/d3-timer/README.md",
+  "sourceDirName": "node_modules/d3-timer",
+  "slug": "/node_modules/d3-timer/",
+  "permalink": "/node_modules/d3-timer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

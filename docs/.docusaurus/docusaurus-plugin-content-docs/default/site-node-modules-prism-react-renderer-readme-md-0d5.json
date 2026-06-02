@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/prism-react-renderer/README",
+  "title": "README",
+  "description": "A lean Prism highlighter component for React",
+  "source": "@site/node_modules/prism-react-renderer/README.md",
+  "sourceDirName": "node_modules/prism-react-renderer",
+  "slug": "/node_modules/prism-react-renderer/",
+  "permalink": "/node_modules/prism-react-renderer/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

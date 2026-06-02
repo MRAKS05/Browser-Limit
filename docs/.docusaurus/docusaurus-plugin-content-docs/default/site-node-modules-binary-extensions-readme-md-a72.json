@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/binary-extensions/readme",
+  "title": "binary-extensions",
+  "description": "List of binary file extensions",
+  "source": "@site/node_modules/binary-extensions/readme.md",
+  "sourceDirName": "node_modules/binary-extensions",
+  "slug": "/node_modules/binary-extensions/",
+  "permalink": "/node_modules/binary-extensions/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

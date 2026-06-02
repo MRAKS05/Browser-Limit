@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/points-on-path/README",
+  "title": "points-on-path",
+  "description": "This package calculate the points on a SVG Path with a certain tolerance. It can also simplify the shape to use fewer points.",
+  "source": "@site/node_modules/points-on-path/README.md",
+  "sourceDirName": "node_modules/points-on-path",
+  "slug": "/node_modules/points-on-path/",
+  "permalink": "/node_modules/points-on-path/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

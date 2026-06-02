@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/multicast-dns/README",
+  "title": "multicast-dns",
+  "description": "Low level multicast-dns implementation in pure javascript",
+  "source": "@site/node_modules/multicast-dns/README.md",
+  "sourceDirName": "node_modules/multicast-dns",
+  "slug": "/node_modules/multicast-dns/",
+  "permalink": "/node_modules/multicast-dns/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/eastasianwidth/README",
+  "title": "East Asian Width",
+  "description": "Get East Asian Width from a character.",
+  "source": "@site/node_modules/eastasianwidth/README.md",
+  "sourceDirName": "node_modules/eastasianwidth",
+  "slug": "/node_modules/eastasianwidth/",
+  "permalink": "/node_modules/eastasianwidth/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

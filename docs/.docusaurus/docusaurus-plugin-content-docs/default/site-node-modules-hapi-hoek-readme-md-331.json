@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@hapi/hoek/README",
+  "title": "README",
+  "description": "Utility methods for the hapi ecosystem.",
+  "source": "@site/node_modules/@hapi/hoek/README.md",
+  "sourceDirName": "node_modules/@hapi/hoek",
+  "slug": "/node_modules/@hapi/hoek/",
+  "permalink": "/node_modules/@hapi/hoek/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

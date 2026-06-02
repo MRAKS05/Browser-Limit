@@ -1,0 +1,27 @@
+{
+  "id": "faq",
+  "title": "FAQ",
+  "description": "General",
+  "source": "@site/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/faq",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "faq",
+    "title": "FAQ",
+    "sidebar_label": "FAQ"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Permissions",
+    "permalink": "/permissions"
+  },
+  "next": {
+    "title": "Troubleshooting",
+    "permalink": "/troubleshooting"
+  }
+}

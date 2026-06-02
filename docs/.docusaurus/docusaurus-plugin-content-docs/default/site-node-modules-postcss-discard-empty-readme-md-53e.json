@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-discard-empty/README",
+  "title": "[postcss][postcss]-discard-empty",
+  "description": "Discard empty rules and values with PostCSS.",
+  "source": "@site/node_modules/postcss-discard-empty/README.md",
+  "sourceDirName": "node_modules/postcss-discard-empty",
+  "slug": "/node_modules/postcss-discard-empty/",
+  "permalink": "/node_modules/postcss-discard-empty/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

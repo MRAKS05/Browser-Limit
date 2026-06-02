@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-minify-font-values/README",
+  "title": "postcss-minify-font-values [![Build Status][ci-img]][ci]",
+  "description": "Minify font declarations with PostCSS.",
+  "source": "@site/node_modules/postcss-minify-font-values/README.md",
+  "sourceDirName": "node_modules/postcss-minify-font-values",
+  "slug": "/node_modules/postcss-minify-font-values/",
+  "permalink": "/node_modules/postcss-minify-font-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

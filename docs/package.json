@@ -1,0 +1,22 @@
+{
+  "name": "browserlimit-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start --port 5000 --host 0.0.0.0",
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve --dir build"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/plugin-sitemap": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
+    "@docusaurus/theme-mermaid": "^3.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@easyops-cn/docusaurus-search-local": "^0.44.0",
+    "mermaid": "^10.9.0",
+    "@mermaid-js/layout-elk": "^0.1.0"
+  }
+}

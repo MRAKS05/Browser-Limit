@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/rehype-recma/readme",
+  "title": "rehype-recma",
+  "description": "Build",
+  "source": "@site/node_modules/rehype-recma/readme.md",
+  "sourceDirName": "node_modules/rehype-recma",
+  "slug": "/node_modules/rehype-recma/",
+  "permalink": "/node_modules/rehype-recma/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

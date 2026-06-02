@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark-util-sanitize-uri/readme",
+  "title": "micromark-util-sanitize-uri",
+  "description": "Build",
+  "source": "@site/node_modules/micromark-util-sanitize-uri/readme.md",
+  "sourceDirName": "node_modules/micromark-util-sanitize-uri",
+  "slug": "/node_modules/micromark-util-sanitize-uri/",
+  "permalink": "/node_modules/micromark-util-sanitize-uri/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

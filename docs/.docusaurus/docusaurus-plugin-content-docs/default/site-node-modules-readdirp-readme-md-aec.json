@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/readdirp/README",
+  "title": "readdirp [![Weekly downloads](https://img.shields.io/npm/dw/readdirp.svg)](https://github.com/paulmillr/readdirp)",
+  "description": "Recursive version of fs.readdir. Exposes a stream API and a promise API.",
+  "source": "@site/node_modules/readdirp/README.md",
+  "sourceDirName": "node_modules/readdirp",
+  "slug": "/node_modules/readdirp/",
+  "permalink": "/node_modules/readdirp/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

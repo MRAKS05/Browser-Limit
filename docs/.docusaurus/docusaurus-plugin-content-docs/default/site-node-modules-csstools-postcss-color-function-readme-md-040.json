@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-color-function/README",
+  "title": "PostCSS Color Function [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install @csstools/postcss-color-function --save-dev",
+  "source": "@site/node_modules/@csstools/postcss-color-function/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-color-function",
+  "slug": "/node_modules/@csstools/postcss-color-function/",
+  "permalink": "/node_modules/@csstools/postcss-color-function/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

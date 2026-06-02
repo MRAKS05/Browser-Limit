@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/detect-node/Readme",
+  "title": "Readme",
+  "description": "Install",
+  "source": "@site/node_modules/detect-node/Readme.md",
+  "sourceDirName": "node_modules/detect-node",
+  "slug": "/node_modules/detect-node/",
+  "permalink": "/node_modules/detect-node/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

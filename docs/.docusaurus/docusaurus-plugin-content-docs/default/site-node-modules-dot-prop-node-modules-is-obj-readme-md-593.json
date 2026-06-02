@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/dot-prop/node_modules/is-obj/readme",
+  "title": "is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)",
+  "description": "Check if a value is an object",
+  "source": "@site/node_modules/dot-prop/node_modules/is-obj/readme.md",
+  "sourceDirName": "node_modules/dot-prop/node_modules/is-obj",
+  "slug": "/node_modules/dot-prop/node_modules/is-obj/",
+  "permalink": "/node_modules/dot-prop/node_modules/is-obj/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

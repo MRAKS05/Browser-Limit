@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-block-scoping/README",
+  "title": "@babel/plugin-transform-block-scoping",
+  "description": "Compile ES2015 block scoping (const and let) to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-block-scoping/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-block-scoping",
+  "slug": "/node_modules/@babel/plugin-transform-block-scoping/",
+  "permalink": "/node_modules/@babel/plugin-transform-block-scoping/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

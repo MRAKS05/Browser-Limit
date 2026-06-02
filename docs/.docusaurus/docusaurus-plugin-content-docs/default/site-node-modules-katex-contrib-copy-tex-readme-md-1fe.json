@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/katex/contrib/copy-tex/README",
+  "title": "Copy-tex extension",
+  "description": "This extension modifies the copy/paste behavior in any browser supporting the",
+  "source": "@site/node_modules/katex/contrib/copy-tex/README.md",
+  "sourceDirName": "node_modules/katex/contrib/copy-tex",
+  "slug": "/node_modules/katex/contrib/copy-tex/",
+  "permalink": "/node_modules/katex/contrib/copy-tex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/webpack-dev-middleware/node_modules/mime-types/HISTORY",
+  "title": "3.0.2 / 2025-11-20",
+  "description": "* Fix: update JSDoc to reflect that functions return only false or string, not boolean|string.",
+  "source": "@site/node_modules/webpack-dev-middleware/node_modules/mime-types/HISTORY.md",
+  "sourceDirName": "node_modules/webpack-dev-middleware/node_modules/mime-types",
+  "slug": "/node_modules/webpack-dev-middleware/node_modules/mime-types/HISTORY",
+  "permalink": "/node_modules/webpack-dev-middleware/node_modules/mime-types/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-interpolate/README",
+  "title": "d3-interpolate",
+  "description": "This module provides a variety of interpolation methods for blending between two values. Values may be numbers, colors, strings, arrays, or even deeply-nested objects. For example:",
+  "source": "@site/node_modules/d3-interpolate/README.md",
+  "sourceDirName": "node_modules/d3-interpolate",
+  "slug": "/node_modules/d3-interpolate/",
+  "permalink": "/node_modules/d3-interpolate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

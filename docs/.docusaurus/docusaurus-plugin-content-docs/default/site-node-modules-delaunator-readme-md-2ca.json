@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/delaunator/README",
+  "title": "Delaunator [![CI](https://github.com/mapbox/delaunator/actions/workflows/node.yml/badge.svg)](https://github.com/mapbox/delaunator/actions/workflows/node.yml) [![](https://img.shields.io/badge/simply-awesome-brightgreen.svg)](https://github.com/mourner/projects) [![](https://badgen.net/bundlephobia/minzip/delaunator)](https://unpkg.com/delaunator)",
+  "description": "An incredibly fast and robust JavaScript library for",
+  "source": "@site/node_modules/delaunator/README.md",
+  "sourceDirName": "node_modules/delaunator",
+  "slug": "/node_modules/delaunator/",
+  "permalink": "/node_modules/delaunator/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

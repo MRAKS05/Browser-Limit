@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/package-manager-detector/README",
+  "title": "package-manager-detector",
+  "description": "npm version",
+  "source": "@site/node_modules/package-manager-detector/README.md",
+  "sourceDirName": "node_modules/package-manager-detector",
+  "slug": "/node_modules/package-manager-detector/",
+  "permalink": "/node_modules/package-manager-detector/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

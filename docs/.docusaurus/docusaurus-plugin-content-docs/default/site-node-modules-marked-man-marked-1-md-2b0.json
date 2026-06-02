@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/marked/man/marked.1",
+  "title": "marked(1) -- a javascript markdown parser",
+  "description": "SYNOPSIS",
+  "source": "@site/node_modules/marked/man/marked.1.md",
+  "sourceDirName": "node_modules/marked/man",
+  "slug": "/node_modules/marked/man/marked.1",
+  "permalink": "/node_modules/marked/man/marked.1",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

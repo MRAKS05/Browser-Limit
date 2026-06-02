@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/estree-util-attach-comments/readme",
+  "title": "estree-util-attach-comments",
+  "description": "Build",
+  "source": "@site/node_modules/estree-util-attach-comments/readme.md",
+  "sourceDirName": "node_modules/estree-util-attach-comments",
+  "slug": "/node_modules/estree-util-attach-comments/",
+  "permalink": "/node_modules/estree-util-attach-comments/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

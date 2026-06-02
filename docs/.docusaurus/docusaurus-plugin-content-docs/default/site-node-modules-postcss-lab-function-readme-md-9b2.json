@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-lab-function/README",
+  "title": "PostCSS Lab Function [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS Lab Function] lets you use lab and lch color functions in",
+  "source": "@site/node_modules/postcss-lab-function/README.md",
+  "sourceDirName": "node_modules/postcss-lab-function",
+  "slug": "/node_modules/postcss-lab-function/",
+  "permalink": "/node_modules/postcss-lab-function/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

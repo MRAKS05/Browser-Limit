@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-react-pure-annotations/README",
+  "title": "@babel/plugin-transform-react-pure-annotations",
+  "description": "Mark top-level React method calls as pure for tree shaking",
+  "source": "@site/node_modules/@babel/plugin-transform-react-pure-annotations/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-react-pure-annotations",
+  "slug": "/node_modules/@babel/plugin-transform-react-pure-annotations/",
+  "permalink": "/node_modules/@babel/plugin-transform-react-pure-annotations/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

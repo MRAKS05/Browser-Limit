@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-ic-unit/README",
+  "title": "PostCSS IC Unit [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS IC Unit] lets you use the ic length unit, following the [CSS Values and Units Module] specification.",
+  "source": "@site/node_modules/@csstools/postcss-ic-unit/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-ic-unit",
+  "slug": "/node_modules/@csstools/postcss-ic-unit/",
+  "permalink": "/node_modules/@csstools/postcss-ic-unit/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

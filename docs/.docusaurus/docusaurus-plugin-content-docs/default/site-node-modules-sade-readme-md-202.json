@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/sade/readme",
+  "title": "sade [![Build Status](https://travis-ci.org/lukeed/sade.svg?branch=master)](https://travis-ci.org/lukeed/sade)",
+  "description": "Smooth (CLI) Operator 🎶",
+  "source": "@site/node_modules/sade/readme.md",
+  "sourceDirName": "node_modules/sade",
+  "slug": "/node_modules/sade/",
+  "permalink": "/node_modules/sade/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-unset-value/README",
+  "title": "PostCSS Unset Value [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS Unset Value] lets you use the unset keyword, following the [CSS Cascading and Inheritance] specification.",
+  "source": "@site/node_modules/@csstools/postcss-unset-value/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-unset-value",
+  "slug": "/node_modules/@csstools/postcss-unset-value/",
+  "permalink": "/node_modules/@csstools/postcss-unset-value/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

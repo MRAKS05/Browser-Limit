@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/emoticon/readme",
+  "title": "emoticon",
+  "description": "Build",
+  "source": "@site/node_modules/emoticon/readme.md",
+  "sourceDirName": "node_modules/emoticon",
+  "slug": "/node_modules/emoticon/",
+  "permalink": "/node_modules/emoticon/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

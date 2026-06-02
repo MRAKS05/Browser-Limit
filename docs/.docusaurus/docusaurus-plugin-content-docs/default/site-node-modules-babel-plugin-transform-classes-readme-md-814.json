@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-classes/README",
+  "title": "@babel/plugin-transform-classes",
+  "description": "Compile ES2015 classes to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-classes/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-classes",
+  "slug": "/node_modules/@babel/plugin-transform-classes/",
+  "permalink": "/node_modules/@babel/plugin-transform-classes/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/ajv/lib/dotjs/README",
+  "title": "README",
+  "description": "These files are compiled dot templates from dot folder.",
+  "source": "@site/node_modules/ajv/lib/dotjs/README.md",
+  "sourceDirName": "node_modules/ajv/lib/dotjs",
+  "slug": "/node_modules/ajv/lib/dotjs/",
+  "permalink": "/node_modules/ajv/lib/dotjs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

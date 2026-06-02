@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/decompress-response/readme",
+  "title": "decompress-response [![Build Status](https://travis-ci.com/sindresorhus/decompress-response.svg?branch=master)](https://travis-ci.com/sindresorhus/decompress-response)",
+  "description": "Decompress a HTTP response if needed",
+  "source": "@site/node_modules/decompress-response/readme.md",
+  "sourceDirName": "node_modules/decompress-response",
+  "slug": "/node_modules/decompress-response/",
+  "permalink": "/node_modules/decompress-response/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

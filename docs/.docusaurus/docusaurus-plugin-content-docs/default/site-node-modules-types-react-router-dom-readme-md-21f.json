@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/react-router-dom/README",
+  "title": "Installation",
+  "description": "npm install --save @types/react-router-dom",
+  "source": "@site/node_modules/@types/react-router-dom/README.md",
+  "sourceDirName": "node_modules/@types/react-router-dom",
+  "slug": "/node_modules/@types/react-router-dom/",
+  "permalink": "/node_modules/@types/react-router-dom/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

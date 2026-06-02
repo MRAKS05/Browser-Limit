@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark/readme",
+  "title": "micromark",
+  "description": "Build",
+  "source": "@site/node_modules/micromark/readme.md",
+  "sourceDirName": "node_modules/micromark",
+  "slug": "/node_modules/micromark/",
+  "permalink": "/node_modules/micromark/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

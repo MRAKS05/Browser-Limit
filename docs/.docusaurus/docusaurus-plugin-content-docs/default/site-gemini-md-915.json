@@ -1,0 +1,27 @@
+{
+  "id": "gemini",
+  "title": "Gemini AI Integration",
+  "description": "Browser Limit integrates with Google Gemini Flash Lite to provide semantic classification of unknown applications. This allows the app to detect browsers that are not in the local KNOWN_BROWSERS database.",
+  "source": "@site/gemini.md",
+  "sourceDirName": ".",
+  "slug": "/gemini",
+  "permalink": "/gemini",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "gemini",
+    "title": "Gemini AI Integration",
+    "sidebar_label": "Gemini AI"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Detection",
+    "permalink": "/detection"
+  },
+  "next": {
+    "title": "Shizuku",
+    "permalink": "/shizuku"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/copy-text-to-clipboard/readme",
+  "title": "copy-text-to-clipboard",
+  "description": "Copy text to the clipboard in modern browsers (0.2 kB)",
+  "source": "@site/node_modules/copy-text-to-clipboard/readme.md",
+  "sourceDirName": "node_modules/copy-text-to-clipboard",
+  "slug": "/node_modules/copy-text-to-clipboard/",
+  "permalink": "/node_modules/copy-text-to-clipboard/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

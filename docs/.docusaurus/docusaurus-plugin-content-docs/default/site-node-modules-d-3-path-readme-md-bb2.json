@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-path/README",
+  "title": "d3-path",
+  "description": "Say you have some code that draws to a 2D canvas:",
+  "source": "@site/node_modules/d3-path/README.md",
+  "sourceDirName": "node_modules/d3-path",
+  "slug": "/node_modules/d3-path/",
+  "permalink": "/node_modules/d3-path/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

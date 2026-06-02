@@ -1,0 +1,6 @@
+{
+  "name": "browserlimit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrowserLimit - Android browser detection and removal utility"
+}

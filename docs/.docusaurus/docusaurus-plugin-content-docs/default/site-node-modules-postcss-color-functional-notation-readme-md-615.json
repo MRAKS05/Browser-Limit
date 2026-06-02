@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-color-functional-notation/README",
+  "title": "PostCSS Color Functional Notation [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-color-functional-notation --save-dev",
+  "source": "@site/node_modules/postcss-color-functional-notation/README.md",
+  "sourceDirName": "node_modules/postcss-color-functional-notation",
+  "slug": "/node_modules/postcss-color-functional-notation/",
+  "permalink": "/node_modules/postcss-color-functional-notation/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

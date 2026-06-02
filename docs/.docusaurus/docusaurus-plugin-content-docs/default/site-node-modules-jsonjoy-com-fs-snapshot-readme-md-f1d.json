@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@jsonjoy.com/fs-snapshot/README",
+  "title": "@jsonjoy.com/fs-snapshot",
+  "description": "File system snapshot - serialize and deserialize file system trees to binary (CBOR) or JSON format.",
+  "source": "@site/node_modules/@jsonjoy.com/fs-snapshot/README.md",
+  "sourceDirName": "node_modules/@jsonjoy.com/fs-snapshot",
+  "slug": "/node_modules/@jsonjoy.com/fs-snapshot/",
+  "permalink": "/node_modules/@jsonjoy.com/fs-snapshot/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

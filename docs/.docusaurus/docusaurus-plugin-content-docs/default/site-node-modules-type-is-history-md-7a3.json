@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/type-is/HISTORY",
+  "title": "1.6.18 / 2019-04-26",
+  "description": "* Fix regression passing request object to typeis.is",
+  "source": "@site/node_modules/type-is/HISTORY.md",
+  "sourceDirName": "node_modules/type-is",
+  "slug": "/node_modules/type-is/HISTORY",
+  "permalink": "/node_modules/type-is/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

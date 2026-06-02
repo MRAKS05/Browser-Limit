@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-dynamic-import/README",
+  "title": "@babel/plugin-transform-dynamic-import",
+  "description": "Transform import() expressions",
+  "source": "@site/node_modules/@babel/plugin-transform-dynamic-import/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-dynamic-import",
+  "slug": "/node_modules/@babel/plugin-transform-dynamic-import/",
+  "permalink": "/node_modules/@babel/plugin-transform-dynamic-import/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

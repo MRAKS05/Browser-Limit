@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/unist/README",
+  "title": "Installation",
+  "description": "npm install --save @types/unist",
+  "source": "@site/node_modules/@types/unist/README.md",
+  "sourceDirName": "node_modules/@types/unist",
+  "slug": "/node_modules/@types/unist/",
+  "permalink": "/node_modules/@types/unist/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

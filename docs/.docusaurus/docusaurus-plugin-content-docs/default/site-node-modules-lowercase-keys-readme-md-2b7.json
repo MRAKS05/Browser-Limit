@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/lowercase-keys/readme",
+  "title": "lowercase-keys",
+  "description": "Lowercase the keys of an object",
+  "source": "@site/node_modules/lowercase-keys/readme.md",
+  "sourceDirName": "node_modules/lowercase-keys",
+  "slug": "/node_modules/lowercase-keys/",
+  "permalink": "/node_modules/lowercase-keys/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

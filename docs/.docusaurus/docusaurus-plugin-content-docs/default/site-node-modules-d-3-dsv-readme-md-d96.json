@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-dsv/README",
+  "title": "d3-dsv",
+  "description": "This module provides a parser and formatter for delimiter-separated values, most commonly comma- (CSV) or tab-separated values (TSV). These tabular formats are popular with spreadsheet programs such as Microsoft Excel, and are often more space-efficient than JSON. This implementation is based on RFC 4180.",
+  "source": "@site/node_modules/d3-dsv/README.md",
+  "sourceDirName": "node_modules/d3-dsv",
+  "slug": "/node_modules/d3-dsv/",
+  "permalink": "/node_modules/d3-dsv/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

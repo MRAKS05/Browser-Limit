@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/d3-hierarchy/README",
+  "title": "d3-hierarchy",
+  "description": "Many datasets are intrinsically hierarchical. Consider geographic entities, such as census blocks, census tracts, counties and states; the command structure of businesses and governments; file systems and software packages. And even non-hierarchical data may be arranged empirically into a hierarchy, as with k-means clustering or phylogenetic trees.",
+  "source": "@site/node_modules/d3-hierarchy/README.md",
+  "sourceDirName": "node_modules/d3-hierarchy",
+  "slug": "/node_modules/d3-hierarchy/",
+  "permalink": "/node_modules/d3-hierarchy/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

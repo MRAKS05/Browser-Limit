@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-gamut-mapping/README",
+  "title": "PostCSS Gamut Mapping [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install @csstools/postcss-gamut-mapping --save-dev",
+  "source": "@site/node_modules/@csstools/postcss-gamut-mapping/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-gamut-mapping",
+  "slug": "/node_modules/@csstools/postcss-gamut-mapping/",
+  "permalink": "/node_modules/@csstools/postcss-gamut-mapping/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-color/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-color",
+  "source": "@site/node_modules/@types/d3-color/README.md",
+  "sourceDirName": "node_modules/@types/d3-color",
+  "slug": "/node_modules/@types/d3-color/",
+  "permalink": "/node_modules/@types/d3-color/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

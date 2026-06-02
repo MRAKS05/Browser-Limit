@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-dsv/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-dsv",
+  "source": "@site/node_modules/@types/d3-dsv/README.md",
+  "sourceDirName": "node_modules/@types/d3-dsv",
+  "slug": "/node_modules/@types/d3-dsv/",
+  "permalink": "/node_modules/@types/d3-dsv/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark-extension-mdx-md/readme",
+  "title": "micromark-extension-mdx-md",
+  "description": "Build",
+  "source": "@site/node_modules/micromark-extension-mdx-md/readme.md",
+  "sourceDirName": "node_modules/micromark-extension-mdx-md",
+  "slug": "/node_modules/micromark-extension-mdx-md/",
+  "permalink": "/node_modules/micromark-extension-mdx-md/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/css-calc/README",
+  "title": "CSS Calc <img src=\"https://cssdb.org/images/css.svg\" alt=\"for CSS\" width=\"90\" height=\"90\" align=\"right\">",
+  "description": "Implemented from//drafts.csswg.org/css-values-4/ on 2023-02-17",
+  "source": "@site/node_modules/@csstools/css-calc/README.md",
+  "sourceDirName": "node_modules/@csstools/css-calc",
+  "slug": "/node_modules/@csstools/css-calc/",
+  "permalink": "/node_modules/@csstools/css-calc/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

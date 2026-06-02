@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/send/SECURITY",
+  "title": "Security Policies and Procedures",
+  "description": "Reporting a Bug",
+  "source": "@site/node_modules/send/SECURITY.md",
+  "sourceDirName": "node_modules/send",
+  "slug": "/node_modules/send/SECURITY",
+  "permalink": "/node_modules/send/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

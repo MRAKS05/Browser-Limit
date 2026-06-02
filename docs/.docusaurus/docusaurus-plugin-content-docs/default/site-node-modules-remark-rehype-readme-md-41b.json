@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/remark-rehype/readme",
+  "title": "remark-rehype",
+  "description": "Build",
+  "source": "@site/node_modules/remark-rehype/readme.md",
+  "sourceDirName": "node_modules/remark-rehype",
+  "slug": "/node_modules/remark-rehype/",
+  "permalink": "/node_modules/remark-rehype/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

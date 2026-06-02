@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/nth-check/README",
+  "title": "nth-check [![Build Status](https://travis-ci.org/fb55/nth-check.svg)](https://travis-ci.org/fb55/nth-check)",
+  "description": "Parses and compiles CSS nth-checks to highly optimized functions.",
+  "source": "@site/node_modules/nth-check/README.md",
+  "sourceDirName": "node_modules/nth-check",
+  "slug": "/node_modules/nth-check/",
+  "permalink": "/node_modules/nth-check/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

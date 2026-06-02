@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-parameters/README",
+  "title": "@babel/plugin-transform-parameters",
+  "description": "Compile ES2015 default and rest parameters to ES5",
+  "source": "@site/node_modules/@babel/plugin-transform-parameters/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-parameters",
+  "slug": "/node_modules/@babel/plugin-transform-parameters/",
+  "permalink": "/node_modules/@babel/plugin-transform-parameters/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

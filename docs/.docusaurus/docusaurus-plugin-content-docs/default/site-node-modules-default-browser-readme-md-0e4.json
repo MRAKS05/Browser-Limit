@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/default-browser/readme",
+  "title": "default-browser",
+  "description": "Get the default browser",
+  "source": "@site/node_modules/default-browser/readme.md",
+  "sourceDirName": "node_modules/default-browser",
+  "slug": "/node_modules/default-browser/",
+  "permalink": "/node_modules/default-browser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

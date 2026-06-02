@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/micromark-util-resolve-all/readme",
+  "title": "micromark-util-resolve-all",
+  "description": "Build",
+  "source": "@site/node_modules/micromark-util-resolve-all/readme.md",
+  "sourceDirName": "node_modules/micromark-util-resolve-all",
+  "slug": "/node_modules/micromark-util-resolve-all/",
+  "permalink": "/node_modules/micromark-util-resolve-all/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/dequal/readme",
+  "title": "dequal [![CI](https://github.com/lukeed/dequal/workflows/CI/badge.svg)](https://github.com/lukeed/dequal/actions)",
+  "description": "A tiny (304B to 489B) utility to check for deep equality",
+  "source": "@site/node_modules/dequal/readme.md",
+  "sourceDirName": "node_modules/dequal",
+  "slug": "/node_modules/dequal/",
+  "permalink": "/node_modules/dequal/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

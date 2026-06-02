@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/react-is/README",
+  "title": "react-is",
+  "description": "This package allows you to test arbitrary values and see if they're a particular React element type.",
+  "source": "@site/node_modules/react-is/README.md",
+  "sourceDirName": "node_modules/react-is",
+  "slug": "/node_modules/react-is/",
+  "permalink": "/node_modules/react-is/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

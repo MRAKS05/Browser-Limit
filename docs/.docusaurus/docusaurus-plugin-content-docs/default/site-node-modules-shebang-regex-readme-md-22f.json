@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/shebang-regex/readme",
+  "title": "shebang-regex [![Build Status](https://travis-ci.org/sindresorhus/shebang-regex.svg?branch=master)](https://travis-ci.org/sindresorhus/shebang-regex)",
+  "description": "Regular expression for matching a shebang) line",
+  "source": "@site/node_modules/shebang-regex/readme.md",
+  "sourceDirName": "node_modules/shebang-regex",
+  "slug": "/node_modules/shebang-regex/",
+  "permalink": "/node_modules/shebang-regex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

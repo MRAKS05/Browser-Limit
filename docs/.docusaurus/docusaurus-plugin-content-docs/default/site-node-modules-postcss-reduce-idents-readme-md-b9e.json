@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-reduce-idents/README",
+  "title": "[postcss][postcss]-reduce-idents",
+  "description": "Reduce custom identifiers with PostCSS.",
+  "source": "@site/node_modules/postcss-reduce-idents/README.md",
+  "sourceDirName": "node_modules/postcss-reduce-idents",
+  "slug": "/node_modules/postcss-reduce-idents/",
+  "permalink": "/node_modules/postcss-reduce-idents/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

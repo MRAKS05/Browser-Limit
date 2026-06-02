@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/strip-final-newline/readme",
+  "title": "strip-final-newline [![Build Status](https://travis-ci.com/sindresorhus/strip-final-newline.svg?branch=master)](https://travis-ci.com/sindresorhus/strip-final-newline)",
+  "description": "Strip the final newline character from a string/buffer",
+  "source": "@site/node_modules/strip-final-newline/readme.md",
+  "sourceDirName": "node_modules/strip-final-newline",
+  "slug": "/node_modules/strip-final-newline/",
+  "permalink": "/node_modules/strip-final-newline/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

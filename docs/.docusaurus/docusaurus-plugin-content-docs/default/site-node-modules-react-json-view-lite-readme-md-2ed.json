@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/react-json-view-lite/README",
+  "title": "README",
+  "description": "react-json-view-lite is a tiny component for React allowing to render JSON as a tree. It focused on the balance between performance for large JSON inputs and functionality. It might not have all the rich features (suce as customization, copy, json editinng) but still provides more than just rendering json with highlighting - e.g. ability to collapse/expand nested objects and override css. It is written in TypeScript and has no dependencies.",
+  "source": "@site/node_modules/react-json-view-lite/README.md",
+  "sourceDirName": "node_modules/react-json-view-lite",
+  "slug": "/node_modules/react-json-view-lite/",
+  "permalink": "/node_modules/react-json-view-lite/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

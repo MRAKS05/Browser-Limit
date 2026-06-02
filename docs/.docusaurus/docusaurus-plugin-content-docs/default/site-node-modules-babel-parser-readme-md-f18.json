@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/parser/README",
+  "title": "@babel/parser",
+  "description": "A JavaScript parser",
+  "source": "@site/node_modules/@babel/parser/README.md",
+  "sourceDirName": "node_modules/@babel/parser",
+  "slug": "/node_modules/@babel/parser/",
+  "permalink": "/node_modules/@babel/parser/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

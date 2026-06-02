@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/unist-util-is/readme",
+  "title": "unist-util-is",
+  "description": "Build",
+  "source": "@site/node_modules/unist-util-is/readme.md",
+  "sourceDirName": "node_modules/unist-util-is",
+  "slug": "/node_modules/unist-util-is/",
+  "permalink": "/node_modules/unist-util-is/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

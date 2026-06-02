@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/lru-cache/README",
+  "title": "lru cache",
+  "description": "A cache object that deletes the least-recently-used items.",
+  "source": "@site/node_modules/lru-cache/README.md",
+  "sourceDirName": "node_modules/lru-cache",
+  "slug": "/node_modules/lru-cache/",
+  "permalink": "/node_modules/lru-cache/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

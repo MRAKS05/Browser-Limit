@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@csstools/postcss-font-format-keywords/README",
+  "title": "PostCSS Font Format [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS Font Format Keywords] lets you specify font formats as keywords, following the [CSS Fonts] specification.",
+  "source": "@site/node_modules/@csstools/postcss-font-format-keywords/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-font-format-keywords",
+  "slug": "/node_modules/@csstools/postcss-font-format-keywords/",
+  "permalink": "/node_modules/@csstools/postcss-font-format-keywords/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

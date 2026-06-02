@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@types/d3-contour/README",
+  "title": "Installation",
+  "description": "npm install --save @types/d3-contour",
+  "source": "@site/node_modules/@types/d3-contour/README.md",
+  "sourceDirName": "node_modules/@types/d3-contour",
+  "slug": "/node_modules/@types/d3-contour/",
+  "permalink": "/node_modules/@types/d3-contour/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

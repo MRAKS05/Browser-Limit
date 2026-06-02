@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/string_decoder/README",
+  "title": "string_decoder",
+  "description": "Node-core v8.9.4 string_decoder for userland",
+  "source": "@site/node_modules/string_decoder/README.md",
+  "sourceDirName": "node_modules/string_decoder",
+  "slug": "/node_modules/string_decoder/",
+  "permalink": "/node_modules/string_decoder/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

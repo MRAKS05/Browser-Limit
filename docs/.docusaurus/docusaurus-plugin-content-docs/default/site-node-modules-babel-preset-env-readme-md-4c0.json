@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/preset-env/README",
+  "title": "@babel/preset-env",
+  "description": "A Babel preset for each environment.",
+  "source": "@site/node_modules/@babel/preset-env/README.md",
+  "sourceDirName": "node_modules/@babel/preset-env",
+  "slug": "/node_modules/@babel/preset-env/",
+  "permalink": "/node_modules/@babel/preset-env/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

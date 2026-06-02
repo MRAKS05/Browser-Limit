@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-sticky-regex/README",
+  "title": "@babel/plugin-transform-sticky-regex",
+  "description": "Compile ES2015 sticky regex to an ES5 RegExp constructor",
+  "source": "@site/node_modules/@babel/plugin-transform-sticky-regex/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-sticky-regex",
+  "slug": "/node_modules/@babel/plugin-transform-sticky-regex/",
+  "permalink": "/node_modules/@babel/plugin-transform-sticky-regex/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

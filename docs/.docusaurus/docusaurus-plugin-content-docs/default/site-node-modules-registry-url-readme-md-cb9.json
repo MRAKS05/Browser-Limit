@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/registry-url/readme",
+  "title": "registry-url",
+  "description": "Get the set npm registry URL",
+  "source": "@site/node_modules/registry-url/readme.md",
+  "sourceDirName": "node_modules/registry-url",
+  "slug": "/node_modules/registry-url/",
+  "permalink": "/node_modules/registry-url/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

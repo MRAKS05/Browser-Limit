@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/plugin-transform-react-display-name/README",
+  "title": "@babel/plugin-transform-react-display-name",
+  "description": "Add displayName to React.createClass calls",
+  "source": "@site/node_modules/@babel/plugin-transform-react-display-name/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-react-display-name",
+  "slug": "/node_modules/@babel/plugin-transform-react-display-name/",
+  "permalink": "/node_modules/@babel/plugin-transform-react-display-name/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

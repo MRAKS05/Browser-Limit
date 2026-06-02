@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/postcss-modules-values/README",
+  "title": "CSS Modules: Values",
+  "description": "Pass arbitrary values between your module files",
+  "source": "@site/node_modules/postcss-modules-values/README.md",
+  "sourceDirName": "node_modules/postcss-modules-values",
+  "slug": "/node_modules/postcss-modules-values/",
+  "permalink": "/node_modules/postcss-modules-values/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

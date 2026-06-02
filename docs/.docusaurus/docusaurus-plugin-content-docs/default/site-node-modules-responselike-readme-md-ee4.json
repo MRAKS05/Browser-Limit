@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/responselike/readme",
+  "title": "responselike",
+  "description": "A response-like object for mocking a Node.js HTTP response stream",
+  "source": "@site/node_modules/responselike/readme.md",
+  "sourceDirName": "node_modules/responselike",
+  "slug": "/node_modules/responselike/",
+  "permalink": "/node_modules/responselike/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

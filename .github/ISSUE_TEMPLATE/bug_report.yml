@@ -1,0 +1,156 @@
+name: Bug Report
+description: File a bug report to help improve Browser Limit
+title: "[Bug]: "
+labels: ["bug", "status: needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report. Before submitting, please search existing issues to avoid duplicates.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the bug
+      placeholder: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue
+      placeholder: |
+        1. Open the app
+        2. Go to Settings
+        3. Toggle Gemini AI off
+        4. Install a browser
+        ...
+      value: "1.\n2.\n3."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Copy and paste any relevant logcat output or crash stack traces. This will be automatically formatted.
+      render: shell
+
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots / Screen Recordings
+      description: Drag and drop screenshots or screen recordings showing the issue
+
+  - type: dropdown
+    id: app-version
+    attributes:
+      label: App Version
+      description: Which version of Browser Limit are you running?
+      options:
+        - 1.1.0 (latest release)
+        - 1.0.0
+        - Built from source (main branch)
+        - Built from source (other branch)
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: android-version
+    attributes:
+      label: Android Version
+      description: What Android version is your device running?
+      options:
+        - Android 8.x (Oreo) — API 26-27
+        - Android 9.x (Pie) — API 28
+        - Android 10.x (Q) — API 29
+        - Android 11.x (R) — API 30
+        - Android 12.x (S) — API 31-32
+        - Android 13.x (T) — API 33
+        - Android 14.x (U) — API 34
+        - Android 15.x (V) — API 35
+        - Android 16+ — API 36+
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      options:
+        - Pixel / Google device
+        - Samsung Galaxy
+        - Xiaomi / Redmi / POCO
+        - OnePlus
+        - Nothing
+        - Motorola
+        - Sony Xperia
+        - Emulator
+        - Other (specify in additional context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: shizuku-status
+    attributes:
+      label: Shizuku Status
+      description: Is Shizuku installed and running?
+      options:
+        - Yes — Shizuku is running
+        - Yes — but Shizuku is not granted API permission
+        - No — Shizuku is not installed
+        - I don't know
+    validations:
+      required: true
+
+  - type: dropdown
+    id: gemini-enabled
+    attributes:
+      label: Gemini AI Status
+      description: Is Gemini AI integration enabled?
+      options:
+        - Yes — Gemini is enabled and API key is set
+        - Yes — but I haven't set an API key
+        - No — Gemini is disabled
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: domain
+    attributes:
+      label: Affected Area
+      description: Which part of the app does this bug affect?
+      options:
+        - label: Detection / Engine (browser detection misclassifications)
+        - label: Overlay (countdown, remove/keep buttons)
+        - label: Dashboard (status, counts, toggle)
+        - label: Settings (configuration changes not saving/applying)
+        - label: Onboarding (setup wizard)
+        - label: Logs (log display, export, recheck)
+        - label: Exceptions (exception management)
+        - label: Service / Background (GuardService, auto-detection)
+        - label: Shizuku (uninstall failures)
+        - label: UI / Theme (layout, colors, animations)
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I have searched for existing issues before filing this report
+          required: true
+        - label: I am running the latest version of the app
+          required: false
+        - label: I have tried restarting the app / device
+          required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information (e.g., Shizuku version, custom ROM, work profile status)

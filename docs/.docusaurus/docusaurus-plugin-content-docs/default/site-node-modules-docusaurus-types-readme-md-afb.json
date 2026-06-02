@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@docusaurus/types/README",
+  "title": "@docusaurus/types",
+  "description": "Common types for Docusaurus packages.",
+  "source": "@site/node_modules/@docusaurus/types/README.md",
+  "sourceDirName": "node_modules/@docusaurus/types",
+  "slug": "/node_modules/@docusaurus/types/",
+  "permalink": "/node_modules/@docusaurus/types/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

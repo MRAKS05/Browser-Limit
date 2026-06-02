@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/@babel/helper-replace-supers/README",
+  "title": "@babel/helper-replace-supers",
+  "description": "Helper function to replace supers",
+  "source": "@site/node_modules/@babel/helper-replace-supers/README.md",
+  "sourceDirName": "node_modules/@babel/helper-replace-supers",
+  "slug": "/node_modules/@babel/helper-replace-supers/",
+  "permalink": "/node_modules/@babel/helper-replace-supers/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

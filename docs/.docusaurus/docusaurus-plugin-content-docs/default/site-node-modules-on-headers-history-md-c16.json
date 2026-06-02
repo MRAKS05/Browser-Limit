@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/on-headers/HISTORY",
+  "title": "1.1.0 / 2025-07-17",
+  "description": "* - Fix CVE-2025-7339 (GHSA-76c9-3jph-rj3q)",
+  "source": "@site/node_modules/on-headers/HISTORY.md",
+  "sourceDirName": "node_modules/on-headers",
+  "slug": "/node_modules/on-headers/HISTORY",
+  "permalink": "/node_modules/on-headers/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

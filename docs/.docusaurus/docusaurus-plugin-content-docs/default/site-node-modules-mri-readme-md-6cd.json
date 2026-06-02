@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/mri/readme",
+  "title": "mri [![CI](https://github.com/lukeed/mri/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/lukeed/mri/actions)",
+  "description": "Quickly scan for CLI flags and arguments",
+  "source": "@site/node_modules/mri/readme.md",
+  "sourceDirName": "node_modules/mri",
+  "slug": "/node_modules/mri/",
+  "permalink": "/node_modules/mri/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

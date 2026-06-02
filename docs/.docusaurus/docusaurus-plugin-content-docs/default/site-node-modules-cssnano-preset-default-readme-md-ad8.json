@@ -1,0 +1,14 @@
+{
+  "id": "node_modules/cssnano-preset-default/README",
+  "title": "cssnano-preset-default",
+  "description": "Safe defaults for cssnano which require minimal configuration.",
+  "source": "@site/node_modules/cssnano-preset-default/README.md",
+  "sourceDirName": "node_modules/cssnano-preset-default",
+  "slug": "/node_modules/cssnano-preset-default/",
+  "permalink": "/node_modules/cssnano-preset-default/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}
