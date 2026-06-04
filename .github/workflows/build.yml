@@ -82,21 +82,29 @@ jobs:
 
           echo "scan_url=$SCAN_URL" >> $GITHUB_OUTPUT
 
-      - name: Create Release
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Write scan URL to job summary
         run: |
-          TAG="${{ github.ref_name }}"
           SCAN_URL="${{ steps.virustotal.outputs.scan_url }}"
+          TAG="${{ github.ref_name }}"
+          {
+            echo "## Build complete for $TAG"
+            echo ""
+            if [ -n "$SCAN_URL" ]; then
+              echo "### VirusTotal Scan"
+              echo "For security transparency, the APK has been scanned and verified."
+              echo "Scan Report: $SCAN_URL"
+            else
+              echo "No VirusTotal scan was performed."
+              echo "To enable scanning, add a VT_API_KEY repository secret."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
 
-          NOTES="$TAG"
-          if [ -n "$SCAN_URL" ]; then
-            NOTES="${NOTES}"$'\n\n'"### VirusTotal Scan"$'\n'"For security transparency, the APK has been scanned and verified."$'\n'"Scan Report: ${SCAN_URL}"
-          fi
-
-          if gh release view "$TAG" &>/dev/null; then
-            gh release edit "$TAG" --notes "$NOTES"
-            gh release upload "$TAG" Browser-Limit.apk --clobber
-          else
-            gh release create "$TAG" Browser-Limit.apk --title "$TAG" --notes "$NOTES"
-          fi
+      - name: Upload scan URL
+        run: |
+          SCAN_URL="${{ steps.virustotal.outputs.scan_url }}"
+          echo "$SCAN_URL" > scan_url.txt
+      - name: Upload scan URL artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-url
+          path: scan_url.txt
