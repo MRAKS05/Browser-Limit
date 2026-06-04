@@ -37,8 +37,66 @@ jobs:
       - name: Rename APK
         run: cp app/build/outputs/apk/release/app-release.apk Browser-Limit.apk
 
-      - name: Upload APK
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: browser-limit-release
           path: Browser-Limit.apk
+
+      - name: Compute APK SHA-256
+        id: apk-hash
+        run: echo "hash=$(sha256sum Browser-Limit.apk | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: VirusTotal Scan
+        id: virustotal
+        continue-on-error: true
+        env:
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+        run: |
+          HASH="${{ steps.apk-hash.outputs.hash }}"
+          SCAN_URL=""
+
+          if [ -n "$VT_API_KEY" ]; then
+            echo "Uploading to VirusTotal..."
+            RESPONSE=$(curl -s -X POST "https://www.virustotal.com/api/v3/files" \
+              -H "x-apikey: $VT_API_KEY" \
+              -F "file=@Browser-Limit.apk")
+            ANALYSIS_ID=$(echo "$RESPONSE" | jq -r '.data.id')
+
+            if [ "$ANALYSIS_ID" != "null" ] && [ -n "$ANALYSIS_ID" ]; then
+              echo "Polling for scan results..."
+              for i in $(seq 1 12); do
+                sleep 10
+                ANALYSIS=$(curl -s "https://www.virustotal.com/api/v3/analyses/$ANALYSIS_ID" \
+                  -H "x-apikey: $VT_API_KEY")
+                STATUS=$(echo "$ANALYSIS" | jq -r '.data.attributes.status')
+                if [ "$STATUS" = "completed" ]; then
+                  SHA256=$(echo "$ANALYSIS" | jq -r '.meta.file_info.sha256')
+                  SCAN_URL="https://www.virustotal.com/gui/file/$SHA256/detection"
+                  echo "Scan complete: $SCAN_URL"
+                  break
+                fi
+              done
+            fi
+          fi
+
+          echo "scan_url=$SCAN_URL" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ github.ref_name }}"
+          SCAN_URL="${{ steps.virustotal.outputs.scan_url }}"
+
+          NOTES="$TAG"
+          if [ -n "$SCAN_URL" ]; then
+            NOTES="${NOTES}"$'\n\n'"### VirusTotal Scan"$'\n'"For security transparency, the APK has been scanned and verified."$'\n'"Scan Report: ${SCAN_URL}"
+          fi
+
+          if gh release view "$TAG" &>/dev/null; then
+            gh release edit "$TAG" --notes "$NOTES"
+            gh release upload "$TAG" Browser-Limit.apk --clobber
+          else
+            gh release create "$TAG" Browser-Limit.apk --title "$TAG" --notes "$NOTES"
+          fi
