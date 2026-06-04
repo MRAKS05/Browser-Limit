@@ -68,3 +68,7 @@ node_modules/
 
 # Previously used `apks/` (removed) - do not re-add
 # apks/ (deleted and replaced by .build_output/)
+
+# open-mem: Auto-generated folder context files.
+# Uncomment to exclude from version control (recommended for large projects):
+# **/AGENTS.md
