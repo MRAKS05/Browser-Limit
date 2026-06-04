@@ -32,32 +32,13 @@ class SettingsManager(context: Context) {
         }
     }
 
-    fun setShowOverlay(show: Boolean) {
-        if (show) {
-            prefs.edit().putBoolean("show_overlay", true).apply()
-            _showOverlay.value = true
-        } else if (!_autoRemove.value) {
-            prefs.edit().putBoolean("show_overlay", true).putBoolean("auto_remove", false).apply()
-            _showOverlay.value = true
-            _autoRemove.value = false
-        } else {
-            prefs.edit().putBoolean("show_overlay", false).apply()
-            _showOverlay.value = false
-        }
-    }
-
-    fun setAutoRemove(auto: Boolean) {
-        if (auto) {
-            prefs.edit().putBoolean("auto_remove", true).apply()
-            _autoRemove.value = true
-        } else if (!_showOverlay.value) {
-            prefs.edit().putBoolean("show_overlay", true).putBoolean("auto_remove", false).apply()
-            _showOverlay.value = true
-            _autoRemove.value = false
-        } else {
-            prefs.edit().putBoolean("auto_remove", false).apply()
-            _autoRemove.value = false
-        }
+    private fun saveMode(showOverlay: Boolean, autoRemove: Boolean) {
+        prefs.edit()
+            .putBoolean("show_overlay", showOverlay)
+            .putBoolean("auto_remove", autoRemove)
+            .apply()
+        _showOverlay.value = showOverlay
+        _autoRemove.value = autoRemove
     }
 
     private val _countdownDuration = MutableStateFlow(prefs.getInt("countdown_duration", 10))
@@ -131,6 +112,14 @@ class SettingsManager(context: Context) {
     fun setUseGemini(use: Boolean) {
         prefs.edit().putBoolean("use_gemini", use).apply()
         _useGemini.value = use
+    }
+
+    fun setShowOverlay(show: Boolean) {
+        saveMode(showOverlay = show, autoRemove = !show)
+    }
+
+    fun setAutoRemove(auto: Boolean) {
+        saveMode(showOverlay = !auto, autoRemove = auto)
     }
 
     fun setCountdownDuration(duration: Int) {
