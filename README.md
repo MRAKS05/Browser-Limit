@@ -6,12 +6,15 @@
 
 <p align="center">
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
-    <img src="https://img.shields.io/badge/Latest%20Release-v1.1.0-blue?style=for-the-badge" alt="Latest Release">
+    <img src="https://img.shields.io/badge/Latest%20Release-v2.0.0-blue?style=for-the-badge" alt="Latest Release">
   </a>
   <a href="https://browser-limit-docs.pages.dev/">
     <img src="https://img.shields.io/badge/Documentation-8A2BE2?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation">
   </a>
   <img src="https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android" alt="Platform">
+  <a href="https://github.com/MRAKS05/Browser-Limit/actions/workflows/build.yml">
+    <img src="https://img.shields.io/badge/Build-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" alt="Build">
+  </a>
 </p>
 
 BrowserLimit is an advanced Android utility engineered to enforce digital minimalism by automatically detecting and eliminating web browsers from the device environment. Built upon the Shizuku API for system-level operations, it combines automated detection with AI-powered analysis to maintain a browser-free environment.
@@ -31,6 +34,24 @@ BrowserLimit is an advanced Android utility engineered to enforce digital minima
 - **Architecture**: Jetpack Compose / MVVM
 - **Database**: Room (Local Persistence)
 - **Execution**: Shizuku API
+
+## Package
+
+- **Package Name**: `com.browserlimit.app`
+- **Min SDK**: 26 (Android 8.0+)
+- **Target SDK**: 36
+
+## Getting the APK
+
+The latest APK is built automatically via GitHub Actions. Download it from the [Actions tab](https://github.com/MRAKS05/Browser-Limit/actions) or check the [latest release](https://github.com/MRAKS05/Browser-Limit/releases/latest).
+
+## Build from Source
+
+```bash
+./gradlew :app:assembleRelease
+```
+
+The unsigned APK will be at `app/build/outputs/apk/release/app-release-unsigned.apk`. Sign it with any Android keystore before installing.
 
 ## License
 
