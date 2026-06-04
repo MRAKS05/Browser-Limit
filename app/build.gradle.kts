@@ -21,12 +21,22 @@ android {
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 
+  signingConfigs {
+    create("releaseSigning") {
+      storeFile = file(System.getenv("KEYSTORE_PATH") ?: "${rootDir}/debug.keystore")
+      storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "android"
+      keyAlias = System.getenv("KEYSTORE_ALIAS") ?: "androiddebugkey"
+      keyPassword = System.getenv("KEYSTORE_PASSWORD") ?: "android"
+    }
+  }
+
   buildTypes {
     release {
       isCrunchPngs = false
       isMinifyEnabled = false
       isShrinkResources = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+      signingConfig = signingConfigs.getByName("releaseSigning")
     }
   }
   compileOptions {

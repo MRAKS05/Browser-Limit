@@ -25,11 +25,21 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build release APK
+      - name: Generate signing keystore
+        run: |
+          keytool -genkey -v -keystore release.keystore \
+            -alias releasekey -keyalg RSA -keysize 2048 \
+            -validity 10000 -storepass android -keypass android \
+            -dname "CN=BrowserLimit,OU=App,O=BrowserLimit,L=Unknown,ST=Unknown,C=US"
+          echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/release.keystore" >> $GITHUB_ENV
+          echo "KEYSTORE_PASSWORD=android" >> $GITHUB_ENV
+          echo "KEYSTORE_ALIAS=releasekey" >> $GITHUB_ENV
+
+      - name: Build signed release APK
         run: ./gradlew :app:assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: browser-limit-release
-          path: app/build/outputs/apk/release/app-release-unsigned.apk
+          path: app/build/outputs/apk/release/app-release.apk
