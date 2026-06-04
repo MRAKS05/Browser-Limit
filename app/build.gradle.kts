@@ -3,16 +3,16 @@ plugins {
   alias(libs.plugins.kotlin.compose)
   alias(libs.plugins.google.devtools.ksp)
   alias(libs.plugins.roborazzi)
-  alias(libs.plugins.secrets)
+  // alias(libs.plugins.secrets)
   id("org.jetbrains.kotlin.plugin.serialization") version "2.0.20"
 }
 
 android {
-  namespace = "com.example"
+  namespace = "com.browserlimit.app"
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.aistudio.browserlimit.abxyz"
+    applicationId = "com.browserlimit.app"
     minSdk = 26
     targetSdk = 36
     versionCode = 1
@@ -21,31 +21,12 @@ android {
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 
-  signingConfigs {
-    create("debugConfig") {
-      storeFile = file("${rootDir}/debug.keystore")
-      storePassword = "android"
-      keyAlias = "androiddebugkey"
-      keyPassword = "android"
-    }
-    create("releaseConfig") {
-      storeFile = file("${rootDir}/release.keystore")
-      storePassword = "android"
-      keyAlias = "releasekey"
-      keyPassword = "android"
-    }
-  }
-
   buildTypes {
     release {
       isCrunchPngs = false
       isMinifyEnabled = false
       isShrinkResources = false
-      signingConfig = signingConfigs.getByName("releaseConfig")
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-    }
-    debug {
-      signingConfig = signingConfigs.getByName("debugConfig")
     }
   }
   compileOptions {
@@ -57,13 +38,6 @@ android {
     buildConfig = true
   }
   testOptions { unitTests { isIncludeAndroidResources = true } }
-}
-
-// Configure the Secrets Gradle Plugin to use .env and .env.example files
-// to match the convention used in Web projects.
-secrets {
-  propertiesFileName = ".env"
-  defaultPropertiesFileName = ".env.example"
 }
 
 // Some unused dependencies are commented out below instead of being removed.
