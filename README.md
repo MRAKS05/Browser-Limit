@@ -34,7 +34,7 @@ BrowserLimit is an advanced Android utility engineered to enforce digital minima
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## AI Development Disclosure
 
