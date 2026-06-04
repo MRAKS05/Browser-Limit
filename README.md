@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
-    <img src="https://img.shields.io/badge/Latest%20Release-v1.0.0-blue?style=for-the-badge" alt="Latest Release">
+    <img src="https://img.shields.io/badge/Latest%20Release-v1.1.0-blue?style=for-the-badge" alt="Latest Release">
   </a>
   <a href="https://browser-limit-docs.pages.dev/">
     <img src="https://img.shields.io/badge/Documentation-8A2BE2?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation">
@@ -34,16 +34,6 @@ BrowserLimit is an advanced Android utility engineered to enforce digital minima
 - **Architecture**: Jetpack Compose / MVVM
 - **Database**: Room (Local Persistence)
 - **Execution**: Shizuku API
-
-## Package
-
-- **Package Name**: `com.browserlimit.app`
-- **Min SDK**: 26 (Android 8.0+)
-- **Target SDK**: 36
-
-## Getting the APK
-
-The latest APK is built automatically via GitHub Actions. Download it from the [Actions tab](https://github.com/MRAKS05/Browser-Limit/actions) or check the [latest release](https://github.com/MRAKS05/Browser-Limit/releases/latest).
 
 ## Build from Source
 
