@@ -144,16 +144,10 @@ fun SettingsScreen() {
         
         if (!isParentalLockEnabled) {
             SettingToggle("Show confirmation overlay", showOverlay) { isChecked ->
-                executeAction {
-                    settings.setShowOverlay(isChecked)
-                    if (isChecked) settings.setAutoRemove(false)
-                }
+                executeAction { settings.setShowOverlay(isChecked) }
             }
             SettingToggle("Auto-remove (No countdown)", autoRemove) { isChecked ->
-                executeAction {
-                    settings.setAutoRemove(isChecked)
-                    if (isChecked) settings.setShowOverlay(false)
-                }
+                executeAction { settings.setAutoRemove(isChecked) }
             }
             
             Spacer(modifier = Modifier.height(16.dp))

@@ -32,23 +32,32 @@ class SettingsManager(context: Context) {
         }
     }
 
-    private fun saveMode(showOverlay: Boolean, autoRemove: Boolean) {
-        prefs.edit()
-            .putBoolean("show_overlay", showOverlay)
-            .putBoolean("auto_remove", autoRemove)
-            .apply()
-        _showOverlay.value = showOverlay
-        _autoRemove.value = autoRemove
+    fun setShowOverlay(show: Boolean) {
+        if (show) {
+            prefs.edit().putBoolean("show_overlay", true).apply()
+            _showOverlay.value = true
+        } else if (!_autoRemove.value) {
+            prefs.edit().putBoolean("show_overlay", true).putBoolean("auto_remove", false).apply()
+            _showOverlay.value = true
+            _autoRemove.value = false
+        } else {
+            prefs.edit().putBoolean("show_overlay", false).apply()
+            _showOverlay.value = false
+        }
     }
 
-    private fun saveShowOverlay(show: Boolean) {
-        prefs.edit().putBoolean("show_overlay", show).apply()
-        _showOverlay.value = show
-    }
-
-    private fun saveAutoRemove(auto: Boolean) {
-        prefs.edit().putBoolean("auto_remove", auto).apply()
-        _autoRemove.value = auto
+    fun setAutoRemove(auto: Boolean) {
+        if (auto) {
+            prefs.edit().putBoolean("auto_remove", true).apply()
+            _autoRemove.value = true
+        } else if (!_showOverlay.value) {
+            prefs.edit().putBoolean("show_overlay", true).putBoolean("auto_remove", false).apply()
+            _showOverlay.value = true
+            _autoRemove.value = false
+        } else {
+            prefs.edit().putBoolean("auto_remove", false).apply()
+            _autoRemove.value = false
+        }
     }
 
     private val _countdownDuration = MutableStateFlow(prefs.getInt("countdown_duration", 10))
@@ -122,34 +131,6 @@ class SettingsManager(context: Context) {
     fun setUseGemini(use: Boolean) {
         prefs.edit().putBoolean("use_gemini", use).apply()
         _useGemini.value = use
-    }
-
-    fun setShowOverlay(show: Boolean) {
-        if (show) {
-            saveMode(showOverlay = true, autoRemove = false)
-            return
-        }
-
-        if (!_autoRemove.value) {
-            saveMode(showOverlay = true, autoRemove = false)
-            return
-        }
-
-        saveShowOverlay(false)
-    }
-
-    fun setAutoRemove(auto: Boolean) {
-        if (auto) {
-            saveMode(showOverlay = false, autoRemove = true)
-            return
-        }
-
-        if (!_showOverlay.value) {
-            saveMode(showOverlay = true, autoRemove = false)
-            return
-        }
-
-        saveAutoRemove(false)
     }
 
     fun setCountdownDuration(duration: Int) {
