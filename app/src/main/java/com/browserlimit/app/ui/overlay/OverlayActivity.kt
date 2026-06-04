@@ -102,7 +102,7 @@ fun OverlayScreen(
                 Spacer(modifier = Modifier.height(16.dp))
                 
                 Text(
-                    text = "Browser Removed", // Changed to removed because it is about to be removed
+                    text = "Browser Detected",
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.error,
                     fontWeight = FontWeight.Bold,

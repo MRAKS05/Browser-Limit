@@ -99,10 +99,6 @@ To prevent excessive API usage, Browser Limit enforces a daily request limit:
 | **Counter** | Stored in SharedPreferences (`gemini_api_count`) |
 | **Date tracking** | Stored in SharedPreferences (`last_api_date`) |
 
-:::note
-The daily counter is incremented before the API call is made ([#11](https://github.com/MRAKS05/Browser-Limit/issues/11)). If a request fails (network error, invalid key), the quota is still consumed. This means failures can reduce your available daily requests.
-:::
-
 When the daily limit is reached, the Dashboard shows "Gemini API: Limit Reached" and detection falls back to the local database.
 
 :::tip

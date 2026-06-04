@@ -126,6 +126,7 @@ fun LogsScreen() {
                                                 geminiResponse = result.reason
                                             )
                                         )
+                                        db.trimLogs()
                                         
                                         if (result.isBrowser) {
                                             val uninstaller = com.browserlimit.app.engine.ShizukuUninstaller()
