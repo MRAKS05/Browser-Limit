@@ -1,4 +1,4 @@
-package com.example.engine;
+package com.browserlimit.app.engine;
 
 import rikka.shizuku.Shizuku;
 import java.io.BufferedReader;
