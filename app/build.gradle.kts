@@ -23,10 +23,19 @@ android {
 
   signingConfigs {
     create("releaseSigning") {
-      storeFile = file(System.getenv("KEYSTORE_PATH") ?: "${rootDir}/debug.keystore")
-      storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "android"
-      keyAlias = System.getenv("KEYSTORE_ALIAS") ?: "androiddebugkey"
-      keyPassword = System.getenv("KEYSTORE_PASSWORD") ?: "android"
+      val signingPropsFile = rootProject.file("signing.properties")
+      if (signingPropsFile.exists()) {
+        val props = java.util.Properties().apply { load(signingPropsFile.inputStream()) }
+        storeFile = rootProject.file(props["storeFile"] as String)
+        storePassword = props["storePassword"] as String
+        keyAlias = props["keyAlias"] as String
+        keyPassword = props["keyPassword"] as String
+      } else {
+        storeFile = file(System.getenv("KEYSTORE_PATH"))
+        storePassword = System.getenv("KEYSTORE_PASSWORD")
+        keyAlias = System.getenv("KEYSTORE_ALIAS")
+        keyPassword = System.getenv("KEYSTORE_PASSWORD")
+      }
     }
   }
 

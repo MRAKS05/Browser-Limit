@@ -62,6 +62,7 @@ node_modules/
 
 # Local release signing keystore; do not commit secret key material
 /release.keystore
+signing.properties
 
 # Local build outputs (untracked)
 .build_output/
