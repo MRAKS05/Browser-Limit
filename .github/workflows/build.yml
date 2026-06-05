@@ -26,10 +26,20 @@ jobs:
 
       - name: Decode signing keystore
         run: |
-          base64 -d debug.keystore.base64 > debug.keystore
-          echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/debug.keystore" >> $GITHUB_ENV
-          echo "KEYSTORE_PASSWORD=android" >> $GITHUB_ENV
-          echo "KEYSTORE_ALIAS=androiddebugkey" >> $GITHUB_ENV
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "Using release signing key..."
+            echo "${{ secrets.KEYSTORE_BASE64 }}" > release.keystore.base64
+            base64 -d release.keystore.base64 > release.keystore
+            echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/release.keystore" >> $GITHUB_ENV
+            echo "KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> $GITHUB_ENV
+            echo "KEYSTORE_ALIAS=${{ secrets.KEYSTORE_ALIAS }}" >> $GITHUB_ENV
+          else
+            echo "Using debug signing key..."
+            base64 -d debug.keystore.base64 > debug.keystore
+            echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/debug.keystore" >> $GITHUB_ENV
+            echo "KEYSTORE_PASSWORD=android" >> $GITHUB_ENV
+            echo "KEYSTORE_ALIAS=androiddebugkey" >> $GITHUB_ENV
+          fi
 
       - name: Build signed release APK
         run: ./gradlew :app:assembleRelease
