@@ -163,7 +163,7 @@ fun LockScreen(settings: SettingsManager, onUnlocked: () -> Unit) {
                 Spacer(modifier = Modifier.height(16.dp))
                 Button(
                     onClick = {
-                        if (pinValue == settings.parentalPinHash) {
+                        if (settings.verifyParentalPin(pinValue)) {
                             onUnlocked()
                         } else {
                             showError = true

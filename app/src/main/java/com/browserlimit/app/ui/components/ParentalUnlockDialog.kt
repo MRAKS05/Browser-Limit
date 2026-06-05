@@ -97,7 +97,7 @@ fun ParentalUnlockDialog(
         confirmButton = {
             if (showPinInput) {
                 Button(onClick = { 
-                    if (parentalUnlockPin == settings.parentalPinHash) {
+                    if (settings.verifyParentalPin(parentalUnlockPin)) {
                         onSuccess()
                     } else {
                         Toast.makeText(context, "Incorrect PIN", Toast.LENGTH_SHORT).show()

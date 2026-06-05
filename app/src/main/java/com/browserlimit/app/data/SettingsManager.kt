@@ -2,8 +2,12 @@ package com.browserlimit.app.data
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Base64
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import java.security.SecureRandom
+import javax.crypto.SecretKeyFactory
+import javax.crypto.spec.PBEKeySpec
 
 class SettingsManager(context: Context) {
     private val prefs: SharedPreferences = context.getSharedPreferences("browserlimit_settings", Context.MODE_PRIVATE)
@@ -74,11 +78,28 @@ class SettingsManager(context: Context) {
             prefs.edit().putBoolean("parental_lock", value).apply()
         }
 
-    var parentalPinHash: String
-        get() = prefs.getString("parental_pin_hash", "") ?: ""
-        set(value) {
-            prefs.edit().putString("parental_pin_hash", value).apply()
-        }
+    fun setParentalPin(pin: String) {
+        val salt = ByteArray(16).also { SecureRandom().nextBytes(it) }
+        val hash = hashPin(pin, salt)
+        val encoded = Base64.encodeToString(salt, Base64.NO_WRAP) + ":" + Base64.encodeToString(hash, Base64.NO_WRAP)
+        prefs.edit().putString("parental_pin_hash", encoded).apply()
+    }
+
+    fun verifyParentalPin(pin: String): Boolean {
+        val stored = prefs.getString("parental_pin_hash", "") ?: ""
+        if (stored.isEmpty()) return false
+        val parts = stored.split(":")
+        if (parts.size != 2) return false
+        val salt = Base64.decode(parts[0], Base64.NO_WRAP)
+        val storedHash = Base64.decode(parts[1], Base64.NO_WRAP)
+        return hashPin(pin, salt).contentEquals(storedHash)
+    }
+
+    private fun hashPin(pin: String, salt: ByteArray): ByteArray {
+        val spec = PBEKeySpec(pin.toCharArray(), salt, 60000, 256)
+        val factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256")
+        return factory.generateSecret(spec).encoded
+    }
         
     var geminiApiCount: Int
         get() = prefs.getInt("gemini_api_count", 0)

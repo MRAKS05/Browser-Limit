@@ -204,7 +204,7 @@ fun SettingsScreen() {
             confirmButton = {
                 TextButton(onClick = { 
                     if (parentalLockPin.isNotBlank()) {
-                        settings.parentalPinHash = parentalLockPin // Note: We should hash this in a real app
+                        settings.setParentalPin(parentalLockPin)
                         settings.isParentalLockEnabled = true
                         settings.setShowOverlay(false)
                         settings.setAutoRemove(true)
