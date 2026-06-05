@@ -21,7 +21,6 @@ import rikka.shizuku.Shizuku
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import java.util.Calendar
 
 import com.browserlimit.app.ui.components.ParentalUnlockDialog
 
@@ -88,18 +87,18 @@ fun DashboardScreen() {
     }
     
     val db = LogDatabase.getDatabase(context).logDao()
-    val todayStart = remember {
-        val cal = Calendar.getInstance().apply {
-            set(Calendar.HOUR_OF_DAY, 0)
-            set(Calendar.MINUTE, 0)
-            set(Calendar.SECOND, 0)
-            set(Calendar.MILLISECOND, 0)
+    val todayStart = mutableLongStateOf(millisAtStartOfToday())
+    LaunchedEffect(Unit) {
+        while (true) {
+            val now = System.currentTimeMillis()
+            val nextMidnight = millisAtStartOfToday() + 86400000L
+            delay(nextMidnight - now)
+            todayStart.longValue = millisAtStartOfToday()
         }
-        cal.timeInMillis
     }
     
-    val scannedCount by db.getScannedTodayCount(todayStart).collectAsState(initial = 0)
-    val removedCount by db.getRemovedTodayCount(todayStart).collectAsState(initial = 0)
+    val scannedCount by db.getScannedTodayCount(todayStart.longValue).collectAsState(initial = 0)
+    val removedCount by db.getRemovedTodayCount(todayStart.longValue).collectAsState(initial = 0)
     
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Row(
@@ -220,4 +219,14 @@ fun DashboardScreen() {
             }
         )
     }
+}
+
+private fun millisAtStartOfToday(): Long {
+    val cal = java.util.Calendar.getInstance().apply {
+        set(java.util.Calendar.HOUR_OF_DAY, 0)
+        set(java.util.Calendar.MINUTE, 0)
+        set(java.util.Calendar.SECOND, 0)
+        set(java.util.Calendar.MILLISECOND, 0)
+    }
+    return cal.timeInMillis
 }
