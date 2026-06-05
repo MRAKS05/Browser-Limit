@@ -25,11 +25,16 @@ android {
     create("releaseSigning") {
       val signingPropsFile = rootProject.file("signing.properties")
       if (signingPropsFile.exists()) {
-        val props = java.util.Properties().apply { load(signingPropsFile.inputStream()) }
-        storeFile = rootProject.file(props["storeFile"] as String)
-        storePassword = props["storePassword"] as String
-        keyAlias = props["keyAlias"] as String
-        keyPassword = props["keyPassword"] as String
+        val props = signingPropsFile.readLines()
+            .filter { it.isNotBlank() && !it.startsWith("#") }
+            .associate {
+                val (key, value) = it.split("=", limit = 2)
+                key.trim() to value.trim()
+            }
+        storeFile = rootProject.file(props["storeFile"] ?: error("storeFile missing in signing.properties"))
+        storePassword = props["storePassword"] ?: error("storePassword missing in signing.properties")
+        keyAlias = props["keyAlias"] ?: error("keyAlias missing in signing.properties")
+        keyPassword = props["keyPassword"] ?: error("keyPassword missing in signing.properties")
       } else {
         storeFile = file(System.getenv("KEYSTORE_PATH"))
         storePassword = System.getenv("KEYSTORE_PASSWORD")
