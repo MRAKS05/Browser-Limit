@@ -72,7 +72,7 @@ fun DashboardScreen() {
         }
     }
 
-    LaunchedEffect(Unit) {
+    DisposableEffect(Unit) {
         val listener = Shizuku.OnBinderReceivedListener {
             shizukuRunning.value = true
         }
@@ -81,6 +81,10 @@ fun DashboardScreen() {
         }
         Shizuku.addBinderReceivedListener(listener)
         Shizuku.addBinderDeadListener(deadListener)
+        onDispose {
+            Shizuku.removeBinderReceivedListener(listener)
+            Shizuku.removeBinderDeadListener(deadListener)
+        }
     }
     
     val db = LogDatabase.getDatabase(context).logDao()
