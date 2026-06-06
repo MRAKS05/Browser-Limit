@@ -55,20 +55,19 @@ fun DashboardScreen() {
         if (lifecycleState == androidx.lifecycle.Lifecycle.State.RESUMED) {
             missingNotifications = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
                     context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
-                    
+
             missingOverlay = !Settings.canDrawOverlays(context)
-            
+
             val pm = context.getSystemService(android.content.Context.POWER_SERVICE) as android.os.PowerManager
             missingBattery = !pm.isIgnoringBatteryOptimizations(context.packageName)
-            
-            while (true) {
-                if (!shizukuRunning.value) {
-                    shizukuRunning.value = Shizuku.pingBinder()
-                }
-                missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
-                kotlinx.coroutines.delay(2000)
-            }
+
+            shizukuRunning.value = Shizuku.pingBinder()
+            missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
         }
+    }
+
+    LaunchedEffect(shizukuRunning.value) {
+        missingShizuku = shizukuRunning.value && Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED
     }
 
     DisposableEffect(Unit) {
