@@ -23,6 +23,13 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Set up debug signing keystore
+        run: |
+          base64 -d debug.keystore.base64 > debug.keystore
+          echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/debug.keystore" >> $GITHUB_ENV
+          echo "KEYSTORE_PASSWORD=android" >> $GITHUB_ENV
+          echo "KEYSTORE_ALIAS=androiddebugkey" >> $GITHUB_ENV
+
       - name: Build debug APK
         run: ./gradlew :app:assembleDebug
 
