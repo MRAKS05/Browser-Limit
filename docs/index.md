@@ -26,7 +26,7 @@ Browser Limit monitors your device for newly installed applications. When a brow
 | | |
 |---|---|
 | **Platform** | Android 8.0+ (API 26) |
-| **Target SDK** | 36 (Android 16) |
+| **Target SDK** | 36 |
 | **License** | MIT |
 | **Package** | `com.browserlimit.app` |
 
