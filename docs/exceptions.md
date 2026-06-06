@@ -25,7 +25,7 @@ Two package names are permanently excepted and cannot be removed:
 
 | Package | Reason |
 |---|---|
-| `com.aistudio.browserlimit.abxyz` | The app itself. Prevents self-uninstallation. |
+| `com.browserlimit.app` | The app itself. Prevents self-uninstallation. |
 | `com.example` | Debug/development namespace used during builds. |
 
 These are hardcoded in `ExceptionsManager.kt`:

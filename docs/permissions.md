@@ -198,8 +198,8 @@ You can also grant permissions via ADB:
 
 ```bash
 # Notifications
-adb shell pm grant com.aistudio.browserlimit.abxyz android.permission.POST_NOTIFICATIONS
+adb shell pm grant com.browserlimit.app android.permission.POST_NOTIFICATIONS
 
 # Overlay (requires manual toggle in settings)
-adb shell appops set com.aistudio.browserlimit.abxyz SYSTEM_ALERT_WINDOW allow
+adb shell appops set com.browserlimit.app SYSTEM_ALERT_WINDOW allow
 ```

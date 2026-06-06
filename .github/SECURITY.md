@@ -33,7 +33,7 @@ You can expect an acknowledgment within 72 hours. We will coordinate disclosure 
 ## Scope
 
 The following are in scope:
-- The Android application (`com.aistudio.browserlimit.abxyz`)
+- The Android application (`com.browserlimit.app`)
 - The documentation site (https://browser-limit-docs.pages.dev)
 - Build and CI pipeline
 

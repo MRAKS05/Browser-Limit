@@ -104,7 +104,7 @@ SharedPreferences file: `browserlimit_exceptions`
 | `removeException(packageName)` | Remove a package (except permanent exceptions) |
 | `setCustomExceptions(packages)` | Bulk-add packages to exceptions |
 
-**Permanent exceptions**: `com.aistudio.browserlimit.abxyz`, `com.example`
+**Permanent exceptions**: `com.browserlimit.app`, `com.example`
 
 ---
 
