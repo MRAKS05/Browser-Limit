@@ -60,6 +60,12 @@ body:
       description: How would this benefit users? Consider usability, privacy, performance, or security.
       placeholder: This would help users who...
 
+  - type: upload
+    id: log-files
+    attributes:
+      label: App Audit Logs (optional)
+      description: If relevant, export logs from the app (Logs screen -> Export) and drag & drop the file here.
+
   - type: checkboxes
     id: verification
     attributes:

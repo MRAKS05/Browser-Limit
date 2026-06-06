@@ -16,7 +16,7 @@ android {
     minSdk = 26
     targetSdk = 36
     versionCode = 2
-    versionName = "1.2.0"
+    versionName = project.findProperty("betaVersion") ?: "1.2.0"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }

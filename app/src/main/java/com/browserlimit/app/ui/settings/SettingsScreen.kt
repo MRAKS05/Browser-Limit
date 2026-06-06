@@ -22,6 +22,7 @@ import com.browserlimit.app.engine.BrowserDatabase
 import com.browserlimit.app.engine.GeminiClient
 import rikka.shizuku.Shizuku
 import kotlinx.coroutines.launch
+import com.browserlimit.app.BuildConfig
 import com.browserlimit.app.ui.components.ParentalUnlockDialog
 
 @Composable
@@ -185,6 +186,14 @@ fun SettingsScreen() {
         Button(onClick = { showLocalListDialog = true }, modifier = Modifier.fillMaxWidth()) {
             Text("View local browser list")
         }
+
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Version: ${BuildConfig.VERSION_NAME}",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
     }
     
     if (showParentalLockDialog) {

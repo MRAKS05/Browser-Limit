@@ -45,6 +45,12 @@ body:
       label: Screenshots / Screen Recordings
       description: Drag and drop screenshots or screen recordings showing the issue
 
+  - type: upload
+    id: log-files
+    attributes:
+      label: App Audit Logs
+      description: Export your logs from the app (Logs screen -> Export) and drag & drop the file here. This helps us understand what happened leading up to the bug.
+
   - type: dropdown
     id: app-version
     attributes:
