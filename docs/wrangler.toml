@@ -1,0 +1,4 @@
+name = "browser-limit-docs"
+pages_build_output_dir = "build"
+pages_build_command = "npm run build"
+compatibility_date = "2024-01-01"

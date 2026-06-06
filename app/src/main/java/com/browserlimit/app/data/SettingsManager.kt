@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.util.Base64
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import java.security.MessageDigest
 import java.security.SecureRandom
 import javax.crypto.SecretKeyFactory
 import javax.crypto.spec.PBEKeySpec
@@ -92,7 +93,7 @@ class SettingsManager(context: Context) {
         if (parts.size != 2) return false
         val salt = Base64.decode(parts[0], Base64.NO_WRAP)
         val storedHash = Base64.decode(parts[1], Base64.NO_WRAP)
-        return hashPin(pin, salt).contentEquals(storedHash)
+        return MessageDigest.isEqual(hashPin(pin, salt), storedHash)
     }
 
     private fun hashPin(pin: String, salt: ByteArray): ByteArray {

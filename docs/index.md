@@ -29,7 +29,7 @@ Browser Limit monitors your device for newly installed applications. When a brow
 | **Target SDK** | 36 (Android 14) |
 | **Language** | Kotlin |
 | **UI Framework** | Jetpack Compose with Material 3 |
-| **License** | CC BY-NC 4.0 |
+| **License** | MIT |
 | **Package** | `com.aistudio.browserlimit.abxyz` |
 
 ## Quick Start

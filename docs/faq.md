@@ -26,7 +26,7 @@ No. Browser Limit is distributed via [GitHub Releases](https://github.com/MRAKS0
 
 ### What does the license allow?
 
-Browser Limit is licensed under CC BY-NC 4.0 (Creative Commons Attribution-NonCommercial). You can share and adapt the software for non-commercial purposes with appropriate attribution.
+Browser Limit is licensed under the MIT License. See the [LICENSE](https://github.com/MRAKS05/Browser-Limit/blob/main/LICENSE) file for details.
 
 ## Detection
 
