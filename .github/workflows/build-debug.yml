@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -28,15 +30,52 @@ jobs:
         id: version
         run: |
           VERSION_NAME=$(grep 'versionName' app/build.gradle.kts | sed 's/.*"\(.*\)".*/\1/')
+          DATE=$(date +%Y%m%d)
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
-          TIMESTAMP=$(date +%Y%m%d%H%M%S)
-          echo "tag=v${VERSION_NAME}-beta.${TIMESTAMP}" >> $GITHUB_OUTPUT
+          echo "tag=v${VERSION_NAME}-beta.${DATE}" >> $GITHUB_OUTPUT
+          echo "apk_name=Browser-Limit-v${VERSION_NAME}-beta.${DATE}.apk" >> $GITHUB_OUTPUT
 
       - name: Rename APK
         run: |
+          cp app/build/outputs/apk/debug/app-debug.apk "${{ steps.version.outputs.apk_name }}"
+
+      - name: Compute APK SHA-256
+        id: apk-hash
+        run: echo "hash=$(sha256sum ${{ steps.version.outputs.apk_name }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: Create Beta Pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
           VERSION="${{ steps.version.outputs.version }}"
-          TIMESTAMP=$(date +%Y%m%d%H%M%S)
-          cp app/build/outputs/apk/debug/app-debug.apk "Browser-Limit-v${VERSION}-beta.${TIMESTAMP}.apk"
+          APK="${{ steps.version.outputs.apk_name }}"
+          HASH="${{ steps.apk-hash.outputs.hash }}"
+
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --prerelease \
+            --target "${{ github.sha }}" \
+            --notes "**Bug fixes in this beta:**\
+          \
+          - **#20:** ShizukuHelper no longer uses reflection (calls public API directly), no longer leaks InputStream, no longer parses fragile output strings\
+          - **#21:** DashboardScreen no longer runs an infinite polling loop every 2 seconds — status updates are now reactive to binder callbacks\
+          - **#22:** Gemini API daily limit is now checked and incremented atomically, preventing race conditions that could exceed the 20/day cap\
+          - **#26:** PIN hash comparison uses MessageDigest.isEqual() for constant-time verification, preventing timing side-channel attacks\
+          \
+          ### What to test\
+          \
+          - Shizuku package removal still works after the helper rewrite\
+          - Dashboard Shizuku status dot updates when Shizuku starts/stops\
+          - Gemini daily counter does not exceed 20 even under rapid scans\
+          - PIN lock/unlock works correctly (no timing window issues)\
+          \
+          ### SHA-256\
+          \
+          \`\`\`\
+          $HASH  $APK\
+          \`\`\`" \
+            "$APK"
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
