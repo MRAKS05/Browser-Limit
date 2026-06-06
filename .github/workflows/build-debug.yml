@@ -35,12 +35,21 @@ jobs:
 
       - name: Compute version
         id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          VERSION_NAME=$(grep 'versionName' app/build.gradle.kts | sed 's/.*"\(.*\)".*/\1/')
-          DATE=$(date +%Y%m%d)
-          echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
-          echo "tag=v${VERSION_NAME}-beta.${DATE}" >> $GITHUB_OUTPUT
-          echo "apk_name=Browser-Limit-v${VERSION_NAME}-beta.${DATE}.apk" >> $GITHUB_OUTPUT
+          APP_VERSION=$(grep 'versionName' app/build.gradle.kts | sed 's/.*"\(.*\)".*/\1/')
+          # Bump minor for next release version (e.g. 1.2.0 -> 1.3.0)
+          BASE=$(echo "$APP_VERSION" | awk -F. '{print $1}')
+          MINOR=$(echo "$APP_VERSION" | awk -F. '{print $2}')
+          NEXT_VERSION="${BASE}.$((MINOR + 1)).0"
+          # Determine next beta number
+          EXISTING=$(gh release list --json tagName --jq '[.[].tagName | select(startswith("v'$NEXT_VERSION'-beta-"))] | length')
+          BETA_NUM=$((EXISTING + 1))
+          echo "version=$APP_VERSION" >> $GITHUB_OUTPUT
+          echo "next_version=$NEXT_VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v${NEXT_VERSION}-beta-${BETA_NUM}" >> $GITHUB_OUTPUT
+          echo "apk_name=Browser-Limit-v${NEXT_VERSION}-beta-${BETA_NUM}.apk" >> $GITHUB_OUTPUT
 
       - name: Rename APK
         run: |
@@ -56,16 +65,17 @@ jobs:
         run: |
           TAG="${{ steps.version.outputs.tag }}"
           VERSION="${{ steps.version.outputs.version }}"
+          NEXT_VERSION="${{ steps.version.outputs.next_version }}"
           APK="${{ steps.version.outputs.apk_name }}"
           HASH="${{ steps.apk-hash.outputs.hash }}"
 
           gh release create "$TAG" \
-            --title "$TAG" \
+            --title "v${NEXT_VERSION} Beta ${TAG##*-}" \
             --prerelease \
             --target "${{ github.sha }}" \
-            --notes "**Bug fixes in this beta:**\
+            --notes "**Bug fixes in this beta (preview of v${NEXT_VERSION}):**\
           \
-          - **#20:** ShizukuHelper no longer uses reflection (calls public API directly), no longer leaks InputStream, no longer parses fragile output strings\
+          - **#20:** ShizukuHelper no longer leaks InputStream, no longer parses fragile output strings; kept reflection because `Shizuku.newProcess()` is a private system API\
           - **#21:** DashboardScreen no longer runs an infinite polling loop every 2 seconds — status updates are now reactive to binder callbacks\
           - **#22:** Gemini API daily limit is now checked and incremented atomically, preventing race conditions that could exceed the 20/day cap\
           - **#26:** PIN hash comparison uses MessageDigest.isEqual() for constant-time verification, preventing timing side-channel attacks\
