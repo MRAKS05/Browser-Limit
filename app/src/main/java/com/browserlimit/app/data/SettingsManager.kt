@@ -122,8 +122,18 @@ class SettingsManager(context: Context) {
         return geminiApiCount < 20
     }
 
-    fun incrementGeminiApiCount() {
-        geminiApiCount += 1
+    @Synchronized
+    fun tryUseGeminiApi(currentDateStr: String): Boolean {
+        if (lastApiDate != currentDateStr) {
+            lastApiDate = currentDateStr
+            geminiApiCount = 0
+        }
+        val count = geminiApiCount
+        if (count < 20) {
+            geminiApiCount = count + 1
+            return true
+        }
+        return false
     }
 
     fun setActive(active: Boolean) {

@@ -45,27 +45,27 @@ class BrowserDetector(private val context: Context) {
             }
         }
 
-        // Primary Mode: Gemini API (if active and limit not reached, or if forced)
-        if (settingsManager.useGemini.value && settingsManager.canUseGeminiApi(todayStr)) {
-            val response = geminiClient.isBrowser(packageName)
-            if (response.contains("YES") && !response.contains("NO")) {
-                settingsManager.incrementGeminiApiCount()
-                settingsManager.addConfirmedBrowser(packageName)
-                return@withContext DetectionResult(true, "Gemini", "Gemini returned YES")
-            } else if (response.contains("NO") && !response.contains("YES")) {
-                settingsManager.incrementGeminiApiCount()
-                settingsManager.addConfirmedNonBrowser(packageName)
-                return@withContext DetectionResult(false, "Gemini", "Gemini returned NO")
-            } else if (response.contains("YES") || response.startsWith("YES") || response.endsWith("YES.") || response.endsWith("YES")) {
-                settingsManager.incrementGeminiApiCount()
-                settingsManager.addConfirmedBrowser(packageName)
-                return@withContext DetectionResult(true, "Gemini", "Gemini returned YES (parsed)")
-            } else if (response.contains("NO") || response.startsWith("NO") || response.endsWith("NO.") || response.endsWith("NO")) {
-                settingsManager.incrementGeminiApiCount()
-                settingsManager.addConfirmedNonBrowser(packageName)
-                return@withContext DetectionResult(false, "Gemini", "Gemini returned NO (parsed)")
+        // Primary Mode: Gemini API (if active and limit not reached)
+        if (settingsManager.useGemini.value) {
+            if (settingsManager.tryUseGeminiApi(todayStr)) {
+                val response = geminiClient.isBrowser(packageName)
+                if (response.contains("YES") && !response.contains("NO")) {
+                    settingsManager.addConfirmedBrowser(packageName)
+                    return@withContext DetectionResult(true, "Gemini", "Gemini returned YES")
+                } else if (response.contains("NO") && !response.contains("YES")) {
+                    settingsManager.addConfirmedNonBrowser(packageName)
+                    return@withContext DetectionResult(false, "Gemini", "Gemini returned NO")
+                } else if (response.contains("YES") || response.startsWith("YES") || response.endsWith("YES.") || response.endsWith("YES")) {
+                    settingsManager.addConfirmedBrowser(packageName)
+                    return@withContext DetectionResult(true, "Gemini", "Gemini returned YES (parsed)")
+                } else if (response.contains("NO") || response.startsWith("NO") || response.endsWith("NO.") || response.endsWith("NO")) {
+                    settingsManager.addConfirmedNonBrowser(packageName)
+                    return@withContext DetectionResult(false, "Gemini", "Gemini returned NO (parsed)")
+                } else {
+                    return@withContext checkLocalList(packageName, "Fallback (Error: $response)")
+                }
             } else {
-                return@withContext checkLocalList(packageName, "Fallback (Error: $response)")
+                return@withContext checkLocalList(packageName, "Local (API limit reached)")
             }
         } else {
             // Fallback Mode: Local List
