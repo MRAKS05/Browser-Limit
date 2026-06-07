@@ -8,6 +8,7 @@
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
     <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge" alt="Latest Release">
   </a>
+  <br />
   <a href="https://browser-limit-docs.pages.dev/">
     <img src="https://img.shields.io/badge/Documentation-8A2BE2?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation">
   </a>
