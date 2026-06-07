@@ -9,25 +9,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  trigger-cloudflare-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Cloudflare Account ID
-        id: cf
-        env:
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: |
-          ACCOUNT_ID=$(curl -s -H "Authorization: Bearer $CF_API_TOKEN" \
-            "https://api.cloudflare.com/client/v4/accounts" \
-            | jq -r '.result[0].id')
-          echo "account_id=$ACCOUNT_ID" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
 
-      - name: Trigger Cloudflare Pages Deployment
-        env:
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: |
-          curl -X POST \
-            "https://api.cloudflare.com/client/v4/accounts/${{ steps.cf.outputs.account_id }}/pages/projects/browser-limit-docs/deploy" \
-            -H "Authorization: Bearer $CF_API_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d '{"branch": "main"}'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+        working-directory: docs
+
+      - name: Build docs
+        run: npm run build
+        working-directory: docs
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: docs
+          command: pages deploy build --project-name=browser-limit-docs
