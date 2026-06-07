@@ -9,52 +9,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  trigger-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Install dependencies
-        run: npm install
-        working-directory: docs
-
-      - name: Build docs
-        run: npm run build
-        working-directory: docs
-
-      - name: Create Cloudflare Pages build hook
-        id: hook
-        env:
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Trigger Cloudflare Pages build
         run: |
-          ACCOUNT_ID=$(curl -s -H "Authorization: Bearer $CF_API_TOKEN" \
-            "https://api.cloudflare.com/client/v4/accounts" | jq -r '.result[0].id')
-          echo "account_id=$ACCOUNT_ID" >> "$GITHUB_OUTPUT"
-
-          HOOK_RESPONSE=$(curl -s -X POST \
-            "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pages/projects/browser-limit-docs/deploy_hooks" \
-            -H "Authorization: Bearer $CF_API_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d '{"name": "gh-actions-deploy", "branch": "main"}')
-          echo "hook_response=$HOOK_RESPONSE" >> "$GITHUB_OUTPUT"
-          HOOK_URL=$(echo "$HOOK_RESPONSE" | jq -r '.result.url // empty')
-          if [ -n "$HOOK_URL" ]; then
-            echo "url=$HOOK_URL" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Trigger deploy via build hook
-        if: steps.hook.outputs.url != ''
-        run: curl -X POST "${{ steps.hook.outputs.url }}"
-
-      - name: Fallback — deploy via wrangler
-        if: steps.hook.outputs.url == ''
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          workingDirectory: docs
-          command: pages deploy build --project-name=browser-limit-docs
+          curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/9dc77447-e96f-4009-8cd8-72c5f88d2537"
