@@ -27,7 +27,32 @@ jobs:
         run: npm run build
         working-directory: docs
 
-      - name: Deploy to Cloudflare Pages
+      - name: Create Cloudflare Pages build hook
+        id: hook
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          ACCOUNT_ID=$(curl -s -H "Authorization: Bearer $CF_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts" | jq -r '.result[0].id')
+          echo "account_id=$ACCOUNT_ID" >> "$GITHUB_OUTPUT"
+
+          HOOK_RESPONSE=$(curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pages/projects/browser-limit-docs/deploy_hooks" \
+            -H "Authorization: Bearer $CF_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"name": "gh-actions-deploy", "branch": "main"}')
+          echo "hook_response=$HOOK_RESPONSE" >> "$GITHUB_OUTPUT"
+          HOOK_URL=$(echo "$HOOK_RESPONSE" | jq -r '.result.url // empty')
+          if [ -n "$HOOK_URL" ]; then
+            echo "url=$HOOK_URL" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger deploy via build hook
+        if: steps.hook.outputs.url != ''
+        run: curl -X POST "${{ steps.hook.outputs.url }}"
+
+      - name: Fallback — deploy via wrangler
+        if: steps.hook.outputs.url == ''
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
