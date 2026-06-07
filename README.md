@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
-    <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge" alt="Latest Release">
+    <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge&label=Latest%20Release" alt="Latest Release">
   </a>
   <br />
   <a href="https://browser-limit-docs.pages.dev/">
