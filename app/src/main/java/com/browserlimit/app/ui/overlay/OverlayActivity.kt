@@ -18,7 +18,6 @@ import com.browserlimit.app.data.LogDatabase
 import com.browserlimit.app.data.LogEntry
 import com.browserlimit.app.data.SettingsManager
 import com.browserlimit.app.engine.ShizukuUninstaller
-import com.browserlimit.app.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

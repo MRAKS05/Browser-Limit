@@ -134,7 +134,6 @@ class GeminiClient(private val context: android.content.Context) {
         )
         var attempt = 0
         val maxAttempts = 3
-        var lastErrorUrl: String? = null
         
         while (attempt < maxAttempts) {
             try {

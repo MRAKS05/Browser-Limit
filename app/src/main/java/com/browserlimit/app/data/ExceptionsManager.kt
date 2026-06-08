@@ -14,11 +14,6 @@ class ExceptionsManager(context: Context) {
     private val _exceptionsFlow = MutableStateFlow<List<String>>(loadExceptions())
     val exceptionsFlow = _exceptionsFlow.asStateFlow()
 
-    init {
-        // Prepopulate with hardcoded permanent exception
-        addException("com.browserlimit.app")
-    }
-
     private fun loadExceptions(): List<String> {
         val json = prefs.getString(EXCEPTIONS_KEY, "[]")
         val array = JSONArray(json)
