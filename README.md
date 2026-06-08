@@ -1,11 +1,22 @@
 # BrowserLimit
 
-![BrowserLimit Icon](app_icon.png)
+<p align="center">
+  <img src="app_icon.svg" width="128" height="128" alt="BrowserLimit Icon" />
+</p>
 
-[![Latest Release](https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge&label=Latest%20Release)](https://github.com/MRAKS05/Browser-Limit/releases/latest)
-[![Documentation](https://img.shields.io/badge/Documentation-8A2BE2?style=for-the-badge&logo=gitbook&logoColor=white)](https://browser-limit-docs.pages.dev/)
-![Platform](https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android)
-[![Build](https://img.shields.io/badge/Build-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions)](https://github.com/MRAKS05/Browser-Limit/actions/workflows/build.yml)
+<p align="center">
+  <a href="https://github.com/MRAKS05/Browser-Limit/releases/latest">
+    <img src="https://img.shields.io/github/v/release/MRAKS05/Browser-Limit?style=for-the-badge&label=Latest%20Release" alt="Latest Release">
+  </a>
+  <br />
+  <a href="https://browser-limit-docs.pages.dev/">
+    <img src="https://img.shields.io/badge/Documentation-8A2BE2?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation">
+  </a>
+  <img src="https://img.shields.io/badge/Platform-Android_12+-3DDC84?style=for-the-badge&logo=android" alt="Platform">
+  <a href="https://github.com/MRAKS05/Browser-Limit/actions/workflows/build.yml">
+    <img src="https://img.shields.io/badge/Build-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" alt="Build">
+  </a>
+</p>
 
 BrowserLimit is an advanced Android utility engineered to enforce digital minimalism by automatically detecting and eliminating web browsers from the device environment. Built upon the Shizuku API for system-level operations, it combines automated detection with AI-powered analysis to maintain a browser-free environment.
 
