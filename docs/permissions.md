@@ -16,7 +16,7 @@ Browser Limit requests several Android permissions to function correctly. This p
 | `RECEIVE_BOOT_COMPLETED` | Start GuardService on device boot | Optional |
 | `FOREGROUND_SERVICE` | Run the background monitoring service | Yes |
 | `FOREGROUND_SERVICE_SPECIAL_USE` | Declare foreground service type as specialUse | Yes |
-| `REQUEST_INSTALL_PACKAGES` | Monitor new app installations | Yes |
+| ~~`REQUEST_INSTALL_PACKAGES`~~ | ~~Monitor new app installations~~ | ~~Yes~~ *(removed)* |
 | `SYSTEM_ALERT_WINDOW` | Show overlay confirmation dialog | Required for overlay mode |
 | `QUERY_ALL_PACKAGES` | Enumerate installed apps for detection | Yes |
 | `POST_NOTIFICATIONS` | Show removal notifications and service notification | Android 13+ |
@@ -68,17 +68,11 @@ This permission is required. Without it, Browser Limit cannot monitor for new in
 
 ---
 
-### REQUEST_INSTALL_PACKAGES
+---
 
-```
-android.permission.REQUEST_INSTALL_PACKAGES
-```
+### ~~REQUEST_INSTALL_PACKAGES~~ *(removed)*
 
-Used for:
-- Receiving `ACTION_PACKAGE_ADDED` broadcast events when new apps are installed.
-- This is how Browser Limit detects newly installed browsers.
-
-This permission is required. Without it, the detection flow does not trigger.
+This permission was previously declared but has been removed. The app never installs APKs — it only uninstalls via Shizuku (`pm uninstall`), so `REQUEST_INSTALL_PACKAGES` is unnecessary.
 
 ---
 
