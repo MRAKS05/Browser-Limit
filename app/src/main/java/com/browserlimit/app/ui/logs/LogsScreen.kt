@@ -1,5 +1,6 @@
 package com.browserlimit.app.ui.logs
 
+import android.content.Intent
 import android.os.Environment
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -114,23 +115,77 @@ fun LogsScreen() {
                                     scope.launch {
                                         val settings = com.browserlimit.app.data.SettingsManager(context)
                                         settings.removeConfirmedCache(log.packageName)
-                                        val result = browserDetector.checkPackage(log.packageName, forceRecheck = true)
-                                        
-                                        db.insertLog(
-                                            LogEntry(
-                                                timestamp = System.currentTimeMillis(),
-                                                appName = log.appName,
-                                                packageName = log.packageName,
-                                                detectionMethod = result.method + " (Recheck)",
-                                                decision = if (result.isBrowser) "Removed" else "Kept",
-                                                geminiResponse = result.reason
+
+                                        val exceptionsManager = com.browserlimit.app.data.ExceptionsManager(context)
+                                        if (exceptionsManager.isExcepted(log.packageName)) {
+                                            db.insertLog(
+                                                LogEntry(
+                                                    timestamp = System.currentTimeMillis(),
+                                                    appName = log.appName,
+                                                    packageName = log.packageName,
+                                                    detectionMethod = "Settings (Recheck)",
+                                                    decision = "Excepted",
+                                                    geminiResponse = "Found in exceptions"
+                                                )
                                             )
-                                        )
-                                        db.trimLogs()
-                                        
+                                            db.trimLogs()
+                                            withContext(Dispatchers.Main) {
+                                                Toast.makeText(context, "Package is in exceptions list", Toast.LENGTH_LONG).show()
+                                                recheckingPackage = null
+                                            }
+                                            return@launch
+                                        }
+
+                                        val result = browserDetector.checkPackage(log.packageName, forceRecheck = true)
+
                                         if (result.isBrowser) {
-                                            val uninstaller = com.browserlimit.app.engine.ShizukuUninstaller()
-                                            uninstaller.uninstallPackage(log.packageName)
+                                            if (settings.showOverlay.value) {
+                                                val intent = android.content.Intent(context, com.browserlimit.app.ui.overlay.OverlayActivity::class.java).apply {
+                                                    putExtra("PACKAGE_NAME", log.packageName)
+                                                    putExtra("METHOD", result.method + " (Recheck)")
+                                                    putExtra("REASON", result.reason)
+                                                    flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP
+                                                }
+                                                context.startActivity(intent)
+                                            } else {
+                                                val uninstaller = com.browserlimit.app.engine.ShizukuUninstaller()
+                                                val success = uninstaller.uninstallPackage(log.packageName)
+                                                val decision = if (success) "Removed" else "Error"
+                                                val reason = result.reason + (if (success) "" else " (Uninstall Fail)")
+
+                                                db.insertLog(
+                                                    LogEntry(
+                                                        timestamp = System.currentTimeMillis(),
+                                                        appName = log.appName,
+                                                        packageName = log.packageName,
+                                                        detectionMethod = result.method + " (Recheck)",
+                                                        decision = decision,
+                                                        geminiResponse = reason
+                                                    )
+                                                )
+                                                db.trimLogs()
+
+                                                if (success) {
+                                                    val appName = try {
+                                                        val pm = context.packageManager
+                                                        val info = pm.getApplicationInfo(log.packageName, 0)
+                                                        pm.getApplicationLabel(info).toString()
+                                                    } catch (e: Exception) { log.packageName }
+                                                    com.browserlimit.app.engine.NotificationHelper.sendUninstallNotification(context, appName, log.packageName, result.reason)
+                                                }
+                                            }
+                                        } else {
+                                            db.insertLog(
+                                                LogEntry(
+                                                    timestamp = System.currentTimeMillis(),
+                                                    appName = log.appName,
+                                                    packageName = log.packageName,
+                                                    detectionMethod = result.method + " (Recheck)",
+                                                    decision = "Kept",
+                                                    geminiResponse = result.reason
+                                                )
+                                            )
+                                            db.trimLogs()
                                         }
 
                                         withContext(Dispatchers.Main) {
